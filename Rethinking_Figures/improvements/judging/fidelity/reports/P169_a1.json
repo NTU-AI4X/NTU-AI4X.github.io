@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P169",
+  "generation_attempt": 1,
+  "source_image_sha256": "08cf2d2261c19a2ee8000e4b832b9f3ab48b810cb9f3e483943e6731b498cab6",
+  "revised_image_sha256": "840a2600ce46612a0fd5ac6010400d785febfff8a79f356504a8577655262de2",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M diagram retains the evidence for zero-, low- and high-frequency stages of UHD restoration."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both complete zero-frequency exchange examples and all nine increasing-frequency columns remain, including texture insets."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All DCT/IDCT labels, Swap formulas, PSNR numbers, infinity values and original full explanatory sentences are source pixels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Every original exchange arrow, DCT/IDCT path, low-frequency filling arrow and high-frequency injection arrow is preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original red swapped-frequency borders, spectral intensity and yellow texture insets remain unchanged."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Four complete protected regions independently match native source pixels, retaining both scientific examples, original sentence and entire nine-column progression."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New three-stage guide, global-to-texture headline and section headers restate Fig2 caption and adjacent frequency-analysis paragraph."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "No scientific column, formula, PSNR, inset or arrow is clipped. Original dense small labels remain for independent readability assessment."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 2. Our core motivation. Based on the observations in (a) and (b), we deconstruct the complex UHD restoration problem into three\nprogressive stages: zero-frequency enhancement, low-frequency restoration, and high-frequency refinement.",
+  "body_evidence": "../papers/2503.13165_conference.pdf; source caption and relevant introduction/method page inspected directly",
+  "independent_pixel_check": "judging/fidelity/reports/P169_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T00:26:22.218424+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T00:26:22.218424+00:00"
+}

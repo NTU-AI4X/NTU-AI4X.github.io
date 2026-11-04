@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_8aErJ21sV6_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "2f3ce7891fc0e1ad901465b31d7bbd9341c4345098efcdbc27af49131120b22d",
+  "revised_image_sha256": "e3efea4c6d94bee446000c93a8bf2f82bcba2f4593c0da9c1849df56c32c360a",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The four-stage decision process remains intact: image and Direct mask construction, pre-execution policy routing, candidate execution and post-execution mask comparison, followed by experience-based knowledge updates."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels remain, including Prediction/Semantics/Structure observations; both Router and Comparator pipelines; Restore/Prompt/Refine with Route 1 and Route k; and Completed experience, Distillation & update, Update validation, and Accepted knowledge."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The image/query notation, Fθ, π₀, M₀, candidate-mask indices, evidence equations, optimization expressions, and primed update-state symbols are retained. Feedback values match: π₀ = 0.00 / 1.276; π₁ = +24.92 / 41.377; πₖ = −46.36 / 68.952. Validation retains Gain, Capture, and Cost comparisons."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Observation evidence still feeds the Router; budgeted selection points down toward candidate execution. The Direct and candidate mask collection still feeds upward into final mask selection, which points right to the final mask. Extended connectors across the new spacing preserve endpoints and arrow directions. Experience consolidation and validation retain their internal ordering."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue, green, gold, and purple stage groupings remain consistent. Route 1 retains its yellow marker and Route k its red marker. Mask class colors and the green positive/red negative gain encoding remain unchanged; no contradictory legend appears."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The foggy-road input, restored-road example, road → drivable road surface and car → passenger car prompts, Direct mask, candidate masks, and final mask are preserved. Prediction values Conf. 0.90, Area 0.82, and Edge 0.98 remain. No fabricated example or measurement is visible."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added Router-before-execution and Comparator-after-execution annotations follow the supplied caption. The added statement about completed outcomes supporting subsequent knowledge updates also follows that caption. The retained mask collection still includes the independent Direct mask."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all panel boundaries, headings, examples, tables, and accepted-knowledge labels without visible clipping or corrupted replacement text. The detail views support inspection of the smaller labels."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. Reported pixel equality supports only the three listed rectangles; added annotations and extended connectors were assessed visually. No separate source body text was supplied. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: DevoSeg’s decision process. The Router chooses policies before execution; the Compara-\ntor selects among their masks and the independent Direct mask afterward. Completed outcomes\nprovide evidence for subsequent knowledge updates.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_8aErJ21sV6_F_a1_e3efea4c6d94/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_8aErJ21sV6_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_8aErJ21sV6_F_a1_e3efea4c6d94",
+    "response_sha256": "de3524fb58b5b838f19ba932b4474561ac3c5be8e0b231d7d89eccde87f4684d",
+    "request_metadata_sha256": "b7fb301d2ba674343deab13a5956d2bd14c09369cbb8bac4e58521f69ee5c269",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the complete DevoSeg final image and read the source caption plus eight pair-inspection checks. Router policies precede independent Direct M0/candidate execution, Comparator follows execution, and completed outcomes populate knowledge. All displayed gains/costs and validation routes remain intact. Three complete native-resolution source bands preserve scientific content. The extended shafts at original x=333 and x=1368 connect the same original bands across enlarged whitespace with original arrowheads retained; they do not introduce a new causal route. The external temporal reading guide is supported by the caption.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T06:41:28.751663+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:41:28.751663+00:00"
+}

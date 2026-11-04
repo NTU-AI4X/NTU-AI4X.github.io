@@ -1,0 +1,2 @@
+Figure 1: Constructing EmboScope from shared interaction schemas with a rule-based engine.
+Bottom: Illustrative annotations and QA at three capability levels from one real episode. L3 observes t₀–t₂; t₃ is held out.

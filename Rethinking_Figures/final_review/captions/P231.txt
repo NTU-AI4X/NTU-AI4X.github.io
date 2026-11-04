@@ -1,0 +1,5 @@
+Figure 3. Output of the initial predictor and multiple samples
+generated from it. We see that the over-smoothed initial prediction
+lacking texture is “corrected” by the stochastic sampler, producing
+crisp and diverse final reconstructions. The residual (top right)
+shows the the difference between reference and initial prediction.

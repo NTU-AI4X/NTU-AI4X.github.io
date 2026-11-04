@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_8P9XSKFW9N_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "ba387f3609d526bc40e38bdd390e77616caf3dbefa5784791f85653bcad80a68",
+  "revised_image_sha256": "d5ee077ca8f11c9a1223721ce5ec063689f3a35d27d349a448eba0a08032a66a",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative retains the motivation: optical and SAR observations have distinct degradations, provide complementary evidence, and contribute to a shared target-distribution consensus. The Gaussian-bandwidth comparison remains intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels (a–d) remain, including both degraded images and magnified insets, the aligned optical/SAR pair, three complementarity statements, both density-evidence maps, the central consensus surface, and all three bandwidth examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original panel titles and scientific labels are retained, including 'Occlusion / Low visibility,' 'Speckle / clutter,' 'Aligned,' 'Consensus Space,' Small/Medium/Large σ, 'Sharper responses,' 'Overly smoothed,' and High/Low. Added numbers 1 and 2 identify explanatory callouts, not measurements."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Red dashed connectors still link each selected image region to its enlargement. The alignment arrow remains bidirectional. Green optical and blue SAR arrows both point inward toward the consensus surface. Bandwidth examples retain their small-to-large ordering."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green continues to identify optical evidence and blue SAR evidence. Red warning symbols and dashed inset outlines retain their roles. Density colors remain consistent, with the legend placing red at High and blue at Low; increasing bandwidth still broadens and merges responses."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The harbor imagery, cloud occlusion, SAR clutter inset, density-map structures, consensus peaks, and bandwidth-dependent point patterns visibly correspond to the originals. No new measured outcomes or replacement examples appear. The supplied pixel-proof report additionally covers the full original figure without exclusions."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added callout about heterogeneous observations describing the same underlying ship distribution follows the caption. The callout about bandwidth-dependent pixel-wise targets and learning instance-wise mass without fixed Gaussian profiles follows the supplied page 2 discussion and contribution statements."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original panels, labels, insets, arrows, and the complete color legend. Both new bottom callouts are fully visible and legible. Cropped edges in the detail views do not represent missing content in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment is based on the supplied images and source text. The pixel-proof result was supplied; its underlying file was not inspected. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Motivation for density consensus learning. OPT and SAR observations provide heteroge-\nneous and spatially varying evidence for the same underlying ship distribution. We establish their\nagreement in a shared density space to preserve mutually supported target responses while suppress-\ning modality-specific interference. Different Gaussian bandwidths in (d) illustrate the dependence\nof conventional pixel-wise density targets on predefined kernel shapes.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_8P9XSKFW9N_M_a1_d5ee077ca8f1/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_8P9XSKFW9N_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_8P9XSKFW9N_M_a1_d5ee077ca8f1",
+    "response_sha256": "6d249aa40ec79abb97cdcff1ded705ed4221229d32d44966589c642eff87911e",
+    "request_metadata_sha256": "9a383eefd288dff0dd11b8d9a7949cb4bdd0f09c881849e8699a5a1dca65f5e9",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the final DeCo motivation figure and read caption plus source introduction's instance-mass and Gaussian-shape discussion. All four original scientific panels retain optical/SAR imagery, ROI details, aligned pair, density evidence, consensus surface, bandwidth examples, warning symbols and High/Low colorbar. The two added bottom statements directly explain the shared ship distribution and instance-wise mass objective without prescribed Gaussian profiles. Complete source scientific content is independently restored; no new density values, ship counts, or per-example error labels were invented.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:06:23.242159+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:06:23.242159+00:00"
+}

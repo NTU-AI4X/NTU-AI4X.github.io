@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_rCgxaWvBRj_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "898791b4265002a2c089375154eb4f1342974d33b924bb00698428b11a5003d0",
+  "revised_image_sha256": "70aa91e4bc0f37da9e68f680030f931e5378a16b65ff1a27e075e10cf65139d5",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative retains action-conditioned consequence prediction, highest-value action selection, execution with independent verification and commit/rollback, and the tool-evolution loop. Image/state and candidate-action inputs retain their original roles."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original panels remain in the overview: State-Action Encoding, World Model Rollout, Predict consequences, Predict-Action Evaluation, Action Selection, Execution and verification, and the complete Tool-Evolution Loop. The additional encoding inset duplicates an existing panel."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The state-estimator expression, world-model inputs, rollout indices, action-selection argmax, verifier expression, and immediate-utility plus discounted-value formula are preserved. All seven consequence labels remain. The prediction table retains its values, including first-row 0.82, 0.31, 0.05, 0.08, 0.12, 0.76 and final-row 0.52, 0.20, 0.18, 0.28, 0., 0.48."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Image branches still feed the visual encoder and state estimator; features and action masks feed region pooling; candidates feed the action encoder and world model. Rollout direction, consequence-to-planning connection, evaluation-to-selection-to-execution sequence, verifier branches, dashed next-planning feedback, and purple tool-evolution arrows are retained."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue visual features, green state features, red action representations, colored consequence categories, green commit/red rollback, and purple evolution links remain consistent. Flame and snowflake markers retain their original placements; the three major process bands preserve their grouping."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The flower input and execution-result images, fire/firefighter, grass and portrait failure examples, prediction table, and dehaze/derain/denoise and SR/sharpen tool examples are retained. No new measurement, example class or outcome is visible."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "“Predict consequences before execution,” “Execute, verify, then commit or rollback,” and the candidate-frontier/tool-adaptation sentence are supported by the supplied caption. “State-action encoding — enlarged view” describes the duplicated panel without adding a scientific claim."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative overview includes the complete original figure, including its rightmost outputs and bottom evaluation-cycle box. The enlarged inset ends at the encoding-panel boundary, truncating outgoing connector continuations locally; their labels, arrowheads and destinations remain visible in the complete overview. No source content is lost overall, and no clipped added text or corrupted replacement is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel-equality evidence. The proof was not independently opened or verified and supports only its listed rectangles; added headings and explanatory text were assessed separately. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Overview of PreActIR. The world model predicts action consequences before execution,\nwhile the predict–act–verify controller executes and verifies the selected action with commit or\nrollback. A tool-evolution loop performs candidate-frontier audit and targeted tool adaptation.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_rCgxaWvBRj_F_a1_70aa91e4bc0f/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_rCgxaWvBRj_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_rCgxaWvBRj_F_a1_70aa91e4bc0f",
+    "response_sha256": "d25b0f93739d6d54e4f052e70580fd592cd6c87ce7552539f91ea79664dd7fa4",
+    "request_metadata_sha256": "81fe9ba5b8f498fc4495d421e96d4204aa6e0fadc7d5eda9cfa3839fddef3681",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final framework and state-action enlargement, read caption. Full original predictive world model/evaluation/action argmax/verification and tool evolution remain, all table values and seven consequences intact. New predictive-before-execution/commit-rollback/frontier audit text matches caption. Enlargement truncates outgoing connector continuations only; full overview preserves their labels/heads/destinations.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:55:40.748660+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:55:40.748660+00:00"
+}

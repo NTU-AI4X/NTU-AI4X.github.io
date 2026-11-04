@@ -1,0 +1,5 @@
+Figure 1: Overview of OPTSCIENTIST. Eight domain specialists share research knowledge, pro-
+pose optimizer hypotheses, and submit programs through an extensible typed DSL. Compilation and
+static admission checks precede a multi-fidelity pretraining cascade. Results, lineages, and lessons
+are written back to guide subsequent proposals. Full-fidelity validation establishes transfer and in-
+forms later system generations; it does not enter the online ranking of the same proxy-search run.

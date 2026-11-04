@@ -1,0 +1,4 @@
+Figure 2. The training process of SPG: each style reference guides the source image through a dedicated generator G to produce a style-
+i
+aware prompt. Prompts are merged and used to optimize a frozen privacy model. Each style-prompt generator consists of a modulation
+network and a learnable prompt template, producing the final style-prompt via element-wise modulation.

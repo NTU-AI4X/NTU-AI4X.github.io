@@ -1,0 +1,64 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_ahcNtcQxsO_F",
+  "generation_attempt": 3,
+  "source_image_sha256": "40715554502cf453f242c6a9178a69138358f92addf66a33d6ccb66569d64b6d",
+  "revised_image_sha256": "ec32910ee575e94077d4a77cb95d3f907828a723c7b138be6325f40141eac449",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The framework remains evidence-grounded agent judging from case materials through trace, visual and audio inspection to process/output feedback."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four input/evidence groups, eight original round cards and evaluation-tool bank are retained; final-video five clips and all reference assets remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original round text, 57.82s/1080p, 37/37, audio times, metric abbreviations including original CP and pass/fail judgments are retained rather than silently reconciled with the table."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Rounds follow the original order1→2→3→4→5→6→7→8, now row-major. Tool-call arrow goes to tools and evidence returns to evaluation; case-input and final-output grouping match caption and Evaluation Protocol."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original green successes, red failures, blue evaluation cards and input evidence colours remain. Yellow arrows encode sequence, not data changes."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Thirteen source blocks independently preserve four evidence groups, eight complete round cards and tool bank under recorded deterministic resizing. Recorded exclusions remove only duplicate neighbouring icon/header fragments and obsolete inter-card arrow remnants; full owning cards remain."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added input/evidence grouping and output metrics/evidence/confidence/feedback are explicitly described in caption and Evaluation Protocol. Worked-example qualifier prevents treating eight rounds as a mandatory general schedule."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original scientific card content and icons are present; small original text and duplicate card headings remain quality limitations. The source-supported parenthesis is retained as an editorial label, not evidence of higher quality."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope retained. Source text and plot resolution remain a design limitation for blind scoring, not scientific-data rewriting.",
+  "caption": "Figure 2: Evidence-grounded agent-as-judge evaluation framework. Given the user request, reference\nassets, execution trace, intermediate artifacts, and final video, the evaluation agent conducts an agentic\nevaluation. At each round, it invokes evaluation skills to inspect traces, extract video metadata, sample\nkey frames, separate audio, run ASR, analyze errors, and understand visual or audio content. The\ncollected evidence is then used to score process and output metrics and provide textual feedback.",
+  "body_evidence": "generation/AI_ahcNtcQxsO_F/attempt_03/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_ahcNtcQxsO_F_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/AI_ahcNtcQxsO_F_a1_self_rejection.json",
+    "judging/fidelity/AI_ahcNtcQxsO_F_a2_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T03:49:20.383812+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T03:49:20.383812+00:00"
+}

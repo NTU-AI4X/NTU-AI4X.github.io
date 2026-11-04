@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P185",
+  "generation_attempt": 2,
+  "source_image_sha256": "1df24f1e9a81543b8369368abc113ed372ef538c1f8826129996045ab4af68e0",
+  "revised_image_sha256": "db276983b3db426bc4e259be784972239affb5cf33845c3a2764a0cb9c37610a",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M comparison retains limitations of two isotropy-assuming reconstruction paradigms for anisotropic volumes."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Full original volume/extraction legend, four train/inference diagrams and both a/b paradigm labels are preserved."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original axes, plane labels, V/V_train notation, HR/LR conditions and testing/training target definitions remain source pixels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Adjacent yz-slice training versus xy-slice inference and x-axis downsample versus z-axis super-resolution correspondence remain unchanged."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original orange training and blue inference encoding is retained with horizontal headings; scientific volume geometry is untouched."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Seven original complete scientific/label regions independently match native original pixels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The bottom comparison of isotropy assumptions and continuous3D inference is the original Fig1 caption and relevant method-motivation paragraph; no new proposed pipeline image is invented."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original panels and paradigm identifiers are visible. Intervention is horizontal headings and source-supported explanatory comparison around intact original diagrams."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope and source resolution retained. Source-boundary seams and original incomplete numeric strings remain for blind design scoring; no missing value is inferred.",
+  "caption": "Figure 1. Different paradigms of isotropic reconstruction from\nanisotropic datasets. Existing approaches typically extract vol-\nume features from abundant xy-plane images. After stacking\nanisotropic slices along the z-axis (top), they: (a) Video inter-\npolation along the z-axis: models are trained along the x or y\ndirection, where adjacent frames are input to synthesize the inter-\nmediate frame; during inference, the trained model is repurposed\nto interpolate along the z-axis, generating intermediate slices cor-\nresponding to continuous temporal coordinates (τ ∈ [0, 1]). (b)\nImage super-resolution on xz/yz planes: Since the xy-plane im-\nages are of much higher resolution, a low-resolution counterpart\ncan be generated either by manual downsampling [21] or by learn-\ning a degradation model [6], forming paired HR–LR supervision\nfor training; during inference, the resulting super-resolution model\nis then applied along the z-axis to enhance xz/yz slices. Both\nparadigms implicitly assume spatial isotropy. In contrast, our\nmethod directly performs inference in continuous 3D space, with-\nout relying on such isotropic assumptions.",
+  "body_evidence": "../papers/2512.06684_conference.pdf; caption and relevant method/intro pages read directly",
+  "independent_pixel_check": "judging/fidelity/reports/P185_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P185_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T02:06:28.838284+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T02:06:28.838284+00:00"
+}

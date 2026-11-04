@@ -1,0 +1,6 @@
+Figure 1. Comparisons among the main RGBD segmentation
+pipelines and our approach. (a) Use dual encoders to encode
+RGB and depth respectively and design fusion modules to fusion
+them [28, 61]; (b) Adopt an unified RGBD encoder to extract and
+fuseRGBDfeatures[1,59]; (c)OurDFormerv2usedepthtoform
+ageometrypriorofthesceneandthenenhancethevisualfeatures.

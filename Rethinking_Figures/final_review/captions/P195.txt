@@ -1,0 +1,7 @@
+Fig. 1: Overview of our proposed evaluation paradigm. (a) HR A preserves structures,
+while HR B shows severe distortions. (b) RefReward-SR uses an MLLM for inter-
+pretable, LR-conditioned semantic scoring. (c) Existing metrics wrongly favor the dis-
+torted HR B, whereas ours aligns with human perception. (d) RefReward-SR uniquely
+ensures semantic fidelity and preference alignment without GT dependency. The as-
+terisk(*) indicates that FR metrics evaluate high-level semantics only passively via
+low-level correspondence.

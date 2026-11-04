@@ -1,0 +1,18 @@
+Figure 1. Motivation. (a) Dense all-in-one restoration meth-
+ods [24, 57] often inefficiently allocate parameters when handling
+multiple degradation types. (b) While recent Mixture-of-Experts
+(MoE) approaches [61, 62] address this through sparse computa-
+tion, their rigid routing mechanisms uniformly distribute inputs
+across experts without considering the natural relationships be-
+tween degradations. (c) To overcome these limitations, we intro-
+duce Complexity Experts - adaptive processing blocks with size-
+varying computational units. Our framework dynamically allocates
+model capacity using a spring-inspired force mechanism that con-
+tinuously guides routing decisions toward simpler experts when
+possible, with the force proportional to the complexity of the input
+degradation. While initially designed for computational efficiency,
+this approach naturally emerges as a task-discriminative learning
+framework, assigning degradations to the most suitable experts.
+This makes it particularly effective for all-in-one restoration meth-
+ods, where both task-specific processing and cross-degradation
+knowledge sharing are crucial.

@@ -1,0 +1,3 @@
+Figure 3. Overall framework of the proposed Method. The Geometric Prior Enhancement module strengthens structural representa-
+tions via visual–geometric fusion and transformer-based query refinement. The Semantic Alignment Injection mechanism align category
+semantics with degraded underwater conditions.

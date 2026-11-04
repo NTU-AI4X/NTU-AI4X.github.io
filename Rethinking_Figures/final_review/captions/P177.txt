@@ -1,0 +1,9 @@
+Figure 1. The concat and frame-by-frame operations in exist-
+ing methods struggle to efficiently extract sub-pixels and suppress
+noise, leading to remaining artifacts and over-smoothed details, as
+shown in (a). We observe that noise randomly appears on several
+frames, while effective sub-pixels have consistent intensity at cor-
+responding positions in all frames, as shown in (c). Based on this,
+a novel inter-frame query and intra-frame scanning-based QMam-
+baBSR is proposed to extract more accurate sub-pixels while mit-
+igating noise interference simultaneously, as shown in (b).

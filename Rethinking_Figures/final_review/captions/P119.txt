@@ -1,0 +1,10 @@
+Figure 1. Motivation for FinPercep-RM and CCL. (a) Standard
+IQAs lack fine-grained perception and struggle to penalize lo-
+cal distortions, while Ours aligns with human judgment (User
+Study). (b) The training curves illustrate the stability-robustness
+dilemma: baseline IQA rewards (blue/purple) converge quickly,
+while FinPercep-RM (light blue) is oscillatory and unstable. Our
+completemethod(FinPercep-RMw/CCL,orange)achievesstable
+and optimal convergence. (c) Visualization of Reward Hacking:
+baseline rewards (W/ CLIP-IQA, W/ MAN-IQA) produce local
+artifacts, whereas our results are faithful to the Ground Truth.

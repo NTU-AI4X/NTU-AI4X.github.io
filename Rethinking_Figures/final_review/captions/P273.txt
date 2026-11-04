@@ -1,0 +1,4 @@
+Figure 1. (a) The synthetic images generated from Stable Diffusion and our proposed InstaGen, which can serve as a dataset synthesizer
+for sourcing photo-realistic images and instance bounding boxes at scale. (b) On open-vocabulary detection, training on synthetic images
+demonstrates significant improvement over CLIP-based methods on novel categories. (c) Training on the synthetic images generated from
+InstaGen also enhances the detection performance in close-set scenario, particularly in data-sparse circumstances.

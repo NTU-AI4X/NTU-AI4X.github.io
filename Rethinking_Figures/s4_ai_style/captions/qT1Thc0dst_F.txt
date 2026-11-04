@@ -1,0 +1,7 @@
+Figure 1: Overview of STRIDE. From K initial samples, STRIDE selects a champion and refines it
+for t rounds. Each round performs evolutionary refinement and agent state update through dual-route
+evaluation: the verifier scores candidate images against the rubrics, while the perceptor provides vi-
+sual grounding of the observed failures. The lead editor then analyzes the agent state and refinement
+trajectory to route the champion to either the composer for global redraw or the retoucher for local
+editing. The generated candidates are then re-evaluated, and the champion is updated only when a
+candidate improves the verifier score. Repeating this process yields the final champion.

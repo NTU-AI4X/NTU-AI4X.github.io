@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P230",
+  "generation_attempt": 1,
+  "source_image_sha256": "65b695cf281f5102e51f8208bcac111f10accb5c48b038c71ddec79d2cd7b65b",
+  "revised_image_sha256": "99af9d26db2b33fd61545329fc6a30cc77e0109ca35c4944226d69830a84db57",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The single-image input, feature backbone, heatmaps Y, joint shape and box predictions, collision loss, and reconstructed scene remain represented. Added headings match the supplied caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Sections 3.1, 3.2, 3.3, and 3.5 retain their modules, including the heatmap stack, shape-selection histogram, box-axis illustration, and loss box. The green mug, red bottle, and partially obscured blue object remain present."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and symbols remain legible: Input Image, Feature Backbone, Heatmaps Y, Shape Selection z, 9D Bounding Box sRt, and L_coll. Added references to object centers, shape exemplars, and 9-DoF boxes agree with the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Rightward arrows preserve input → backbone → heatmaps → paired prediction modules → collision loss. Shape selection remains above the box module. Neither full image shows an explicit arrow from the loss box to the rendered scene."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green backbone/heatmap grouping, blue shape-selection grouping, yellow box-prediction grouping, stacked cards, and colored box faces retain their original associations."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The enlarged reconstruction preserves the same objects, colors, relative arrangement, and occlusions. Histogram bar patterns and heatmap marks remain consistent; no new measurements or examples appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added single-RGB-image, joint-multi-object-prediction, object-center, and reconstruction annotations are supported by the caption. 'Collision loss favors non-intersecting reconstructions' directly reflects its stated claim."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original modules, labels, arrows, and scene objects without visible clipping or corruption. Cropped text at the detail-image boundaries is visible in full in the complete derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. The reported pixel proof covers only its listed rectangles and was not independently verified; semantic relationships were checked visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Overview of the proposed approach. Given a single RGB image, our model detects object centers as key-points in a heatmap Y .\nThe network directly predicts shape exemplars z and 9-DoF bounding boxes jointly for all objects in the scene. The collision loss L\ncoll\nfavors non-intersecting reconstructions. Our method predicts lightweight, realistic and physically plausible reconstructions in a single pass.",
+  "body_evidence": "judging/fidelity/requests/P230_a1_99af9d26db2b/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P230_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P230_a1_99af9d26db2b",
+    "response_sha256": "24119b4345534f9c1f76aa9363d037f9c9a5f1c7ca1368ac4281f597ed10081c",
+    "request_metadata_sha256": "75f70fafb3f5e4bf549e0217871da990ae107f13a6f33cd07b25a8d91ef527d8",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final method overview and read caption plus every independent pair check. Input image, green backbone/heatmaps, blue exemplar histogram, yellow 9D box module, collision loss, and reconstructed green mug/red bottle/partially occluded blue object remain. Added object-center and joint 9-DoF/exemplar headings and non-intersection loss description directly follow caption. There is no invented loss-to-output arrow; original example and schematic evidence are independently restored.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:26:11.303375+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:26:11.303375+00:00"
+}

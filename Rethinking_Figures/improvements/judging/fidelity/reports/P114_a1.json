@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P114",
+  "generation_attempt": 1,
+  "source_image_sha256": "1eac37dc86007393e8d073bcdc8e47d1d82a618e13b6c634e7299abf5f953466",
+  "revised_image_sha256": "372953b8c087e24dbc508518561f7b6c762baf2cb9d867d097db44e82ac29017",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The F figure retains geometric-prior enhancement through visual/geometric fusion and category-semantic alignment for underwater segmentation."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Frozen geometry/CLIP encoders, multiscale visual decoder, fusion, CLS, response maps, Q-former/queries, text encoder, Top-K, refinement, scaling, loss and both photo examples remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original E_G/E_V/D_V/F_VG, CLS, Top-K, L_cls and category names are accurate. The inherited original traiable spelling remains in the legend."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Image feeds both encoders; three multiscale visual paths feed the decoder; fusion provides CLS to refinement and response features through the Q-former. Text→encoder→Top-K→refinement and refinement→scale/output plus loss remain. The bottom-routed fusion-to-map edge occurs once."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Frozen snowflakes and trainable flames retain source module assignments. Blue computational versus yellow text-support paths and red loss arrow are consistent with the source meaning."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All four protected regions independently match exact 2×nearest source pixels: input fish, complete response-map layers, output fish/category label, and class-list block."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "No unsupported new module is added. Source Fig3 and Sec4.2–4.4 support the representations, geometric fusion, Q-former and template selection relationships."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All source category text, response maps, modules and three multiscale arrows are visible. Original resolution and crop-background seams remain cosmetic limitations."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Source example scope and original wording are retained. Cosmetic boundary joins, spacing and source-pixel resolution remain for quality scoring.",
+  "caption": "Figure 3. Overall framework of the proposed Method. The Geometric Prior Enhancement module strengthens structural representa-\ntions via visual–geometric fusion and transformer-based query refinement. The Semantic Alignment Injection mechanism align category\nsemantics with degraded underwater conditions.",
+  "body_evidence": "generation/P114/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P114_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T17:14:52.095968+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T17:14:52.095968+00:00"
+}

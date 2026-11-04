@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_QlpWNkJcBr_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "137c8cd8fa6705a29f083e0edeeed2ccfd6556a966c252cc4fc411a30df4bce3",
+  "revised_image_sha256": "a17d37e38849c34942d177ca1be6fb86256190cfcf040b4baa1c6a7e794138ac",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The F comparison retains prior sequential restoration-network planning versus HarnessIR evidence-conditioned MFM execution and verification."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The complete prior pipeline and eleven original blocks retain both LQ inputs, all outputs, user request, diagnosis, tools, evidence, composer, executor, verifier and tool legend."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Every original prompt fragment, diagnosis item, OCR string, role variable and Yes/No label is preserved; no new instruction content replaces scientific source text."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "LQ routes into diagnosis/toolbox and directly to both composer and MFM; evidence enters composer, prompt enters MFM, generated output enters verifier, No returns to composer and Yes selects final. Prior sequential/reflection loop stays unchanged."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original role colors and all real images, detection overlay, depth and segmentation evidence remain; no evidence map is regenerated."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Eleven original regions independently match documented proportional resizing, including the whole prior pipeline and all source text/data cards."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New bottom statement that executor remains fixed and re-execution starts from original input is explicit in Sec3.1/3.4. Restored x-to-composer bypass is supported by Sec3.3 and source arrow."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original fields and outputs remain visible. Duplicate outer/inner headings and small prompt font are retained as design limitations, not grounds for content alteration."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope retained. Source text and plot resolution remain a design limitation for blind scoring, not scientific-data rewriting.",
+  "caption": "Figure 2: Comparison between (a) prior agentic IR pipelines (top) and (b) HarnessIR (bottom).\nPrior methods sequentially apply task-specific restoration models planned by VLMs to produce the\noutput. HarnessIR instead uses auxiliary tools for image-specific evidence, composes a restoration\ninstruction for MFM, and invokes verification-driven re-execution when necessary.",
+  "body_evidence": "generation/ICLR27_QlpWNkJcBr_F/attempt_02/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_QlpWNkJcBr_F_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/ICLR27_QlpWNkJcBr_F_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T01:54:34.421650+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T01:54:34.421650+00:00"
+}

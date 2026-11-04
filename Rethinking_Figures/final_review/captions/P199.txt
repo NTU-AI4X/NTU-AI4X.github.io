@@ -1,0 +1,4 @@
+Figure 2. Effects of Noise on Fidelity and Controllability. Based on pretrained Qwen-Image, (a) shows the denoising results of ground-
+truth (GT) under the same prompt and different levels of noise. (b) adopts low noise level and different prompts (with Chinese annotation).
+(c) studies the effects of noise on LQ with the same prompt. High-noise inputs improve perceptual quality and controllability but reduce
+fidelity, whereas low-noise inputs preserve original details yet fail to deliver enhanced super-resolution effects.

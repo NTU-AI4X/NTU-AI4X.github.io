@@ -1,0 +1,6 @@
+Figure 1. Cosine similarity of patch feature from Cityscapes to
+BDD100k.. We evaluate the similarity between the yellow star re-
+gion in the Cityscapes image and all other regions in both images.
+Compared to the EMA Teacher, DINOv2 generates semantically
+stable features across domains, justifying the choice to use it for
+feature alignment and as a frozen backbone for our labeller.

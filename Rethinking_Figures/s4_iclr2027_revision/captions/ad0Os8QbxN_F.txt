@@ -1,0 +1,11 @@
+Figure 2: Persistent support evidence and SSCA-centered calibration in PULSE. In Stage I, HED
+is fine-tuned on the target support set, and the resulting encoder snapshot is frozen to construct the
+evidence bank E. In Stage II, the query detector is initialized with the Stage I weights and produces
+query features Q, base class logits S, and predicted boxes B. SSCA matches Q with the cached
+evidence E to obtain support agreement s and refines the base logits as S′ = S + G ⊙ ∆, while the
+box coordinates bypass score calibration and remain unchanged. The evidence bank remains fixed
+throughout Stage II training and inference. Flames indicate trainable parameters during training,
+whereas snowflakes indicate frozen modules or fixed evidence. All model parameters are fixed during
+inference. Test images from the DeepFish dataset (Fu et al., 2024) are adopted for illustration and do
+not correspond to the sampled adaptation episode; the displayed output box is schematic rather than
+an actual model prediction.

@@ -1,0 +1,4 @@
+Figure 2: Comparison between (a) prior agentic IR pipelines (top) and (b) HarnessIR (bottom).
+Prior methods sequentially apply task-specific restoration models planned by VLMs to produce the
+output. HarnessIR instead uses auxiliary tools for image-specific evidence, composes a restoration
+instruction for MFM, and invokes verification-driven re-execution when necessary.

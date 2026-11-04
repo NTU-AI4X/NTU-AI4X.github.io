@@ -1,0 +1,5 @@
+Figure 2: LifecycleSkillBench construction and evaluation. Public tasks, tools, and rules support re-
+producible environmental changes, paired affected and capability-retention tasks, and persistent up-
+date histories. The evaluated method receives the change description, pre-update Skill, and available
+evidence. The evaluator separately stores test tasks, reference outcomes, and recoverable historical
+versions, and reports recovery, retention, error propagation, and execution cost.

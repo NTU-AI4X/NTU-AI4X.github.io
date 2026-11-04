@@ -1,0 +1,6 @@
+Figure3. IllustrationofthetrainingandinferenceprocessesofAdcSR,aninstantiationofourADCframeworkappliedtoOSEDiff.
+(a)InStage1,wepretrainaprunedVAEdecoderthatsharesthelatentspacewithSDandOSEDiff. (b)InStage2,wedistilltheknowledge
+from OSEDiff (ADC-teacher) into AdcSR (ADC-student) by aligning features in the pretrained decoder. An adversarial loss encourages
+the student to generate features that can fool a LoRA-finetuned SD UNet (ADC-discriminator), utilizing the corresponding real features
+of GT images. Since all supervisions perform in the feature space, there is no need to decode images as in previous approaches [96, 112].
+(c) During inference, the LR image is directly fed into our trained compressed UNet and VAE decoder to obtain the super-resolution result.

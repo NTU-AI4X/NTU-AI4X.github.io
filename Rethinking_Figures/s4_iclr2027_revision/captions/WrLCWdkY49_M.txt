@@ -1,0 +1,6 @@
+Figure 1: Motivation of DCHA. (a) Existing category-level methods rigidly assign fixed experts
+based on category, whereas DCHA dynamically selects and composes fine-grained parameter vec-
+tors according to category demands. (b) Category-specific updates produced by existing category-
+level methods exhibit uniformly high pairwise similarities within the same task. (c) Shared bank
+parameter deviations progressively accumulate at the vector, category, and task levels during incre-
+mental training, resulting in hierarchical drift.

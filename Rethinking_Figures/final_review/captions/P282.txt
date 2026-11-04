@@ -1,0 +1,4 @@
+Figure 2. Overview of our proposed framework GenNBV. Our end-to-end policy takes the historical multi-source observations as input,
+transforms them into a more informative scene representation, and produces the next viewpoint position. A reward signal will be returned
+at training time to optimize the end-to-end policy for maximizing the expected cumulative reward in one episode. Specifically, the signal
+is the increased coverage ratio after collecting a new viewpoint.

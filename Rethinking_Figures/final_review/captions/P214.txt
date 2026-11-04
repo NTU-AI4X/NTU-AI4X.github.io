@@ -1,0 +1,4 @@
+Figure 3. Illustration of localization distillation (LD) for an edge e ∈ B = {t, b, l, r}. Only the localization branch is visualized here.
+S (·, τ ) is the generalized SoftMax function with temperature τ . For a given detector, we first switch the bounding box representation
+to probability distribution. Then, we determine where to distill via region weighting on the main distillation region and the valuable
+localization region. Finally, we calculate the LD loss between two probability distributions predicted by the teacher and the student.

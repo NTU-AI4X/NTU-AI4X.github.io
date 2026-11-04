@@ -1,0 +1,9 @@
+Figure 2. Language models struggle to accurately represent spa-
+tial information, leading to coarse and imprecise image super-
+resolution. To overcome this limitation, we incorporate additional
+spatialmodalitieslikedepthmapsandsemanticsegmentationmaps.
+These modalities provide detailed spatial context, allowing our
+model to implicitly align language descriptions with individual pix-
+els through a transformer network. This enriched understanding of
+theimagesignificantlyenhancestherealismofoursuper-resolution
+results and minimizes distortion.

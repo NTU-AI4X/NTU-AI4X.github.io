@@ -1,0 +1,11 @@
+Figure 2: Overview of the UniOSE model. (a) Semantics-Enriched Object Namer combines
+Deformable region reader layer
+detector features with region-level VLM semantics to construct queries z and generates category
+i
+names with a generative lang F uage model. (b) Semantics-Guided Object Dx2etector predicts candi-
+q Deformable
+date boxes and combines query–targ+et caLteaygeroNroyrmmatchFiFnNg cos+ts wiLtahyesrNpoarmtial costs for training-time
+Cross-Attention
+supervision assignment. (c) Semantically Conditioned Mask Decoder injects z into the first mask
+i
+token and combines it with image features and predicted boxes to generate masks.

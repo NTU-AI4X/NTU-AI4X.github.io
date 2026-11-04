@@ -1,0 +1,13 @@
+Figure 1. The framework of Class-balanced Pixel-level Self-Labeling (CPSL). The model contains a main segmentation network f and
+SEG
+its momentum-updated version f′ . The f′ is followed by a self-labeling head f and its momentum version f′ , which projects
+SEG SEG SL SL
+pixel-wise feature embedding into a class probability vector. The pixel-level self-labeling module produces soft cluster assignment P to
+SL
+gradually rectify soft pseudo label P . Then the segmentation loss Lt is computed between the prediction map P and the rectified
+ST SEG
+pseudo label Yˆt. To train the self-labeling head, we randomly sample pixels from each image, and use the memory bank M, which
+contains previous batches of pixel features, to augment the current batch. Then we compute the optimal transport assignment Q over
+aug
+the augmented data by enforcing class balance, and use the assignment of current batch Q to compute the self-labeling loss L .
+cur SL

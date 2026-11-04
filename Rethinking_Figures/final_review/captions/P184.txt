@@ -1,0 +1,5 @@
+Figure 2. Training pipeline of NAS3R. Subscripts “C ” and “T ” denote context and target views, respectively. Unconstrained images are
+patchified into visual tokens and concatenated with a learnable camera token for camera prediction. A masked decoder regulates cross-view
+interactions and prevents target-to-context leakage. Refined context tokens are then processed by the Gaussian head to predict Gaussian
+parameters, while a depth head estimates depth maps that are lifted into 3D Gaussian centers using the predicted context poses. The
+predicted target poses are finally used to render novel views, providing photometric supervision for end-to-end training.

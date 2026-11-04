@@ -1,0 +1,3 @@
+Figure 2. Diagram describing our dual-network architecture. The
+initial predictor produces the deterministic candidate for the de-
+noiser network, which then models the residual.

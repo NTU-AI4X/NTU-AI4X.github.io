@@ -1,0 +1,4 @@
+Figure 2. Framework overview. Best viewed in color. We develop the high-level feature alignment into separate task spaces, by applying
+the proposed Task-specific Inconsistency Alignment module to both the classification (green part) and localization (blue part) branches
+of the baseline detector (gray part). In each branch, the behavioral inconsistency of multiple auxiliary predictors is optimized via the
+corresponding inconsistency-aware loss, for essentially bridging the category-wise or boundary-wise margins between domains.

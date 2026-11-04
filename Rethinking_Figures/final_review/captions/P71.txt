@@ -1,0 +1,3 @@
+Figure 1. SR recovery of different models on rotated and curve-
+shaped text images. ‘R’, ‘P’ and ‘S’ stand for recognition, PSNR
+and SSIM results. Characters in red are missing or wrong.

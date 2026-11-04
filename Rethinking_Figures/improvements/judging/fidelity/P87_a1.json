@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P87",
+  "generation_attempt": 1,
+  "source_image_sha256": "b992cc11c023a9d0b70b0ff3e70a8e5e2fe0cb9dcf560d236f71042add5d0954",
+  "revised_image_sha256": "2977df1f4c7650aacd86d4a8a0b214952840453c9a18b477ecb66b9c4a932bf6",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation is preserved as the contrast between a short grounding sentence and a detailed description of the same kitchen image. The new title and takeaway restate the original Figure 2 caption and Dataset Formulation paragraph.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The complete kitchen photograph, full grounding sentence, entire caption-generation prompt and full detailed caption are all retained. No entity or quoted sentence has been omitted.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original quotation text, colored words and original grammatical wording are source pixels. Added labels identify original short grounding text, caption-generation prompt and detailed caption without changing their content.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The new downward arrow connects the displayed caption-generation prompt to the detailed caption, consistent with the described data construction. It does not introduce an inference between different examples.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The six color-key categories correspond to the original colored prompt words: green object types/parts, orange textures, ochre colors, blue actions, purple locations and red texts. Source highlight colors remain unchanged.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed four source crops and their destination regions. All four match byte-for-byte at native scale; original and restored pixel hashes match the provenance records.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The statement that detailed captions expose more visual attributes is directly supported by the source caption and Section 3. The quoted imperative prompt is preserved as research content, not executed or treated as instructions.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed both full images. Photograph, entire prompt, grounding sentence, long caption, legend and title are visible without clipping. Full resolution is needed for small caption text.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Independent content-fidelity review only; no derivative quality scores were viewed. Original evidence pixels and scientific ambiguities are retained.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-10-31T19:01:02.222330+00:00",
+  "hybrid_verification": {
+    "regions": 4,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/P87/provenance.json",
+    "source_pdf_page": 3
+  }
+}

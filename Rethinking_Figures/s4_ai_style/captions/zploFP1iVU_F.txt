@@ -1,0 +1,6 @@
+Figure 2: The CUAWright architecture. Terminal serves as the sole interface between the agent
+and the task environment. At each step of task execution process, the agent model receives com-
+mand line output as observation or call a CLI tool to load image into context on demand, and output
+commands that gets executed. The underlying execution environment contains a runtime, an ex-
+pandable set of installed CLI tools and applications, and a file system as the agent’s workspace to
+programmatically manage system state and craft new tools.

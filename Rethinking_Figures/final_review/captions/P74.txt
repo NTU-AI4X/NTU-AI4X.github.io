@@ -1,0 +1,4 @@
+Figure 2. The overview of Entropy-based Uncertainty Modeling and Self-training framework. 1) The model is first trained on the labeled
+base set. 2) For the novel images, the saliency maps are generated from a saliency model and high confidence base pixels are ignored. We
+then apply clustering to the novel salient part to obtain clustering pseudo-labels. 3) We apply entropy ranking and dynamic reassignment
+to split clean and unclean novel images and utilize them to optimize the model with clustering labels and online labels, respectively.

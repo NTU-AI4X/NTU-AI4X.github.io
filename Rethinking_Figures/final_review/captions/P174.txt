@@ -1,0 +1,8 @@
+Figure 3. Overview of DORNet. Given D as input, the degradation learning first encodes it to produce degradation representations D˜
+up
+and D. Then, D˜, D, D , and I are fed into multiple degradation-oriented feature transformation (DOFT) modules, generating the HR
+lr
+depth D . Finally, D and D are sent to the degradation regularization to obtain D , which is used as input for the degradation loss
+hr hr d
+L and the contrastive loss L . The degradation regularization only applies during training and adds no extra overhead in testing.
+deg cont

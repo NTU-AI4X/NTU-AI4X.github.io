@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P336",
+  "generation_attempt": 2,
+  "source_image_sha256": "c8d0ed11c3712cb041f3489d01cc57e65f116897aa313fb2d10aa806ea8a8df1",
+  "revised_image_sha256": "be97090051adc2f96336628b077aef281f771f95b78e42de94d3de0de753b603",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The F diagram preserves diffusion denoising and multiview-consistency reinforcement finetuning."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Text prompt, t100/t50/t0 examples, reconstructed NeRF, rendered views, MRC and policy gradient all remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All timestep numbers, prompt words and six legend categories match source; a/b/c are now expanded role labels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input arrows enter denoiser; green forward paths lead through predictions to policy gradient; generated views reconstruct NeRF then render corresponding views; both feed stop-gradient MRC reward and policy gradient; blue backward path returns to model."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original green forward, yellow input, purple render, magenta reconstruction, dashed stop-gradient and blue backward coding are preserved, including corrected t50 shaft."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Five native original image/noise/NeRF blocks independently match source pixels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "MRC expansion is stated in Sec3; panel roles and policy reward/log-probability explanation are Fig2 caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All paths and example panels remain visible. Only layout/labels change; generated data replacements were removed."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope retained. Source resolution, duplicate labels and frame discontinuities are left for blind quality scoring. P284 is a limited heading/key intervention around a fully preserved scientific body.",
+  "caption": "Figure 2. Overview of Carve3D. Given a prompt sampled from our curated prompt set and a initial noisy image, we iteratively denoise\nthe image using the UNet. The final, clean image contains four multi-view images tiled in a 2-by-2 grid. MRC reward is computed by\ncomparing (a) the generated multi-view images with (c) the corresponding multi-view images rendered at the same camera viewpoints\nfrom (b) the reconstructed NeRF. Then, we train the model with policy gradient loss function, where the loss is derived from the reward\nand log probabilities of the UNet’s predictions, accumulated over all denoising timesteps. By using only a set of training text prompts, our\nRLFT algorithm finetunes the diffusion model by evaluating its own generated outputs, without relying on ground truth multi-view images.",
+  "body_evidence": "../papers/2312.13980_conference.pdf; caption and relevant method/intro pages read directly",
+  "independent_pixel_check": "judging/fidelity/reports/P336_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P336_a1.json"
+  ],
+  "reviewed_at": "2026-10-31T19:01:04.802352+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T19:01:04.802352+00:00"
+}

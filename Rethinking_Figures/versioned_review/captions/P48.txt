@@ -1,0 +1,7 @@
+Figure 2. An overview of the proposed multi-class token transformer (MCTformer-V1). It first splits and transforms an input RGB image
+into a sequence of patch tokens. We propose to learn C extra class tokens, where C is the number of classes. The C class tokens are
+concatenated with patch tokens, with added position embeddings (PE), which then go through consecutive L transformer encoding layers.
+Finally, the output C class tokens are used to produce class scores via average pooling. We aggregate the transformer attentions from the
+last K layers and multiple heads to generate a final attention map, from which we can extract class-specific object localization maps and a
+patch-level pairwise affinity map from the class-to-patch and the patch-to-patch attentions, respectively. The patch-level pairwise affinity
+can be used to refine the class-specific transformer attention maps to produce improved object localization maps.

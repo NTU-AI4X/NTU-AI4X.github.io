@@ -1,0 +1,2 @@
+Figure 1: Token-level motivation. Sensor advantages are local, so the fusion decision belongs at the
+token level, illustrated by 1 case each for RGB, events, and depth.

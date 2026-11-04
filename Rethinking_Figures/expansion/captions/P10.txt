@@ -1,0 +1,5 @@
+Figure 3. The data generation process of event and RGB cameras (upper parts) and the pipeline of See-NeRF (lower parts) are shown in the
+figure. We use NeRF to represent the actual radiance of an extreme lighting scene in the HDR domain. The volume rendering simulates the
+raw scene radiance rays hitting the sensor and obtaining the raw sensor values. The predicted LDR images and events are generated with our
+proposed sensor-physics grounded RGB and event CRF models (details are shown in the right part of the figure). The image loss and event
+loss are employed to jointly supervise the optimization of the two CRF models and the NeRF network.

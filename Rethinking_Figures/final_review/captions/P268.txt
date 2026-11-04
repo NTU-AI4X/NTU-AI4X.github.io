@@ -1,0 +1,4 @@
+Figure 2. (a) Class-Aware Teacher (CAT) consists of: a student-teacher network; Inter-Class Relation module (ICRm), which estimates
+inter-class biases; Class-Relation Augmentation, which augments images to reduce the inter-class biases by mixing the cropped instances of
+related classes; and Inter-Class Loss, which emphasises the loss on highly misclassified minority classes. (b) Class-Relation Augmentation
+demonstrated on majority (Car) and minority (Bus) classes.

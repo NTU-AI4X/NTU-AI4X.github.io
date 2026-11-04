@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P293",
+  "generation_attempt": 1,
+  "source_image_sha256": "b76a3562748150b83871e2fdd159231bc8f32b309580a443c6b1dc02dbb3ac12",
+  "revised_image_sha256": "657b77097d6c3b5c152e798f60b9d4db74103b06ef0d8dbd55bb8426e2bc97ae",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Preserves the comparison: Transformer decoder predictions delineate countable cars but fragment road masks; semantic-head predictions preserve road continuity but have less precise small-target boundaries."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All six panels remain: two remote-sensing examples, each with its original image, Transformer prediction and semantic-head prediction."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Both original row captions, including (a), (b), cars and road examples, are retained. Added column headings and four explanatory labels accurately reflect the supplied caption. No source equations or numerical labels are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Left-to-right ordering remains input image, Transformer decoder prediction, semantic segmentation prediction. Row associations remain intact; no arrows or causal relationships are added."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Brown car masks and purple road masks retain their meanings. Peach and blue annotation bands consistently associate descriptions with the middle and right prediction columns."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same car locations and road-mask patterns are retained, including fragmented middle-column road coverage and broader continuous right-column coverage. Supplied pixel checks verify equality under scaling for both image-row rectangles."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added claims about precise countable-object outlines, less precise small-target boundaries, fragmented amorphous masks and continuous amorphous regions are supported by the original caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative shows all six panels, three column headings, four explanatory labels and both row captions without visible clipping or unreadable text. Truncated text in the supplied detail crops is complete in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Audit uses only the supplied images, caption and pixel-check report. Pixel verification covers the two listed image-row rectangles; added headings and annotations were assessed visually against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. The Transformer decoder of SAM 3 excels at delineat-\ning countable objects but produces fragmented masks for amor-\nphous regions, while the semantic head preserves continuity for\namorphous regions but lacks boundary precision for small targets.\n(Left: Remote sensing image. Middle: Prediction of Transformer\nDecoder. Right: Prediction of semantic segmentation head.)",
+  "body_evidence": "judging/fidelity/requests/P293_a1_657b77097d6c/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P293_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P293_a1_657b77097d6c",
+    "response_sha256": "4f342baa7e8e207c8130573a1e53768d7e81d12f19808a0e54fb39590f7206dc",
+    "request_metadata_sha256": "e6fd7b06cfd31c5c031cffbc509199d5fe96d67ecd41be9c829b7ae9f85c560e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full image and read all eight independent source-pair observations against caption. Two rows remain cars/countable and road/amorphous; all six remote-sensing/mask panels visible. The added precise-boundary versus continuity statements are the caption contrast; no invented color key or numeric results. Region replay verifies both entire original image rows at integer scaling.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T05:12:52.502453+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:12:52.502453+00:00"
+}

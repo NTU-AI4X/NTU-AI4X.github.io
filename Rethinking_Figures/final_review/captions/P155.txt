@@ -1,0 +1,2 @@
+Figure 1. Overview of domain generalization settings under privacy constraints. (a) Standard DGSS requires backbone tuning. (b) Style-
+fixed prompting is ineffective on unseen domains. (c) SAGE inference overcomes privacy limitations.

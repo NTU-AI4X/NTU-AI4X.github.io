@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P274",
+  "generation_attempt": 1,
+  "source_image_sha256": "fca74d72d191e946aa18f7fd09d067aa48d6ab49cbab11f9af1e6107fb765f4f",
+  "revised_image_sha256": "2fe623e259d75b5a8b300e227c0207426e1a4ba1a89ba6a8a890ab02d72ff74c",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both stages remain intact: (a) diffusion-model fine-tuning using a cropped detection image, text and noise; (b) grounding-head training using synthetic images, visual features, teacher/student heads and base/novel losses."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The derivative retains both original panels and additionally enlarges panel (b). The image examples, noise patches, diffusion models, feature cube, detector, teacher/student heads, T-encoder and legend are present."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The prompts, panel captions, Crop & Resize, Noise, Predicted noise, Visual features, EMA update and module names are preserved. Both L_fine-tune and L_base + L_novel retain their meanings and subscripts."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Panel (a) retains image/noise combination and predicted-noise comparison. Panel (b) retains diffusion-to-image/features paths, feature branches to both heads, text-to-T-encoder-to-student, upward student-to-teacher EMA update, and detector/teacher annotations feeding the loss alongside student output."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green still denotes base categories and red novel categories in prompts, paths, boxes, losses and legend. Frozen-module snowflakes and trainable-module flames retain their placements. Added base/novel callouts use consistent colors."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The room and cropped person/chairs/table example, noise patches, and dog/bottle synthetic image remain unchanged in identity and content. The annotated example retains the green bottle box and red dog box; no measurements or outcomes are added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added statements—base categories use supervised learning, novel categories use self-training, and synthetic images train the grounding head—are explicitly supported by the supplied caption. The enlarged-view heading introduces no scientific claim."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains both complete original panels, the complete enlarged panel (b), its caption and all three explanatory callouts. No clipped labels, missing key content or visible corruption is apparent; detail-image boundaries are only crop boundaries."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption; no source body text was provided. The supplied pixel-equality report supports only its two listed rectangles and was not independently verified. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Illustration of the process for finetuning diffusion model and training the grounding head: (a) stable diffusion model is fine-tuned\non the detection dataset on base categories. (b) The grounding head is trained on synthetic images, with supervised learning on base\ncategories and self-training on novel categories.",
+  "body_evidence": "judging/fidelity/requests/P274_a1_2fe623e259d7/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P274_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P274_a1_2fe623e259d7",
+    "response_sha256": "1331104664954e69c251d10efa6bf964092e12044b4aada03c550791edd78f4d",
+    "request_metadata_sha256": "c94c811facf371d1eb81a0f45cc1f38a61272251548157389e7bf809003ce087",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full original overview and enlarged grounding-head panel; caption reviewed. Synthetic dog/bottle image, detector/teacher/student,student→teacherEMA,basegreen/novelred annotations and Lbase+Lnovel retained. Added supervised-base/self-trained-novel and synthetic-training notes are explicit caption statements. Wholepaneldetail includes full input prompt/legend and owncaption.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T09:07:34.554615+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:07:34.554615+00:00"
+}

@@ -1,0 +1,2 @@
+Figure 1. Showcase of UARE. It supports image quality assessment (image scoring and comparison), image restoration/enhancement
+(super-resolution, dehazing, and low-light enhancement, etc.), and assessment-guided restoration and enhancement in one unified model.

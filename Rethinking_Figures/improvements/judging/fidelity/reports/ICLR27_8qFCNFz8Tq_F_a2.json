@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_8qFCNFz8Tq_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "96605652767136b71d947ca9b8ff3ec01f40e43442ee7cf5e39abbf2008626b0",
+  "revised_image_sha256": "17396321a03e8b9c89f39c4ef132c57ecf66c9c762f094e08c2396bd23d56840",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The F architecture retains modular any-depth detection through essential and optional refinement paths."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three original panels remain: multiscale backbone-neck-head pipeline, residual stage and CSP stage."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original block1-4, CV1/CV2 1x1, Concat, plus operators and component names are retained source pixels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Every original vertical essential/refinement edge, stage-to-neck/head connection, residual bypass and CSP concatenation branch is preserved in complete original panels."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Solid blocks denote essential paths and dashed hatched blocks denote optional refinement as stated in source; original three-scale colors remain."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Three full original schematic regions independently match native source pixels, avoiding the first draft missing-edge changes."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New solid/dashed/full-path key and self-distillation sentence match Fig1 caption and introduction p2; no extra training objective is asserted."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original modules and arrows remain visible. The intervention is panel framing and explanatory legend, with source architecture unchanged."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope retained. Source resolution, duplicate labels and frame discontinuities are left for blind quality scoring. P284 is a limited heading/key intervention around a fully preserved scientific body.",
+  "caption": "Figure 1: (a) Overall pipeline of our any-depth object detection network, following the standard\nbackbone–neck–head design common to modern detectors such as RT-DETR and YOLO, operating\non multi-scale features. Each stage in both the backbone and neck is divided into an essential path\n(solid blocks) and a skippable refinement path (dashed blocks). At inference time, any combination\nof essential and full paths across stages yields a valid sub-network, enabling a continuous range of\naccuracy–efficiency trade-offs from a single set of weights. (b) A residual-block stage, as used in\nRT-DETR. (c) A CSP-style stage, as used in the YOLO family. In both stage types, the essential and\nfull paths are jointly trained via self-distillation to produce aligned feature representations at each\nstage boundary, so that downstream stages can process the output of either path reliably.",
+  "body_evidence": "../s4_iclr2027_revision/papers/8qFCNFz8Tq_submission.pdf; caption and relevant method/intro pages read directly",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_8qFCNFz8Tq_F_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_8qFCNFz8Tq_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T01:51:27.346002+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T01:51:27.346002+00:00"
+}

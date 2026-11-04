@@ -1,0 +1,5 @@
+Figure 2: Overview of EAGLE. It combines holistic MLLM scoring with anchor-guided evidence
+decomposition. The decomposition branch organizes latent queries into shared and anchor-specific
+groups to respectively acquire reusable evidence across judgments and cross-modal/visual evidence
+anchor, followed by adaptive aggregation of these grounded judgments for criterion-specific scoring.
+The decomposed prediction score is further combined with the holistic score for final assessment.

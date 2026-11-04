@@ -1,0 +1,6 @@
+Figure 2. An overview of Target-perceived Dual-branch Distillation framework. To simplify the description, ROI refers to the operation
+to get proposal features of each image. First, a source domain image is transferred into target-like domain. All of the images from three
+domains are fed to a shared proposal extractor to get proposals and proposal features. Then, the proposal features of source and target-like
+images are used to train corresponding branches with supervision of ground truth. Moreover, we feed the proposal features of a real target
+domain image into both branches, for learning object knowledge from both source and target-like domains. As the images from target
+domain are not annotated, the model is optimized by self-distillation.

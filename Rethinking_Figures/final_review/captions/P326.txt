@@ -1,0 +1,4 @@
+Figure 2: Illustration of our DASR framework. DASR firstly trains a down-sampling network (DSN) which aims to generate
+LR images y g in the real LR domain y r from HR images xr : y g = DS N (xr ). Then, DASR take the domain-gap between
+generated LR images y g and real-world LR images y r into consideration, utilize the generated LR-HR pairs {y g , xr }, domain
+distance maps w and real-world LR images y r to train super-resolution network (SRN).

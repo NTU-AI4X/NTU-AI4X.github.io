@@ -1,0 +1,4 @@
+Figure 2. Qualitative analysis of receptive field patterns and segmentation performance for small-sized models (27M-29M parameters).
+Left: Visualization of effective receptive fields (ERF) on the Cityscapes validation set at 1024×1024 resolution, illustrating SegMAN’s
+stronger global context modeling capacity in comparison to existing state-of-the-art models. Right: Segmentation maps highlighting
+SegMAN’s superior capacity to encode fine-grained local details that are often missed by existing approaches.

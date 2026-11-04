@@ -1,0 +1,2 @@
+Figure 2: VoxPolyMem identifies recurring speakers, constructs interaction memory, facts, and par-
+ticipant profiles, and adaptively retrieves evidence across memory layers and modalities.

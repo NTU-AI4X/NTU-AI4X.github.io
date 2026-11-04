@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_NYrrKvi2Dy_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "09912aff508dac59c6e1ca7aacd89efcf46e004a4980c4a159bbdda135753da2",
+  "revised_image_sha256": "ce31eb10ce7efae98833e848f69739eb2c537ae0ef04bba80f46fad1d11b16df",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures retain offline calibration followed by calibration-guided response fusion: labeled examples determine selected states and classwise weights, and a new image produces building, car, and person segmentations."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All six calibration panels remain, together with the frozen backbone, timestep/layer caches, selected-window stacks, response grid, fusion, scaling, segmentation backend, and three output examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "State indices, q_s and q_{s,c}, shrinkage, π_{s,c}, and S* = L* × T* are preserved. Fusion remains R̄_c = Σ_{s∈S*} π_{s,c}R_{s,c}; scaling remains R̂_c = R̄_c/(h_c/g)^α. Class labels and panel numbering are retained."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input-to-backbone connections, state enumeration and backend ordering, opposing GT-comparison arrows, shrinkage-to-softmax-to-weights sequence, and fusion-to-scaling-to-decoding arrows retain their original directions and relationships."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Purple calibration and green inference groupings remain consistent. Reliability heatmaps, selected-state markings, classwise weight shading, response overlays, and output mask colors preserve their original meanings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The red-building calibration photograph and GT mask, street photograph with red car, nine response examples, and building/car/person outputs are preserved. No new measurements or examples appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added top banner about fixing the state pool and class-conditioned routing weights follows the supplied caption. The bottom banner about reusing selected states and fixed weights, then fusing and rescaling before an unchanged backend, is also supported by that caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image includes the complete original diagram and both complete added banners without apparent clipping or corrupted text. The supplied pixel proof reports exact preservation of the entire original rectangle, with no exclusions."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel proof; the proof file was not independently accessed. No source body excerpt was provided. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3: Overview of Classwise State Routing. Top: A labeled calibration set estimates down-\nstream class-by-state reliability, selects a compact shared state pool, and fixes class-conditioned\nrouting weights. Bottom: For a new image, the frozen backbone extracts selected-state responses,\nwhich are fused and rescaled before unchanged backend-native decoding.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_NYrrKvi2Dy_F_a2_ce31eb10ce7e/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_NYrrKvi2Dy_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_NYrrKvi2Dy_F_a2_ce31eb10ce7e",
+    "response_sha256": "e9e0a4f00b1e8a8e18b3723f08000834a671f6ef85339430831488cbec8be975",
+    "request_metadata_sha256": "77dc78596302ecac09c8b9338f78c12e63985a688b62c8c474021252d8687870",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed complete final image and caption. Six calibration steps, fixed selected state pool and class weights, original formulas and input/class response examples, fusion/scaling/backend ordering are intact. New calibration/inference banners correctly describe fixed weights reused for a new image before unchanged decoding, without altering original heatmap or class encodings. Complete original rectangle independently replayed native.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_NYrrKvi2Dy_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:21:44.418458+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:21:44.418458+00:00"
+}

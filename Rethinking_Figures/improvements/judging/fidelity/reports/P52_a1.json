@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P52",
+  "generation_attempt": 1,
+  "source_image_sha256": "18019cb8681302d7447fea6fcd9c7cf6595963597a880a4bd80e10ad190d150e",
+  "revised_image_sha256": "2ea1295eef5aae5866b07f6ce4e8eca9ba3627851ad6390bbba29e3583d03742",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The encoder–pixel decoder–transformer decoder architecture remains intact, including class and mask embeddings, D1, and the final semantic map."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The derivative retains the architecture overview, detailed pixel decoder, RFB, CST, LSE and spatial-attention insets, edge-guided fusion, legend, input image and edge prediction."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Feature indices F1–F4, S1–S4 and D1–D4, S_detail, Q0/Q_final, q/k/v, kernel sizes 1/3/5/7, and USx2/USx4/DSx2 annotations are preserved. The sidebar correctly identifies D2–D4 as transformer-query inputs."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "S4 and S3 feed CST; upsampled D3 and S2 feed RFB; S1 and the downsampled image feed LSE. Fusion retains the detail-driven sigmoid gating, edge-prediction branch and residual route to D1."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The convolution shapes and symbols for sigmoid, Hadamard product, matrix multiplication, concatenation, addition and positional embedding retain their legend meanings. Added blue, pink and purple explanatory groups agree with the represented branches."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same outdoor input photograph and dark edge-prediction example remain visible. No measurements, class identities or additional experimental outcomes are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The sidebar's global-semantics, local-detail and fusion descriptions follow the supplied network-design text. Its description of D4 as an early CST feature, D3 as a higher-resolution output, and D1 as supporting the final mask is also supported."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains the entire original figure and complete sidebar text without observed clipping or missing scientific content. Detail views support label inspection; the supplied pixel proof reports equality for the complete architecture rectangle with no exclusions."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, source text and reported pixel proof; the proof file was not independently accessed. The added sidebar was checked separately against the supplied source. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3. Architecture of MaSSFormer. The model architecture is shown on the top left corner, including the image encoder, pixel decoder\nand transformer decoder. The detailed structure of the high-resolution pixel decoder is shown on the right of this figure.",
+  "body_evidence": "judging/fidelity/requests/P52_a1_2ea1295eef5a/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P52_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P52_a1_2ea1295eef5a",
+    "response_sha256": "f49e4f4db71978c42930dc5b65e8d43abcc09e31e3418fd2c53924d3f426437f",
+    "request_metadata_sha256": "42598e7177c1176cb9c52471288b5f5fd8e7f8f59e2803c5d433426b3f3660f4",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final MaSSFormer architecture, read source pp4-5 and equations 1-3, and reviewed all independent checks. Full original encoder/decoder, three module insets, legend, features, input and edge map remain intact. Added sidebar correctly distinguishes early low-resolution D4, CST higher-resolution D3, RFB combination with S2, LSE image/S1 branch, edge-guided D1, and D2-D4 transformer inputs. These are explicit in source text; sidebar introduces no new internal edge or feature index.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:30:30.249073+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:30:30.249073+00:00"
+}

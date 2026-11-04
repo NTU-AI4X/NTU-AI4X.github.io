@@ -1,0 +1,4 @@
+Figure 1. Examples of noisy annotations in Cityscapes dataset.
+Miss-annotated samples: The bicycle in (a); the rider and car in
+(c). Class-corrupted samples: The rider and bicycle are labeled
+as person in (a); the motorcycle is labeled as bicycle in (b).

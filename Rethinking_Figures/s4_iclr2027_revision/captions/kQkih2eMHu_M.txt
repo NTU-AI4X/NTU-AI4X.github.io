@@ -1,0 +1,4 @@
+Figure 1: The “last-mile” problem in generative image restoration. State-of-the-art methods (Yu
+et al., 2024; Wu et al., 2024b; Lin et al., 2025) produce globally plausible reconstructions from
+severely degraded inputs, yet localized failures persist. Despite their small spatial extent, these
+failures dominate perceived quality and practical acceptability.

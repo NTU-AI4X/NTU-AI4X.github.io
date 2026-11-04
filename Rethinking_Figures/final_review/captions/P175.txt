@@ -1,0 +1,3 @@
+Figure 1. Illustration of the output feature map of a typical image
+obtained by standard CNN and our used rotation equivariant con-
+volution neural network. Both networks are initialized randomly.

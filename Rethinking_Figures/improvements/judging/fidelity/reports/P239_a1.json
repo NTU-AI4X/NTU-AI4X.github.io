@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P239",
+  "generation_attempt": 1,
+  "source_image_sha256": "c9a6353cd496750f585c9611159e36e95ef1b1dba5466e0e514313c182e3c981",
+  "revised_image_sha256": "e4f7b54843a1cfcca9b4585aaddd0001b38f058f19e1ef5d0af2fca9bf506f15",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains comparison of annotation requirements, annotation costs and annotation speed for five oriented-detection paradigms."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original (a)-(e) panels remain, including both horizontal-box and point-label 20% branches within partial weak supervision and their 80% unlabeled data."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original cost values $86/1k, $63/1k, $42/1k and times 0.2, the 20%/80% labels, method names and PWOOD identity are retained in the restored panels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Panels are reordered into full weak/strong annotation types above and partial-label settings below. Added headings correctly associate rotated boxes with semi-supervision and horizontal boxes or points with partial weak supervision."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original red high-cost, blue middle-cost and green low-cost wording and all annotated green boxes/points are unchanged. New framing does not redefine them."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All aerial photographs, annotated rotated/horizontal boxes, points, unlabeled image stacks, original prices and method lists are preserved in complete original scientific panels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new annotation-cost/speed clarification and 20%-labeled-plus-80%-unlabeled summary are directly visible in the source and supported by the caption and first-page introduction."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Both alternatives in partial weak supervision are fully visible; no lost point branch, clipped price, missing method list or obscured annotation remains."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Fig. 1. The main paradigmatic types of existing oriented object detec-\ntion. Existing methods are primarily divided into rotated boxes (RBox)-\nsupervised, horizontal boxes (HBox)-supervised, Point-supervised, and Semi-\nSupervised approaches. Compared to these settings, our proposed Partial\nWeakly-supervised methods have high annotation speed and low costs.",
+  "body_evidence": "generation/P239/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P239_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T04:39:10.389511+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:39:10.389511+00:00"
+}

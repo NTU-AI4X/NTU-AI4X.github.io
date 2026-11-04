@@ -1,0 +1,4 @@
+Figure 2: Overview of MASCraft. (1) Role–Skill Composition: the orchestrator agent assigns sub-
+tasks, selects role–skill pairs, and establishes information dependencies. (2) Self-Evolving Orches-
+tration: within-task reflection and cross-task aggregation distill lessons from contrasting rollouts to
+update Environment Knowledge and Team Strategy for subsequent team construction.

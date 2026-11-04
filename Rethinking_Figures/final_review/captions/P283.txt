@@ -1,0 +1,2 @@
+Figure 3. Ambiguity of determining 3D postions under sparse
+views with geometric and photometric cues.

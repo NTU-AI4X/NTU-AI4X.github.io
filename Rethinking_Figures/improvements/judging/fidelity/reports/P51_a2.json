@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P51",
+  "generation_attempt": 2,
+  "source_image_sha256": "e7514cd06872acdd0a6c3c5845e281f59ac575f8ec895ab71eef222f999b57a2",
+  "revised_image_sha256": "048de1cf2f69e9137b26b3338965a7fb8d969165a0899ef0770ab8851f7b708e",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The comparison of resolution and annotation boundaries across MS-COCO, ADE20K, EntitySeg and MaSS13K remains intact, including MaSS13K outdoor and indoor examples."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three existing-dataset panels and their six enlargements remain. Both MaSS13K scenes and enlargements ①–④ retain the crane, vegetation, hand/hair and indoor foliage examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Dataset labels (a)–(d), enlargement numbers ①–④, and Outdoor Scene/Indoor Scene labels are preserved. Resolution labels remain 480×640, 512×683, 800×1209, 3072×4096 and 3024×4032."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Blue and red dashed source boxes still connect to the corresponding upper and lower enlargements in each existing-dataset panel. MaSS13K numbered source boxes match their respective enlargements."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Segmentation colors and dashed-box encodings are retained. The added yellow legend explicitly applies to MaSS13K and correctly identifies 'others' as well-segmented objects without specific class names, rather than background."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The crowd, mountain-road/person, castle/tree, outdoor crane and indoor person scenes retain their visible masks and detail examples. No new measurements, examples or class identities are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added headings about existing datasets' resolution/boundary limitations and MaSS13K's high-resolution, fine-boundary masks are supported by the supplied text. The yellow-category explanation is explicitly supported, and the thin-structure, foliage and hair guidance describes visible enlargements."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains complete panels, enlargement borders, headings, scene labels and both footer statements without apparent clipping or corruption. Relocated scene labels preserve the content affected by the proof's narrow exclusion."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, source text and reported pixel checks. The proof was not independently executed and covers only its listed rectangles; added text and relationships were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Comparisons on the resolution and annotation quality between existing semantic segmentation datasets (a) COCO, (b) ADE20K,\n(c) EntitySeg and (d) our established dataset MaSS13K. Note that the ‘others’ category, which is highlighted in yellow, in our MaSS13K\nactually contains a group of well-segmented objects without specific class names. Please zoom-in for a better view.",
+  "body_evidence": "judging/fidelity/requests/P51_a2_048de1cf2f69/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P51_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P51_a2_048de1cf2f69",
+    "response_sha256": "ed2b1d0ca08ec822054c796f6cb027321e85d5ab296928de192c332b9f635a36",
+    "request_metadata_sha256": "5f8a525911dcc0dcbedb2145e352f90de104e51d8e595f9a29c8fbbc337037f1",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed all five scene-resolution labels, six existing-dataset enlargements, two MaSS scenes and four numbered details. The yellow-others definition is explicitly restricted to MaSS13K, and added detail-reading guidance describes the actual thin structures, foliage and hair. Source exclusions affect duplicate moved labels, not mask evidence.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/P51_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T04:53:24.692836+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:53:24.692836+00:00"
+}

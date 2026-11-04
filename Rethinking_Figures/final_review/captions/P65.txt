@@ -1,0 +1,6 @@
+Figure 1. An illustration of the difference between the proposed
+DWmethodandexistinglabelassignmentmethods,e.g.,GFL[21]
+and VFL [43]. For ambiguous anchors B, C and D, GFL and VFL
+willassignnearlythesameposandnegweightsto{B,D}and{C,
+D}, respectively. In contrast, our DW assigns a distinct (pos, neg)
+pair for each anchor.

@@ -1,0 +1,6 @@
+Figure 2: Qualitative comparison of FoundIR (Li et al., 2025) and Qwen-Image-Edit (Wu et al., 2025)
+trained/finetuned on different datasets. FoundIR shows limited generalization to real rain and haze,
+even after finetuned on existing restoration datasets. Qwen-Image-Edit produces sharper details with
+its strong generative prior but may introduce hallucinations or color shifts, while finetuning on existing
+datasets weakens its detail generation ability. GGT-100K significantly improves the generalization
+capability of them to real-world degradations, enhancing visual details while preserving scene fidelity.

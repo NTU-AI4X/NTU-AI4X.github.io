@@ -1,0 +1,5 @@
+Figure1. IllustrationofcurrentSASSapproaches. S andE denote
+the segmentation and auxiliary models, respectively. Our method
+leverages the minimum spanning trees (MSTs) to capture both
+low-level and high-level affinities to generate soft pseudo labels,
+performing online self-training.

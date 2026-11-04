@@ -1,0 +1,4 @@
+Figure 3. We use a hierarchy of networks operating on input
+patches of different resolutions (including the global one) to pro-
+duce multiple shape reconstruction variants. Those are fused by
+simple averaging to yield the final reconstruction.

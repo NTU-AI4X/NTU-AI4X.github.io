@@ -1,0 +1,3 @@
+Figure 3: Overview of AKI. (a) Three-level knowledge reorganization. (b) RCA constructs compact
+response support and enforces response consistency. (c) RPA discovers reusable semantic directions
+for selective alignment. (d) DEP suppresses current old–new distribution overlap.

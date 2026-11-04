@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P173",
+  "generation_attempt": 2,
+  "source_image_sha256": "b9396f4ea602e570a1d7ae51ecd48dc88020093754f44682faaab86593ca4656",
+  "revised_image_sha256": "bf0fc5ffb53db62333dadf2fa590f16bb536da8840e52b58f9bd4d986c0b8d0c",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both panels retain the comparison between previous RGB-D fusion and degradation-guided depth recovery, with RGB I and LR depth D_lr as inputs and HR depth D_hr as output."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both panels, all six processing modules, repeated RGB/depth examples, and the dashed box containing D̃ and D are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original panel titles, module names, and symbols I, D_lr, D_hr, D̃, and D remain legible and accurate. No original equations or numerical values are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Panel (a) preserves the LR-depth branch into RGB learning and fusion. Panel (b) preserves degradation learning feeding the representation, representation guidance into both feature modules, the separate D_lr fusion input, and representation/LR/HR inputs into regularization. Arrow directions match."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Neutral previous-method modules, peach degradation-oriented modules, blue degradation learning/regularization modules, and green dashed representation grouping retain their original distinctions. Added title backgrounds do not change these categories."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same person/curtain RGB examples, colored depth maps, and degradation representation are retained. Supplied pixel checks report equality for all seven example regions; no new measurements or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "“Direct RGB–depth fusion” follows the original caption. “Learn degradation, then guide RGB–depth fusion” and “Learned degradation representation” follow the caption and architecture excerpt. “Training only” is explicitly supported by the statement that degradation regularization applies only during training."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative shows both complete panels, all labels, examples, and connector paths without visible clipping or unreadable replacement text. Cropping in the supplied detail views does not affect the full figure."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. Pixel-proof results are supplied evidence, not independently rerun, and cover only the listed rectangles; diagram structure was inspected visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Previous methods (a) directly fuse the RGB information\naligned with the LR depth, while our method (b) focuses more on\nmodeling the degradation representation of the LR depth to pro-\nvide targeted guidance for HR depth recovery.",
+  "body_evidence": "judging/fidelity/requests/P173_a2_bf0fc5ffb53d/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P173_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P173_a2_bf0fc5ffb53d",
+    "response_sha256": "f6b0c0bd62ca4b34875f4629e22fa70f6422c5caede0f6e19e942bf69c97050e",
+    "request_metadata_sha256": "85e4578763b0fbdff0c9983ef1a6681af530e1c53ddd1cacc29ac580e7c2982d",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed both method diagrams and source Figure 3/Section 3.2. Degradation representation feeds both feature learning and fusion; LR, HR and representation feed regularization with no fabricated HR-to-LR arrow. Training-only annotation is explicit in source; all seven example regions independently match.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P173_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T05:08:16.083680+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:08:16.083680+00:00"
+}

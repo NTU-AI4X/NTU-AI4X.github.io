@@ -1,0 +1,472 @@
+[
+  {
+    "id": "02vIJnLoLo",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used coding agents, including Claude Code and Codex with various underlying models, to help\nimplement the MAESTRO harness and its evaluation pipeline, and to help polish the writing of this\npaper. All research ideas, system designs, and experimental choices are our own. We checked every\nresult and claim in the paper and take full responsibility for its content.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/02vIJnLoLo_submission.pdf"
+  },
+  {
+    "id": "0ZTqgrmYaQ",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nLLMs were used for benchmark construction and the memory and evaluation pipelines, as described\nin Sections 3–5. Generative AI tools also assisted code development. The authors take responsibility\nfor the final manuscript and research artifacts.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/0ZTqgrmYaQ_submission.pdf"
+  },
+  {
+    "id": "12nS7mYinw",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used AI tools for the following research tasks:\n• Implement methods. Coding agents assisted with writing and debugging code for reconstruction\nand evaluation.\n• Generate and prepare data. AI tools assisted with writing and running the synthetic-data gener-\nation pipeline and with experimental data preparation.\n• Support analysis and interpretation. AI tools helped organize experimental results into tables\nand plots and summarize quantitative and qualitative comparisons.\nAI was not used for experiment design or mathematical formulation. Formal proofs are not part\nof this work. Additional AI assistance included identifying related work, formatting references,\ndrafting sections of the manuscript, editing text for clarity and readability, and preparing figure\nlayouts.\nWe distinguish this assistance from AI used as an experimental component of GATOR. OpenAI’s\nGPT-6-Astra (OpenAI, 2026) refines generated assets through scripted geometry and appearance\nedits guided by input observations and rendered feedback (Secs. 3.5 and A.4). The same model is\nused for the from-scratch reconstruction baseline. These agents receive no reference meshes, held-\nout observations, or benchmark scores, and their outputs are evaluated using the protocols described\nin the paper.\nThe authors tested AI-assisted code, verified reported metrics against experimental outputs, checked\ncitations against their sources, and inspected figures. We have reviewed and validated the AI-assisted\nwork and take responsibility for the final manuscript and associated artifacts, including text, claims,\ncode, and visualizations produced with AI assistance.",
+    "note": "作者披露AI参与准备图形布局，未指明具体绘图模型或所选图号。",
+    "source_pdf": "papers/12nS7mYinw_submission.pdf"
+  },
+  {
+    "id": "1Xi9fslMSG",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI tools were used to assist with drafting parts of the manuscript, polishing and improv-\ning the clarity of the writing, retrieving and discovering relevant literature, and generating or refining\ncode. All AI-generated or AI-assisted text, references, and code were carefully reviewed, verified,\nand, when necessary, revised by the authors before inclusion in the paper or implementation. The\nauthors take full responsibility for the final manuscript, references, experimental code, and reported\nresults.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/1Xi9fslMSG_submission.pdf"
+  },
+  {
+    "id": "3gogFGspDb",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nThis work uses generative AI tools as part of the proposed method: LLaVA generates the initial se-\nmantic captions, and GPT-5.4 performs inference-time prompt refinement as described in Sections 3.4\nand 3.5. We also used generative AI tools to assist with manuscript language editing and organization.\nAll AI-assisted outputs, experimental procedures, quantitative results, and final claims were reviewed\nby the authors. The authors take responsibility for the final content of this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/3gogFGspDb_submission.pdf"
+  },
+  {
+    "id": "4kPwNYWJYm",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI assisted task authoring and manuscript preparation, including drafting, language\nediting, and reference lookup. For task authoring, models proposed candidate specifications and\nevaluator components under an expert-calibrated process; domain experts reviewed the outputs and\nvalidated the final tasks as described in Section 3.3 and App. A. The evaluated models generated\nengineering artifacts as experimental outputs, which were assessed by task-specific verifiers. The\nauthors take responsibility for the manuscript, benchmark materials, and reported findings.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/4kPwNYWJYm_submission.pdf"
+  },
+  {
+    "id": "7zleBvksX6",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools to assist with manuscript drafting, translation, and revision,\nliterature research, feedback on methodology and experimental design, interpretation of results, and\nfigure preparation. GPT-5.6-sol generated the role and skill libraries from validation and other avail-\nable non-test tasks, following the construction and manual review procedure in Appendix B.3. It\nalso generated initial policies from ten validation examples per benchmark and background on team\nconstruction and execution (Appendix A.3). LLM use within agent execution, policy evolution, and\nevaluation is documented in the method and experimental sections and the appendix. The authors re-\nviewed the AI-assisted text and figures, checked references and literature summaries against original\nsources, and reviewed the generated libraries for correctness and potential safety or ethical issues.\nWe take full responsibility for the final content, claims, and artifacts of this work.",
+    "note": "作者披露生成式AI参与figure preparation；未指明具体绘图工具或图号。",
+    "source_pdf": "papers/7zleBvksX6_submission.pdf"
+  },
+  {
+    "id": "8ztJtapkEV",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nFor FINFIRST, we used LLMs as search agents in our experiments, for model-based stress testing,\nand as an automated rubric-based judge. Although LLM tools were involved throughout the quality\ncontrol process, all outputs underwent rigorous manual inspection and adjustment by domain experts.\nThe automated judge was additionally validated against annotations provided by domain experts in\nfinance and we computed its agreement with human annotations to ensure reliability. In addition,\nwe use LLM tools to polish the paper, while the ideas and core content of the paper are entirely\ndeveloped and written by us. All of our uses of LLM tools comply with the ICLR 2027 policy.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/8ztJtapkEV_submission.pdf"
+  },
+  {
+    "id": "C4VFESNXLV",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nDuring manuscript preparation and research discussions, we used generative AI tools, including\nChatGPT and OpenAI Codex, for language editing and drafting, manuscript organization, LaTeX\nformatting, and feedback on experimental comparisons and result interpretation. The authors re-\nviewed and revised the AI-assisted content and retain full responsibility for the methods, claims,\nand reported results.\nGenerative AI also formed part of the research methodology. GPT-5.5 served as the teacher for\ncollecting multi-round interaction trajectories. The resulting actions, tool-generated images, and\nverification feedback were used to construct selective SFT supervision, as described in Section 4.2\nand the appendix. Qwen3-VL-8B-Instruct provided the planner backbone, while Qwen-Image-2512\nand Qwen-Image-Edit-2511 served as frozen generation and editing tools. Z-Image-Turbo was used\nfor cross-generator evaluation. Model-generated images are included in the qualitative comparisons.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/C4VFESNXLV_submission.pdf"
+  },
+  {
+    "id": "Dli0qriFyd",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn constructing MEMVISTA, we used generative AI models to generate synthetic project scenarios,\nstate schemas, state timelines, conversation turns, and benchmark images, as described in Sections 3\nand 4. We also used an LLM assistant to improve the manuscript’s English expression and formatting,\nincluding the presentation of the evaluation prompt. We reviewed all AI-assisted work and verified\nthe manuscript, citations, reported results, and release materials. We take responsibility for the final\ncontent of this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/Dli0qriFyd_submission.pdf"
+  },
+  {
+    "id": "EkkRujJohS",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nBeyond the LLM components used in the experiments, LLM assistance was used for manuscript\ndrafting and revision, language editing, and checking consistency between the manuscript and\nsupporting materials. Generative models were also used to create synthetic image and audio assets.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/EkkRujJohS_submission.pdf"
+  },
+  {
+    "id": "FqbDu6m3j2",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 9,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools to translate and refine author-prepared text, assist literature\ndiscovery, and discuss and refine research ideas and methodology grounded in our review of prior\nwork. The authors determined the substantive content and organization of the manuscript and manu-\nally checked retrieved publications and references against their original sources. Codex and Claude\nassisted with code implementation and debugging. LLMs were also used as evaluated agents and for\nAI-assisted judging, as described in the evaluation protocol(Section 3.5). We did not use generative\nAI to synthesize the underlying urban observations, which originate from real-world data sources\ndocumented in Appendix A.2; mathematical proof assistance is not applicable to this work. The au-\nthors reviewed all AI-assisted work and take responsibility for the final text, code, analyses, claims,\nand other artifacts.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/FqbDu6m3j2_submission.pdf"
+  },
+  {
+    "id": "I6Gx5US2sY",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe partially used generative AI tools for code development and for improving the clarity and\nreadability of the manuscript. All AI-assisted code and text modifications were carefully reviewed,\nverified, and tested by the authors.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/I6Gx5US2sY_submission.pdf"
+  },
+  {
+    "id": "MI8d8y9Hja",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI as part of the research methodology to classify model reasoning traces, as\ndescribed in Section 5. Second, we used AI tools to assist with paper revision and language editing.\nThird, we used coding agents to help develop the data collection interface and supporting system,\nand to assist in writing data analysis code. The authors reviewed and verified all AI-assisted writing\nand code, and the reported analyses were produced by running the verified analysis code. Generative\nAI was not used to make final research conclusions or replace author review and interpretation. Other\nuses of generative AI were not applicable.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/MI8d8y9Hja_submission.pdf"
+  },
+  {
+    "id": "O7Vvd7kb57",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI Use Statement\nGenerative AI assisted with literature research, experimental design and implementation, result anal-\nysis, translation, and illustrations. Experimental model use is described in the relevant sections. The\nauthors take responsibility for all content and evidence.\nReferences\nRishabh Agarwal, Max Schwarzer, Pablo Samuel Castro, Aaron Courville, and Marc Belle-\nmare. Deep Reinforcement Learning at the Edge of the Statistical Precipice. In Advances\nin Neural Information Processing Systems, volume 34, pp. 29304–29320. Curran Associates,\nInc., 2021. URL https://proceedings.neurips.cc/paper_files/paper/2021/hash/\nf514cec81cb148559cf475e7426eed5e-Abstract.html.\nVictor Barres, Honghua Dong, Soham Ray, Xujie Si, and Karthik Narasimhan. τ 2-Bench: Evaluating\nConversational Agents in a Dual-Control Environment, 2025. URL https://arxiv.org/abs/\n2506.07982.\nArslan Chaudhry, Marcus Rohrbach, Mohamed Elhoseiny, Thalaiyasingam Ajanthan, Puneet K.\nDokania, Philip H. S. Torr, and Marc’Aurelio Ranzato. On Tiny Episodic Memories in Continual\nLearning, 2019. URL https://arxiv.org/abs/1902.10486.\nEdoardo Debenedetti, Jie Zhang, Mislav Balunovic, Luca Beurer-Kellner, Marc Fischer,\nand Florian Tramèr. AgentDojo: A Dynamic Environment to Evaluate Prompt Injec-\ntion Attacks and Defenses for LLM Agents. In Advances in Neural Information Pro-\ncessing Systems, volume 37, pp. 82895–82920. Curran Associates, Inc., 2024. doi:\n10.52202/079017-2636. URL https://proceedings.neurips.cc/paper_files/\npaper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_\nBenchmarks_Track.html. Datasets and Benchmarks Track.\nXiang Deng, Yu Gu, Boyuan Zheng, Shijie Chen, Sam Stevens, Boshi Wang, Huan Sun, and\nYu Su. Mind2Web: Towards a Generalist Agent for the Web. In Advances in Neural In-\nformation Processing Systems, volume 36, pp. 28091–28114. Curran Associates, Inc., 2023.\ndoi: 10.52202/075280-1220. URL https://proceedings.neurips.cc/paper_files/\npaper/2023/hash/5950bf290a1570ea401bf98882128160-Abstract-Datasets_and_\nBenchmarks.html. Datasets and Benchmarks Track.\nRotem Dror, Gili Baumer, Segev Shlomov, and Roi Reichart. The Hitchhiker’s Guide to Test-\ning Statistical Significance in Natural Language Processing. In Proceedings of the 56th An-\nnual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.\n1383–1392. Association for Computational Linguistics, 2018. doi: 10.18653/v1/P18-1128. URL\nhttps://aclanthology.org/P18-1128/.\nAlexandre Drouin, ",
+    "note": "作者披露生成式AI参与illustrations，未指明具体工具或图号。",
+    "source_pdf": "papers/O7Vvd7kb57_submission.pdf"
+  },
+  {
+    "id": "Qask3lw679",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "author_states_language_only",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools solely for language editing, including grammar checking\nand improving the clarity and readability of the manuscript. We did not use generative AI tools to\ngenerate or process data, develop research ideas or conceptual frameworks, formulate mathematical\nclaims, design the methodology or experiments, implement the proposed method, or analyze and\ninterpret experimental results. All AI-assisted edits were reviewed and verified by the authors. We\ntake full responsibility for the final content of this work, including all text, claims, results, and\nartifacts.",
+    "note": "作者声明生成式AI仅用于语言编辑；具体绘图工具未披露。",
+    "source_pdf": "papers/Qask3lw679_submission.pdf"
+  },
+  {
+    "id": "RPFKIcqk1w",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nLanguage models are the object of this study: the planners, repair calls and reviewers of the community\nare the open models described in Section 4, run locally. We have used AI tools to help create and edit\ncode and scripts, to help run and analyze experiments under our direction, to search for related work,\nto understand code, and to draft and polish sections of the text. We have not used generative AI tools\nto generate data, which come from the numerical solvers of Appendix A, and the tasks that concern\nmathematical claims and proofs are not applicable to this work. We have reviewed all AI-assisted\nwork: every result in the paper is produced by a script from the logged results, and every reference\nwas checked against its source. We take responsibility for all the work produced with the aid of\ngenerative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/RPFKIcqk1w_submission.pdf"
+  },
+  {
+    "id": "S2cQcRF30w",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI tools during manuscript preparation to assist with drafting, restructuring,\nand refining parts of the text, including improvements to clarity, concision, and organization. AI-\nassisted suggestions were used iteratively and were reviewed and edited by the authors, who retained\ncontrol over the scientific content and final wording. This use was limited to manuscript preparation\nand is distinct from the LLMs evaluated as components of COSYN, which are described in the\ncorresponding methodological sections.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/S2cQcRF30w_submission.pdf"
+  },
+  {
+    "id": "TTbrrqrzGu",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "LLM USAGE STATEMENT\nLarge Language Models (LLMs) were used to aid in the writing and polishing of the manuscript.\nSpecifically, we used an LLM to assist in refining the language, improving readability, and ensuring\nclarity in various sections of the paper and assist in locating relevant research. The model helped\nwith tasks such as sentence rephrasing, grammar checking, and enhancing the overall flow of the text.\nIt is important to note that the LLM was not involved in the ideation, research methodology, or\nexperimental design. All research concepts, ideas, and analyses were developed and conducted by\nthe authors. The contributions of the LLM were solely focused on improving the linguistic quality of\nthe paper, with no involvement in the scientific content or data analysis.\nThe authors take full responsibility for the content of the manuscript, including any text generated or\npolished by the LLM. We have ensured that the LLM-generated text adheres to ethical guidelines and\ndoes not contribute to plagiarism or scientific misconduct.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/TTbrrqrzGu_submission.pdf"
+  },
+  {
+    "id": "UPFHZRl39C",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools for tasks with recommended disclosure, including aesthetic\nrefinement of the method framework figure based on the original version manually drawn by authors,\nediting manuscript to improve readability. We have not used generative AI for generating synthetic\ndatasets, helping develop theoretical models or conceptual frameworks, formulating mathematical\nclaims, providing critical ingredients for proving mathematical claims, assisting in the writing of\nproofs, proposing or refining hypotheses, designing or providing feedback on research methodology\nor experiments, implementing methods, cleaning and reformatting datasets, or supporting qualitative\nand thematic data analysis. We also used generative AI tools for tasks with recommended disclosure,\nincluding editing the manuscript to improve readability and suggesting phrasing for method descrip-\ntions. We have reviewed all AI-assisted work. Every AI-assisted sentence was manually revised and\nverified by the authors against the source manuscripts, all numerical results and tables were produced\nsolely by the authors’ own experiments and cross-checked against the experimental logs, and all\nscientific claims and methodological designs originate from the authors, with AI involvement in\nvisual artifacts limited to the disclosed framework-figure creation and refinement and all final figures\nmanually verified by the authors. We take responsibility for the final content of this work, including\ntext, claims, and artifacts produced with the aid of generative AI.",
+    "note": "作者明确披露对手工原版方法框架图使用生成式AI作美学改进；未指明具体绘图模型。此声明针对框架图，不能自动归因于M图。",
+    "source_pdf": "papers/UPFHZRl39C_submission.pdf"
+  },
+  {
+    "id": "VA0yCrShah",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI tools to aid and polish the writing of the manuscript, to draft and edit the\nfigures and tables, and to retrieve, survey, and organize related work. We have reviewed all AI-\nassisted work. The related-work compilation was checked by the authors against the original papers,\nand all AI-assisted text, figures, and tables were revised and verified by the authors.",
+    "note": "作者披露生成式AI参与图与表的起草、编辑，未指明具体工具或图号。",
+    "source_pdf": "papers/VA0yCrShah_submission.pdf"
+  },
+  {
+    "id": "VJ7YUdWOrj",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI tools assisted with manuscript drafting and language editing. The authors reviewed\nAI-assisted material and remain responsible for the scientific claims and reported results.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/VJ7YUdWOrj_submission.pdf"
+  },
+  {
+    "id": "VkVp7CjajL",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 22,
+    "evidence_excerpt": "AI USE STATEMENT\nLarge language models were used as research agents within OPTScientist and the OpenEvolve base-\nlines, as described in the main paper. These agents proposed optimizer hypotheses, implemented\ncandidate programs, and recorded experimental lessons using GLM-5.2. Generative AI tools also\nassisted with manuscript drafting, translation, language revision, and feedback on mathematical ex-\nposition and experimental presentation. The authors take responsibility for the final manuscript,\nexperimental claims, and accompanying artifacts.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/VkVp7CjajL_submission.pdf"
+  },
+  {
+    "id": "WdH7oBSYcB",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": null,
+    "evidence_excerpt": "",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/WdH7oBSYcB_submission.pdf"
+  },
+  {
+    "id": "X31pnGGh8D",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI is part of the system studied in this paper and is disclosed as such: Gemini 2.5 Flash\nis the internal backend of the Assistant and sub-agents and the Director’s replanning backend in the\nrecovery benchmark (Section 3), and Gemini 2.5 Pro is the MLLM judge for automatic video eval-\nuation (Section 3, Appendix D.4); the end-to-end videos of all compared systems are produced with\nthe generative backends listed in Appendix D.3. Among the uses that require disclosure, we used\ngenerative AI tools to generate synthetic data: the structured chain-of-thought rationales in the SFT\nsplit are distilled from Gemini 2.5 Flash conditioned on template-generated target chains (Section 3),\nand during GRPO the candidate plans are sampled from the Director itself and scored against the\nreference chains of the GRPO split (Section 2). We also used them to implement methods: LLM-\nbased coding assistants helped write parts of the framework code. We have not used generative AI\ntools to develop the conceptual framework, propose or refine hypotheses, design the methodology\nor experiments, or interpret results; formulating or proving mathematical claims, translation, dataset\ncleaning, and qualitative data analysis are not applicable to this work. Among the tasks with recom-\nmended disclosure, we used LLM-based assistants to edit the manuscript for readability and length.\nWe have reviewed all AI-assisted work: a random 20% sample of the training instruction-plan pairs\nand every test case were manually inspected for capability coverage and dependency-consistent\nordering (Appendix D.3), all AI-assisted code was reviewed and tested by the authors, and all AI-\nedited text was checked by the authors for accuracy. We take responsibility for the content of this\nwork, including text, claims, and artifacts produced with generative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/X31pnGGh8D_submission.pdf"
+  },
+  {
+    "id": "YLI8SRurGG",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI tools were used in this work in two distinct roles. First, large language models\nare integral components of the proposed BrainIPAgent framework, where they are employed as\nmulti-agent modules to identify structural connectivity patterns, generate clinical interpretations,\nand iteratively refine these interpretations through expert feedback. The specific models, prompts,\nand interaction procedures are described in the main text and Appendix I. Second, generative AI\ntools were used to assist with language polishing, wording refinement, and improving the readability\nof the manuscript.\nAll AI-assisted content was reviewed and revised by the authors. The authors verified the scientific\nclaims, mathematical formulations, experimental results, figures, tables, and cited references, and\ntake full responsibility for the final content of the paper. Generative AI tools were not treated as au-\nthors and were not used as a substitute for human evaluation of the experimental results or scientific\nconclusions.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/YLI8SRurGG_submission.pdf"
+  },
+  {
+    "id": "ZEeYfne3aD",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools for the following tasks with required disclosure. (i) Code\ndevelopment: LLM-based coding assistants were used during the code development. (ii) AI as a\nresearch component: an LLM-based auditor reviewed the models’ self-authored notebooks for fac-\ntual grounding and self-consistency (Appendix G); its findings are reported as data-quality evidence\nonly and never enter any score. We note that the evaluated systems themselves are LLM agents;\ntheir outputs (actions, notebooks, transcripts) are the object of study, and every reported score is\ncomputed by the deterministic engine with no LLM judge. We have not used generative AI tools for\nresearch ideation, for the design of the benchmark or experiments, or for generating, fabricating, or\nmodifying any experimental results, data, or citations; the remaining required-disclosure tasks are\nnot applicable to this work. Additionally, we used generative AI tools for light editing and polishing\nof the manuscript text. We have reviewed all AI-assisted work. LLM-assisted code was reviewed\nby the authors and is covered by the 284-test suite, including bit-identity replay checks that verify\nevery reported score against its action log (Appendix B); all cases flagged by the LLM auditor were\nre-examined manually by the authors; and all edited text was checked by the authors for accuracy.\nWe take responsibility for the final content of this work, including text, claims, or artifacts produced\nwith the aid of generative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/ZEeYfne3aD_submission.pdf"
+  },
+  {
+    "id": "ahcNtcQxsO",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used an AI assistant, Codex, to support code development, debugging, and writing review during\nthe preparation of this work. All AI-assisted outputs were carefully inspected and revised by the\nauthors. The assistant was not used to make autonomous research decisions or alter experimental\noutcomes. We manually verified all code, data processing steps, experimental results, and paper\ncontent to avoid hallucination, bias, or unsupported claims.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/ahcNtcQxsO_submission.pdf"
+  },
+  {
+    "id": "cR0St8qS2n",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools for editing (grammar, spelling, and word choice), for\ndrafting sections of the paper, for implementing standard methods in our codebase, and for retrieval\nand discovery of related work: candidate references were surfaced with AI assistance and every one\nof them was then read and verified against its primary source by an author before being cited or\ndescribed. We did not use generative AI tools to generate research ideas, or to generate or fabricate\nexperimental results. All AI-assisted text was reviewed and edited by the authors; all AI-assisted\ncode was read, executed, and tested by at least two authors, and every number reported in this paper\ncomes from a run we performed ourselves. Generative AI was not used as a subject of study, as a\nresearch participant, or as an evaluator of our results. We take responsibility for the final content of\nthis work, including all text, claims, and artifacts produced with the aid of generative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/cR0St8qS2n_submission.pdf"
+  },
+  {
+    "id": "djznyPY9n1",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 9,
+    "evidence_excerpt": "AI use statement. Generative AI is a component of the proposed framework and of its evaluation.\nAll agents are instantiated from Qwen3.8-27B (Qwen Team, 2026b), Qwen3.5-9B (Qwen Team,\n2026a) serves as the VLM judge of perceptual quality, and Qwen3.5-27B (Qwen Team, 2026a)\nfilters the COCO training images of the layout predictor. Claude Opus 5.5 is the coding agent\ncompared above and in Sec. B.1 of the supplementary material. In addition, we used large language\nmodels to assist with revising sentences and the agent prompts of our work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/djznyPY9n1_submission.pdf"
+  },
+  {
+    "id": "e1hPHStzkZ",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, we used generative AI tools to assist with several research and writing tasks. Specif-\nically, we used AI tools for generating parts of the synthetic datasets, including restoration instruc-\ntions and related prompt data, as well as for translation assistance and improving the clarity and\nreadability of the manuscript. All AI-assisted outputs were carefully reviewed, verified, and refined\nby the authors. The authors take full responsibility for the final content of this work, including all\ntext, claims, and artifacts produced with the assistance of generative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/e1hPHStzkZ_submission.pdf"
+  },
+  {
+    "id": "eFi9w6vSHP",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI tools to find related work, develop the formulation and experiments, assist\nimplementation, write and edit the manuscript, and generate candidate task episodes. These tools also\nhelped formulate mathematical claims and check derivations. The authors reviewed the text, code,\ntasks, and claims and take responsibility for the submission.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/eFi9w6vSHP_submission.pdf"
+  },
+  {
+    "id": "fhaZlgOTZu",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 5,
+    "evidence_excerpt": "AI-USE DISCLOSURE\nAI coding assistants (Claude and Codex) were used throughout this work: to write and debug the\nbenchmark, harness, and server code; to design and review the experiment workflow; to write the\nanalysis scripts and run evidence and provenance checks over the recorded artifacts; to draft and\nrevise this manuscript, including the LaTeX markup of every table; to check literature and citations;\nand to help articulate the measurement limitations reported in the Validity and Limitations section.\nNumeric table contents are transcribed from the outputs of the analysis scripts and were re-verified\nagainst those outputs; no reported value was produced by a language model asserting it.\nGenerative models also proposed candidate scenarios through the project’s LiteLLM-based genera-\ntion workflow. All five generated scenarios retained in the frozen 36-file resource were produced by\nwatsonx/meta-llama/llama-3-3-70b-instruct: three from prompt version v0.1 and\ntwo from v0.2. Each was retained only after a per-scenario rubric review that rejected fabricated\nground truth, repaired the intended tool sequence, and re-selected the hand-authored comparator;\nthe applied edits are recorded per scenario in the resource. Ten further generated candidates were\nrejected. The remaining 31 scenarios of the frozen resource, and the entire 31-scenario quality core,\nare hand-authored.\nThe agent configurations under test and the LLM judges that score them are research instruments,\ndescribed with the task and configurations and treated as measurements throughout; they are not\npart of this disclosure of authoring assistance. AI assistance, automated checks, and model-based\nreview do not constitute independent human or domain-expert validation, and the paper makes no\nsuch claim. The authors reviewed the AI-assisted code, analyses, tables, citations, and text, checked\nreported values against the recorded experiment outputs, and take full responsibility for the content\nof this paper. No AI system is an author.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/fhaZlgOTZu_submission.pdf"
+  },
+  {
+    "id": "gGGjmjPJi4",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "LLM USAGE STATEMENT\nWe used LLM to assist with drafting and revising manuscript sections. We also used LLMs to obtain\ncritical feedback on the methodology and evaluation, and to assist with implementation through\ncode generation and debugging. These research and writing assistance roles are distinct from the\nLLM/VLM components used within the proposed framework and experiments, whose roles and\nprompts are documented in the main text and appendix. The authors are responsible for reviewing and\nvalidating LLM-assisted text and code and take full responsibility for all methodological decisions,\nreferences, reported results, and conclusions.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/gGGjmjPJi4_submission.pdf"
+  },
+  {
+    "id": "hFRPKRZXeS",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this work, generative AI tool is used solely to aid in polishing the writing and improving grammat-\nical clarity. All AI-assisted text is carefully reviewed, verified, and revised by the authors to ensure\nfactual accuracy. We have not used generative AI tool for research ideation, theoretical derivation\nor experimental design. The authors take full responsibility for the entire work, including all text,\nclaims, and results.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/hFRPKRZXeS_submission.pdf"
+  },
+  {
+    "id": "jVkkfpmnAw",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI tools were used only to support manuscript preparation, primarily for language re-\nfinement, grammatical correction, and improving clarity of presentation. All AI-assisted text was\nsubsequently reviewed and revised by the authors. The authors are fully responsible for the technical\ncontent, experimental results, interpretations, and conclusions presented in this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/jVkkfpmnAw_submission.pdf"
+  },
+  {
+    "id": "k6IVm6JQzu",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nIn this paper, we used AI tools solely to refine grammar and improve the clarity and readability of the\ntext.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/k6IVm6JQzu_submission.pdf"
+  },
+  {
+    "id": "olW2A6zx75",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI tools in two ways. First, generative AI systems are part of the experimental\nworkflow studied in this paper: coding agents are evaluated on their ability to construct executable\nBlender scene artifacts, and generated scene outputs are used in the LEGO-Bench and LEGO-World\nanalyses described in the main paper and appendix. Second, we used generative AI tools to help\ndraft, revise, and polish portions of the manuscript. All AI-assisted text, claims, figures, tables, code\noutputs, and experimental artifacts were reviewed by the authors. The authors take responsibility\nfor the final content of this work, including any text, claims, or artifacts produced with the aid of\ngenerative AI.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/olW2A6zx75_submission.pdf"
+  },
+  {
+    "id": "qT1Thc0dst",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nLarge Language Models (LLMs) were used in this study to aid in polishing the manuscript. Specif-\nically, we used LLMs to assist in refining the language and detecting potential grammatical errors.\nThis is to improve readability and ensure clarity of the paper. We confirm that LLMs were not in-\nvolved in research ideation, method exploration, and experiment designs. All research ideas, meth-\nods, and analysis were produced by the authors. We take full responsibility for the content in this\npaper, including the text generated or polished by the LLMs.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/qT1Thc0dst_submission.pdf"
+  },
+  {
+    "id": "skorOYrYml",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "author_states_no_generative_AI",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 8,
+    "evidence_excerpt": "AI USE STATEMENT\nNo generative AI tools were used in this work.",
+    "note": "作者声明本研究未使用生成式AI；未披露具体非AI绘图工具。",
+    "source_pdf": "papers/skorOYrYml_submission.pdf"
+  },
+  {
+    "id": "uLkUAjKWe6",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used generative AI tools to proofread author-written text and suggest edits for clarity and read-\nability, and to provide feedback on drafts of this paper. All research ideas, task curation, experi-\nments, analyses, results, and conclusions were developed by the authors, who reviewed and revised\nall AI-assisted edits and take full responsibility for the final content of this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/uLkUAjKWe6_submission.pdf"
+  },
+  {
+    "id": "vc3oWN9Ikw",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nGenerative AI tools were used to assist with code review and the writing and editing of the\nmanuscript. All AI-assisted outputs were reviewed and validated by all authors. All authors take\nfull responsibility for the final content of this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/vc3oWN9Ikw_submission.pdf"
+  },
+  {
+    "id": "vowOuAXSIO",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "THE USE OF LARGE LANGUAGE MODELS\nLarge language and vision-language models were used as evaluation subjects and as components\nof benchmark construction and assessment. In the construction pipeline, they supported visual and\ninteraction annotation and rubric-guided quality review; task-specific rules assembled questions,\ncandidates, and reference answers from the resulting evidence (Section 3.1 and Appendix B). A\nfixed vision-language model judged open-response answers using the task-specific rubrics in Ap-\npendix D.2. Generative AI tools also assisted with code development, data analysis, figure prepa-\nration, manuscript drafting and organization, and language editing. The authors are responsible for\nchecking AI-assisted outputs against source data and experimental records and take full responsibil-\nity for the final content of this paper, including its claims, results, and artifacts.",
+    "note": "作者披露生成式AI辅助figure preparation，未指明具体工具或图号。",
+    "source_pdf": "papers/vowOuAXSIO_submission.pdf"
+  },
+  {
+    "id": "whcg806KGZ",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nBKBAgent incorporates LLM-based components as part of the proposed method, as described in\nthe methodology and Appendix L. We additionally used generative AI tools for manuscript editing,\nanalysis-code development, and figure preparation. The authors review the resulting text, code, and\nfigures for technical correctness and consistency with the reported evidence. We take responsibil-\nity for the final content of this work, including text, claims or artifacts produced with the aid of\ngenerative AI.",
+    "note": "作者披露生成式AI参与figure preparation；未指明具体绘图工具或图号。",
+    "source_pdf": "papers/whcg806KGZ_submission.pdf"
+  },
+  {
+    "id": "xGIdDM5rYW",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "paper_level_yes",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 10,
+    "evidence_excerpt": "AI USE STATEMENT\nOur work designs an agent framework, which has components of using AI to generate Python code\nto build maps and using LLM to directly build maps (Section 2.4). We used AI tools to correct\ngrammatical errors in writing, and construct diagrams in the paper. Additionally, we used genera-\ntive AI tools to assist with creating and editing a limited portion of the experimental code, primarily\nfor plot generation and baseline environment setup. The research ideas, methodological decisions,\nexperimental design, interpretation of results, and scientific conclusions were developed by the hu-\nman authors. We did not use generative AI tools for other tasks requiring disclosure under the ICLR\n2027 AI Policy for Authors.\nWe have reviewed all AI-assisted work. The authors manually inspected and executed the AI-\ngenerated code, reviewed language edits to preserve the intended meaning, and checked the dia-\ngrams for consistency with the underlying methods and concepts. We take responsibility for the\nfinal content of this work, including all text, code, figures, claims, and other artifacts produced with\nthe aid of generative AI.",
+    "note": "作者披露AI用于construct diagrams，未指明具体绘图工具或图号。",
+    "source_pdf": "papers/xGIdDM5rYW_submission.pdf"
+  },
+  {
+    "id": "yLEH2uLAgc",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 14,
+    "evidence_excerpt": "AI USE STATEMENT\nLarge language models and AI tools were used for two purposes. First, they assisted with language\npolishing, including wording, grammar, and sentence structure. All AI-assisted revisions were care-\nfully reviewed and proofread by the authors to ensure factual correctness, preserve the intended\nmeaning, and avoid hallucinated or unsupported statements. Second, as CADForge is an agentic\nframework, VLMs were used as components of the proposed pipeline and for perceptual assess-\nment, as described in the paper. All such uses followed human-defined procedures and were subject\nto human supervision and verification. The research design, experimental protocol, result interpreta-\ntion, and scientific conclusions were determined by the authors. The authors take full responsibility\nfor the final content of this work, including text, claims and conclusions.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/yLEH2uLAgc_submission.pdf"
+  },
+  {
+    "id": "zploFP1iVU",
+    "tool_disclosure": "unknown",
+    "figure_ai_assistance_disclosure": "unknown",
+    "disclosure_scope": "paper-level; not attribution to every selected figure",
+    "page": 9,
+    "evidence_excerpt": "AI USE STATEMENT\nWe used AI to assist with routine software engineering for the experimental harness and occasionally\nexperiment execution. All AI-assisted work was reviewed and verified by the authors. We take\nresponsibility for the final content of this work.",
+    "note": "声明未明确披露所选图的绘图工具；研究中使用模型、文字润色或审查图表不等于绘图工具披露。",
+    "source_pdf": "papers/zploFP1iVU_submission.pdf"
+  }
+]

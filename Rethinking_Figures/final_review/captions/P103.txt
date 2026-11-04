@@ -1,0 +1,5 @@
+Figure 2. Analysis of real and synthetic image restoration datasets
+for various degradations. Existing datasets are small and less di-
+verse, especially for haze, low-light, and raindrop. Our diffusion-
+generated synthetic data substantially increases the number of
+samples as well as scene diversity.

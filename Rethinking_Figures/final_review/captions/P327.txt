@@ -1,0 +1,6 @@
+Figure 2. Formation of the two image I and I from two points
+L R
+C and C on the lens plane may be thought of as pin-hole pro-
+L R
+jections (with centres C L and C R and focal-length F ) of the vir-
+tual image formed by the lens.

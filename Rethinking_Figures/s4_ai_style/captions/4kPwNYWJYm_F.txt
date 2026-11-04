@@ -1,0 +1,3 @@
+Figure 2: Overview of the ENGIWORLD framework. Agents interact with engineering applica-
+tions through CLI or GUI interfaces and are evaluated from the artifacts produced during execution.
+Domain-specific verifiers check whether these artifacts satisfy the required engineering constraints.

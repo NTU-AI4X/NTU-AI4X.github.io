@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_ZEeYfne3aD_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "b77bb092ef573c524d4ded2b8a280db0a9012ab06412379f60444aa3192493b4",
+  "revised_image_sha256": "916af3d316da29a8fc2a058c5fef295cab995e9cc260b450ccbae4c5af6d7606",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures show a 20-year club-management run, frozen decision stops with read → act → advance turns, notebook memory, and a final composite score."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The timeline, agent prompt, notebook, per-stop budget, three illustrated turns, engine simulation statement, and all club/world environment cards are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Key values match: 341–390 stops, 26 tools, 30 queries, 10 negotiation moves, soft cap 40/hard 60, 25 players, and 15 rivals. Tool names, JSON fields, and notebook reference D209 remain legible and unchanged."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The timeline points toward final score and down to the selected stop. Rightward calls, leftward results, read/act/leave ordering, and engine simulation after advance preserve the original relationships."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Purple continues to identify agent calls and frozen-stop structure; teal identifies results and environment accents. Club, world, and end-score groupings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The example retains 69 listings; P00361, DM, age 27, ability band 70–86, confidence B; an offer amount_m of 8; and the accepted result with fee_m 8.0. The notebook example is unchanged."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added numbered footer summarizes read → act → advance within stops and engine simulation plus notebook-only memory between stops. These claims are supported by the original figure and supplied caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image includes all original text and panels, plus the complete footer. No missing labels, clipped substantive text, or unreadable replacement content is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The reported pixel-proof metadata was not independently verified; the added footer was assessed semantically. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: How a run works. One run spans 20 in-game years and roughly 340 to 400 decision stops,\nending in a single composite score. At each stop, the clock freezes and the agent takes as many tool-\ncall turns as it wants (read → act → advance). The agent’s only cross-stop memory is its self-\nwritten notebook (§3.2); the environment side holds the club (net worth, squad with permanently\nhidden true ability, a board that can fire the manager) and the world (15 rival clubs, a counter-\nadaptive market, delayed-payoff investments).",
+  "body_evidence": "judging/fidelity/requests/AI_ZEeYfne3aD_F_a2_916af3d316da/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_ZEeYfne3aD_F_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_ZEeYfne3aD_F_a2_916af3d316da",
+    "response_sha256": "5400936da2b0807a230c025d1591f5c2f6f7a21955eb14d88d59b0746fa10aa5",
+    "request_metadata_sha256": "cbc1037c5a76c450eb5a3a68bfddd43b09ed91232fa3603b11a8deafd956d5d1",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full image and reviewed independent paired-image response with caption. Complete original timeline, 341-390 stops, 20 years, notebook-only cross-stop memory, budgets, tool calls/JSON and environment cards are retained. Added two footer statements accurately distinguish within-stop read/act/advance from between-stop engine simulation; caption explicitly supports notebook-only memory. Original 341-390 versus caption approximately 340-400 is preserved, not harmonized. Optional misspelled generated title was removed in a2; source rectangle independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/AI_ZEeYfne3aD_F_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T10:10:45.089684+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T10:10:45.089684+00:00"
+}

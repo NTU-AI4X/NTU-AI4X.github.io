@@ -1,0 +1,6 @@
+Fig.1: Comparison of restoration paradigms. (a) All-in-one model: Uses
+a single network with specialized heads to inject various degradation features. (b)
+Training-free Agent: Uses VLMs for static task planning, executing sub-tasks se-
+quentially via exhaustive tool traversal. (c) TIR-Agent (Ours): A trainable agent
+that dynamically decides the next sub-task based on current results and learns to di-
+rectly select the optimal tool, avoiding redundant execution.

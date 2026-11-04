@@ -1,0 +1,6 @@
+Figure 2: Overview of the proposed DCHA framework. (a) DCHA constructs category-specific
+LoRA by composing vectors from a shared bank and averages the resulting category updates to form
+the task-level adaptation for the VLF layers. (b) LCAR transforms category-specific routing logits
+into sparse composition weights using a learnable sparsity coefficient, enabling category-dependent
+vector selection. (c) HDC preserves historical adaptation knowledge by constraining deviations at
+the bank-vector, category-update, and task-update levels.

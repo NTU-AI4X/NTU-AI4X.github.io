@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P220",
+  "generation_attempt": 2,
+  "source_image_sha256": "bf6f96026f0c3010c7beff7a245e98dbbb7015f6b32a8e0e02797665a94e7873",
+  "revised_image_sha256": "5286a4283caf61ff033f9a133c16fc33caeb039ac3dbb0181dfa8941e4d5a206",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The framework remains differentiable plane rendering, optimization under monocular depth/normal supervision and final plane merging."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The complete original scientific figure is retained, including all posed inputs, rendering geometry/maps, loss links, optimization snapshots and final reconstruction."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All source headings, frozen-model symbol, Iteration0/5000 labels and output text remain unchanged."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "All original rendering rays, map/loss comparison links, optimization progression and merge arrow remain exact source pixels, avoiding the altered loss direction in the initial draft."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original plane-instance colours, normal/depth maps and frozen-model encoding remain without reinterpretation."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The entire original scientific figure independently matches native1× pixels. This is a limited peripheral annotation intervention, not a comprehensive redraw."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Render/Optimize/Merge headings follow caption; pretrained pseudo-labels and rendered-map comparison follow Section3.2 Eq.14 and the accompanying Metric3Dv2/Omnidata description."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full source title and scientific content are visible. Small peripheral coloured line remnants are cosmetic and retained for blind scoring."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope and source resolution retained. Repeated reference labels, colour choices and layout imperfections remain for independent quality scoring; no score-informed revision.",
+  "caption": "Figure 3. Illustration of our proposed PlanarSplatting. Given a set of posed multi-view images of indoor scenes, our method renders\ndepth and normal maps from 3D plane primitives. Then, with the supervision of monocular cues, these 3D plane primitives are gradually\noptimized to recover the scene geometry and finally merged to get the planar reconstruction result.",
+  "body_evidence": "generation/P220/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P220_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P220_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T04:03:48.721608+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:03:48.721608+00:00"
+}

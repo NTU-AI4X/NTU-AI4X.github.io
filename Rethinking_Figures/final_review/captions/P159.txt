@@ -1,0 +1,4 @@
+Figure 1. Exampled images from PASCAL VOC [10] → Cli-
+part [18]. Compared with vanilla detector [28], both UMT [8] and
+TIA identify more foreground objects (Row 1), yet deliver lower
+as well as higher quality bounding boxes (Row 2), respectively.

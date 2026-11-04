@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P216",
+  "generation_attempt": 2,
+  "source_image_sha256": "1ae2f61dab888a7333a0ca2d4a7ffd46eb73bf0c7f5fa6e643ce74e1becf54a8",
+  "revised_image_sha256": "62668f1bc642866fd53d2ab85b8e9fd0ec4447ad805bf0ffab3e8594d09c2ada",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The LR-to-HR restoration method is preserved: estimated kernel k̂ feeds feature-domain DCLS, and primitive and deblurred features enter the dual-path attention network before residual addition and upscaling."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both butterfly images, kernel thumbnail, Conv and three Resblocks, channel reduction, filter stack, DCLS, five-group network, legend, DPG panel and expanded DPAB panel remain present."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and symbols remain visible, including LR, HR, CR, DCLS, G_y, R̂, {P̃_i}_{i=1}^L, '5 Groups', DPG, DPAB and CA Layer. The filter retains rows [0, −1, 0], [−1, 4, −1], [0, −1, 0]."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Kernel and predicted-filter inputs to DCLS, the reduced primitive-feature path, both network inputs, concatenation and convolution, the outer residual connection and upscale ordering are preserved. DPG/DPAB residual paths and the left-to-right feature connection inside DPAB also match."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue still denotes original features and green deblurred features. The concatenation/convolution and element-wise-sum symbols retain their legend meanings; orange, blue and purple dashed group boundaries remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same butterfly LR/HR examples and estimated-kernel thumbnail are retained. No new measurements, performance results or example identities appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "All three added footer statements are supported: estimated-kernel use in feature-domain DCLS by the caption; channel-specific smooth-filter regularization by Section 3.3 and equations (11), (15)–(16); and combining primitive with deblurred features by the caption and Section 3.4."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram, legend, panel captions and all three added footer statements. Cropping in the supplied detail views does not omit content from the full export; no unreadable replacement text or visible corruption is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The supplied pixel-proof report covers the full-original rectangle but does not validate the added footer claims; those were checked against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 4. The overview architecture of the proposed method. Given an LR image y, we first estimate the degradation kernel kˆ , and involve\nit in the deep constrained least squares (DCLS) convolution in the feature domain. The deblurred features R(cid:98) are then concatenated with\nprimitive features G y to restore the clean HR image x through a dual-path attention network (DPAN).",
+  "body_evidence": "judging/fidelity/requests/P216_a2_62668f1bc642/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P216_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P216_a2_62668f1bc642",
+    "response_sha256": "99c3a3e4a269dd7f2c1213c705955de60ff931f6c78d0a54c55479b6d424a47a",
+    "request_metadata_sha256": "d9faea60c9591c12fc7f99007096c439efd9ba06b2fd61dbaa0ab10e9361e09c",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final complete DCLS architecture and read source_context Section 3.3 around Eq15: different-channel smooth filters explicitly support the added second footer statement. Caption supports estimated kernel into feature-domain DCLS and combination of primitive/deblurred features. All original butterfly evidence, kernel, matrix, five groups, DPG/DPAB paths and legend remain exact, with no new scientific connectors. Prior added-fragment correction leaves original pixels untouched.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/P216_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T10:10:45.163168+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T10:10:45.163168+00:00"
+}

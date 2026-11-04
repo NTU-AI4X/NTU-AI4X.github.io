@@ -1,0 +1,5 @@
+Fig. 1. The main paradigmatic types of existing oriented object detec-
+tion. Existing methods are primarily divided into rotated boxes (RBox)-
+supervised, horizontal boxes (HBox)-supervised, Point-supervised, and Semi-
+Supervised approaches. Compared to these settings, our proposed Partial
+Weakly-supervised methods have high annotation speed and low costs.

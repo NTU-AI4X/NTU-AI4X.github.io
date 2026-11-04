@@ -1,0 +1,2 @@
+Figure 3: Overview of the GGT-100K construction pipeline. We collect diverse real-world LQ images,
+evaluate MFMs for HQ target generation, and apply multi-stage quality control to build the dataset.

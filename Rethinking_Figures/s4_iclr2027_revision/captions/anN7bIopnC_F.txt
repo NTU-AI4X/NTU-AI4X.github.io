@@ -1,0 +1,3 @@
+Figure 4: Overview of PhoenixSR. HDA adapts real-score estimation, tracks the evolving student
+distribution, and anchors paired fidelity. DRW reweights sample-wise guidance according to residual-
+direction consistency.

@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P187",
+  "generation_attempt": 2,
+  "source_image_sha256": "625d7eb2aaf02b0d3e3339fc432edae1f1d13a64014a0bcca063cd6d0f09a01d",
+  "revised_image_sha256": "64311cbc1b460dba63239dceb547df3ea586cbb9098fcd0c8ccc8ac72b0f21dd",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M contrast preserves different visual overlaps for two sequences with the same frame interval."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both original frame pairs, two covisibility masks and both camera-motion diagrams remain in the same sequence rows."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All four original overlap values remain 0.91/0.93 and 0.40/0.74; Frame i, i+delta-t and sequence labels are preserved."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Within-row frame pairing and smaller/larger camera-motion correspondence remain exact; the added j=i+delta-t resolves the source caption notation."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red higher overlap/smaller motion and green lower overlap/larger motion remain; no black/white mask meaning is guessed."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Four source photos, two complete covisibility maps and two motion schematics independently match exact integer source-pixel copies."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "UFM covisibility and DINOv2 cosine similarity definitions are Eq9 in Sec3.3; equal interval versus unequal overlap is the original Fig3 caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All examples, metric values and camera diagrams are visible; rotated labels are moved to horizontal positions without new data."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope retained. Source resolution, duplicate labels and frame discontinuities are left for blind quality scoring. P284 is a limited heading/key intervention around a fully preserved scientific body.",
+  "caption": "Figure 3. Different Visual Overlaps under the Same Frame In-\nterval. Two sequences from DL3DV [34] share the same frame in-\nterval yet exhibit drastically different levels of visual overlap. Our\nproposed semantic and geometric overlap metrics more accurately\ncapture the true difficulty (or camera motion) of each sequence.",
+  "body_evidence": "../papers/2512.10950_conference.pdf; caption and relevant method/intro pages read directly",
+  "independent_pixel_check": "judging/fidelity/reports/P187_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P187_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T01:51:27.326220+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T01:51:27.326220+00:00"
+}

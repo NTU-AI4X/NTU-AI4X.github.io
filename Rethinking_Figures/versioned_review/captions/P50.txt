@@ -1,0 +1,4 @@
+Figure 2. Overview of our approach. (a) First, a Pairwise-Affinity Predictor (PA Pred.) is trained to predict pairwise affinities using non-
+exhaustive segmentation masks as supervision. (b) Once trained, PA Pred. is used to predict pairwise affinities of the images. A grouping
+module is then applied on the predicted pairwise affinity maps to generate pseudo-ground-truth masks. (c) A class-agnostic generic object
+proposal network (e.g., class-agnostic Mask R-CNN) is trained end-to-end using a combination of GT and generated pseudo-GT masks.

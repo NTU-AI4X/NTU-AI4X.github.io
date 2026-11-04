@@ -1,0 +1,5 @@
+Figure 4: Shape selection. We compare one-hot encoding (hard
+labels, left) for supervising the shape selection problem with soft
+labels (right) which allow for multiple shape predictions at the
+same time and are based on geometric similarity, specifically the
+Euclidian distance between SDF shape representations.

@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P202",
+  "generation_attempt": 2,
+  "source_image_sha256": "d31f1101af4c6cdbbd2e096393de7acd99506ef6fa398f1735ffd4a79c5f4251",
+  "revised_image_sha256": "2b7f66fcf632aeaabfc69424aacc2438a969f228009f90f289c18b531df3458c",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The streaming input sequence, dual prediction branches, dynamic-region suppression, and transition from State/Scene T-1 to State/Scene T remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both prediction panels retain their encoders, token stacks, State Query modules, depth/confidence outputs, and pose output. Dynamic Map, Static Scene, and State Update are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and the update expression s_{t-1} + α_t ⊙ Δs_t remain legible and unchanged, including E_r and the T-1/T indices. Added explanatory text agrees with the supplied caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input ordering, the downward image-to-encoder arrow, branch processing arrows, dashed connection into RayMap, curved interbranch comparison arrow, and rightward state-update flow are preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Branch backgrounds, purple state/query encodings, yellow and cyan output tokens, dashed orange enclosure, and blue update arrows retain their original roles. Added numbered badges organize explanatory statements without redefining diagram categories."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same skateboarder frames, reconstructed scenes, grayscale depth/confidence examples, and dynamic-map image remain visible. The supplied pixel proof reports exact preservation of the complete original rectangle at scale 1."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added title and three statements describe querying the previous state, projecting depth disagreement through image-state attention into α_t, and suppressing dynamic regions during updates. These are supported by the supplied caption; no new measurement or result is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains the entire original diagram and complete added heading and explanation box, with no visible clipping or unreadable replacement text. Partial text in the detail images reflects their crop boundaries."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel proof. No separate source body text was provided; the added explanatory region was assessed against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Fig. 4: Method Overview. Our method performs streaming 3D reconstruction via\ndual-branch inference. At time step t, the main branch predicts depth and pose from\nstate s using both image and RayMap features. The predicted pose Tˆ is remapped\nt−1 t\ninto RayMap and encoded into tokens r′ , then queried against the frozen state s\nt t−1\nby the RayMap branch to obtain a static-biased prediction. The depth difference\nbetween branches is pro jected via image-state attention to form staticness weights α\nt\nthat suppress dynamic regions during state update (s = s + α ⊙ ∆s ). This dual-\nt t−1 t t\nbranch scheme identifies and suppresses dynamic regions at inference time.",
+  "body_evidence": "judging/fidelity/requests/P202_a2_2b7f66fcf632/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P202_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P202_a2_2b7f66fcf632",
+    "response_sha256": "b0827edbe32cf4c519a7acd40fa1ff6657b8061fcec6bc1319fe1a821db080c9",
+    "request_metadata_sha256": "d4f79b36950f73d467f8a758f9adf13105b59bcdb73d88027fd4b264446d9dae",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed draft and final full export, read caption and independent checks. Complete source dual-branch graph preserves five input frames, previous/new state and scenes, image encoder/state-query and RayMap/state-query outputs, maps, alpha update expression and original pose location. New three notes are direct caption statements: shared frozen previous state, depth disagreement projected through image-state attention, staticness suppresses dynamic update. Source ambiguities not silently repaired.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P202_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T07:46:45.375107+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:46:45.375107+00:00"
+}

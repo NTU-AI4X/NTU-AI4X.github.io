@@ -1,0 +1,2 @@
+Figure 1. Training process for OVD using frozen CLIP. (a) Com-
+monly used training process, (b) Our training process.

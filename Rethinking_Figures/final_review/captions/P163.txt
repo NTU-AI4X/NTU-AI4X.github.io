@@ -1,0 +1,4 @@
+Figure 1. We employ a hierarchical shape prior to enable recom-
+bination of partial shapes observed during training. This signif-
+icantly improves generalization compared to conventional global
+shape priors.

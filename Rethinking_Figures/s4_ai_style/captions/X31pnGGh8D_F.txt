@@ -1,0 +1,6 @@
+Figure 1: Closed-loop orchestration in FRAMEWORKERS. The Director edits the Dynamic Task
+Stack from the user input and the Assistant’s summaries; the stack shows completed tasks, an in-
+serted task (T3′), and a deleted pending task (T3). The Assistant executes the dispatched task (arrows
+1–5): it queries the sub-agent’s input requirements, retrieves the inputs from the Workspace, pro-
+vides them to the sub-agent, receives the results, and stores results and logs in the Workspace. Right:
+the sub-agent inventory, grouped by capability.

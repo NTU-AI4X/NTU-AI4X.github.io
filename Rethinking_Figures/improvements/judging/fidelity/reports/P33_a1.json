@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P33",
+  "generation_attempt": 1,
+  "source_image_sha256": "46f6f15f861ed7e60fe2e775a7c44bdbdff511b05c08cc4b8f380a373e42b9d2",
+  "revised_image_sha256": "071095826aa38628b953351965251aabb259c587a87407f6ed467184fadd4e6d",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The IWE motivation remains intact: dense raw proposals, a zero-shot missed person, a dog false positive under standard entropy, and only the correct person detection under IoU-weighted entropy."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels retain the same portrait and detection configurations: overlapping red/blue proposals, no boxes, person plus dog boxes, and a person-only box."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Panel names and indices (i)–(iv) are preserved. Detection labels retain Person 0.86, Dog 0.55, and Person 0.93. Added counts and maxima—Person 167 and 0.14; Dog 45 and 0.15—match the supplied caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The left-to-right comparison and box containment are preserved. Added explanations appear beneath the corresponding panels. No source arrows or explicit connections are omitted."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red consistently denotes Person and blue denotes Dog. The added legend agrees with the source caption and detection boxes. Standard entropy retains both categories; IWE retains only red."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same portrait example, proposal arrangement, detection classes, and displayed confidence values are retained. Added raw-prediction statistics come from the supplied caption, without introducing new measurements."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "All added explanations are supported by the caption: scores below threshold and a missed person; over-confident sharpening and a dog false positive; dense-cluster updates and suppression of isolated boxes."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all four panels, complete panel titles, confidence labels, and added explanatory text without visible clipping or missing scientific content. Partial neighboring panels in the detail crops are present in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment is based on the supplied images and source text. The reported pixel proof covers the complete original rectangle; its file was not independently inspected. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Fig.1: Motivation for IWE. Left→right: (i) Raw predictions before thresholding\nfor two classes — a true positive Person (red) (bbox cluster size = 167, max score\n= 0.14) and a false positive Dog (blue) (bbox cluster size = 45, max score = 0.15);\n(ii) In ZS, all scores remain below the detection threshold, causing a missed detection;\n(iii) Standard entropy minimization over-confidently sharpens scores, resulting in a dog\nfalse positive; and (iv) IWE focuses updates on dense bbox clusters and suppresses\nisolated boxes, producing only the correct person detection.",
+  "body_evidence": "judging/fidelity/requests/P33_a1_071095826aa3/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P33_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P33_a1_071095826aa3",
+    "response_sha256": "0f6c5ae5203e6f35589e426ad1e68380166d0df83151ae06ee1ee7622d085c73",
+    "request_metadata_sha256": "eaf7f74e45e5d7540beb326d7d16e087dde020ed1d1b93b34dde340138cd9621",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed all four final panels and caption. Raw person/dog proposalclusters,zero-shotmiss,standardentropy falsepositive andIWE person-only outcome preserve exact originalphoto/boxes/confidences. Added167/0.14 and45/0.15 are explicit captionstatistics, not inferred boxcounts. Panel-aligned explanations correctly distinguish threshold/falsepositive/density.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T09:03:47.795919+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:03:47.795919+00:00"
+}

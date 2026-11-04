@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P69",
+  "generation_attempt": 1,
+  "source_image_sha256": "f1be5741674d74295bbfe9d10031c27c67ddd20d1649fa84d4ec522f9cef5ca1",
+  "revised_image_sha256": "3b8b2a824da754132dc9ff7f2837277eed6a09afe69d38116b09a5a59284697a",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The caption, segmentation map, depth map and additional modalities still feed the Transformer, which feeds the SR Diffusion Model. The added spatial-information summaries agree with the supplied caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The image-caption prompt, beach photograph, VLMs with Gemini/OpenAI identifiers, caption bubble, segmentation and depth examples, Transformer with Q/V/K, SR Diffusion Model and additional-modality input are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The caption retains the Shiba Inu dog, sandy beach, guitar and black SUV descriptions. VLMs, Q, V, K, Transformer, SR Diffusion Model, segmentation input, depth input and more input modalities remain legible and accurate."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Caption-to-Transformer and Transformer-to-SR arrows preserve their direction. Segmentation, depth and additional-modality arrows still enter the Transformer. Dashed associations retain arrowheads at the highlighted text and corresponding dog/SUV regions."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Magenta/purple dog highlighting and orange SUV highlighting remain associated with their segmentation regions. Grayscale depth encoding and the blue Transformer/green SR module distinction are preserved."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same dog-with-guitar beach photograph and SUV appear alongside corresponding segmentation and depth maps. Supplied pixel checks confirm preservation of the three listed image regions; no new measurements or example outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new statements about imprecise language spatial information and pixel-level context from depth/segmentation follow the supplied caption. 'Text–region associations' describes the existing dashed links and is supported by the caption's alignment explanation."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all modules, examples, labels, arrowheads and both added banners without visible clipping or unreadable text. The cropped detail views do not indicate missing content in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. Pixel verification covers only the three listed rectangles; surrounding labels, connections and claims were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Language models struggle to accurately represent spa-\ntial information, leading to coarse and imprecise image super-\nresolution. To overcome this limitation, we incorporate additional\nspatialmodalitieslikedepthmapsandsemanticsegmentationmaps.\nThese modalities provide detailed spatial context, allowing our\nmodel to implicitly align language descriptions with individual pix-\nels through a transformer network. This enriched understanding of\ntheimagesignificantlyenhancestherealismofoursuper-resolution\nresults and minimizes distortion.",
+  "body_evidence": "judging/fidelity/requests/P69_a1_3b8b2a824da7/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P69_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P69_a1_3b8b2a824da7",
+    "response_sha256": "9ea0d379ce9b1e6e5a3e0543643d8e8929a5ca2181680830ad803e6aa9521cee",
+    "request_metadata_sha256": "415d16a2f3a97fdf3d7469c91d46248fa7a76c461e101a298e67f09aa6a3d575",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed final full figure: highlighted dog/SUV phrases still correspond to their original segmentation objects via dashed associations. Native photo/map evidence is unchanged. Depth, segmentation, text and extra-modality routes still enter the Transformer. Small gaps at pasted dashed-line boundaries do not create different endpoints.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T04:53:24.548777+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:53:24.548777+00:00"
+}

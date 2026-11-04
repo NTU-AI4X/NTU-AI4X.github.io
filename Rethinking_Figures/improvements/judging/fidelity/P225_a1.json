@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P225",
+  "generation_attempt": 1,
+  "source_image_sha256": "6a16e50ea6b40c1e4ddd60bdfa880c17f35842f90a696c967142e4fc25d9d8e4",
+  "revised_image_sha256": "0a1ed9d6a922301b88272c6c8b5fe6bd148cd88154fd03c5b09d763cf3e90afd",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The original motivation remains missed detections and wrong categories in fog, comparing UBT, GPA and Ours on the same two scenes.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All six original detection panels remain in their original three-column/two-row correspondence. Every visible bounding box, object and background region is present.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original categories and confidence percentages remain source pixels, including rider95%, motorcycle92%, bus91% and person75%. Header citations 29 and 51 are retained as in the original image despite inconsistent caption citation numbers.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The two new wrong-prediction notes are centered under the GPA column for the respective motorcycle and person examples. They do not label the Ours predictions as failures.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "All original box colors and confidence text are preserved. No new classification color mapping, threshold or numerical score is introduced.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed all six original panels and their exact 2x nearest-neighbor expansion. Each destination matches byte-for-byte and every source/restored pixel hash matches provenance.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new title, two wrong-prediction notes and bottom UBT/GPA takeaway directly follow the source Figure 1 caption and adverse-weather motivation. No additional successful result is fabricated.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed both full images. All six panels and method headings are complete. Dense overlapping source labels remain dense and have not been silently corrected.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Independent content-fidelity review only; no derivative quality scores were viewed. Original evidence pixels and scientific ambiguities are retained.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-10-31T19:01:02.611662+00:00",
+  "hybrid_verification": {
+    "regions": 6,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/P225/provenance.json",
+    "source_pdf_page": 1
+  }
+}

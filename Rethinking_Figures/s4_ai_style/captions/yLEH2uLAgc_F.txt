@@ -1,0 +1,7 @@
+Figure 1: Overview of CADForge. Given a single image, CADForge decomposes the object into
+several components and constructs them progressively. For each component, geometry observation
+identifies reference components and CAD-relevant constraints, while geometry programming trans-
+lates them into key modeling parameters. A code generator then synthesizes executable CadQuery
+code, and a review agent evaluates the result and provides targeted feedback. Throughout the pro-
+cess, a compact parametric CAD memory maintains essential CAD state for on-demand retrieval,
+while a failure-guided toolkit offers reusable helpers for robust code generation.

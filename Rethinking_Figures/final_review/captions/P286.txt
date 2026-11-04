@@ -1,0 +1,17 @@
+Figure 2. Method overview. We use a diffusion probabilistic model [18] to predict a distribution over plausible 3D reconstructions
+conditioned on a single RGB image. During training, we predict noise-dependent pixel-aligned features g (t) (x , I) given a noisy observation
+Θ t
+set x consisting of front/back albedo, depth and normal renders, and an RGB image I. These features condition an SDF f (t) , which is
+t Θ
+dependent on both x and I. f (t) and g (t) are neural networks that define an implicit surface S (t) (x , I). Then, we obtain an estimate of the
+t Θ Θ Θ t
+denoised observation set x(t) by rendering S (t) . We may additionally produce a shaded image C(t) by applying a pixel-wise noise-dependent
+0Θ Θ
+shading network s(t) . During inference, we can sample trajectories over observation sets x ∼ p (x |I) by computing and rendering
+Θ 0:T Θ 0:T
+S (t) (x , I) in each denoising step. Our final 3D samples S ∼ p (S |I) are obtained as the final reconstruction S = S (1) (x , I). To mitigate
+Θ t Θ Θ 1
+the computational cost of rendering an implicit surface in every step, we train a “generator” network h(t) that imitates rendering by directly
+Θ
+mapping g (t) (x , I) to x(t) . During inference, we denoise using h(t) and only explicitly compute the 3D reconstruction in the last step.
+Θ t 0Θ Θ

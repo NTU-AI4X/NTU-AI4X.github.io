@@ -1,0 +1,8 @@
+Figure 2. Overview of our framework at incremental step t. Given an image x, the query function generates a content-aware query
+representation by adaptively computing query weights via a ranking function F and performing weighted aggregation. Subsequently,
+ψ
+prompts are retrieved from both the shared and private pool and injected into the decoder layer. In parallel, the teacher model Φ
+t−1
+generates a set of candidate bounding boxes, where potentially valuable ones are projected into the feature space to compute their similarity
+with class prototypes. This process yields a set of refined, high-quality pseudo-labels to guide the training of the student model Φ .
+t

@@ -1,0 +1,2 @@
+Figure 3. Overall Architecture of SegMAN. (a) Hierarchical SegMAN Encoder. (b) LASS for modeling global contexts and local details
+with linear complexity. (c) The SegMAN Decoder. (d) The MMSCopE module for multi-scale contexts extraction.

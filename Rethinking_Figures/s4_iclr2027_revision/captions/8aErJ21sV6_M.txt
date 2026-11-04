@@ -1,0 +1,2 @@
+Figure 1: Direct segmentation and a fixed tool pipeline follow predetermined paths. DevoSeg routes
+policies per image, compares their masks, and uses completed cases to update its decision state.

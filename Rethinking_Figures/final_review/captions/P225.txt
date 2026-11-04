@@ -1,0 +1,7 @@
+Figure 1. Two typical examples of detection results on the adverse
+weather conditions adaptation experiments with different methods.
+Semi-supervised method UBT [27] lacks awareness of objects in
+the fog. Adversarial based GPA [49] attempts to exploit the objects
+in the fog but gives some wrong predictions, such as the motorcy-
+cle in the first row and the person in the second row. Our methods
+can predict the boxes and categories more accurately.

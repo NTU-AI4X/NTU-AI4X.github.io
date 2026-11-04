@@ -1,0 +1,2 @@
+Figure 3: Direct use of MFMs may yield higher NR-IQA scores than GT, even when the image
+content is largely altered. NR-IQA should not be used as an independent metric for IR performance.

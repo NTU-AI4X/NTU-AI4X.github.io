@@ -1,0 +1,5 @@
+Figure 1: Overview of the BrainIPAgent framework. (1) The Multi-Agent Interpretation Frame-
+work extracts structural patterns via collaborative reasoning to generate sparsity masks and textual
+priors. (2) The Structure-Aware Functional Encoder maps these patterns to attention biases in
+the logit space and projects them via mask propagation. (3) The RL-Guided Alignment Module
+dynamically regulates structural guidance strength Alpha (α) and alignment weight Lambda (λ).

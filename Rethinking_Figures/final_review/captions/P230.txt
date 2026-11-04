@@ -1,0 +1,4 @@
+Figure 2: Overview of the proposed approach. Given a single RGB image, our model detects object centers as key-points in a heatmap Y .
+The network directly predicts shape exemplars z and 9-DoF bounding boxes jointly for all objects in the scene. The collision loss L
+coll
+favors non-intersecting reconstructions. Our method predicts lightweight, realistic and physically plausible reconstructions in a single pass.

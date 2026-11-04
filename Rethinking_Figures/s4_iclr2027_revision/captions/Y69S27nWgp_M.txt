@@ -1,0 +1,5 @@
+Figure 2: Comparison of motion representations. The
+proposed representation preserves the structure of object
+motion, which provides a more structured description than
+standard per-pixel displacement and encouraging intra-
+object homogeneity.

@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_zploFP1iVU_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "cd8b998a22c1dd26fbed316dba71d7ab36c2eb4ed4110fa9ddf416b121862cef",
+  "revised_image_sha256": "a28b0507d1f1bbd3c820d7b1d57e8874b1a3874ed3f107a33b0de52e2ef003e8",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The figure remains the overall CUAWright architecture: model terminal actions, terminal observations, underlying execution capabilities and three pluggable task domains."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Model, Terminal, Execution Environment, Runtime, Tools/Libraries/Applications, Filesystem with nested Workspace, and Web/OS-Desktop/CAD all remain with their source capabilities."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Input/output descriptions, stdout/stderr/files/state, all runtime bullets, CLI/API/package/subagent/plugin labels, workspace contents and each domain example match source text. No measurements or equations are invented."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Model actions point to Terminal and observations return to Model; commands point to Execution Environment and results return to Terminal. The repaired dashed mapping now starts at the outer Execution Environment scope and reaches all three domains, matching the original."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Dark solid arrows consistently show command paths, blue upward arrows show return observations/results, and dashed mapping arrows connect environment capabilities to task domains. New color emphasis does not relabel source components."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The original is a conceptual architecture with no empirical photographs, plots or numerical results. Web, OS/Desktop and CAD examples are the same original categories; no experimental data is generated."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new three-way capability branch and line-style key express source containment and command/result relations, supported by Figure 2 caption and Method formulation on PDF pages 2-4. The domain stem was repaired precisely to avoid claiming Tools alone provides all domains."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All source modules and text are visible in the final complete PNG. The narrow deterministic repair removes only the unsupported inner stem while preserving card borders, outer domain branches and every label."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Conceptual architecture, not an empirical validation. A 20-by-25 pixel strip copied from adjacent background/borders removes the unsupported inner mapping stem; the final image was viewed after this repair.",
+  "caption": "Figure 2: The CUAWright architecture. Terminal serves as the sole interface between the agent\nand the task environment. At each step of task execution process, the agent model receives com-\nmand line output as observation or call a CLI tool to load image into context on demand, and output\ncommands that gets executed. The underlying execution environment contains a runtime, an ex-\npandable set of installed CLI tools and applications, and a file system as the agent\u2019s workspace to\nprogrammatically manage system state and craft new tools.",
+  "body_evidence": "generation/AI_zploFP1iVU_F/source_context.txt: Figure 2 caption, terminal action formulation, persistent workspace and dynamic tool construction.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/AI_zploFP1iVU_F_a1.json"
+  ],
+  "reviewed_at": "2026-10-31T15:45:16.110022+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T15:45:16.110022+00:00",
+  "repair_record": "generation/AI_zploFP1iVU_F/attempt02_record.json"
+}

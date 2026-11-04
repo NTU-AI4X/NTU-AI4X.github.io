@@ -1,0 +1,2 @@
+Figure 3. Architecture of MaSSFormer. The model architecture is shown on the top left corner, including the image encoder, pixel decoder
+and transformer decoder. The detailed structure of the high-resolution pixel decoder is shown on the right of this figure.

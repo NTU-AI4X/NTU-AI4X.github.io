@@ -1,0 +1,5 @@
+Figure 1: POISE overview. The support set is encoded by a frozen DINOv2 encoder into a raw memory
+bank and per-class prototype maps. TPR retrieves an adjacency set of hard negatives, renews each prototype
+by a bounded one-step update, and writes the refined prototype back. UPN proposals are scored by cosine
+classification against the refined prototypes; suspect screening flags nested same-class pairs and passes only
+those to OAD, which separates whole objects from fragments.

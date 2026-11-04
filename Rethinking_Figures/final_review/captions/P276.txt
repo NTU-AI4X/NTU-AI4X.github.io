@@ -1,0 +1,3 @@
+Figure 2. Framework of our proposed Relation-aware Intra-modal Matching (RIM) Network. We first explore Stable Diffusion model and
+SAM to construct image-modal reference features, then we conduct relation-aware matching between region features and reference features
+based on ranking distribution. The matching is established in the all-purpose feature spaces of DINOv2.

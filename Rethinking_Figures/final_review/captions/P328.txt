@@ -1,0 +1,6 @@
+Figure 5. The architecture of the proposed DDDNet. With the input DP image pair, the DepthNet first estimates a coarse inverse depth map
+Dˆ . Then, we combine the coarse and blurred inverse depth map with B , and feed them to the DeblurNet. The deblurred image and
+c {L,R}
+estimated inverse depth map are fed to our DP simulator to synthesize a DP image pair. The synthesized DP images are compared to the
+inputs using our reblur loss (Eq. (11)), to regularise the DDDNet in training. Note that, the ground truth inverse depth maps and sharp
+images are used as supervision signals in training. (Best viewed in colour on screen.)

@@ -1,0 +1,4 @@
+Figure 1. Illustration of Novel Class Discovery in Semantic Seg-
+mentation(NCDSS).Givenalabeledset(person,horse,motorbike
+and car) and a class disjoint unlabeled set (bike and boat), NCDSS
+aims at leveraging all the data to segment novel images.

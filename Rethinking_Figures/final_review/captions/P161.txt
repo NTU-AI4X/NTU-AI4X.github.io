@@ -1,0 +1,7 @@
+Figure 1. When a 3D reconstructor is trained using only a single
+viewperobject,becauseofambiguityinthe3Dshapeofanobject,
+itreconstructsashape whichonly fitsthe observedview andlooks
+incorrect from unobserved viewpoints (upper). By introducing a
+discriminator that learns prior knowledge of correct views, the re-
+constructor is able to generate a shape that is viewed as reasonable
+from any viewpoint (lower).

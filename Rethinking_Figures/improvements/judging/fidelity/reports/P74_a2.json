@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P74",
+  "generation_attempt": 2,
+  "source_image_sha256": "496ee43eeae2b7b9a124ac528b3a164febc4991de122253483b6427064576254",
+  "revised_image_sha256": "ef13a6deaad05d09eb52811baaef73c998ee6d2b0e9c42c79276dd44291ce976",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The three-stage method remains intact: labeled-base training, novel-image saliency and clustering, then entropy-based splitting and self-training using clustering and online pseudo-labels."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both loss boxes, all network modules, the saliency branch, ground-truth mask, clustering outputs, clean/unclean rows, and horse, bottle-holder, bird, and cyclist examples are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Both L_seg formulas and the original stage, Ground Truth, Moving Average, pseudo-label, Entropy Ranking, and Dynamic Reassignment labels remain legible. All six class names remain present."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The base-image and ground-truth paths into training, saliency and segmentation paths into clustering, clean clustering-label arrow into the lower loss, downward moving-average arrow, and upward online-label arrow are preserved. The reassignment connector retains its direction toward the unclean split."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The Person/Horse/Bottle/Bird/Boat/Bike legend retains its pink/magenta/purple/olive/blue/green mapping. Blue clean and yellow unclean borders and paths, green saliency/clustering paths, and dashed split groupings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The photographs, segmentation masks, and entropy heatmaps match the original examples. The cyclist’s blue clustering-mask regions and green online-mask regions remain distinct as in the original; no measurements or outcomes are added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added numbered overview follows the caption’s three steps. The footer’s clean-images→clustering-labels, unclean-images→online-labels, and dynamic-reassignment statements are explicitly supported by caption step 3."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative includes the complete original pipeline and legend plus readable overview and footer text. No scientific content is visibly clipped or corrupted; the supplied pixel proof reports exact preservation of the complete original rectangle."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel proof. The proof covers the original pipeline rectangle; added overview and footer claims were checked separately against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. The overview of Entropy-based Uncertainty Modeling and Self-training framework. 1) The model is first trained on the labeled\nbase set. 2) For the novel images, the saliency maps are generated from a saliency model and high confidence base pixels are ignored. We\nthen apply clustering to the novel salient part to obtain clustering pseudo-labels. 3) We apply entropy ranking and dynamic reassignment\nto split clean and unclean novel images and utilize them to optimize the model with clustering labels and online labels, respectively.",
+  "body_evidence": "judging/fidelity/requests/P74_a2_ef13a6deaad0/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P74_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P74_a2_ef13a6deaad0",
+    "response_sha256": "f18f805d0c4c6bc3c59fda32e26e0323cf42e5e5e980ee3e36b71dd34328ffa5",
+    "request_metadata_sha256": "31a92fdd7b305f2d8135ea84fe83d9879db0865c181ab22f2f002b950759668e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full and read eight source-pair checks with source caption. Entire original pipeline, saliency/clustering masks, entropy splits, moving-average connection and both losses remain original pixels. New three-stage header tracks caption sequence; footer correctly maps clean to clustering labels, unclean to online labels. Original class colors and cyclist mask differences remain intact, with no additional internal edge or pseudo-label alteration.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P74_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T06:09:39.215033+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:09:39.215033+00:00"
+}

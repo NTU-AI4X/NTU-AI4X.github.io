@@ -1,0 +1,9 @@
+Figure 1. ZS3 aims to train a model merely on seen classes and
+generalize it to classes that have not been seen in the training (un-
+seen classes). Existing methods formulate it as a pixel-level zero-
+shot classification problem (b), and use semantic features from a
+language model to transfer the knowledge from seen classes to
+unseen ones. In contrast, as in (c), we decouple ZS3 into two
+sub-tasks: 1) A class-agnostic grouping and 2) A segment-level
+zero-shot classification, which enables us to take full advantage of
+the pre-trained vision-language model.

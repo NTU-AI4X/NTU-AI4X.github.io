@@ -1,0 +1,6 @@
+Figure 1. Generative 3D reconstruction from a single image.
+Left: Input image. Middle: Our method recovers a canonical 3D
+model (intrinsic properties such as shape and texture) along with
+theexactcamerapose(extrinsicproperty)thatgeneratedtheinput.
+Right: Re-rendering the 3D model from the estimated pose faith-
+fully reproduces the input.

@@ -1,0 +1,96 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_xGIdDM5rYW_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "c82fc1687ea994fb456da10a39c5e8928e64c8d86a9db64570e095f86bbd93a4",
+  "revised_image_sha256": "8f4178df16875d02f2c8a6387b0804299ba8d3f0753283d2496530511c46fb77",
+  "reviewer": {
+    "identity": "/root/vision_exemplars with retained independent gpt-6-astra high first-draft evidence",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures show persistent map construction from observations and previous actions, map information entering prompts, and an LLM producing a subgoal and action."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Environment, modules A–C, SpatialAgent boundary, LLM, and '(modified) subgoal + action' are retained, including all original method and context lists."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Both map equations retain their variables and indices. Parentheses around t−1 in the derivative do not change meaning. Added definitions of locations, relations, and agent location agree with Section 2.2."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Observation branches into A and C; previous action enters A; A→B→C→LLM→output→Environment directions are preserved. Environment remains outside the SpatialAgent boundary."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue A, orange B, purple C, and the red-bordered output retain their original groupings. Changed icon styling introduces no evident scientific category change."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Neither figure contains quantitative results or concrete experimental examples. The environment and LLM icons retain their illustrative roles."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Section 2.5 on the supplied source PDF page 5 explicitly says the relevant map portion is rendered as text and the complete map remains in memory; variable definitions are supported by Section 2.2. The added next-decision subgoal sentence lacked equally direct timing evidence and was removed in attempt 2. Direct final inspection confirms all original labels, equations, both observation branches and full environment loop remain."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all original labels, equations, lists, modules, and connectors without visible clipping or unreadable replacement text. Detail-image cropping does not affect the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [
+    {
+      "raw_issues": [
+        "Text rendering of the selected map is unverified: the excerpt says the map is rendered and incorporated into context, but does not specify its rendering modality.",
+        "The added next-decision subgoal feedback claim is unverified: the original shows a current-subgoal input and modified-subgoal output, but no explicit feedback connection or timing statement."
+      ],
+      "resolution": "Map-as-text is verified by additionally read Section 2.5, omitted from the initial request. The next-decision sentence was conservatively removed, not asserted from inference. The original output label and whole control loop are retained."
+    }
+  ],
+  "remaining_limitations": "Pure schematic, no empirical pixel regions to restore. A pale blanking stripe remains in the output box where the unsupported sentence was removed; this cosmetic limitation is retained for actual quality scoring.",
+  "caption": "Figure 1: Overview of SpatialAgent. The MapBuilder maintains a persistent spatial map from\nobservations and actions, which is provided to the LLM for decision making.",
+  "body_evidence": {
+    "path": "generation/AI_xGIdDM5rYW_F/attempt_01/source_decision_context_p5.txt",
+    "sha256": "00810d91de11081f60396104919f129fa483c1e70788a03a7f68bf8ad40f3e80",
+    "section": "2.5 Map-augmented decision context"
+  },
+  "independent_pixel_check": "judging/fidelity/reports/AI_xGIdDM5rYW_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_xGIdDM5rYW_F_a1_2fd6c059a906",
+    "response_sha256": "035a97d1ee1485c3e78c6c5aea19c0073d5b6ce85147f102e1940c8a2ab66fd6",
+    "request_metadata_sha256": "024c6d580f1d0448b4ba6b73e46635e138a14509535c9c4c597feb0befa38b55",
+    "evaluated_image": "attempt_01/composite.png",
+    "final_delta_verification": {
+      "prior_sha256": "2fd6c059a90657a400f78d685fd2b1046267adf5489e62d0bdd21bff590e837d",
+      "current_sha256": "8f4178df16875d02f2c8a6387b0804299ba8d3f0753283d2496530511c46fb77",
+      "changed_bbox": [
+        988,
+        1432,
+        1964,
+        1482
+      ],
+      "outside_bbox_unchanged": true,
+      "meaning": "Only the newly added unsupported sentence is removed; no original scientific object, label, formula or connection changes."
+    },
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed full original and final, read extra source Section 2.5, and independently computed the exact final-versus-draft difference bbox. All original module lists, map formulas, A/B/C connections, observation to A and C, previous action, LLM/output/environment loop remain. Only an unsupported added timing sentence is removed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/AI_xGIdDM5rYW_F_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T07:03:31.128552+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:03:31.128552+00:00"
+}

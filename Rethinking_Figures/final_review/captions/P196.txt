@@ -1,0 +1,5 @@
+Fig. 2: The proposed RefReward-SR framework. (a) MLLM Fine-tuning:
+Fine-tuning via GRPO with format and LR-conditioned rank rewards from RefSR-
+18K for human preference alignment. (b) Global-Local Crop Scoring: Extracting
+representative local crops via RAM and Grounding DINO, then fusing multi-scale
+MLLM scores via area-weighted averaging for comprehensive evaluation.

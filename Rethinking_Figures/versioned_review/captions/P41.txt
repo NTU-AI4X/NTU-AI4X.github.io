@@ -1,0 +1,4 @@
+Figure 1. Visualization of our enhanced ground truth (GT). Our
+enhanced GT not only demonstrates sharper text and superior per-
+ceptualqualitybutalsomaintainssemanticconsistencywithrespect
+to the original GT. Zoom in for better visualization.

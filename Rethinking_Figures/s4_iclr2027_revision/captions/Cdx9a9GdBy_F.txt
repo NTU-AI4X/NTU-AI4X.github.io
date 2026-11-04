@@ -1,0 +1,7 @@
+Figure 2: Overview of the proposed RestoreMore framework. A pretrained restoration model is
+preserved as a frozen capability anchor, and lightweight residual expansion modules are inserted at
+selected feature stages. Inside each expansion module, a degradation descriptor is first constructed
+from spatial and frequency statistics. Top-M capability selection is then performed over accumu-
+lated capability prototypes and routers. The selected routers further retrieve complementary experts
+from the expert-key bank through query–key matching. Frozen historical components and trainable
+current-task components are indicated by snowflake and flame icons, respectively.

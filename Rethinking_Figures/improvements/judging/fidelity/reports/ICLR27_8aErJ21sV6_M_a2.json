@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_8aErJ21sV6_M",
+  "generation_attempt": 2,
+  "source_image_sha256": "33cb2ff59e43dd26a920f5af99f7f6df01176d8998f0fad04cc591551c4ad4c2",
+  "revised_image_sha256": "615a32599f4d48e9d36d7f58e89a89c41b354231c4b4da724b301a06a72dc12d",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The contrast between predetermined segmentation paths and DevoSeg’s per-image policy routing remains intact. Image inputs, predicted masks, candidate comparison, final prediction and the decision-state update cycle are preserved."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three panels remain. Retained components include auxiliary tools and their three assistance stages; Policy Router; stacked Routed Slate with optional Pre/Post stages; Candidate Predictions; Comparator; Final Prediction; Cross-Path Experience; Controller Update; and Verified knowledge."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels remain legible, including all four fixed-path limitations, “Budget-Aware Candidate Execution,” “Shared Context | Reuse | Selective Activation,” “Fit | Validate | Promote,” and “Router | Comparator | Policy | Memory | Budget.” The “vegetation” class and frozen-segmentor snowflake symbols are retained. No equations or numerical results are changed."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The left-to-right inference paths and upward auxiliary-tool assistance arrows remain unchanged. DevoSeg retains routing through candidate generation and comparison, downward collection into Cross-Path Experience, leftward updates through Controller Update to Verified knowledge, and knowledge connections upward to the router and comparator."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue-gray, gold and teal panel categories remain consistent, as do red limitation crosses, blue snowflakes, dashed optional-stage boundaries, stacked alternatives, dotted assistance links and the distinct update-path arrows. Added footer colors match their corresponding panels."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The road-scene examples labeled “vegetation,” sparse baseline masks, stacked candidate masks and final mask are preserved. The supplied pixel proof reports exact preservation of the entire original rectangle at scale 1. No new measurements or example outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added title, “Fixed paths versus image-dependent policies,” follows the original comparison. Footer summaries of a single path, predetermined tool composition, and routing per image, comparing candidates and updating from completed cases are supported by the original figure and supplied caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram plus the added title and footer. No original labels, modules or connectors are visibly clipped or missing; added text is fully visible. Detail-image boundary crops do not represent clipping in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and pixel-proof report. The proof was not independently executed and covers only the original-figure rectangle; the added title and footer were checked visually against the supplied source. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Direct segmentation and a fixed tool pipeline follow predetermined paths. DevoSeg routes\npolicies per image, compares their masks, and uses completed cases to update its decision state.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_8aErJ21sV6_M_a2_615a32599f4d/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_8aErJ21sV6_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_8aErJ21sV6_M_a2_615a32599f4d",
+    "response_sha256": "a8f66b103671b97915c439d3765e0a6e4ef432aa9f677d78a2280974502e4d50",
+    "request_metadata_sha256": "c62e3c7fa8f5e52b06c35cb7c2ea2b57d7b85582271fb214c51f7a1c3340240e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed complete final and caption. Three original direct/fixedtool/DevoSeg panels preserve road evidence/masks, all optional pre/post policies, comparator and final prediction, downstream experience→controller→knowledge and router/comparator update branches. New title and three caption-grounded summaries introduce no new controller behavior.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_8aErJ21sV6_M_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:03:47.581883+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:03:47.581883+00:00"
+}

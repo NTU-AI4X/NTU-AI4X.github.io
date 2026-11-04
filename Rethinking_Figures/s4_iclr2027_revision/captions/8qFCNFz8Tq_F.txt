@@ -1,0 +1,9 @@
+Figure 1: (a) Overall pipeline of our any-depth object detection network, following the standard
+backbone–neck–head design common to modern detectors such as RT-DETR and YOLO, operating
+on multi-scale features. Each stage in both the backbone and neck is divided into an essential path
+(solid blocks) and a skippable refinement path (dashed blocks). At inference time, any combination
+of essential and full paths across stages yields a valid sub-network, enabling a continuous range of
+accuracy–efficiency trade-offs from a single set of weights. (b) A residual-block stage, as used in
+RT-DETR. (c) A CSP-style stage, as used in the YOLO family. In both stage types, the essential and
+full paths are jointly trained via self-distillation to produce aligned feature representations at each
+stage boundary, so that downstream stages can process the output of either path reliably.

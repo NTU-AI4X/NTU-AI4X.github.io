@@ -1,0 +1,4 @@
+Figure 2. Local geometries. (a) For points on a geometry that are
+differentiable, the local shape at these points can be approximated
+by quadratic surfaces. (b) For points that are non-differentiable, we
+can also construct locally approximated surfaces using functions.

@@ -1,0 +1,2 @@
+Figure 1. We present G²VLM, a geometry grounded vision-language model proficient in both spatial 3D reconstruction and spatial
+understanding tasks. For spatial reasoning questions, G²VLM can predict 3D geometry and employ interleaved reasoning for an answer.

@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_dpOjIHiDKY_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "d3ec5e18317f7d1df815f9e238fceb13b18e81ee03e964fcdd85557322ce9937",
+  "revised_image_sha256": "05dcb194366c498bf4c4bcf743e5e79f2a50f831f06652aceaa33463450bc6c4",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures show the same 3D blueberry region with clearly visible, oblique, and fully occluded views, preserving the motivation for region-specific view selection."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels remain: the target region marked by a 3D box and the three viewpoint examples. The pancake stack, blueberries, strawberries, plate, and bowl are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "“Target 3D region,” “Clearly visible,” “Oblique view,” and “Fully occluded” are retained and legible. The added “three blueberries” agrees with the supplied caption. No equations or numerical measurements are present."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The target-to-view sequence is unchanged. The cuboid encloses the blueberry cluster; red rectangles identify its projections in the visible and oblique views. The fully occluded view still hides the target behind the plate. Neither figure contains relationship arrows."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The red target cuboid, dashed hidden edges, red projection rectangles, and green check beside “Clearly visible” preserve their meanings. The added footer separators do not introduce a category or relationship encoding."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same food-scene example and three visibility conditions are preserved. The oblique view retains the small exposed portion of the target, while the occluded view retains the obstructing plate underside. No measurements or new outcomes are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added statements “Same target region: three blueberries” and “Select views for each 3D region: visibility changes across viewpoints” are supported by the caption’s target identity and explicit motivation for region-specific view selection."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all four panels, their complete labels, and both complete footer statements. No missing key content, clipped text, or visible corruption is apparent; cropped material at detail-image boundaries is present in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The supplied pixel-proof report covers its listed rectangles; its file and hash were not independently verified. Added footer content was assessed separately against the source text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Different views provide different evidence for the same 3D region. The 3D box marks\nthree blueberries, which are clearly visible, seen at an oblique angle, or fully occluded across the\nthree views, motivating region-specific view selection.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_dpOjIHiDKY_M_a1_05dcb194366c/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_dpOjIHiDKY_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_dpOjIHiDKY_M_a1_05dcb194366c",
+    "response_sha256": "6a6f70330fefeac67e9f9d1978ce1139f72bab69b8fa807224c8c63d93eb7d9c",
+    "request_metadata_sha256": "fb774b18730ef9e0a3256f90d48138cf3940e22b92ea3efc0fc5d87d5731c6b2",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the final four-view motivation figure, read caption and every independent check. Original three-blueberry target cuboid, clear and oblique projections, occluded underside, red boxes and green check are preserved with complete labels. Added footer identifies the same target and explains region-specific selection because visibility varies by view, directly following caption. No viewpoint geometry or occluded content was reconstructed.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:30:30.025654+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:30:30.025654+00:00"
+}

@@ -1,0 +1,3 @@
+Figure 1: Overview of DUDA-Bench. The benchmark connects a hierarchical task taxonomy and
+multimodal urban case dataset with an interactive agent environment, and formulates urban diagno-
+sis as a four-stage analytical workflow.

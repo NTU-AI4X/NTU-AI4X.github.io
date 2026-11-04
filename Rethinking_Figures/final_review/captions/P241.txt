@@ -1,0 +1,4 @@
+Figure 8. Failure cases. Wide clothing is under-represented in
+our dataset and this can be addressed with more diverse training.
+Complex poses can lead to missing body parts. The back-side
+sometimes mismatches the front (subject is wearing a hood).

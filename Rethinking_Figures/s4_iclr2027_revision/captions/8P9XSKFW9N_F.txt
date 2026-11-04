@@ -1,0 +1,4 @@
+Figure 2: Overview of DeCo. Independent backbones extract multimodal, multiscale features, which
+are projected into a shared density space to estimate modality reliability and construct density con-
+sensus. The resulting consensus guides multiscale feature fusion for detection and is simultaneously
+decoded into a density map for density supervision.

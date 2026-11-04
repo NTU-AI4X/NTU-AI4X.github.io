@@ -1,0 +1,4 @@
+Figure 2. An overview of the proposed RSCN. For every batch, source-domain images with labeled foreground objects and target-domain
+images without foreground objects are fed to the detector. The background prototypes are aligned with the BPA objective in Eq. 5. RSH in
+Eq. 6 keeps the relative geometric relationship for the source and target background prototypes to the shared foreground prototype anchors.
+A frozen reference detector is utilized to maintain the source-domain structure in order to avoid the feature collapse with SSP in Eq. 7.

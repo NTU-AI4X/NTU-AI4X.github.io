@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_v44KR7QgKE_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "6bb8d9cb9661833998e8e0af5379571999ba969b4ff9a738ab6c77215ba3e9ae",
+  "revised_image_sha256": "4dabe43a0d85d9bc3182721b2f6a2bf997e0e825890f95a01213f2a8c2241f9a",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures preserve S³-PnP training and inference: task-specific observations feed ADMM state collection and score learning; inference combines corrections before the analytical prior update."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both training panels, D_s and D_g networks, projection inset, inference correction diagram, ADMM cycles, and observation/output examples are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The C¹, C², Cᴷ state labels, training losses, P_g = I − P_s, score definitions, prior-update equations, and inference data/dual-update equations remain intact. Added P_s = 0, P_g = I, β_s = 0 matches the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Orange and purple observation arrows, downward Next Stage transition, ADMM cycle directions, and state-to-network arrows are preserved. Inference still branches from the same Cᵏ into both corrections and combines them with Cᵏ before T_k."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Teal and blue consistently identify D_s and D_g and their projections. Purple denotes full-space learning, orange denotes structure-guided learning, and snowflakes denote frozen networks, consistent with the supplied caption."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The colored image stacks, noisy scene examples, brain images, training-state thumbnails, and reconstructed outputs are retained without visible substitutions. The supplied pixel report also states exact preservation of the complete original rectangle."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The four added explanatory cards restate the supplied caption: full-space parameter settings, training/freezing D_s before collecting D_g states, combining corrections at a common ADMM input, and the snowflake meaning."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image includes the complete original diagram and all four added cards. No omitted labels, clipped equations, missing edges, or visibly corrupted content are apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel-preservation metadata. The proof file was not independently accessed; no source body text was supplied. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Training and inference of S3-PnP. Purple arrows indicate full-space learning with P = 0,\ns\nP = I, and β = 0. Orange arrows indicate structure-guided learning: D is trained and frozen, and\ng s s\nits correction is enabled to collect a new state training set for D . At inference, active corrections are\ng\nevaluated at the same ADMM input and combined before a single analytical prior update. Snowflakes\ndenote frozen networks.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_v44KR7QgKE_F_a2_4dabe43a0d85/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_v44KR7QgKE_F_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_v44KR7QgKE_F_a2_4dabe43a0d85",
+    "response_sha256": "aba79379ffb9ba4f54badc0c937f75e220169bafb9af2959711ed6569fd4cbdd",
+    "request_metadata_sha256": "80e3a19c1d221422decbce930289b82b83ac8ffd06ca71926e70a88df0ce2631",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full training/inference diagram and caption. Original D_s/D_g stages, ADMM cycles, state examples, projection inset, losses and inference corrections remain. New purple full-space settings P_s=0/P_g=I/beta_s=0, orange training/freeze sequence, same-input combined correction and snowflake=frozen key are directly caption-supported. No altered scientific image or extra prior update; full original rectangle independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_v44KR7QgKE_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:52:22.431350+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:52:22.431350+00:00"
+}

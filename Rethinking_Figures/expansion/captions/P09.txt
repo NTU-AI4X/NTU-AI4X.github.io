@@ -1,0 +1,9 @@
+Figure 1. Events corresponding to a blurry LDR image contain
+spatial difference (High Dynamic Range) and temporal difference
+(High Temporal Resolution) information of the scene radiance,
+making it an ideal data for enhancing HDR sharp 3D scene recon-
+struction. See-NeRF models the physical imaging process with
+proposed RGB and event CRF models to bridge the sensor-physics
+discrepancy, leveraging events to infer scene dynamics and achiev-
+ing sharper and better HDR novel view synthesis results compared
+to the physical unaligned method EvHDR-NeRF [5].

@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_FqbDu6m3j2_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "096f51264b4bfde3924080804781aa2e04eaf48a4073d301f7cd9d04abcd3c5c",
+  "revised_image_sha256": "19205afebee9f23b02a93953820aefaeb3f885db88da9302dec062c32d8cc523",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The full benchmark construction and four-stage urban-diagnosis workflow remain the organizing message."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Atomic/workflow taxonomy, imagery/raster/vector data groups, agentic Thought-Action-Observation environment and all four analytical stages remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Five atomic task names, LST/NTL/Landcover/Built/POP, Road Network/POI/AOI, S1-S4 stage names and all analysis/check/refine/diagnosis labels retain their meanings."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Query plus data flows through framing and analysis plan, environment/profile evidence, overlay and spatial/qualitative evidence, then check/refine/diagnosis. Dashed revision returns from refine-claim to reasoning agent; tool/code paths feed observations."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green construction and orange workflow groups remain distinct, blue planning/checking nodes preserve identities, and original geographic evidence colors are unchanged."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All six satellite/street/LST/landcover/spatial-support/qualitative-support image tiles independently match original native1x RGB pixels and recorded hashes."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Rearranged labels and more explicit row alignment restate original task taxonomy and workflow described on source pages2-3; no new task, data modality or performance claim is added."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All construction components, four workflow stages, six restored evidence tiles and revision connector remain complete and visible."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Exact original source regions are preserved at native or integer nearest scale; enlarged small labels retain original pixel detail. Fidelity audit does not independently validate scientific conclusions.",
+  "caption": "Figure 1: Overview of DUDA-Bench. The benchmark connects a hierarchical task taxonomy and\nmultimodal urban case dataset with an interactive agent environment, and formulates urban diagno-\nsis as a four-stage analytical workflow.",
+  "body_evidence": "generation/AI_FqbDu6m3j2_F/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_FqbDu6m3j2_F_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/AI_FqbDu6m3j2_F_a1.json"
+  ],
+  "reviewed_at": "2026-10-31T16:10:47.822744+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T16:10:47.822744+00:00"
+}

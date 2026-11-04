@@ -1,0 +1,3 @@
+Figure3. IllustrationofcamerasensornoiseofCase2. Fromlefttoright:
+(a) clean image; (b) simulated noisy image with camera sensor noise; (c)
+absoluteresidual(ornoise)between(a)and(b).

@@ -1,0 +1,1 @@
+Figure 1. Bottom edge for “elephant” and right edge for “surfboard” are ambiguous.

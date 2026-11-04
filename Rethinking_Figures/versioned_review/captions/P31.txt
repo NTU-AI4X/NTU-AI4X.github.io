@@ -1,0 +1,4 @@
+Fig.1: A counterexample from robustness verification of a YOLOv3 model on a runway
+detection task. Left: original image; right: perturbed image. Green boxes: ground truth,
+blue box: original model prediction (IoU = 0.89), red box: prediction on the perturbed
+image (IoU = 0.11).

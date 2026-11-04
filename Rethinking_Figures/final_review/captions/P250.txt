@@ -1,0 +1,4 @@
+Figure 2. Diagram of our proposed method. Offline Labeller Training: we add a detector head to a frozen DINOv2 encoder and train
+it with source images only. Offline Label Generation: we combine and freeze the labeller backbone and detector, and generate target
+pseudo-labels. Online Student Training: We train a student network using source ground truth boxes and target pseudo-labels, and align
+patch features to a frozen DINOv2 encoder. During inference, the alignment encoder and projection MLP are not used.

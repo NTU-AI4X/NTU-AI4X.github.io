@@ -1,0 +1,7 @@
+Figure 2: Overview of HIVE. A frozen visual encoder processes a global view and multiple overlap-
+ping local views. HVR refines local features through local-to-global-to-local interaction, producing
+holistic local representations {FH }R . IVE iteratively evolves an image-specific vocabulary set
+Lr r=1
+V∗ under visual guidance. Finally, the local predictions derived from {ZV∗}R are refined and
+Lr r=1
+fused to produce the final segmentation Y˜︁ V∗.

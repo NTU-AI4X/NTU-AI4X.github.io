@@ -1,0 +1,2 @@
+Figure 4: (a) The overall framework of DFC-IR. (b) FCMS for adaptive DFC tokenization and
+spectral token extraction. (c) MMD for token-guided feature modulation and aggregation.

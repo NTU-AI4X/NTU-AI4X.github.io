@@ -1,0 +1,7 @@
+Figure 1. Performance of Class-Aware Teacher (CAT). AT [29]
+(top left), with Inter-Class Loss, ICL, (top-right), with Class Rela-
+tion Augmentation, CRA, (bottom-left), and CAT (bottom-right).
+CAT is able to address misclassification and false positives, blue
+and red boxes, respectively, in minority classes such as ’train’. The
+combination of ICL and CRA further boosts performance by re-
+ducing the number of false positives shown as pink boxes.

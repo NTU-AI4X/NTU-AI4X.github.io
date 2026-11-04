@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_dpOjIHiDKY_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "2c8c3f008c3532cc7f48bb3429cc7fbdc0b8e7ef87b0d49010c60faa58affa2e",
+  "revised_image_sha256": "8dacc5fd10a2fe7930de76de6ed1e5081080f775390cccca04d6cb513f752bb8",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both stages retain their meaning: input views drive joint reconstruction and sparse-structure generation in an anchor-guided space, followed by structure-guided view conditioning to produce the final 3D asset."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both main panels, three input views, shared-space illustration, VGGT, DiT, Dual Fusion Blocks, noise input, point maps, sparse structure, structure-conditioned VGGT, correspondence illustration, view-selected DiT, and final asset are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original titles and module labels are preserved, including 'Anchor view,' 'Structure guidance,' '3D-to-image correspondence,' and 'Per-voxel view conditioning.' No original equation or numerical annotation is visibly omitted or changed."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input branching to VGGT and DiT, bidirectional fusion arrows, noise-to-DiT input, branch outputs, sparse-structure and image inputs to structure-conditioned VGGT, and the rightward path to the final asset remain intact. The three colored image–voxel correspondences retain their endpoints."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue and lavender stage groupings, orange anchor emphasis, and green/purple/orange correspondence curves and matching view borders remain consistent. The purple correspondence retains its dashed segment."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same piano-and-bench example appears throughout the input views, point maps, voxel structure, correspondence illustration, and final asset. No new measurements, examples, or outcomes are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The three added bottom summaries are supported by the supplied text: bidirectional geometric feature exchange in shared space, pixel-to-voxel correspondence using point maps and sparse structure, and selected-view image features guiding detailed shape generation."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains both complete original panels and all three added summary boxes without visible clipping or corrupted replacement text. Cropping in the supplied detail images does not affect the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and text only. The supplied pixel-proof report covers the complete-original rectangle; it does not verify the added summaries, which were checked against the source excerpt. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3: Overview of UniForge3D. Left: The reconstruction and generation branches interact\nbidirectionally to predict multi-view point maps and a complete sparse structure in a shared anchor-\nguided space. Right: Structure-conditioned point maps establish voxel-to-pixel correspondences,\nenabling the model to select informative views and use their image features to guide detailed shape\ngeneration.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_dpOjIHiDKY_F_a1_8dacc5fd10a2/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_dpOjIHiDKY_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_dpOjIHiDKY_F_a1_8dacc5fd10a2",
+    "response_sha256": "4836351d41a563629f7d0aed50d396aceb385f24b0dd561ca33d668056157dec",
+    "request_metadata_sha256": "4a9710bb587fba4f44f728236f50a02546428c125cc8fe90f70eb756625a7cf0",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final and caption, checked eight source-pair evidence items. All original piano/bench views, anchor coordinates, bidirectional VGGT/DiT fusion, pointmaps/sparse structure, three colored correspondences and voxel-selected DiT output remain. Added shared-space/geometry-exchange/pixel-to-voxel/selected-view summaries are source-supported; no invented meaning for dashed curves.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:55:40.526629+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:55:40.526629+00:00"
+}

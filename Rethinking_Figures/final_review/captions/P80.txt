@@ -1,0 +1,5 @@
+Fig.3: Training pipeline of TIR-Agent. The process begins with SFT Data Gen-
+eration, followed by Exploration-Driven Perturbation to enhance data diversity
+via shuffled task sequences and tool substitutions. Following SFT, the agent undergoes
+RL with a Multi-Dimensional Adaptive Reward mechanism, which dynamically
+balances metric weights based on their EMA trends to optimize the restoration policy.

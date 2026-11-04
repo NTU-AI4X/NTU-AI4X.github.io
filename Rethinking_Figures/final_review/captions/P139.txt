@@ -1,0 +1,5 @@
+Figure 1: 1a. Sparse RCNN [37] introduces false positives
+in crowded scenes. 1b. Our approach can remove those
+false positives and ensure each object can be detected only
+once. Green boxes indicate true positives while red ones
+represent false positives.

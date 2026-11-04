@@ -1,0 +1,4 @@
+Figure 1. Comparison of Knowledge Distillation (KD) and our
+proposed generalizable KD (GKD). Conventional KD preserves
+accuracy within the same domain but overlooks generalization to
+unseen domains.

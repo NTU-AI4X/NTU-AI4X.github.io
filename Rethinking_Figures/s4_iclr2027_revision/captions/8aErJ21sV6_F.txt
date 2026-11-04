@@ -1,0 +1,3 @@
+Figure 2: DevoSeg’s decision process. The Router chooses policies before execution; the Compara-
+tor selects among their masks and the independent Direct mask afterward. Completed outcomes
+provide evidence for subsequent knowledge updates.

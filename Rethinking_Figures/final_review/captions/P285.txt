@@ -1,0 +1,5 @@
+Figure 3. Qualitative comparison against deterministic monocular 3D human reconstruction methods [5, 10] that predict geometry,
+surface albedo and shaded colour. PHORHUM [5] (retrained on our dataset) outputs good front predictions, but exhibits over-smooth, flat
+geometry and blurry colours on the back. S3F [10] yields more detailed geometry, but colours are still often blurry. Moreover, both these
+methods occasionally paste the front colour predictions onto the back incorrectly (see row 3). Our method outputs multiple diverse samples,
+with a greater level of geometric detail and colour sharpness in uncertain regions, that are consistent with the input image after shading.

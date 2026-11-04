@@ -1,0 +1,4 @@
+Figure 1. We propose CrossSDF, a novel approach for reconstructing a 3D signed-distance field from 2D cross-sections. The input is a
+set of 2D cross-sections that sample an unobserved ground-truth geometric object by planar intersection (denoted as black lines overlayed
+on the ground truth Alveolis structure on the left). CrossSDF (middle) accurately reconstructs thin structures without breakages, over-
+smoothing, or cross-sectional artifacts observed in competing methods (right).

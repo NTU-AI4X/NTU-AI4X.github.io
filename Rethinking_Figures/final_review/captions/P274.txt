@@ -1,0 +1,3 @@
+Figure 2. Illustration of the process for finetuning diffusion model and training the grounding head: (a) stable diffusion model is fine-tuned
+on the detection dataset on base categories. (b) The grounding head is trained on synthetic images, with supervised learning on base
+categories and self-training on novel categories.

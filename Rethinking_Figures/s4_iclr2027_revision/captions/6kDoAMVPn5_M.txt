@@ -1,0 +1,5 @@
+Figure 1: (a) A brief illustration of the current Grounding-DINO-based works. (b) We find that
+compared with the ground-truth bounding box (red), for target domains, the top-ranked candidate
+boxes (yellow) are less likely to tightly bound the objects, where the better candidate boxes (cyan)
+may be ranked outside the Top-900 quota. Unlike current work, we identify the selected candidate
+boxes as another bottleneck for the CD-FSOD task, which we aim to address in this paper.

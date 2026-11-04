@@ -1,0 +1,3 @@
+Figure 1: Risks across successive Skill updates. An edit can repair the current task while breaking
+existing capabilities, with errors persisting into later tasks. Checking recovery and retention after
+each change informs whether to adopt the new version.

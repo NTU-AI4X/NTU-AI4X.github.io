@@ -1,0 +1,74 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_67ApUu5dSo_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "da917d45dd2f3d9d937fd0c171e14de92431d61029ad6cb49ac5ffce633b5010",
+  "revised_image_sha256": "d8a022dfbe80a6255241959c7e72bec8f9343b04904129f7f4fb557988b665e6",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The framework remains the ordered Edge, Node and Region Expert procedure. The added support/aggregation/correction/consistency descriptions restate Figure 2 caption and Sections 3.2–3.4 on PDF pages 4–5.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three complete original rows are retained: dog input, CLIP/VFM graph matching, text encoder, attention, heatmaps and scores; neighbor selection and blending; spectral groups, gating, region score and segmentation result.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All mathematical symbols, alpha blending equation, a_r and tau_R conditions, class names and score bars are original source pixels. No new interpretation of the highlighted ground bar or agreement variable is introduced.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Traced both inter-row dependencies: Edge score continues via the right margin into both original Node destinations; Node score continues into both original Region destinations. Original arrowheads and the branching junctions are intact. No connection reverses or ends on the added header text.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original frozen snowflakes, graph colors, heatmap evidence, score colors, red/blue/purple grouping and agreement check/cross encodings are unchanged. Added blue/orange/green header bands mark the three existing experts.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed three native-scale source strips and all destination pixel hashes; all original and restored pixel arrays match exactly. The strips jointly cover the entire source image.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added expert-role sentences follow the supplied caption and relevant methods paragraphs; no new output, module, learned variable or performance claim is added.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed the complete original and derivative. All source content and restored dependency paths are visible. Wide right-margin routing and repeated titles remain layout limitations rather than scientific changes.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Independent scientific-fidelity review only. No derivative quality scores were read. Exact original scientific content is retained; layout quality is left to independent scoring.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-11-01T02:05:50.636393+00:00",
+  "hybrid_verification": {
+    "regions": 3,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/ICLR27_67ApUu5dSo_F/provenance.json",
+    "source_pdf_pages": [
+      4,
+      5
+    ]
+  }
+}

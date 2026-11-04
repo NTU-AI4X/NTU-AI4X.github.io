@@ -1,0 +1,4 @@
+Figure 1: Comparison of existing restoration strategies and RestoreMore. Existing methods are
+limited to a fixed degradation set and typically require joint retraining with historical and new data
+when new degradations arrive. In contrast, RestoreMore continually expands a pretrained restorer
+by adding new experts using only newly arriving task data.

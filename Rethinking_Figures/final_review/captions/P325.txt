@@ -1,0 +1,4 @@
+Figure 1: Visualization of the domain-gap between the gen-
+erated LR images by different methods and LR images in
+the AIM [40] dataset. More details can be found in our
+main text.

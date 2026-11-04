@@ -1,0 +1,4 @@
+Figure 1: (a) Different assessment judgments may rely on different evidence for the same generated
+image. (b) Left: Existing MLLM-based evaluators derive different assessment scores from a holistic
+multimodal representation; Right: EAGLE grounds different judgments in cross-modal or visual
+evidence anchors and uses shared and anchor-specific queries to acquire the corresponding evidence.

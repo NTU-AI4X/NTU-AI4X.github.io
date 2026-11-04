@@ -1,0 +1,3 @@
+Figure 2. Approach Overview. We first pre-train a reconstruction model using multi-view renderings of synthetic data. We then self-train
+category-specific models on diverse image collections in-the-wild with only foreground mask annotations. We finally distill the learned
+models from prior training stages into a unified reconstruction model.

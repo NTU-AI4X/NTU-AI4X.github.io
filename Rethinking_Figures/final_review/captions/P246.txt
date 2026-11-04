@@ -1,0 +1,4 @@
+Figure 4. The detailed architecture of our method. Initially, we sample instances from the old data according to their classes. Subsequently,
+during the class combination, we identify the potential old classes through the old model. In the instance selection, we select the instances
+of potential classes from the instance pool. After that, we calculate the position in new image to replay the instance and fuse them with the
+new image to create a fused image. Finally, the fused image is trained in an enhanced way.

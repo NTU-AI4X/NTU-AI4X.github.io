@@ -1,0 +1,4 @@
+Figure 1: Overall simulation-grounded VLM framework. Top: 2D simulation and procedural 3D
+proxies provide depth, scribble, and prompt controls for synthetic aerial-view episodes with simulator-
+derived labels. Bottom: a memory-augmented multi-agent VLM reporter combines query frames,
+retrieved labeled references, and disagreement adjudication for wildfire monitoring and reporting.

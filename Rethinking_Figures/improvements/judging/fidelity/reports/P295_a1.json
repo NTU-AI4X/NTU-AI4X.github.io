@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P295",
+  "generation_attempt": 1,
+  "source_image_sha256": "72209f1c21bd036f2a617703c446643742da58646ac63b02e8aee7455f8eca84",
+  "revised_image_sha256": "5cf95bf4ba1e73d6edabe1bfbb0808cf75116b638b66355f319eb4cc6c4f738f",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains classical GFSS with limited novel annotations versus synthetic support-guided augmentation for joint base/novel learning."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both original paradigms retain all five dataset image/label groups, three classical stages and Syn4Seg/synthetic/joint-learning/evaluation modules."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Base Set, Support Set, Synthetic Set and all learning/registration/evaluation labels remain with original a/b identities."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Base Set feeds both Syn4Seg and Base-and-Novel Class Learning in the lower path; Support Set feeds Syn4Seg; Syn4Seg→Synthetic Set→joint-learning→evaluation remains. Top base→registration→evaluation and support→registration dependencies are preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original photographs and masks remain unchanged; orange Syn4Seg remains the highlighted mechanism and all other stages retain neutral styling."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Five original photo-and-label dataset blocks were independently checked at 2x nearest-neighbour pixels and hashes, without generating replacement examples."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Limited manual annotations constrain diversity and support-guided images/pseudo labels augment base data are stated in original caption and introduction."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original data stacks, both outgoing Base Set dependencies and all labels are visible; restored connecting path is continuous and does not enter the Support Set."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Fig. 1. Pipelines of classical GFSS works and our Syn4Seg framework.\n(a) Classical GFSS methods follow three stages: base class learning, novel\nclass registration, and evaluation, where novel classes rely on limited manual\nannotations, resulting in low diversity and constrained performance. (b) Our\nSyn4Seg framework synthesizes diverse, realistic novel class images and\npseudo labels guided by support annotations. These synthesized samples,\ntogether with base data, are used to train a semantic segmentation model,\nenabling robust recognition of both base and novel classes during evaluation.",
+  "body_evidence": "../papers/2603.27206v1.pdf; source caption and relevant introduction/method page inspected directly",
+  "independent_pixel_check": "judging/fidelity/reports/P295_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T03:44:14.605441+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T03:44:14.605441+00:00"
+}

@@ -1,0 +1,12 @@
+Figure 1. Comparative analysis of the VFM and the VLM fea-
+tures. VFM: Visualization of PCA-computed features from DI-
+NOv2 (the first three components of PCA, computed on the image
+features, serve as color channels), displaying fine-grained details
+but lacking text alignment. VLM: Image-text similarity map from
+EVA02-CLIPusingthequery‘car’,demonstratinggoodalignment
+with text but insufficient localization of queried objects. MFuser:
+OurproposedfusionframeworkintegratesVFMandVLM,result-
+ing in unified features that exhibit both precise locality and robust
+text alignment. Quantitative results on synthetic-to-real DGSS
+benchmarks further validate our approach, with MFuser consis-
+tently achieving the highest mIoU scores across all tasks.

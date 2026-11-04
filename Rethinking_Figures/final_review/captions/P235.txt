@@ -1,0 +1,6 @@
+Figure 1. Unlike conventional point cloud completion that aims
+to recover individual points (middle, non-planar points shown in
+red), parametric completion recovers primitive parameters along
+with corresponding inlier points. PaCo recovers planar structures
+(right, each color denoting a planar primitive), directly enabling
+high-quality polygonal surface reconstruction.

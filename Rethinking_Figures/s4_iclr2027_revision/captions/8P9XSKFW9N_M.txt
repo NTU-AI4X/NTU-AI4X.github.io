@@ -1,0 +1,5 @@
+Figure 1: Motivation for density consensus learning. OPT and SAR observations provide heteroge-
+neous and spatially varying evidence for the same underlying ship distribution. We establish their
+agreement in a shared density space to preserve mutually supported target responses while suppress-
+ing modality-specific interference. Different Gaussian bandwidths in (d) illustrate the dependence
+of conventional pixel-wise density targets on predefined kernel shapes.

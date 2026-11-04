@@ -1,0 +1,6 @@
+Figure 2. Our PEARL framework with align-then-propagate. Given an image I and a label set Y , a frozen ViT vision encoder yields
+patch tokens. Procrustes alignment is inserted in the last self-attention block: for each head (J heads), queries and keys are weighted-
+centered and the keys are orthogonally rotated toward the query subspace, producing geometry-corrected patch features. A frozen text
+encoder maps Y to unit-norm prototypes T . Patch-text cosine similarity gives initial logits Z(cid:101) . Text-aware Laplacian propagation then
+refines Z(cid:101) on a compact grid using a class graph G induced by T and confidence weights, and the refined scores are upsampled to full
+resolution F . The final segmentation S is obtained by selecting, at each pixel, the class with the highest score.

@@ -1,0 +1,1 @@
+Figure 2: The relationship between Expansion pixels and the empirical FNR across different images.

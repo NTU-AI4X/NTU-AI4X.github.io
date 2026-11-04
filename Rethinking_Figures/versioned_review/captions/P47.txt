@@ -1,0 +1,8 @@
+Figure 1. (a) In previous vision transformers [10], only one class
+token (red square) is used to aggregate information from patch to-
+kens (blue square). The learned patch attentions corresponding
+to the class token generate a class-agnostic localization map. (b)
+In contrast, the proposed MCTformer uses multiple class tokens
+to learn interactions between class tokens and patch tokens. The
+learned class-to-patch attentions of different class tokens can pro-
+duce class-specific object localization maps.

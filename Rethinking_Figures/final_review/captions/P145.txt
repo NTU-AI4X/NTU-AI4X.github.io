@@ -1,0 +1,8 @@
+Figure 1. Visualization of the two kinds of statistical characteris-
+tics that we used to guide the denoising process. (a) The spatial
+deviation characteristic obtained by calculating the pixel standard
+deviation (SD) within 3 × 3 windows. It reflects the fluctuation
+conditions of different spatial positions in the image. (b) The fre-
+quencybandcharacteristicobtainedbytheFastFourierTransform
+(FFT). Signal and noise are distributed at different frequency band
+positions and have different patterns.

@@ -1,0 +1,13 @@
+Fig. 2: GATOR architecture. (A) Pose-aware generative reconstruction. Following TRELLIS.2 (Xiang
+et al., 2026), GATOR uses conditional flows for sparse structure, geometry, and appearance. RGB images and
+depth-derived pointmaps retain scene context, while masks identify the target. Tokens from all three modalities
+share a patch grid with common 2D position and Plücker-ray encodings. A local mixer exchanges information
+at each patch within a view (Secs. 3.2 and 3.3). Cross-view attention and SigLIP2 object-name conditioning
+guide structure generation. At its active coordinates, projected DINOv3 and NAF-upsampled features from
+target-masked images are averaged across valid views and injected into every geometry and appearance de-
+noising block. Global image tokens and T5Gemma2-encoded captions supply cross-attention. Shape latents
+condition PBR material generation (Sec. 3.4). ❄ denotes frozen encoders. (B) Agentic refinement. Initialized
+with the complete, scene-aligned asset, an agent uses input images and structural priors to complete parts, re-
+pair topology, and refine texture coordinates and materials. Its edit-render-review loop compares original and
+candidate renders under matched cameras and lighting to retain or revert local edits. Within the time budget, it
+selects the best inspected asset while preserving reliable regions and scene-relative placement (Sec. 3.5).

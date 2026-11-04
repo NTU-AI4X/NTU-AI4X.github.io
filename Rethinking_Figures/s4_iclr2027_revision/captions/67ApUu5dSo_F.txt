@@ -1,0 +1,5 @@
+Figure 2: Overview of SHAPE. (a) The Edge Expert uses relation-level VFM support to guide
+CLIP feature aggregation. (b) The Node Expert uses a patch-specific VFM neighborhood to refine
+each score. (c) The Region Expert uses an agreement-gated regional support to reduce residual
+fragmentation. Together, the three experts organize VFM structure into complementary supports for
+feature aggregation, patch-specific correction, and regional consistency.

@@ -1,0 +1,4 @@
+Figure2. Illustrationofthearchitectureandtwo-stagetrainingframeworkofUARE.TwotransformerexpertsareusedtoprocessIQA
+and restoration, respectively. Training stages include (1) a progressive, easy-to-hard schedule that moves from single-type to high-order
+degradations. In this stage, only the restoration expert is trained to make UARE handle multiple degradations. (2) Unified fine-tuning of
+the entire model to strengthen the IQA ability and align the IQA signals with restoration objectives through interleaved data.

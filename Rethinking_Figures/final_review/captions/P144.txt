@@ -1,0 +1,4 @@
+Figure 1. Illustration of our proposed training framework for con-
+tinual semantic segmentation to avoid catastrophic forgetting. We
+design two mechanisms in our method, representation compensa-
+tion (RC) module and pooled cube distillation (PCD).

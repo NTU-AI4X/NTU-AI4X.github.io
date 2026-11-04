@@ -1,0 +1,3 @@
+Figure 1. 3D reconstruction under extreme illumination variation. We propose a method for 3D reconstruction from a set of images
+captured under strongly varying illumination. Our method recovers high-fidelity appearance details including specular highlights that prior
+state-of-the-artapproachescannotrecover(topbaseline: NeRF-Casting[47]withappearanceembeddings,bottombaseline: NeROIC[25]).

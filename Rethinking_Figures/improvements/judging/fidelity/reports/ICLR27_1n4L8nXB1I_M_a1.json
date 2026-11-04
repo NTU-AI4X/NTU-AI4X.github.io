@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_1n4L8nXB1I_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "e4bf27d2076a64e429e7d8aec06e24747b95dd093f07611d4387f0dcd393db1f",
+  "revised_image_sha256": "b1755320a955ca6b428c0f1a4a59cfeb34a53e57e2d4586c41bb501288cc5293",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The comparison of FoundIR and Qwen-Image-Edit across LQ input, official model, existing-data training, and existing data + GGT-100K remains intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All 16 image panels remain: four conditions for each of the rain, hazy street, weathered object, and building examples. Both model group labels are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All four column headings and the FoundIR, Qwen-Image-Edit, and GGT-100K names are accurate and legible. No source equations or numerical results are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Column order and row alignment preserve each input-to-output comparison. FoundIR still groups the upper two rows; Qwen-Image-Edit groups the lower two. No arrows or relationships are lost."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Gray identifies LQ input; pink and red crosses identify the two baseline conditions; pale green and a green check identify existing data + GGT-100K, consistently with the original."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same scenes and condition-specific differences remain, including residual rain and haze, the official model's darkened object background, and softened building details after existing-data training. The supplied pixel proof reports preservation of the complete original rectangle."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added sidebar follows the supplied caption: residual real-rain/haze degradation, possible hallucinations or color shifts, weakened detail after existing-data training, and GGT-100K detail with scene fidelity. 'Sharpness alone is insufficient' faithfully summarizes the stated sharpness–fidelity concern."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original panels, headings, group labels, and symbols, plus the complete readable sidebar. No material clipping or visible corruption is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment is based on the supplied images, caption, excerpt, and reported pixel proof. The proof file was not independently inspected; its reported coverage concerns the original rectangle, while the added sidebar was checked against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Qualitative comparison of FoundIR (Li et al., 2025) and Qwen-Image-Edit (Wu et al., 2025)\ntrained/finetuned on different datasets. FoundIR shows limited generalization to real rain and haze,\neven after finetuned on existing restoration datasets. Qwen-Image-Edit produces sharper details with\nits strong generative prior but may introduce hallucinations or color shifts, while finetuning on existing\ndatasets weakens its detail generation ability. GGT-100K significantly improves the generalization\ncapability of them to real-world degradations, enhancing visual details while preserving scene fidelity.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_1n4L8nXB1I_M_a1_b1755320a955/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_1n4L8nXB1I_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_1n4L8nXB1I_M_a1_b1755320a955",
+    "response_sha256": "79e2118d649c7171f65168d88baa350aa76498d94d9871bd93d19000c268568d",
+    "request_metadata_sha256": "84d01831bbd151b66078d8351ddf82028ca92f7e7df5538bee4c72ce3c6835b9",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final and caption. All sixteen original images, condition headings, FoundIR/Qwen group labels and original crosses/check remain. Added sidebar distinguishes residual real-rain/haze errors from generative sharpness/fidelity issues exactly as caption. No new evaluation evidence or synthetic results introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:20:59.917702+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:20:59.917702+00:00"
+}

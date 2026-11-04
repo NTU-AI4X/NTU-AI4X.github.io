@@ -1,0 +1,6 @@
+Figure 2. The framework of GDPO, which consists of two core stages: (a) advantage calculation and (b) policy optimization. Firstly, we
+employ a pre-trained one-step Real-ISR model as the reference model to generate a group of diverse outputs by injecting different random
+noises. Subsequently, we compute the advantage A for each sample by evaluating its reward with our designed attribute-aware reward
+functions and converting these rewards into group-relative advantages. In the policy optimization stage, we feed these samples along with
+noises into both the policy model and the reference ISR model, and update the parameters of the policy ISR model by minimizing the
+proposed GDPO loss, steering it to favor generating high-reward samples.

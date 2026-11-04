@@ -1,0 +1,6 @@
+Figure 1: Schematic comparison of conditioning paradigms in generative Real-ISR. Prior methods
+typically inject low-quality observations and semantic prompts through latent-level conditioning,
+auxiliary visual-control branches, or joint token-level multimodal conditioning. Panel (a) illustrates an
+additive implementation of latent-level conditioning. GRASP organizes local visual evidence, global
+image context, and agent-refined semantic prompts as distinct condition streams with complementary
+functions for the SR objective.

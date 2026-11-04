@@ -1,0 +1,1 @@
+Figure 4: Overall organization of the proposed SRWarp model. More detailed architectures are described in our supplementary material. Black regions outside the warped image I_SR represent void pixels that are ignored.

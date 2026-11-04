@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_WiNCsgDP25_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "735dd25bd3348a3fb7e0861641e49e4e5179bcf2a85cf16a5fa524d86a1364d9",
+  "revised_image_sha256": "e7de46c7d83c6902de36c42fcceb12d55d19409dd7f9845e7ff6243dfa11925d",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The complete pipeline remains: LoGeR chunk processing, dense Gaussian prediction, AllTracker-guided consolidation, accumulation into global Gaussians, and rendering supervision."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three original sections remain, including chunks 1, 2 and K, memory states, both within-chunk branches, consolidation, global Gaussians, and CTX/NVS–GT examples. The additional rendering panel duplicates retained content."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Module names, Chunk 1/2/K, M₁/M₂/M_K, CTX, NVS, GT, and both image-loss expressions with arguments C_r and Q are preserved, including in the enlargement."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Memory progression remains left-to-right; Chunk 2 feeds the within-chunk stage. Dense Gaussians and multi-frame tracks retain their Consolidate and Guide arrows into consolidation. Accumulate leads to global Gaussians, followed by post processing, rendering, and the two supervised outputs."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original dashed groupings, branch colors, track colors, snowflakes and flames remain consistent. Added legends correctly identify frozen and trainable modules, as explicitly stated in the caption."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same scene frames, Gaussian reconstructions, colored tracks and rendering/GT comparisons are retained. Supplied pixel checks confirm preservation of the full source block and the enlarged rendering crop."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added AllTracker guidance headline follows the caption. The icon legends also follow the caption, and the enlarged-view heading accurately describes duplicated rendering content. No new method component or result is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram, enlargement, headline and both legends without visible clipping or corrupted labels. Cropping in the supplied detail views does not affect the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel checks; no source body text was supplied. Pixel checks establish preservation only within their listed rectangles; added content and relationships were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3: Overview of LonGaussian. LoGeR processes overlapping chunks, and AllTracker cor-\nrespondences guide Gaussian consolidation before cross-chunk filtering and far-field modeling.\nSnowflakes and flames denote frozen and trainable modules, respectively.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_WiNCsgDP25_F_a1_e7de46c7d83c/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_WiNCsgDP25_F_a1_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_WiNCsgDP25_F_a1_e7de46c7d83c",
+    "response_sha256": "2977f8a8b395fef45c89695e1e615d0127c57e8688b0a66d5b09485ce62c7bce",
+    "request_metadata_sha256": "80c6be54a0508f158790387531cb40b365e820a5e184e255f10a3668f55fb806",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed LonGaussian final overview and enlarged rendering-supervision panel, read caption and independent checks. Chunk/memory progression, dense Gaussian and AllTracker branches, consolidation, accumulation and CTX/NVS loss paths are retained. Added headline and snowflake/flame key directly match caption. Detail is explicitly enlargement of original pixels; whole overview and detail independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T09:52:22.468092+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:52:22.468092+00:00"
+}

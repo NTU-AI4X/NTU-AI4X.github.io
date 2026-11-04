@@ -1,0 +1,5 @@
+Figure 2. Overview of the proposed PanoVGGT framework. Given one or multiple panoramic images, PanoVGGT extracts spherical
+patch tokens using a ViT backbone, augments them via S O(3) geometric augmentation, and encodes them with shared and branch-adapted
+positional embeddings. A multi-branch attention aggregator jointly reasons about local geometry, global structure, and camera motion.
+The model outputs dense depth maps, camera poses (under a randomly selected global anchor), and local/global point maps for final 3D
+reconstruction.

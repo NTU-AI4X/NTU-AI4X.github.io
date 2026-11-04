@@ -1,0 +1,5 @@
+Figure 3: The pipeline of our method. Multi-view image streams are processed in a block-wise
+manner. Each image block is first encoded with intrinsic priors and then processed by a spatio-
+temporal decoder. By maintaining a streamed KV memory across consecutive blocks, the model
+continuously extracts consistent geometry features for multi-task predictions, including ego-centric
+motion and dense metric 3D reconstruction.

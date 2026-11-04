@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P290",
+  "generation_attempt": 1,
+  "source_image_sha256": "6e2f430fd9c68bab3f458428a84f9aff1f65c55aeac6ffb5456feb5b6e1fa796",
+  "revised_image_sha256": "2d7ab6051d93067c1c084e1e736b771f937897fe6eeb612537049d5b67eb9656",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves the one-shot exemplar → descriptive language → language-conditioned detection pipeline and its training-free target-domain output."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both original panels remain, including the support image, SAM, segmentation mask, domain-aware prompt, DAM, descriptive phrases, grounding detector, candidate boxes, crops, category scores, BLIP and final detection."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original module names, four stage labels, '1-shot' designation and descriptive phrases are retained. The original distinction between 'vertical elongated' in the sentence and 'vertical elongate' in the prompt list is preserved. No original equations or numerical results are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The mask and domain-aware instruction still feed DAM; prompts and target-domain data feed the grounding detector. Candidate areas lead through crops to the category-score/BLIP grouping and final detection. The downward connection between panels remains."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Phrase colors, purple dashed prompt boxes, teal arrows, frozen-model snowflakes, purple/yellow/blue candidate boxes and red final detection box remain consistent with the original."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same grayscale defect examples, white segmentation silhouette, three candidate boxes and single final red box are retained. No new measurements, examples or detection outcomes are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The three added explanatory cards are supported: frozen weights and exemplar-derived phrases by the framework description; averaging category-associated phrase scores by Section 3.2.3; optional BLIP calibration for small or ambiguous detections using crops and category descriptions by the caption and Section 3.2.4."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains both complete original panels and all three added cards with legible text. No key content is clipped; partial content at detail-image boundaries is visible in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The supplied pixel proof reports preservation of the original figure rectangle; it does not validate the added cards, which were checked against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of LAB-Det. Top: exemplar-to-language projection. A single annotated exemplar is segmented by SAM and described\nby DAM under a domain-aware prompt, yielding natural-language phrases (e.g., “rough texture”). Bottom: these phrases condition a\nfrozen detector (e.g., Grounding DINO) to generate candidate boxes and phrase scores. Category scores are obtained by averaging phrase\nscores, and an optional BLIP-based calibration refines small or ambiguous detections. The entire pipeline is training-free and interpretable.",
+  "body_evidence": "judging/fidelity/requests/P290_a1_2d7ab6051d93/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P290_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P290_a1_2d7ab6051d93",
+    "response_sha256": "1b913cb7476604aae11dc213754b77a45d4d869d62bf6185b545aa1a47b0a27a",
+    "request_metadata_sha256": "50ec0749c3a1e560db634fcdbfa714c4bcd1f4fdb3765ac2b656f79550807fcd",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final LAB-Det framework, read caption and source Sections 3.2.3-3.2.4, and reviewed independent pair observations. Both complete original panels retain grayscale defect evidence, SAM mask, domain instruction, descriptive phrase colors, frozen detector, three candidate boxes and final red box. Added cards accurately explain frozen models, averaging category-associated phrase scores and optional BLIP calibration with a crop and category description. No new detection outcome or category score is asserted.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:15:21.435802+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:15:21.435802+00:00"
+}

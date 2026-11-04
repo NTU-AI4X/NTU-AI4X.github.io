@@ -1,0 +1,1 @@
+Figure 2. Visual comparison (×4) of one-step diffusion SR models. We use OSEDiff as a 32-bit full-precision (FP) reference and provide 6-bit quantized version with different methods.

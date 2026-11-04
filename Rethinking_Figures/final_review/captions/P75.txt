@@ -1,0 +1,2 @@
+Figure 1. Noise regulates the diversity of generated samples. Different noise inputs yield both high-quality samples (e.g., noise1) and
+low-quality ones (e.g., noise2 and noise3). After preference learning, the model produces more visually pleasing results.

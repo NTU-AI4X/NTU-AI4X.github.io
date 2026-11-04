@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P163",
+  "generation_attempt": 1,
+  "source_image_sha256": "23b7cf7f968b6386499e18f6ca27cdeb074394c806b6cea4e3526f3d59300160",
+  "revised_image_sha256": "0ca230be70d14544079a57a07fa5048968b363a9ee36cd3750612b4c12821330",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves the input-depth/reference comparison and the global ONet versus hierarchical HPN reconstruction comparison. Its generalization framing agrees with the supplied caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels remain: Input depth, Ground truth, Global prior (ONet), and Hierarchical prior (HPN, ours), rearranged into one row."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All four original labels are retained accurately and legibly. The original contains no equations or numerical values requiring preservation."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Each label remains associated with its corresponding rendering. Added brackets group input/reference and the two prior results without introducing directional or causal arrows."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Grayscale depth and surface renderings retain their meanings. Blue and orange brackets distinguish explicitly named groups without changing method identities or implying quantitative values."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same chair example remains throughout, including the collapsed bowl-like ONet reconstruction and the HPN reconstruction retaining two chair backs and branching bases. No measurements or additional examples appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added title about recombining partial shapes for generalization and the statement about recombining partial shapes observed during training are supported by the supplied original caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image shows all four renderings, their complete labels, the title, group headings, and explanatory sentence without visible clipping or corruption. Cropping in the detail views does not affect the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel checks. Pixel proof covers only the four listed rectangles; added headings, brackets, and explanatory text were assessed visually and against the caption. No source body excerpt was provided. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. We employ a hierarchical shape prior to enable recom-\nbination of partial shapes observed during training. This signif-\nicantly improves generalization compared to conventional global\nshape priors.",
+  "body_evidence": "judging/fidelity/requests/P163_a1_0ca230be70d1/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P163_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P163_a1_0ca230be70d1",
+    "response_sha256": "49c5c08a802554edb9d2dce82b807e915e00b084aa88e6007d5df29c0a464022",
+    "request_metadata_sha256": "4135e774c2cebb05289afd4eeff6fd6d539ca9d9aaff4405a1e39bc2f2232db3",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full image and checked source-pair evidence and caption. Input depth, GT, collapsed ONet reconstruction and hierarchical HPN two-chair structure remain distinct with accurate labels. Braces only group input/reference versus prior comparison. Added recombination/generalization claim is explicitly in caption; no extra ground truth or quantitative claims.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T05:12:52.526524+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:12:52.526524+00:00"
+}

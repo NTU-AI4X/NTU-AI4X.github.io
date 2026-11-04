@@ -1,0 +1,3 @@
+Figure 3: Overview of InstaPoint. IDC initializes instance-wise assignments to SAM or watershed
+using class-calibrated point spacing. ISA then makes a one-time selection of the source with the
+lower GWD-based size loss relative to the detector’s current prediction.

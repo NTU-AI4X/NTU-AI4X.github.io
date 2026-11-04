@@ -1,0 +1,3 @@
+Figure 4. Architecture of our DPSeg network. We begin by generating visual prompts based on text prompt templates, which are then
+combined with text prompts to create the dual-prompt cost volume. Subsequently, we incorporate multi-scale image features and corre-
+sponding visual prompt embeddings into the cost volume-guided decoder (CVGD) in a progressive manner.

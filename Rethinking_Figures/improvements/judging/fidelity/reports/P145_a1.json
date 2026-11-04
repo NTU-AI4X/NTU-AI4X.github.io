@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P145",
+  "generation_attempt": 1,
+  "source_image_sha256": "3cad15db92ae5d6fe1b7415a77af4e59aff82c1810f397d78a02ed5ad1c68ce7",
+  "revised_image_sha256": "51c5a75b68275ec9212734e5c9d3a510e5770c620d96a827695f0533ca5707f3",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M illustration retains two statistical characteristics used to guide denoising."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both complete spatial-deviation and frequency-band examples remain with their microscopy images, maps, colorbars and insets."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original 3x3 SD/FFT, Signal/Noise labels and all colorbar values remain exact source pixels; SD expansion matches caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The original microscopy-to-SD-map and microscopy-to-FFT-map arrows are unchanged and kept as separate characteristics."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original red ROI boxes, SD inset correspondence and frequency Signal/Noise boxes remain with unmodified color ranges."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Both whole source panels independently match exact2x nearest-neighbor original pixels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Spatial fluctuation and different signal/noise frequency patterns are Fig1 caption; added language does not assert any new atomic interpretation."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original scientific content, axis/colorbar values and labels are visible, with source resolution preserved rather than enhanced."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 1. Visualization of the two kinds of statistical characteris-\ntics that we used to guide the denoising process. (a) The spatial\ndeviation characteristic obtained by calculating the pixel standard\ndeviation (SD) within 3 × 3 windows. It reflects the fluctuation\nconditions of different spatial positions in the image. (b) The fre-\nquencybandcharacteristicobtainedbytheFastFourierTransform\n(FFT). Signal and noise are distributed at different frequency band\npositions and have different patterns.",
+  "body_evidence": "../papers/2603.18834_conference.pdf; source caption and relevant introduction/method page inspected directly",
+  "independent_pixel_check": "judging/fidelity/reports/P145_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T02:09:57.010757+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T02:09:57.010757+00:00"
+}

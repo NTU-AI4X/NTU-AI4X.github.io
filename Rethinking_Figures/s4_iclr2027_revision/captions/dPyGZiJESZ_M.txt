@@ -1,0 +1,1 @@
+Figure 1: Bypass the video decoder and directly align latent spaces to generate 3D outputs.

@@ -1,0 +1,8 @@
+Figure 1. Comparison between our proposed AdcSR and typ-
+ical one-step diffusion-based Real-ISR methods. (a) The state-
+of-the-art one-step diffusion network OSEDiff [96] employs com-
+plete SD [80] models for Real-ISR, suffering from high computa-
+tional costs. (b) We distill OSEDiff (ADC-teacher) into a smaller
+diffusion-GAN hybrid model, AdcSR (ADC-student), under the
+proposed ADC framework, achieving significantly improved effi-
+ciency while maintaining competitive recovery performance.

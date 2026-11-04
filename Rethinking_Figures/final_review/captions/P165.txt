@@ -1,0 +1,7 @@
+Figure1. Comparisonbetweendepth-based3Dreconstruction
+methods and the proposed method. In depth-based methods,
+key-frame depths are estimated separately from each key frame,
+and later fused into a TSDF volume. In the proposed method, the
+TSDF volume is directly predicted with all the key frames in a
+local window. This design leads to a much more coherent recon-
+struction and real-time speed.

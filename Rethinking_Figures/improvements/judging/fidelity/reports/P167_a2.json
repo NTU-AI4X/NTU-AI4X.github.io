@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P167",
+  "generation_attempt": 2,
+  "source_image_sha256": "52af5013e949f06fa7d810d2a6b02389825fb00d1663a7ebee37605f65084721",
+  "revised_image_sha256": "12c0062d9d7a34a6dc57c0cdcb0c37e67090f03e83f139d836d8e11c5c26ded4",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The comparison of voxel, point, and mesh discretizations with a continuous classifier decision boundary remains intact, including each representation’s bench example."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four schematics and four corresponding benches are retained in the original order, labeled (a) Voxel, (b) Point, (c) Mesh, and (d) Ours."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The original panel labels and f_θ(p) = τ are preserved and legible. Added headings match the caption; the definitions of occupancy prediction, query point p, and threshold τ agree with the supplied text."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Each schematic remains paired with its corresponding bench. The mesh’s connected vertex sequence and the rising decision boundary separating the two symbol classes are preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Gray/white voxel cells, purple points, black mesh vertices and segments, and red squares versus blue circles retain their meanings. The added legend identifies two occupancy classes without assigning an unsupported occupied/unoccupied color mapping."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The 6×6 voxel pattern, eight purple points, seven connected mesh vertices, and ten red squares with seven blue circles are retained. All four bench examples preserve their representation-specific features; no measurements or outcomes are added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new headings and explanatory footer are supported by the caption and excerpt: binary occupancy prediction, a threshold-defined surface, and mesh extraction at arbitrary resolution."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all panels, benches, labels, headings, and footer text without visible clipping or missing content. Cropping in the supplied detail views does not affect the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The reported pixel proof supports only its eight listed schematic and bench rectangles; its file and hash were not independently verified. Added text and overall relationships were assessed visually against the supplied source. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Overview: Existing 3D representations discretize\nthe output space differently: (a) spatially in voxel represen-\ntations, (b) in terms of predicted points, and (c) in terms of\nvertices for mesh representations. In contrast, (d) we pro-\npose to consider the continuous decision boundary of a clas-\nsifier f (e.g., a deep neural network) as a 3D surface which\nθ\nallows to extract 3D meshes at any resolution.",
+  "body_evidence": "judging/fidelity/requests/P167_a2_12c0062d9d7a/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P167_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P167_a2_12c0062d9d7a",
+    "response_sha256": "3567e3d14a4d777587d95d40502439848811daea6a3438feab95af865832eb3b",
+    "request_metadata_sha256": "795896871ffd40e4d1111829c7b464480edc08076023557e0406a61a48c41a8e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed all four schematic/bench pairs and source Sections 3.1/3.3. Original grid, point positions, mesh edges, decision boundary and f_theta(p)=tau are unchanged. New occupancy legend names two classes without guessing which color is inside/outside; p and tau definitions are source-supported.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P167_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T05:08:16.035863+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:08:16.035863+00:00"
+}

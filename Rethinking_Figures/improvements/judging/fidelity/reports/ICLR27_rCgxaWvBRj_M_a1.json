@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_rCgxaWvBRj_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "657bbe6a6d379e5d399055f5507afa33a4609eb6bc3e9431209f680acf7f584a",
+  "revised_image_sha256": "9ce6d651de8294f1fff7ecec19604865a55a01f1c1eaf6fda179185ee00d5bcf",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures contrast reactive trial-and-error and fixed-toolbox constraints with PreActIR’s prediction before execution, verification, and replanning."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three panels remain, including execution-cost icons, fixed and additional tool sets, predictive world model, consequence prediction, selected action, verifier, rollback/commit branches, and offline toolbox expansion."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Method and module names, explanatory statements, and tool labels are retained. Prediction values remain dehaze 0.92, derain 0.68, and denoise 0.18; dehaze remains the selected action."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The image-to-tool-to-rejection-to-retry-to-acceptance sequence is preserved. Toolbox selection and exclusion retain their directions. Prediction leads to execution and verification; verification branches to commit or rollback/re-plan. Replanning and expanded-toolbox re-evaluation feed back toward prediction."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green checks and red crosses retain acceptance/commit versus rejection/exclusion meanings. Prediction scores retain green, black, and red coding. Toolbox boundaries and prediction, execution, and verifier groupings preserve their meanings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same schematic image inputs and tool examples remain: dehaze, derain, denoise, sr, and sharpen. No new measurements or restoration outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "No additional scientific claims or method components are visible. Verification, rollback, replanning, and offline tool-space expansion are already represented in the original."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all panel titles, labels, connectors, and three explanatory banners without visible clipping or unreadable replacement text. Detail crops are consistent with the full images."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. No source body text or verified pixel rectangles were supplied; the empty region list provides no pixel-level verification. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Motivation of PreActIR. Existing agentic restoration is largely reactive: tool effects are\nobserved only after execution, while decisions remain restricted to the available action space. Pre-\nActIR predicts action consequences before execution.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_rCgxaWvBRj_M_a1_9ce6d651de82/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_rCgxaWvBRj_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_rCgxaWvBRj_M_a1_9ce6d651de82",
+    "response_sha256": "12af6e791bc407940b987c2a9b07bddae84d957cf24af0daf991266038c480a8",
+    "request_metadata_sha256": "8b88b9634df9eeda39c259bc628cc678ab37e3b9614c46c8a9e22d598e4e83ac",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed final conceptual figure and independent original/derivative response: trial/retry sequence, fixed-toolbox exclusion, 0.92/0.68/0.18 action predictions, verifier commit/rollback and offline expansion feedback retain their roles. No new verifier-to-failure-case edge is introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T04:45:38.582325+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:45:38.582325+00:00"
+}

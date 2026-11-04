@@ -1,0 +1,2 @@
+Figure 1: Session-level risks arise from composed action flows across agents or endpoints. The
+unsafe condition may appear only after otherwise ordinary actions are composed within a session.

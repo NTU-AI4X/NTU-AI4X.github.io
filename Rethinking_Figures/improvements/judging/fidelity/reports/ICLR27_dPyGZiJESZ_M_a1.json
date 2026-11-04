@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_dPyGZiJESZ_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "5f0670bd0d1c3efc1e69e7720e72f3d2d1d352cb72958cf741cb26115a590cd4",
+  "revised_image_sha256": "d88e3c8bed127ef299ae5c5194f957994d07287ccd4cfaf68e21ebc358bbba40",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The comparison of joint latent-space generation, latent 3D decoding, and direct latent alignment remains intact. Panel (c) preserves the encoder → representation-specific bridges → VGGT aggregator pathway that bypasses RGB decoding and DINO re-encoding."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three panels and their modules remain: Compression, Adapter, DiT, 3D Head, optional DiT, 3D/4D Decoder, both encoder alternatives, RGB decoders, DINO, bridges, and VGGT Aggregator."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The derivative retains C=16/1024, C=3, C=1024, the encoder-specific C=16 and C=1024 labels, T / 4, OR, Optional, panel titles, and method attributions. No altered numerical values or missing mathematical labels are visible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Panel (a) retains DINO → Compression → DiT and DiT → Adapter → 3D Head. Panel (b) retains the encoder and optional DiT branches into the 3D/4D decoder. Panel (c) preserves both encoder alternatives, the dashed RGB Decoder → DINO → aggregator route, and the solid bridge → aggregator route."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Orange, purple, and teal pathways retain their original roles. Snowflakes and flames remain associated with the same frozen and trainable modules. Dashed bypassed pathways and the 'Bypassed pathway' legend remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "No empirical plots, example reconstructions, or measurements were added or changed. WAN 2.1 and VRAE remain the encoder alternatives; added badges 1 and 2 organize explanations rather than report results."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added statements about aligning generative latents with reconstruction representations, using a matching bridge for WAN2.1 or VRAE, keeping VGGT frozen, and bypassing RGB decoding and DINO re-encoding are supported by the supplied figure and text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative shows the complete original diagram and all added explanatory text without visible clipping or unreadable replacement labels. The detail-image crops do not indicate omissions in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The reported pixel proof covers the original-diagram rectangle only; the added explanatory content was checked separately against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Bypass the video decoder and directly align latent spaces to generate 3D outputs.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_dPyGZiJESZ_M_a1_d88e3c8bed12/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_dPyGZiJESZ_M_a1_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_dPyGZiJESZ_M_a1_d88e3c8bed12",
+    "response_sha256": "8f479786ee77a202aed5e99e617d32648ef7f4f4bcd9ee21d4a0e01d32bdada0",
+    "request_metadata_sha256": "1a12606a3f82435ed4fc71c550294977ccd10af7fe73bd5addc6c6676f4ee2ad",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed all three retained architecture panels and final notes; read source_context abstract and background: representation-specific WAN2.1/VRAE bridges align generative features to geometric features, keeping encoder/geometry model frozen and bypassing intermediate RGB. These explicitly support both new numbered notes and footer. Original C values, T/4, optional DiT, OR, snowflake/flame meanings and both source routes remain exact. No empirical claims added.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T10:10:45.223802+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T10:10:45.223802+00:00"
+}

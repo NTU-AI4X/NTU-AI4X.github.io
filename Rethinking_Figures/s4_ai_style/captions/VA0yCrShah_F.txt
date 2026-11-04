@@ -1,0 +1,9 @@
+Figure 2: Pipeline of Sprout. Three questions about one video are answered in order, building one
+memory. Each row shows the rounds of one question: tool calls (circles) and their results (boxes).
+Video frames stay in the context for one round only; text results are kept. Q1 watches the first two
+chunks, remembers them as coarse nodes, and revisits n at a higher frame rate to add finer child
+2
+nodes. Q2 reuses the memory: search returns a node and Q1’s answer, and a short revisit adds one
+more detail, without watching new video. Q3 finds that the memory does not cover what it asks, so
+it watches two more chunks. The last two chunks are never watched. The memory tree (bottom) is
+drawn on the same time axis as the video; node colors show which question added each node.

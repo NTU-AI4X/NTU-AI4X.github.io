@@ -1,0 +1,12 @@
+Figure 1. Challenge and conceptual comparison of training-free 1-
+shot domain generalization for object detection. (a) In specialized
+domains (e.g., underwater or industrial), data can be very scarce
+(e.g., only one labeled exemplar per class) and object boundaries
+are ambiguous, making general-domain detectors fail under severe
+domain gaps. (b) Training-based approaches rely on fine-tuning
+with gradient updates, which incur extra cost, overfit under 1-shot
+supervision, and remain unstable in high-IB domains. In contrast,
+LAB-Det leverages language as a domain-invariant bridge: sup-
+port exemplars are re-expressed as descriptive text and injected
+into frozen vision–language models, enabling training-free, inter-
+pretable, and robust target-domain detection.

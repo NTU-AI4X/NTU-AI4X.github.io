@@ -1,0 +1,3 @@
+Figure 1. To determine the best view for 3D reconstruction, previous methods only chose from hand-crafted action space or based on
+object-centric capturing, lacking the ability to generalize to unforeseen scenes (Left). With our end-to-end trained, generalized free-space
+policy, it can generalize to unseen objects, enabling the captured drone to image from any viewpoint (Right).

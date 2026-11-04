@@ -1,0 +1,3 @@
+Fig. 2. The overview of the proposed PWOOD framework. Orientation Learning and Scale Learning modules enables the Orientation-and-Scale-aware Student
+to learn both scale and orientation information from weakly annotated data, as well as Class-Agnostic Pseudo-Label Filtering mechanism enhances pseudo-label
+quality by leveraging dynamic thresholds.

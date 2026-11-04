@@ -1,0 +1,8 @@
+Figure 1. The overall framework of SED. Our model improves the
+scale equivalence, which is critical for object detectors, by regu-
+larizing the consistency between different-sized images. Further-
+more, the inherent False Negative sample noise is alleviated by
+self-distillation. A re-weighting strategy is adopted to solve the
+severe class imbalance problem. The bird in the left example is a
+False Negative sample when the threshold is set to 0.7. The right
+example shows the scale inconsistency of different-sized images.

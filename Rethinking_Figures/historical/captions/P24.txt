@@ -1,0 +1,11 @@
+Figure 2. Method overview. We first apply a relighting diffusion
+modelthatconvertsN imagesI ,...,I withknowncameraposes
+1 N
+π , ..., π , captured under extremely different illuminations, to a
+1 N
+set of images with the same poses, but rendered under the illumi-
+nation of the reference image I (highlighted in orange). We then
+1
+optimize a neural radiance field to obtain a consistent 3D repre-
+sentation with a novel per-image shading embedding, which can
+be used to render new views of the scene from unobserved poses.

@@ -1,0 +1,70 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P175",
+  "generation_attempt": 1,
+  "source_image_sha256": "b1e6087373bdfa7edec1c19c0d82a236176058c1b0e878a0083d4e7649dd21cc",
+  "revised_image_sha256": "fce5c259ca0ae011ec9aa52c4e62f6a52b0ccb15cd8c7093591d6c818a801db0",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves the comparison of one input image with standard CNN and rotation-equivariant convolution feature maps. The random-initialization annotation matches the source caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three panels remain, including the speaker image, both feature maps, three red local-region boxes, and three enlarged insets."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The labels '(a) Input image', '(b) CNN output', and '(c) Equ. conv. output' are retained and legible. The added convolution descriptions match the caption. No original equations or numerical values are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The input–CNN–equivariant panel order and region-to-inset correspondence remain intact. The added brace groups only the two network outputs under the supported random-initialization statement."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red outlines consistently identify local regions and their enlarged insets. The multicolored feature maps retain their original patterns; no new color legend or category meaning is introduced."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same speaker example and output feature structures are visible. The supplied pixel checks report source equality after scaling for all three image rectangles. No measurements or additional examples are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "'Before training' is consistent with the caption's randomly initialized networks. The architecture-level image-prior statement is supported by the abstract and body. The red-box explanation describes the existing visual correspondence."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all panels, labels, insets, and added explanatory text without visible clipping or corruption. Cropping in the supplied detail views does not affect the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, source text, and reported pixel checks. Pixel proof covers only the three listed image rectangles; surrounding labels and annotations were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Illustration of the output feature map of a typical image\nobtained by standard CNN and our used rotation equivariant con-\nvolution neural network. Both networks are initialized randomly.",
+  "body_evidence": "judging/fidelity/requests/P175_a1_fce5c259ca0a/prompt.txt",
+  "additional_reviewer_source": null,
+  "independent_pixel_check": "judging/fidelity/reports/P175_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P175_a1_fce5c259ca0a",
+    "response_sha256": "906f3063551cc9aa3c6cec3fd425b7a477ca8df91459acd640f6047ecf1021a9",
+    "request_metadata_sha256": "924a827e969199924b3f1fb40626ee9c13d58931c904a9d90fbc12177a1aeafc",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full image and read independent source-pair checks plus caption. Input speaker and both original feature maps retain three red-region/inset correspondences, labels and color patterns. The output brace states random initialization, explicitly in source caption. Added architecture-level prior explanation has source abstract/body support, not an invented interpretation of feature-map colors. All three scientific rectangles independently replay.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T05:30:28.953469+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:30:28.953469+00:00"
+}

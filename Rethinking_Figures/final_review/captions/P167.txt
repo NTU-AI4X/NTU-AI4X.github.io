@@ -1,0 +1,8 @@
+Figure 1: Overview: Existing 3D representations discretize
+the output space differently: (a) spatially in voxel represen-
+tations, (b) in terms of predicted points, and (c) in terms of
+vertices for mesh representations. In contrast, (d) we pro-
+pose to consider the continuous decision boundary of a clas-
+sifier f (e.g., a deep neural network) as a 3D surface which
+θ
+allows to extract 3D meshes at any resolution.

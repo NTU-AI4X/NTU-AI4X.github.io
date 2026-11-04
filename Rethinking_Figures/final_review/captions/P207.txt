@@ -1,0 +1,11 @@
+Figure 1. We show how the proposed concept IRP differs from
+the traditional image metric visual quality. Given a sequence of
+images captured under varying exposures in dynamic scenes (first
+row), both IQA metric NIQE [23] and human observers favorite
+either (a) or (b) as relatively good shots, but they do not neces-
+sarily lead to better restored results (second row). As a compari-
+son, a perceptually poor image (c) leads to the best restored image
+quality. The result indicates the necessity of developing the IRP
+metric which predicts if the restored image quality will be good
+even before it is processed. All images are processed by the same
+restoration model MPR [40] to ensure fairness.

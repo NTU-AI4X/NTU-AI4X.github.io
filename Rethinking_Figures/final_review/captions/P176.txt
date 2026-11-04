@@ -1,0 +1,7 @@
+Figure3. IllustrationsofourproposedadaptivenetworkAdaReNet. Specifically, I ∈ RH×W×C representsanoisyimage, whereH andW
+represent the spatial dimensions, and C denotes the channel dimension. The Vanilla Module and EQ Module each produce their respective
+preliminary denoising results, denoted as f and f . The Fusion Module Mask(·) automatically decides which areas of the image to use
+c e
+moreEQModulewouldgainmorebenefit. AfteradaptivefusionbyMask(·)andcorrectionbytheSelf-correctingModuleS (·), thefinal
+c
+denoised image I¯is output.

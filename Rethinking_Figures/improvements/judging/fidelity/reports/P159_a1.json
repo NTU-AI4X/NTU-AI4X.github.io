@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P159",
+  "generation_attempt": 1,
+  "source_image_sha256": "d7c3219b4e3ec2529186c281d95332d47b436af840f6fd8a9515d4696df4abbb",
+  "revised_image_sha256": "a70aa9a4d1aa5f7c37b907ad37e08d65d706c7bea958a6c8c23129f5fb741a00",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M contrast still separates foreground detection coverage from bounding-box localization."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Six complete source examples remain in the same Vanilla/UMT/TIA columns and two illustrative rows."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original method citations, detection class labels and confidence values remain; PASCAL VOC to Clipart scope is retained."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Each comparison remains within its original row; no new processing relation or ground-truth box is introduced."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "All original green boxes and red confidence labels retain their exact positions and colors."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Six complete source photographs and annotations independently match exact2x nearest-neighbor source pixels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The two row explanations and headline are bounded paraphrases of Fig1 caption: UMT/TIA find more foreground while differing in box quality."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All six panels, method names, confidences and explanation lines are visible; source image/annotation detail is preserved without enhancement."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 1. Exampled images from PASCAL VOC [10] → Cli-\npart [18]. Compared with vanilla detector [28], both UMT [8] and\nTIA identify more foreground objects (Row 1), yet deliver lower\nas well as higher quality bounding boxes (Row 2), respectively.",
+  "body_evidence": "../papers/2203.15345_conference.pdf; source caption and relevant introduction/method page inspected directly",
+  "independent_pixel_check": "judging/fidelity/reports/P159_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T00:23:05.333108+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T00:23:05.333108+00:00"
+}

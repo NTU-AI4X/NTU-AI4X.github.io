@@ -1,0 +1,7 @@
+Figure 2: SAM challenges. Left: As an instance-based model, SAM performs poorly when segmenting a
+class comprising multiple instances, see the class “person”. Splitting the class mask into individual instances
+addresses this challenge. Middle: Confidence-based sampling (Kweon & Yoon, 2024) yields a suboptimal
+mask; in contrast, our proposed sampling strategy achieves comprehensive mask coverage, resulting in im-
+proved segmentation. Right: SAM score-based mask selection may not give the best desired segmentation
+(see mask in red box). Our mask selection strategy using intersection with the coarse mask determines the
+desired mask granularity (see mask in green box).

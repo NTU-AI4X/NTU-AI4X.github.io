@@ -1,0 +1,2 @@
+Figure 2: Agentic scene construction, abstracted from a GPT-6-astra trajectory: workspace,
+action space, Blender code structure, and construction workflow.

@@ -1,0 +1,4 @@
+Figure 3. This diagram illustrates our multimodal super-resolution pipeline. Starting with a low-resolution (LR) image, we extract modalities
+like depth and semantic segmentation maps. These modalities are encoded into tokens and transformed into multimodal latent tokens (m).
+Our diffusion model uses these tokens and the LR input to generate a high-resolution (SR) output. A multimodal classifier-free guidance
+(m-cfg) refines the SR image for enhanced quality.

@@ -1,0 +1,4 @@
+Figure 1. Given an unpaired image collection (with known camera poses) of an object category at training time, our approach learns to: (a)
+reconstruct the underlying 3D given only a single image at test time, and (b) model dense 3D correspondences across category instances.
+The learned correspondence field is articulation-aware, topologically-aware and inherently captures structural properties of the category,
+enabling the task of unsupervised texture transfer. Videos and code at https://shivamduggal4.github.io/tars-3D/

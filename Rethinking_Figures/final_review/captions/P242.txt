@@ -1,0 +1,7 @@
+Figure 2. Overview of our method. The feature extractor network G produces pixel-aligned features z from an input image I for all points
+x
+in space x. The implicit signed distance function network f computes the distance d to the closest surface given a point and its feature.
+Additionally f returns albedo colors a defined for surface points. The shading network s predicts the shading for surface points given its
+surface normal n , as well as illumination l. On the right we show the reconstruction of geometry and albedo colors, and the shaded 3D
+x
+geometry.

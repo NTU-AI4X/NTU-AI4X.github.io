@@ -1,0 +1,6 @@
+Figure 1. Comparison of prompt-based methods. (a) Use task
+ID to isolate prompt, which forces task-general prompt to be re-
+learned at each task. (b) Missing annotations cause prompt tokens
+to drift. (c) The shared prompt pool continuously optimizes task-
+general prompt, and category prototypes guide the generation of
+pseudo labels for old categories.

@@ -1,0 +1,3 @@
+Figure 2: From indexed to input-dependent correspondence. (a) Order-aware global context
+enables position-based associations. (b) Order-invariant global context exposes no fixed order to
+exploit. (c) Content-derived identity embeddings enable order-invariant associations.

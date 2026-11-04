@@ -1,0 +1,4 @@
+Figure 2: Overview of RwF. Filter localization (left): parameter-space integrated gradients rank
+layers, then filters within them, and the selected set is expanded with high-IG, low-similarity filters.
+Filter learning (right): the localized filters are regenerated from a filter bank by factorized matrices
+with cross-task attention and assembled back into the frozen backbone.

@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_vowOuAXSIO_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "d062093b8caddbdedb068275aa2794d41689125b55cf99c4c32cfc3267837179",
+  "revised_image_sha256": "bf9052390a039f8f710715dd6c2bb07f217cd901f34a39c62f19828d6d019051",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The Sources → Interaction Schema → QA Construction → EmboScope pipeline remains intact, including shared interaction records, rule-based QA generation, and three capability levels."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four main panels and all three worked-example sections remain. Human Video, Real Robots, Simulation, SAM2, DA3, VLM, the schema fields, and all four episode frames are retained. The enlarged Shared records panel duplicates existing content."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Names, schema labels, four engine steps, and temporal indices t₀–t₃ are preserved. EmboScope still lists 3 levels and 14 tasks, distributed 4/6/4. The L3 condition 'goal + ≤t₂' and all three example answers remain unchanged."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Pipeline arrows, schema construction flow, task-rule/record inputs, and episode → records → questions relationships are preserved. Visible history ends at t₂ before held-out t₃. Record transitions retain rack → counter, tilted → flat, and apple on counter → held above plate."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Orange, pink, and purple consistently identify L1, L2, and L3. Red labels and dotted boundaries continue to mark held-out t₃. Blue plate and purple apple annotations retain their identities, including in the enlargement."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same robot episode and plate/apple annotations are retained. The goal remains 'apple on green plate'; example answers remain t₀, 'Move plate → counter,' and 'Release onto plate.' No new measurements or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added headings 'One episode, three capability levels' and 'L3 observes t₀–t₂; t₃ is held out' are supported explicitly by the supplied caption. 'Shared records — enlarged view' accurately labels a repetition of source content."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram and the complete enlarged records panel. No missing labels, clipped substantive content, unreadable replacement text, or visible corruption is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel checks. Pixel-proof coverage is limited to the two listed rectangles; the added headings were checked against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Constructing EmboScope from shared interaction schemas with a rule-based engine.\nBottom: Illustrative annotations and QA at three capability levels from one real episode. L3 observes t₀–t₂; t₃ is held out.",
+  "body_evidence": "judging/fidelity/requests/AI_vowOuAXSIO_F_a1_bf9052390a03/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_vowOuAXSIO_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_vowOuAXSIO_F_a1_bf9052390a03",
+    "response_sha256": "3a586fa69698849292bda235b045352428ee214f7c895525b6e2b56ad941fc97",
+    "request_metadata_sha256": "0903a950aa808bbf235e58b58148138625734797d306c0789bd49cc662d9f22d",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed complete final and enlarged shared records, read caption and eight-check source-pair response. Full source pipeline,3levels/14tasks,all four frames/times,three QA answers,plate/apple annotations and held-out t3 remain. Enlarged records retain original state changes and goal; new headings explicitly match caption. No held-out observation leaked into L3 input.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:21:00.055727+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:21:00.055727+00:00"
+}

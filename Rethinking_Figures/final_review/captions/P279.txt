@@ -1,0 +1,10 @@
+Figure 1. Comparisons between our approach and other single-
+stage or CLIP-based approaches. (a) Previous single-stage ap-
+proach, which uses a trainable ImageNet [11] pre-trained back-
+bone with trainable classification and segmentation process. (b)
+Previous CLIP-based approach, which is a multi-stage approach
+that uses the Frozen CLIP model to produce pseudo labels and
+trains an individual ImageNet pre-trained segmentation model. (c)
+Our approach. Our approach is a single-stage approach that uses
+a frozen CLIP model as the backbone with a trainable segmenta-
+tion process, significantly reducing the training cost.

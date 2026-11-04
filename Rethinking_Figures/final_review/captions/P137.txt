@@ -1,0 +1,4 @@
+Figure 1. Geometric illustration of SimT with the setting of 3
+pseudo label classes and 5 ground truth label classes. Note that
+coordinates (x,y,z) of any points in blue triangle satisfy condi-
+tions of x + y + z = 1 and 0 < x,y,z < 1.

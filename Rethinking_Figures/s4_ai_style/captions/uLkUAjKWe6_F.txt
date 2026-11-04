@@ -1,0 +1,4 @@
+Figure 1: AccessWorld Overview. Each task has an instruction and grader, with task-specific
+setup when needed, and runs in the same macOS virtual machine. OpenClaw connects the agent to
+standard computer use, VoiceOver, Voice Control, or Zoom. The task and grader stay fixed while
+the available observations and actions change with the interaction condition.

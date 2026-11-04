@@ -1,0 +1,4 @@
+Figure 1. Visual comparison with state-of-the-art SR methods. (b) and (c) are the intermediate results of the degradation removal module
+(DRM) by DiffBIR [21] and SUPIR [49]. The competing methods [21, 49] do not effectively restore faithful structures based on the
+degradation removal results in (b)-(c). In contrast to the results in (d) and (f)-(g), our approach can recover more realistic high-quality
+results with faithful contents (e.g., the characters in (h)).

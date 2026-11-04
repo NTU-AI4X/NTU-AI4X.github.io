@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P37",
+  "generation_attempt": 1,
+  "source_image_sha256": "b80e3aad4a42a856713b6f0be8d303e8c1e7ac6c5982966d3873ab030d9a5ca3",
+  "revised_image_sha256": "85f1f860e9aabcd0f139c8b1cc475df117da05ecf06ec6eb001dbb3220d73b08",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M showcase retains a unified model for quality scoring/comparison, restoration/enhancement and assessment-guided enhancement."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both assessment examples, four before/after restoration pairs, both complete instruction/reasoning bubbles and tower images remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Every source paragraph, 3.575 example score, Ref/A/B labels, four task names and reasoning text is retained in exact source blocks."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input/output labels match original restoration pair order. Assess→plan→restore is the exact user instruction sequence, linking the existing user example to its response."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Source scientific emphasis and orange/blue wording are unchanged; the new blue hierarchy is only layout grouping."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All eight original content blocks match native source pixels independently, including every photograph, text paragraph, number and icon."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The unified-model headline follows Fig1 caption and Abstract. The newly explicit three-step arrow is stated in the original instruction bubble."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Every original example and full paragraph is visible. The output remains a showcase of the source model capabilities, not new evaluation evidence."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Source example/schematic scope and original resolution remain. Semantic fidelity is separate from visual quality and scientific validation.",
+  "caption": "Figure 1. Showcase of UARE. It supports image quality assessment (image scoring and comparison), image restoration/enhancement\n(super-resolution, dehazing, and low-light enhancement, etc.), and assessment-guided restoration and enhancement in one unified model.",
+  "body_evidence": "../papers/2512.06750_conference.pdf; page1 caption/Abstract read directly",
+  "independent_pixel_check": "judging/fidelity/reports/P37_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T18:30:01.816311+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T18:30:01.816311+00:00"
+}

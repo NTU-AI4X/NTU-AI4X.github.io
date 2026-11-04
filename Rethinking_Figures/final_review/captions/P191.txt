@@ -1,0 +1,4 @@
+Figure 4. Native resolution example. Methods like DUSt3R require centered principal point and would thus downscale the image to its
+training resolution, leading to blurry prediction (top). With camera intrinsics input, we can process any crop in the image leading to native
+resolution prediction (bottom row), for example by dividing the image into 4 crops, that are independently process as the first input image,
+while the second input image of the network is set to the downscaled image.

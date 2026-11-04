@@ -1,0 +1,7 @@
+Figure 1: Physics alignment and visual consistency under various methods for a reconstructed
+scene. We compare SAM3D (Chen et al., 2026), REST3D (Ma et al., 2026), and PAIR3D (ours)
+at initialization and after 2 seconds of MuJoCo simulation, rendered from the input camera. In
+this example, PAIR3D achieves the highest scene mIoU, near-zero support error, and the smallest
+simulation-induced displacement, while using fewer simulation rollouts for scene refinement. The
+mIoU and support error are measured at initialization; displacement denotes the maximum per-object
+translation between 0 and 2 seconds.

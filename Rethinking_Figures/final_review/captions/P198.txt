@@ -1,0 +1,6 @@
+Figure 3. EW-DETR framework for Evolving-World Object Detection. An input image is processed by a frozen backbone and
+transformer encoder–decoder equipped with aggregate (cid:0) ∆Wt−1 (cid:1) and task-specific (cid:0) ∆Wt (cid:1) LoRA adapters, yielding class-agnostic
+agg task
+query features. These queries are reparameterised by the Query-Norm Objectness Adapter and passed through a classification head and
+an objectness head, whose outputs are combined by Entropy-aware Unknown Mixing module to produce calibrated class scores, while a
+localisation head predicts bounding boxes to form final detections across tasks1 .

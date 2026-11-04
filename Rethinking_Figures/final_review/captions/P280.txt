@@ -1,0 +1,9 @@
+Figure 2. Framework of our WeCLIP. The image is input to the Frozen CLIP image encoder to generate the image features, and class
+labels are used to build text prompts and then input to the Frozen CLIP text encoder to generate the text features. The classification scores
+are generated based on the distance between the pooled image and text features. Using GradCAM, we can generate the initial CAM
+M . Then, the frozen image features from the last layer of each transformer block are input to our decoder to generate the final semantic
+init
+segmentation predictions. Meanwhile, the affinity map A from our decoder and the multi-head attention maps A from CLIP are input to
+f s
+our RFM to establish refining maps R to refine M as M . After post-processing, it will be used as the supervision to train our decoder.
+init f

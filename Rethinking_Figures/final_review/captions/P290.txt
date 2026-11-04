@@ -1,0 +1,4 @@
+Figure 2. Overview of LAB-Det. Top: exemplar-to-language projection. A single annotated exemplar is segmented by SAM and described
+by DAM under a domain-aware prompt, yielding natural-language phrases (e.g., “rough texture”). Bottom: these phrases condition a
+frozen detector (e.g., Grounding DINO) to generate candidate boxes and phrase scores. Category scores are obtained by averaging phrase
+scores, and an optional BLIP-based calibration refines small or ambiguous detections. The entire pipeline is training-free and interpretable.

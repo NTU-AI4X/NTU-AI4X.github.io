@@ -1,0 +1,12 @@
+Figure 2. NeuralRecon architecture. NeuralRecon predicts TSDF with a three-level coarse-to-fine approach that gradually increases the
+density of sparse voxels. Key-frame images in the local fragment are first passed through the image backbone to extract the multi-level
+features. These image features are later back-projected along each ray and aggregated into a 3D feature volume Fl, where l represents the
+t
+level index. At the first level (l = 1), a dense TSDF volume S1 is predicted. At the second and third levels, the upsampled Sl−1 from the
+t t
+last level is concatenated with Fl and used as the input for the GRU Fusion and MLP modules. A feature volume defined in the world
+t
+frame is maintained at each level as the global hidden state of the GRU. At the last level, the output Sl is used to replace corresponding
+t
+voxels in the global TSDF volume Sg, yielding the final reconstruction at time t.
+t

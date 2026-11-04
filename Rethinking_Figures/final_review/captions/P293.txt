@@ -1,0 +1,6 @@
+Figure 1. The Transformer decoder of SAM 3 excels at delineat-
+ing countable objects but produces fragmented masks for amor-
+phous regions, while the semantic head preserves continuity for
+amorphous regions but lacks boundary precision for small targets.
+(Left: Remote sensing image. Middle: Prediction of Transformer
+Decoder. Right: Prediction of semantic segmentation head.)

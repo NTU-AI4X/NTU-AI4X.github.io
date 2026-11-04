@@ -1,0 +1,3 @@
+Figure 2. HeROD pipeline. Text and image features are encoded, and spatial/semantic reasoning priors are derived from the phrase and
+image. These priors are injected into reference generation, final prediction, and training loss, guiding the detector toward plausible regions
+for more data-efficient learning.

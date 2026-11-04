@@ -1,0 +1,5 @@
+Figure 1. Comparison of real SR results across different trained
+models from different camera data in the DRealSR dataset [18].
+The Difference Map denotes the absolute difference between
+ground-truth HR and SR image (The brightness in the map reflects
+the magnitude of the difference).

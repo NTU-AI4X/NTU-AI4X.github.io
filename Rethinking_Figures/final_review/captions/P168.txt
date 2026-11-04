@@ -1,0 +1,12 @@
+Figure2: MultiresolutionIsoSurfaceExtraction: Wefirst
+mark all points at a given resolution which have already
+been evaluated as either occupied (red circles) or unoccu-
+pied (cyan diamonds). We then determine all voxels that
+have both occupied and unoccupied corners and mark them
+as active (light red) and subdivide them into 8 subvoxels
+each. Next, we evaluate all new grid points (empty circles)
+that have been introduced by the subdivision. The previous
+two steps are repeated until the desired output resolution is
+reached. Finally we extract the mesh using the marching
+cubes algorithm [44], simplify and refine the output mesh
+using first and second order gradient information.

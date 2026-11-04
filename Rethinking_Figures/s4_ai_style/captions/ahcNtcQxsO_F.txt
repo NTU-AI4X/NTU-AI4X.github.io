@@ -1,0 +1,5 @@
+Figure 2: Evidence-grounded agent-as-judge evaluation framework. Given the user request, reference
+assets, execution trace, intermediate artifacts, and final video, the evaluation agent conducts an agentic
+evaluation. At each round, it invokes evaluation skills to inspect traces, extract video metadata, sample
+key frames, separate audio, run ASR, analyze errors, and understand visual or audio content. The
+collected evidence is then used to score process and output metrics and provide textual feedback.

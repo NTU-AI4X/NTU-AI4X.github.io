@@ -1,0 +1,8 @@
+Figure 2: Training and inference of S3-PnP. Purple arrows indicate full-space learning with P = 0,
+s
+P = I, and β = 0. Orange arrows indicate structure-guided learning: D is trained and frozen, and
+g s s
+its correction is enabled to collect a new state training set for D . At inference, active corrections are
+g
+evaluated at the same ADMM input and combined before a single analytical prior update. Snowflakes
+denote frozen networks.

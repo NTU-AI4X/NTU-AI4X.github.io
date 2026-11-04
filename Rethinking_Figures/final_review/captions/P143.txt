@@ -1,0 +1,2 @@
+Figure 5. The impact of the strip pooling (top row) used in
+PLOP [27] and the average pooling (bottom row) in our method.

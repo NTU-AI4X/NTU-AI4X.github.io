@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P43",
+  "generation_attempt": 1,
+  "source_image_sha256": "552fabbfb01bfcd9309d482f51dce660e7a3f95c1eac9905988f2b4d6ed9035d",
+  "revised_image_sha256": "449fb14a09b9891dea4da7ffab9e0692af8aa85c86f05abe03e12f68dba6ea8a",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains the conceptual contrast between iterative logits optimization and a direct analytical solution, with a separately grouped reported quantitative comparison.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both scientific columns retain the two logits heatmaps, GT map, degenerate distribution map, original loops/direct arrow and equations. The entire radar chart, all eight dataset axes, numerical labels and six-method legend are retained.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Both equations, Q/P/S distribution symbols, GT and degenerate labels, method names and values are original pixels. Three new advantages match the original caption: no GT annotations, no time-consuming training and no model-specific modulation.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The optimization loop and analytical downward relationship remain exact source graphics. The three advantages are expressly scoped under Our method, not asserted for the SOTA-method column.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original heatmap values/colors and each radar fill/stroke encoding remain exact. Added blue/green panel framing distinguishes conceptual and reported sections without recoloring evidence.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed five native-scale original regions, including separate bottom distribution labels and the complete quantitative panel. All destination pixel arrays and recorded SHA256 hashes match.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added comparison headings and the three-advantage strip are supported by Figure 1 caption and introduction on pages 1–2. No new metric, numerical scale, result or scientific mechanism is added.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed complete original and derivative. All labels, equation operators, heatmaps and radar axes are present; repeated headings and larger frames are layout choices, not scientific content changes.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Independent content-fidelity review only; no derivative quality scores were viewed. Original evidence pixels and scientific ambiguities are retained.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-10-31T19:01:02.410474+00:00",
+  "hybrid_verification": {
+    "regions": 5,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/P43/provenance.json",
+    "source_pdf_page": 1
+  }
+}

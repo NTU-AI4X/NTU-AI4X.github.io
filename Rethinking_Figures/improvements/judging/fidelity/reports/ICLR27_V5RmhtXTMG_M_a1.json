@@ -1,0 +1,70 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_V5RmhtXTMG_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "241ca42d049d0c7685f3d2c820bfaea720eab87e152501be346fdeec43bf9d55",
+  "revised_image_sha256": "4d60849492a4331c1ad7363f9a723a509b4fa8a4a4cc9bfaecf9fb3df4a960bd",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves the diagnostic message: overlapping proposals resist simple merging, a nested smaller box may be a distinct animal, and biased few-shot support can make a fragment outscore the whole object."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four panels remain: (a) overlapping cattle proposals, (b) grazing cattle with nested proposals, (c) four cow portraits in a 2×2 grid, and (d) a cow with whole-object and head-fragment boxes."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Panel identifiers (a)–(d) and visible scores are preserved: (a) 0.77, 0.62, 0.75, 0.82; (b) 0.57, 0.63, 0.67; (d) head 0.82 and whole object 0.74. Added headings and captions accurately paraphrase the supplied caption. The original figure contains no equations."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Box overlap and containment relationships remain unchanged. The added rightward arrow from support portraits (c) to scored proposals (d), labeled 'part-view bias,' expresses the causal relationship explicitly described in the supplied caption and F3."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red outlines consistently denote proposals and red numbers denote classification confidence. The added legend matches the source encoding; the support portraits remain grouped separately from query proposals."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same cattle scenes, support portraits, proposal placements, and confidence values are retained. Supplied pixel-verification results cover all four image regions and corroborate their preservation."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The title, explanatory captions, legend, and arrow are supported by the supplied text. Claims about unsuccessful simple merging, genuine small instances, part-biased support, and higher-scoring fragments introduce no new scientific result."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image shows the complete title, four panels, headings, explanatory captions, arrow label, and bottom legend without visible clipping or corruption. Cropping in the supplied detail views does not indicate clipping in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, excerpt, and reported pixel checks only. Pixel verification covers the four listed rectangles; added text and relationships were assessed separately against the supplied source. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Why over-segmentation defeats confidence-based suppression in the few-shot regime. (a) Real\nscenes contain multiple overlapping same-class instances, so class-agnostic proposal generators fragment ob-\njects into nested, mutually overlapping proposals that simple merging cannot consolidate. (b) The smaller\nmember of a nested pair is occasionally a genuine, distinct object, so the covered box cannot simply be dis-\ncarded. (c) Few-shot support sets are frequently biased: a handful of examples may emphasise part-views and\nfail to represent the class as a whole. (d) Under such bias, the prototype shifts towards part-views, and an\nover-segmentation fragment can attain higher classification confidence than the correct whole-object proposal.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_V5RmhtXTMG_M_a1_4d60849492a4/prompt.txt",
+  "additional_reviewer_source": null,
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_V5RmhtXTMG_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_V5RmhtXTMG_M_a1_4d60849492a4",
+    "response_sha256": "a6026ef1445c5be4cd514f3ef097a7fd9c4c1e72a2f25216b7d1622e7e7594e6",
+    "request_metadata_sha256": "aefec60cc7faca91ebacd572636d691a08574e5e61af93b99e9b8c9436679e67",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final and read all independent source-pair checks and caption. Four original cattle/support panels preserve nested boxes and original confidence values. Part-view support→fragment preference arrow is specifically caption-supported, with no new evaluated outcome. Added red proposal/confidence key describes original encodings. All four photographs/score regions match the original scientific evidence.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T05:15:56.365038+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:15:56.365038+00:00"
+}

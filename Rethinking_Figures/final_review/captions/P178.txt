@@ -1,0 +1,2 @@
+Figure 2. The overall framework of our proposed QMambaBSR, primarily includes the novel Query State Space Model (QSSM), Multi-
+scale Fusion Module (MSFM), and the Adaptive Up-sampling Module (AdaUp).

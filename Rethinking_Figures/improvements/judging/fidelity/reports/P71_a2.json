@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P71",
+  "generation_attempt": 2,
+  "source_image_sha256": "213b8bc5da7f3e29589b3e668d50fbc511b65a5604a8149e8233a560e136c394",
+  "revised_image_sha256": "ed1dee1b7049c3915d6f5e43297231812930a7be05ed69c77fadd49d33ab2131",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains difficulty of rotated and curved text recovery, illustrated by the same failures across methods."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both text cases and all five method/reference rows remain, with ten complete photo/detail/metric cells."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Every recognition string, PSNR and SSIM value remains original, including red PRPS/ME O/H/M errors, bold Ours metrics and the original green slash."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Every red ROI and enlargement connection is part of the restored cell; no new comparison link or causal relationship is introduced."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red error characters and red image ROI outlines retain their original meaning. The isolated green slash is preserved without assigning a new meaning."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Ten complete source image-and-metric regions were independently checked at integer nearest-neighbour scale; no recovered text texture or number is regenerated."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Rotated/Curved text headings, R/P/S definitions and red-error legend are supported explicitly by the caption and p1 introduction."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All cells and all metric text are visible; former vertical method labels are re-expressed as full horizontal method names."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope and source resolution retained. Repeated reference labels, colour choices and layout imperfections remain for independent quality scoring; no score-informed revision.",
+  "caption": "Figure 1. SR recovery of different models on rotated and curve-\nshaped text images. ‘R’, ‘P’ and ‘S’ stand for recognition, PSNR\nand SSIM results. Characters in red are missing or wrong.",
+  "body_evidence": "generation/P71/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P71_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P71_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T02:18:55.970200+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T02:18:55.970200+00:00"
+}

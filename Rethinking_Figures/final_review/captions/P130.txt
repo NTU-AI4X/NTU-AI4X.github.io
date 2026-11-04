@@ -1,0 +1,3 @@
+Figure 1. An overview of the proposed SISR method and the corresponding EM algorithm. A probabilistic model is constructed to depict the generation
+process of the observed LR image, which mainly involves two groups of parameters, including the latent variable z and the model parameters {α,L,λ}.
+AMonteCarloEMalgorithmisdesignedtoalternatelyupdatethemintheE-StepandM-Step,respectively.

@@ -1,0 +1,1 @@
+Figure 1: Long-tailed category distributions in the DOTA v1.0 and DOTA v1.5 training sets.

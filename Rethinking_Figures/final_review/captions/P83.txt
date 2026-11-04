@@ -1,0 +1,6 @@
+Figure 1. We consider continual test-time adaptive object detec-
+tion, which adapts a source detector to changing environments
+during inference. By focusing adaptation efforts on invariant
+parts while pruning sensitive parts, we improve computational ef-
+ficiency, which is crucial for resource-constrained scenarios like
+autonomous driving or UAV.

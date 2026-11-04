@@ -1,0 +1,3 @@
+Figure 2. An example of GroundingCap-1M. Bounding box annotations are discarded for clarity. Compared with original short grounding
+texts, the detailed captions in GroundingCap-1M are rich in object types, textures, colors, parts of the objects, object actions, precise object
+locations and texts. Each caption in GroundingCap-1M has around 115 words on average.

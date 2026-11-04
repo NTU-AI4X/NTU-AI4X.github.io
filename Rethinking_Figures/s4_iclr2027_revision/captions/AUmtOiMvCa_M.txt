@@ -1,0 +1,5 @@
+Figure 1: Qualitative comparison of supervision assignment. Point2RBox-v3 (Zhang et al., 2026)
+uses a shared patch-wise supervision source, while our Instance Density Calibration (IDC) and
+Instance-wise Supervision Assignment (ISA) perform instance-wise source assignment between
+SAM (blue) and watershed (green) supervision. Yellow boxes denote the RBoxes and white dots
+denote point annotations.

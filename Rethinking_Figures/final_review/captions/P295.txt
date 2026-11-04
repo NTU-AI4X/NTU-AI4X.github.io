@@ -1,0 +1,8 @@
+Fig. 1. Pipelines of classical GFSS works and our Syn4Seg framework.
+(a) Classical GFSS methods follow three stages: base class learning, novel
+class registration, and evaluation, where novel classes rely on limited manual
+annotations, resulting in low diversity and constrained performance. (b) Our
+Syn4Seg framework synthesizes diverse, realistic novel class images and
+pseudo labels guided by support annotations. These synthesized samples,
+together with base data, are used to train a semantic segmentation model,
+enabling robust recognition of both base and novel classes during evaluation.

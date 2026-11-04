@@ -1,0 +1,2 @@
+Figure 2: Overview of TOCOMAS. Task-derived responsibility regions organize agents, handoffs,
+and memory boundaries; online evolution preserves their coherence.

@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P117",
+  "generation_attempt": 1,
+  "source_image_sha256": "f050bef6bb7db0183b78822ca17f0309a97edce1cb384f83cbb305fd9bb1f573",
+  "revised_image_sha256": "5952f4c4f4d112beb2f161e51d1dc09cebc07d784a58ae6e378f1791818d173f",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M concept still explains why nearby low-resolution views can provide enough detail to supervise distant rendering."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both camera centers and image planes, patterned scene strip, two blue ground-truth frusta, one green render frustum and three red intersections remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Near/Far camera and low-resolution ground truth/high-resolution render labels retain their original identities."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Two blue ground-truth arrows identify near and far frusta; the green render pointer identifies the narrower distant render frustum. All frusta share the original scene intersection and appropriate camera origin."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue remains ground truth, green remains render and red remains marked scene/image-plane intersections; relative near/far sampling geometry is retained."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "This is a qualitative schematic without empirical photographs or calibrated measurements. Camera/frustum topology, ray boundaries and three red points were checked directly."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new headline and final selective-super-resolution statement are exactly supported by Fig3 caption and Sec3.2/4.1."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original conceptual elements, labels and pointer tips remain visible. Schematic dimensions are not interpreted as measured distances."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Source example/schematic scope and original resolution remain. Semantic fidelity is separate from visual quality and scientific validation.",
+  "caption": "Figure 3. Disparity in high-frequency ground truth informa-\ntion across different views. Low-resolution ground truth from\nnear cameras provides high-resolution information for rendering\ndistant views, reducing the need for additional generated detail\nin those views. Conversely, super-resolution is needed in views\nwhere no other camera provides higher-resolution information.",
+  "body_evidence": "generation/P117/attempt_01/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P117_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T18:30:01.867363+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T18:30:01.867363+00:00"
+}

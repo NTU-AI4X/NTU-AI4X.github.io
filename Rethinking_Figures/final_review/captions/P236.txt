@@ -1,0 +1,5 @@
+Figure 2. Architecture of PaCo. Starting from an incomplete point cloud, we hierarchically encode the points into plane proxies with a
+lookup table from segmentation. These proxies inform the proxy generator in producing a set of proxy proposals. The generated proxies
+are then passed to the parameter estimator and the point distributor for primitive estimation. Finally, the primitive selector identifies a
+subset of primitives to form the parametric completion, with selection optimized via bipartite matching. The resulting primitives enable
+direct assembly for polygonal surface reconstruction. Points are colored according to their planar primitives.

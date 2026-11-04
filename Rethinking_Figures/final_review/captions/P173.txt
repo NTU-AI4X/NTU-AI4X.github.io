@@ -1,0 +1,4 @@
+Figure 1. Previous methods (a) directly fuse the RGB information
+aligned with the LR depth, while our method (b) focuses more on
+modeling the degradation representation of the LR depth to pro-
+vide targeted guidance for HR depth recovery.

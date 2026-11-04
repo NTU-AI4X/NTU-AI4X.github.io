@@ -1,0 +1,3 @@
+Figure 4. Overview of our PassionSR. Step 1: we simplify OSEDiff [42] by removing DAPE and CLIP Encoder, obtaining PassionSR-
+FP. Step 2: the quantizer we use has two key trainable parts, consisting of the Learnable Boundary Quantizer and Learnable Equivalent
+Transformation. Step 3: we design a distributed calibration strategy and special loss function to accelerate convergence of calibration.

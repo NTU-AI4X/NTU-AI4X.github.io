@@ -1,0 +1,3 @@
+Figure 4. Illustration of our DFormerv2. (a) Overall architecture of our DFormerv2, which contains an encoder with pyramid structure
+and a decoder head that receives input from the last three stage features. (b) Detailed structure of the basic building block. (c) Detailed
+illustration of the proposed geometry self-attention mechanism.

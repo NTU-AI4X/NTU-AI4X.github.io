@@ -1,0 +1,4 @@
+Fig. 2: RayMap Static Bias. Left: The main prediction and RayMap prediction pro-
+duce differing depth estimates in dynamic regions, suggesting a static bias in RayMap
+predictions. Right: The depth discrepancy correlates with ground-truth dynamic ratio
+across multiple datasets, suggesting a consistent signal for dynamic identification.

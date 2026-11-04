@@ -1,0 +1,5 @@
+Figure 1. Conceptual illustration. (a) Without priors, grounding
+detectors trained with limited labels often ignore spatial/semantic
+cues (e.g., “on the left”). (b) HeROD injects heuristic-inspired
+reasoning priors (spatial + semantic), guiding the detector toward
+correct localization and improving data-efficient learning.

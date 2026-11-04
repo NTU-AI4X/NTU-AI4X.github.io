@@ -1,0 +1,7 @@
+Figure 2. Directional incoherence. High-level feature (c) has
+strong semantics and large receptive fields but captures the coarse
+orientation. Forexample,from(c)wecanonlyinferthattheobject
+lieshorizontally. Yetmanydown-samplingsblurspatialdetails, so
+the orientation signal is low-frequency and vague. Low-level fea-
+ture (b) keeps rich edges, corners, and textures, giving clear and
+high-frequency orientation cues.

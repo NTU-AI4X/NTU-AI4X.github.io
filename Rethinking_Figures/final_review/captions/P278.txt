@@ -1,0 +1,13 @@
+Figure 2. Overview of the proposed unified learning framework. (a) shows image label-guided WSSS (from classification to segmentation).
+The upper branch describes the classification network θ identifying object regions corresponding to each category to minimize LBC E .
+Introduce a self-supervised learning paradigm using context prototype-aware learning to provide a more complete CAM, supervising the
+initial CAM and minimizing LS elf . The lower branch refines these CAMs (e.g., DenceCRF [26]) to form pseudo-labels for supervising the
+semantic segmentation network. (b) outlines our strategy based on context prototype-aware learning. In mini-batches, instance prototypes
+P I are generated using CAM and extracted features f , updating the support bank. Then, the bank is used to construct a context prototype
+n
+set P c . Feature distribution alignment is then applied to the current instance features, adding a shift term δ to guide them toward clusters of
+n n
+dense features in the bank. Next, soft neighbors are softly measured for P I based on P c , with P I serving as anchors. Finally, positiveness
+n n n
+value w can be computed between two specific attributes. This mechanism selects K soft positive neighbors P˜ c to generate PACAM.
+i n

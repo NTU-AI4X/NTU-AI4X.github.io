@@ -1,0 +1,7 @@
+Figure 2: Why over-segmentation defeats confidence-based suppression in the few-shot regime. (a) Real
+scenes contain multiple overlapping same-class instances, so class-agnostic proposal generators fragment ob-
+jects into nested, mutually overlapping proposals that simple merging cannot consolidate. (b) The smaller
+member of a nested pair is occasionally a genuine, distinct object, so the covered box cannot simply be dis-
+carded. (c) Few-shot support sets are frequently biased: a handful of examples may emphasise part-views and
+fail to represent the class as a whole. (d) Under such bias, the prototype shifts towards part-views, and an
+over-segmentation fragment can attain higher classification confidence than the correct whole-object proposal.

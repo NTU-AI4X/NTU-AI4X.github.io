@@ -1,0 +1,1 @@
+Figure 1: An illustrative comparison between latest-state refinement and our GenRevisit.

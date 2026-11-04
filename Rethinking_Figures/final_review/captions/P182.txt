@@ -1,0 +1,4 @@
+Figure 2: Network architecture. In the first stage, the network takes a single RGB image as input, and predicts a planar/non-
+planar segmentation mask and pixel-level embeddings. Then, an efficient mean shift clustering algorithm is applied to
+generate plane instances. In the second stage, we estimate parameter of each plane by considering both pixel-level and
+instance-level geometric consistencies.

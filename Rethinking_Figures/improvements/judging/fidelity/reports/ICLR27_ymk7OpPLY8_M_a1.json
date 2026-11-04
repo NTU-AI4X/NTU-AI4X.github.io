@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_ymk7OpPLY8_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "09fb37ebb97599324d057567c1fd3ba87c4e436fe49a1f81b81c47f3da4c236d",
+  "revised_image_sha256": "1b2ac78f5c6c6a1ae96c2f013a7ee7310c4f0482cb16386221696e6d09a8ce2a",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M figure still motivates token-level sensor fusion by three local modality advantages."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All nine RGB/events/depth observations and their original red ROIs remain in three corresponding scene rows."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "RGB/Events/Depth names and road marking/tunnel exit/cyclist statements exactly retain the source examples."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Each row groups three sensors viewing the same source scene and highlights the original best-local-evidence modality; no cross-scene correspondence or new causal edge is introduced."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue RGB, orange event and magenta depth emphasis matches source. Every original red ROI and event/depth color value is retained."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All nine complete source sensor regions independently match deterministic proportional resizes, preserving exposure, event patterns, depth fields and ROIs."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New title and token-level conclusion restate source Fig1 caption and Introduction; no new robustness metric or universal per-modality ranking is added."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All nine images, ROI borders, modality labels and local explanations remain visible; original sensor resolution is retained through documented resampling."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original illustrative scope remains. Qualitative optics is not calibrated geometry; empirical panels retain source resolution via documented resampling. Visual polish is judged separately.",
+  "caption": "Figure 1: Token-level motivation. Sensor advantages are local, so the fusion decision belongs at the\ntoken level, illustrated by 1 case each for RGB, events, and depth.",
+  "body_evidence": "generation/ICLR27_ymk7OpPLY8_M/attempt_01/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_ymk7OpPLY8_M_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T17:28:11.341490+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T17:28:11.341490+00:00"
+}

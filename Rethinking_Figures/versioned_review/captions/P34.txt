@@ -1,0 +1,5 @@
+Fig.3: Overview of VLOD-TTA. Given an input image and a pool of class
+prompts, the text encoder produces embeddings that interact with region proposals
+through the vision–language head to compute similarity scores. IPS selects the top-ρ
+prompts and averages their scores to obtain per-proposal class scores. IWE then com-
+bines per-proposal entropy with IoU-based weights to form the adaptation objective.

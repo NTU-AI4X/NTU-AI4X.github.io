@@ -1,0 +1,4 @@
+Figure 3. Overview of CUPID’s pipeline. From a single input image, CUPID first generates an occupancy and a UV cube in canonical
+space. Then, a Perspective-n-Point (PnP) solver (i.e., Eq. 2) recovers the camera pose. Using this recovered camera pose, we extract pose-
+aligned conditioning latents and visual features (i.e., Eq. 3), along with noisy structured latents, to generate the geometry and appearance
+features, which will be decoded to the 3D Gaussian splats and mesh.

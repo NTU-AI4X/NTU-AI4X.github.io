@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_VA0yCrShah_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "78158793c35636623de0d715da0eda4751ddbf8937bbc434d70bf8976543f41d",
+  "revised_image_sha256": "56078c252ff1dadb6a54b550e45ab5adbf227a13a406d0699ff49a764bb48abe",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The sequential Q1–Q3 workflow and shared memory remain intact: Q1 watches c1–c2 and revisits n2; Q2 reuses and refines memory; Q3 watches c3–c4. Answers remain B, C, and A."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three query rows, c1–c6 timeline, operation and retention legends, memory tree, watch frontier, Q–A record, and n2_2 example are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Chunk and node labels, including n2_1, n2_2, n2_3, and n2_3_1, match. The example retains 02:40–02:55, @02:44, and @02:52. All five operation labels and the time-axis symbol t remain legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Reading order and rightward watching arrows are preserved. The tree retains n2’s three children and n2_3’s child n2_3_1. Frame-disposal arrows, the n2_2 example connector, and the frontier after c4 remain intact."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue, pink, and green still identify additions by Q1, Q2, and Q3. Ringed coarse nodes, solid child nodes, circular tool calls, boxed results, and hatched unwatched c5–c6 retain their meanings and consistent legends."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The n2_2 example still describes a man in a gray vest opening a fridge, with 'gray vest, no jacket' and 'grab the milk' at the original timestamps. No measurements or answer outcomes are changed."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added Query Operations Guide summarizes supported content: Q1 watches c1–c2 and refines n2; Q2 reuses memory and refines n2_3 without new chunks; Q3 encounters a memory gap and watches c3–c4. Its unwatched-chunk and frame/text-retention statements also follow the supplied source."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram and the added sidebar without visible clipping or unreadable replacement text. The supplied pixel-proof report also covers the complete original rectangle with no exclusions."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The pixel-proof report was supplied evidence; its file and hash were not independently verified. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Pipeline of Sprout. Three questions about one video are answered in order, building one\nmemory. Each row shows the rounds of one question: tool calls (circles) and their results (boxes).\nVideo frames stay in the context for one round only; text results are kept. Q1 watches the first two\nchunks, remembers them as coarse nodes, and revisits n at a higher frame rate to add finer child\n2\nnodes. Q2 reuses the memory: search returns a node and Q1’s answer, and a short revisit adds one\nmore detail, without watching new video. Q3 finds that the memory does not cover what it asks, so\nit watches two more chunks. The last two chunks are never watched. The memory tree (bottom) is\ndrawn on the same time axis as the video; node colors show which question added each node.",
+  "body_evidence": "judging/fidelity/requests/AI_VA0yCrShah_F_a1_56078c252ff1/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_VA0yCrShah_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_VA0yCrShah_F_a1_56078c252ff1",
+    "response_sha256": "375cbb086a446b44443162bd29942abdb6fe6458043122a8d4ef6dd6e38e254a",
+    "request_metadata_sha256": "df053472c883f6dcaecf50df7539f92a97564341b4dea1f954c6dec927a2363d",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final and source caption. Entire original Sprout rows, c1–c6 timeline, n2 children/refinement, n2_2 timestamp example and all node/color/retention legends remain. Added Q1/Q2/Q3 guide matches caption: Q2 refines n2_3 without new chunks, Q3 watches c3–c4, c5–c6 unwatched. Actual structured evidence recovered from completed request after verified runtime network warning misclassification, with original raw/error preserved; no tools were used.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:41:52.204175+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:41:52.204175+00:00"
+}

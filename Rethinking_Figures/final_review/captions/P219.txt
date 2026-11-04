@@ -1,0 +1,7 @@
+Figure 5. Illustration of the proposed plane splatting function.
+Naive Gaussian Splatting can not effectively approximate the
+boundary of our rectangular plane primitive (shown in black
+dashed border). In contrast, our proposed plane splatting function
+can approximate the boundary of the rectangle as the number of
+iterations increases, allowing our 3D planar primitives to better fit
+the surface of the scene.

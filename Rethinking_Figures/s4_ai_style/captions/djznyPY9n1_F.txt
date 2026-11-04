@@ -1,0 +1,3 @@
+Figure 2: Overview of our framework. From a single image, scene initialization (Stage 1), environ-
+ment construction (Stage 2), and scene refinement (Stage 3) build a complete 3D scene. In Stage 1,
+the geometry-aware layout predictor regresses per-object R, T , S, and floor rotation F .

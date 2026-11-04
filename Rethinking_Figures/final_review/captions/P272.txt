@@ -1,0 +1,6 @@
+Figure 2. The pipeline of the PointOBB. PointOBB contains three views in total. From these views, an angle acquisition module and
+a scale augmentation module are constructed. The scale augmentation module incorporates a Scale-Sensitive Consistency (SSC) loss to
+enhance scale perception ability. Within the angle acquisition module, a Dense-to-Dense sample assignment is designed for angle learning,
+optimized using the Self-Supervised Angle (SSA) loss. Additionally, a Dense-to-Sparse (DS) matching strategy is proposed to obtain more
+precise object angles. During the training, a progressive multi-view switching strategy is designed to switch the resized and rot/flp views,
+along with their corresponding modules.

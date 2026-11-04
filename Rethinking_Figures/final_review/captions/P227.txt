@@ -1,0 +1,2 @@
+Figure 8. Failure modes. Our model is not robust to occlusion
+and does not perform well on some difficult categories.

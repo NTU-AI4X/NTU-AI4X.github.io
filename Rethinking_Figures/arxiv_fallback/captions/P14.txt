@@ -1,0 +1,4 @@
+Figure 4. Overview of the proposed GKD framework. GKD comprises two major parts: domain-general distillation and task learning. In
+the domain-general distillation stage, the student sequentially performs task-agnostic and domain-agnostic distillation, both via the Query-
+based Soft Distillation mechanism. In the task learning stage, only the decoder is trained on source annotations, while the student encoder
+is frozen to preserve the domain-general representations.

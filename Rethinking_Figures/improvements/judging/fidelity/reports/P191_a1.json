@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P191",
+  "generation_attempt": 1,
+  "source_image_sha256": "b6d4894741997c420357d34163624aafadb41c3ad7cd4d28127116967efd61f4",
+  "revised_image_sha256": "45f2d056e238ad4f2f2942ef8cd9db51d2f3b5ab101bfa454a6ead44933a418b",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Preserves the comparison between blurry DUSt3R baseline predictions and native-resolution Pow3R predictions, with a crop and downscaled full image feeding Pow3R."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Retains the full street image, red crop region, extracted crop, downscaled image, Pow3R module, both prediction panels, both detail insets and both reconstructed views."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Preserves 'crop', 'downscale', both '512 pixels' dimensions, 'Pow3R', 'DUSt3R baseline' and 'Pow3R (native resolution, sliding window)'. No original formula or numerical label is missing."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Red crop and blue downscale arrows retain their destinations; both inputs enter Pow3R. The black output arrow points toward the lower prediction, and yellow connectors associate each selected region with its corresponding enlarged inset."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue full-image/downscale encoding, red crop encoding, yellow inset outlines and prediction color patterns remain consistent. Baseline stays above Pow3R, with reconstructed views aligned to their respective rows."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same street scene, people, bicycles, prediction details and reconstruction examples are retained. The supplied pixel-equality evidence supports preservation within the six listed source regions."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added statements about off-center crops, camera intrinsics, native-resolution crop input and downscaled full-image input follow the caption. The global-context title summarizes the full-image input; the blur/detail statement matches the caption's comparison."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image shows all original panels and labels, plus complete added headings and explanatory text. Cropped text at the edges of the supplied detail views is visible in full in the complete derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel checks. Pixel proof covers only the listed rectangles; added text, connectors and overall relationships were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 4. Native resolution example. Methods like DUSt3R require centered principal point and would thus downscale the image to its\ntraining resolution, leading to blurry prediction (top). With camera intrinsics input, we can process any crop in the image leading to native\nresolution prediction (bottom row), for example by dividing the image into 4 crops, that are independently process as the first input image,\nwhile the second input image of the network is set to the downscaled image.",
+  "body_evidence": "judging/fidelity/requests/P191_a1_45f2d056e238/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P191_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P191_a1_45f2d056e238",
+    "response_sha256": "88636c72dc6be8926b1848c92466e7bdaf26228a14f07c7c7a8c937d7d73d8b7",
+    "request_metadata_sha256": "1ccb65d198dfba675239d92002c9b0eaa7988d3a5c895131f7692f534596953e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed final image and independent source-pair response; crop/downscale branch and both 512-pixel dimensions remain, both inputs enter Pow3R and the extended output connector reaches its lower prediction. Native source scientific regions independently match.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T04:45:38.557450+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:45:38.557450+00:00"
+}

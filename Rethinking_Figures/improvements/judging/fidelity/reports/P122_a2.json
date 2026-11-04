@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P122",
+  "source_image_sha256": "ef48fadab26b1053d5f3977c4ef75368369d8ba2266334589122bf2d8e2599a1",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "caption": "Figure 6. Overall learning pipeline of the proposed LDL method.",
+  "body_evidence": "../arxiv_fallback/text/2203.09195v1.txt lines 277–385; Section 3.2–3.3, Eqs. (5)–(8).",
+  "reviewed_at": "2026-10-31T14:22:23.085947+00:00",
+  "remaining_limitations": "Agreement is assessed against the supplied original figure and associated text, not independent validation of the scientific method.",
+  "generation_attempt": 2,
+  "revised_image_sha256": "3dfafac627c9580b774990342bd5ade40dea9d04470792c7b77560eb6fdcadf5",
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The revised image remains the overall LDL training framework: one low-resolution input feeds the online and EMA models; outputs construct the artifact map and training loss."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both Ψ and Ψ_EMA, I_LR, I_SR1, I_SR2, I_HR, M_refine, L_artif, the GAN contribution and the training return are visibly present."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All original symbolic names and subscripts remain recognizable. Added “Refined artifact map” and “Artifact loss” agree with Section 3.3 and Eq. (7); no new numerical claim appears."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "I_SR1, I_SR2 and I_HR each enter M_refine; I_SR1, M_refine and I_HR each enter L_artif once. The loss plus L_GAN returns to Ψ, and dashed parameter averaging goes from Ψ to Ψ_EMA."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Gray solid paths represent data flow/training, dashed gray denotes EMA, orange denotes map-construction inputs and green denotes loss inputs; the legend matches these displayed paths."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The source contains a symbolic model diagram without photographs, measurements or performance outcomes; the revision adds no example, numerical result or substituted data."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added semantic labels name operations already supported by the source image and the inspected text; no new model, loss term or scientific relation is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The final PNG contains the complete two-model pathway, the upper feedback lane, both right-side boxes, all labels and the four-entry legend with visible margins and no clipped text."
+    }
+  },
+  "issues": [],
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P122_a1.json"
+  ],
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T14:22:23.085947+00:00",
+  "repair_verification": "The extra vertical I_HR-to-L_artif arrow is removed. The retained rightmost I_HR path enters L_artif once; its separate orange path still enters M_refine. The gray legend now reads “Data flow / training”."
+}

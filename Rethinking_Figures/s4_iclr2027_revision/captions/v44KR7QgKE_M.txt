@@ -1,0 +1,3 @@
+Figure 1: Two sources of mismatch when using pretrained image priors in scientific imaging:
+differences between the pretraining and target image domains, and differences between score-model
+training inputs and ADMM denoiser inputs.

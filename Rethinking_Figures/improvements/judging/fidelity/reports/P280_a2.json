@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P280",
+  "generation_attempt": 2,
+  "source_image_sha256": "da35c5803d35f7162e39bacf41790e055fa742741b702ddd0336cfdf1eb2689c",
+  "revised_image_sha256": "b78f62a3f1255fad26526d9afd90897a5406bd5943e1bf9621cc9c3943ed2af9",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures preserve frozen CLIP image/text encoding, distance-based classification, GradCAM initialization, decoder segmentation, and refined pseudo-label supervision."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Prompt examples, both encoders, classification panel, decoder, RFM, MLP and transformer detail panels, legend, CAMs, masks, and affinity matrices are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Labels and notation remain consistent, including M_init, M_f, A_f, A_s, Â, R, S, G, G_e, both L_ce labels, transformer indices, W_fc¹/W_fc², and binary 1/0 examples."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Pooling still feeds distance computation; encoder features feed decoder MLPs and concatenation. A_f and A_s feed RFM, whose R joins M_init at CAM refinement. M_f leads through post-processing to pseudo labels and transferred affinity supervision."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Frozen snowflakes, no-gradient slashes, feature-map blocks, operation symbols, scalar colors, and green transformer blocks retain their legend meanings. Panel grouping and matrix color patterns remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The bird photograph, selected bird prompt, background examples, initial/refined heatmaps, prediction and pseudo-label silhouettes, and illustrative matrices visibly preserve the original examples."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added WeCLIP title and footer explanation are supported by the caption’s frozen features, affinity/attention refinement, and decoder supervision description. The component-detail note accurately identifies the existing M and TB-X panels."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image includes the complete diagram, legend, rightmost refinement loop, bottom RFM, and added title/footer without visible clipping or corrupted text. Cropping in detail views does not omit content from the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. The supplied pixel-equality report supports preservation of its listed rectangle; its file and hash were not independently verified. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Framework of our WeCLIP. The image is input to the Frozen CLIP image encoder to generate the image features, and class\nlabels are used to build text prompts and then input to the Frozen CLIP text encoder to generate the text features. The classification scores\nare generated based on the distance between the pooled image and text features. Using GradCAM, we can generate the initial CAM\nM . Then, the frozen image features from the last layer of each transformer block are input to our decoder to generate the final semantic\ninit\nsegmentation predictions. Meanwhile, the affinity map A from our decoder and the multi-head attention maps A from CLIP are input to\nf s\nour RFM to establish refining maps R to refine M as M . After post-processing, it will be used as the supervision to train our decoder.\ninit f",
+  "body_evidence": "judging/fidelity/requests/P280_a2_b78f62a3f125/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P280_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P280_a2_b78f62a3f125",
+    "response_sha256": "b6489132e00999b70ed7ed03e7590f2c3e6404df1243b5b38817e1fd2e8f07d2",
+    "request_metadata_sha256": "ef05b04787b4ba4c2c638e527a7a3f1112a9bf0d9278915dd28c2ed3a878a543",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed complete final, caption and independent eight-check evidence. Entire WeCLIP original preserves frozen image/text encoders, distance/GradCAM, multilevel decoder, all initial/refined heatmaps/prediction/pseudolabels and RFM affinity pathways. Added title and RFM explanatory footer strictly match caption; M/TB-X details identified without introducing a processing edge.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P280_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:03:47.555873+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:03:47.555873+00:00"
+}

@@ -1,0 +1,7 @@
+Figure 3. The distributions of TP+, TP- and BG when using 10%
+labeled data on COCO. ‘TP+’ means that the estimated instance
+has the same class ID as the ground-truth (GT) and the IOU of
+BBox is above 0.5. ‘TP-’ means that the estimated instance has
+the same class ID as GT but the IOU of BBox is below 0.5. ‘BG’
+means that the estimated instance belongs to the background or
+has wrong class ID.

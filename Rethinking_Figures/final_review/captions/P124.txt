@@ -1,0 +1,1 @@
+Figure 2. Architecture illustration of our non-learnable prototype based nonparametric segmentation model during the training phase.

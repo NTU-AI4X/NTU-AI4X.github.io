@@ -1,0 +1,6 @@
+Figure 4. The overview of LLMDet. LLMDet contains a standard open-vocabulary detector and a large language model (LLM) and is
+trained under both grounding loss and language modeling loss. The LLM is designed to generate both image-level captions using feature
+maps as visual input and region-level captions using a single object query as visual input, which are separated by different prompts.
+Only vision tokens in region-level generation pass through the cross-attention (CA) modules in LLM, which is highlighted by a dashed
+boundary. Since the number of tokens in image-level and region-level generation varies greatly, we forward the LLM twice separately to
+save memory and computation. The LLM can be discarded in the inference time so that there is no extra cost.

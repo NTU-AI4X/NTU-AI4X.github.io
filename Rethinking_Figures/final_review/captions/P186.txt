@@ -1,0 +1,10 @@
+Figure 2. Overview of the pipeline of EMGauss. Given a vol-
+ume EM dataset (top), the gray-shaded regions denote the miss-
+ing intermediate slices to be interpolated, while the visible regions
+represent the available anisotropic training data. We interpret the
+low-resolution z -axis as a temporal dimension and employ a de-
+formable 2D Gaussian splatting representation to model the ge-
+ometric evolution of 2D structures along depth. During inference,
+the model synthesizes the target slice by directly conditioning on
+the relative temporal coordinate corresponding to the desired in-
+terpolation position.

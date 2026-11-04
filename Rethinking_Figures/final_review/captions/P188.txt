@@ -1,0 +1,5 @@
+Figure 2. E-RayZer Model & Training. E-RayZer first predicts camera poses and intrinsics for all images. Then it follows RayZer [25] to
+split images into two sets. E-RayZer predicts explicit 3D Gaussians as scene representation from the reference views (I ), and renders the
+ref
+scene using self-predicted target-view (I ) cameras. Finally, E-RayZer is trained with self-supervised photometric losses on target views.
+tgt

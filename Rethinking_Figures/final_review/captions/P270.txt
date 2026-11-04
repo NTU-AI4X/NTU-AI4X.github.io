@@ -1,0 +1,5 @@
+Figure 2. Overview of our proposed open-ended object detection model, GenerateU, which comprises two major components: an object
+detector and a language model. We compare two training strategies: (Top) We incorporate the class-agnostic DETR (with frozen image
+encoder) into a pre-trained and frozen Multimodal Large Language Model (including Adaptor and Language Model), to facilitate a smooth
+transfer of knowledge from the language domain to object detection; (Bottom) We activate the image encoder and language model as
+trainable components, taking an end-to-end approach to seamlessly integrate region-level understanding into the language model.

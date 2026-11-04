@@ -1,0 +1,9 @@
+Figure 2: Overview of ReTax-Seg. The upper panel summarizes the training pipeline. The visual
+backbone and forward model are learnable. CLIP and SAM remain frozen. Boundary quality scores
+the segmentation outputs. The lower panel details the multiscale visual backbone, the frozen Mobile-
+SAM geometry branch, representative semantic atoms, and the frozen CLIP text-prior construction.
+The symbol θ∗ denotes the weights associated with dataset d. The star marks the selected trained
+d
+checkpoint. For example, θ∗ represents the Cityscapes-specific weights. Snowflakes and flames
+City
+indicate frozen and learnable components, respectively.

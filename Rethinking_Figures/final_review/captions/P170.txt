@@ -1,0 +1,2 @@
+Figure 3. Overall framework of our proposed ERR. Building on the insight from progressive spectral perspective, ERR consists of three
+collaborative sub-networks: the zero-frequency enhancer (ZFE), the low-frequency restorer (LFR), and the high-frequency refiner (HFR).

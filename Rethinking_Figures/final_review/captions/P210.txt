@@ -1,0 +1,5 @@
+Figure 5. The proposed framework of our DADA. It includes a source branch and a target branch, both of which have an LR-HR-LR
+reconstruction structure. In their up-sampling networks, a Domain-Invariant Attention (DIA) module provides component attentive masks
+by a pre-trained CDC model. For InterAA, two LR images from different domains are fed into the up-sampling network for adversarial
+adaptation in one branch. For IntraAA, one LR image is respectively fed into up-sampling networks in source and target branches for the
+adversarial adaptation. For testing, the trained up-sampling network in target branch is utilized for inference.

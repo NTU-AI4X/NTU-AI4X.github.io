@@ -1,0 +1,6 @@
+Figure 3. Disparity in high-frequency ground truth informa-
+tion across different views. Low-resolution ground truth from
+near cameras provides high-resolution information for rendering
+distant views, reducing the need for additional generated detail
+in those views. Conversely, super-resolution is needed in views
+where no other camera provides higher-resolution information.

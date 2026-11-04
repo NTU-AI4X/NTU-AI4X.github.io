@@ -1,0 +1,5 @@
+Figure 2. The motivation. (c) The explicit alignment within the
+SSCH [53] is prone to introducing spatial distortions and textural
+artifacts into the warped image. (d) The result validates the princi-
+plethatleveragingawell-aligned, high-fidelityabundanceenables
+the reconstruction of the HR HSI from its LR counterpart.

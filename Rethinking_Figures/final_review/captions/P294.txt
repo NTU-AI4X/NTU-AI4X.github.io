@@ -1,0 +1,4 @@
+Figure 2. The overall inference pipeline of SegEarth-OV3. Given an input image and a list of text prompts, we leverage SAM 3’s decoupled
+outputs. The pipeline involves: (1) instance aggregation to consolidate sparse object queries; (2) dual-head mask fusion to combine the
+fine-grained instance details with the global coverage of the semantic head; and (3) presence-guided filtering (using the presence score) to
+suppress false positives from absent categories. denotes the element-wise maximum operation, and denotes multiplication.

@@ -1,0 +1,4 @@
+Figure 1: The neural operator AI scientific community: the three problems and the two arms (left), a
+community of 16 labs and the four phases of each iteration inside a lab (center), and two discovered
+programs (right). Every winning program is retrained on held-out random seeds before it is compared
+with other models.

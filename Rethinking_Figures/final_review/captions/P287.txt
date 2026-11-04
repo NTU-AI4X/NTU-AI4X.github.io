@@ -1,0 +1,6 @@
+Figure 1. Illustration of Instance-Free DAOD. The orange time-
+line indicates that target-domain instances appear only after a
+long waiting period and require costly manual screening. Tradi-
+tional DAOD (top) relies on target images containing foreground
+instances, whereas Instance-Free DAOD (bottom) enables transfer-
+ring using only background-only target images.

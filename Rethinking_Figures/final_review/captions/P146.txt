@@ -1,0 +1,2 @@
+Figure 2. The framework of our statistical-characteristic guided network. It enhances signals and suppresses noise in the spatial and
+frequency domains using spatial deviation-guided weighting and frequency band-guided weighting, respectively.

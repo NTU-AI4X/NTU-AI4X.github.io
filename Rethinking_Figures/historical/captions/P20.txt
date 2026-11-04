@@ -1,0 +1,3 @@
+Figure 2. Overview of TARS: Given a single image, we first map a 3D point in object space to a higher-dimensional canonical space using
+our learned topologically-aware deformation field. The canonical point is then mapped to its SDF value using the Canonical Shape Generator
+module. We leverage an LSTM-based differentiable renderer to guide the learning of deformation and signed distance fields.

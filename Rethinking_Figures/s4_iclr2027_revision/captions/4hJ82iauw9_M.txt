@@ -1,0 +1,2 @@
+Figure 2: Paradigm comparison between previous sequence processing strategies (offline, streaming,
+chunk-then-align) and our proposed block-wise streaming approach, Drive3R.

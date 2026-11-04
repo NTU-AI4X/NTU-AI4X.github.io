@@ -1,0 +1,73 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_Qask3lw679_M",
+  "generation_attempt": 3,
+  "source_image_sha256": "2be3c9112a89707138e4ed85f46d2541625d76de04a44815b2eebd53202610c2",
+  "revised_image_sha256": "e308e9b6cbb7a06a2f6e62f647d9ccbb2fd2614209506772e20e7a5964180ee2",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit (generator self-check)",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "failed",
+      "evidence": "After the last allowed semantic repair, image inputs now connect upward to the Authenticity instruction rectangles instead of independently entering the MLLM input bus. Original source has separate image/prompt/instruction inputs. This scientific input dependency remains incorrect; do not score as a faithful derivative.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [
+    {
+      "check": "connections_and_direction",
+      "description": "After the last allowed semantic repair, image inputs now connect upward to the Authenticity instruction rectangles instead of independently entering the MLLM input bus. Original source has separate image/prompt/instruction inputs. This scientific input dependency remains incorrect; do not score as a faithful derivative."
+    }
+  ],
+  "remaining_limitations": "One draft and two semantic repairs exhausted. No further generation or quality-based replacement.",
+  "verdict": "unresolved",
+  "previous_report_paths": [
+    "judging/fidelity/AI_Qask3lw679_M_a1_self_rejection.json",
+    "judging/fidelity/AI_Qask3lw679_M_a2_self_rejection.json"
+  ],
+  "approved_by": "",
+  "approved_at": ""
+}

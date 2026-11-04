@@ -1,0 +1,6 @@
+Figure 1. Detection results for label “Mountain Dew”. While the
+GroundingDINO, one of the state-of-the-art grounded object de-
+tection methods, fails to capture the Mountain Dew bottles in the
+image displayed in the figure, SearchDet manages to ground every
+instance of Mountain Dew that appears in the image. Detection
+results for other classes “Phone” and “Fork”.

@@ -1,0 +1,7 @@
+Figure 1: Feed-forward 3D foundation models fail on transparent objects in two opposite directions.
+(a) L1 depth error for a transparent object under zero-shot prediction, LoRA, and Ours. The zero-
+shot prediction is dominated by overestimation associated with background leakage. LoRA reduces
+the error, but underestimation around the concave interior remains, whereas our method corrects both
+error directions. (b) The two error directions differ in reference availability. Background leakage
+can be related to an observable background surface, whereas a filled-in concavity has no analogous
+geometric reference for recovering the missing depth.

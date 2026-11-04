@@ -1,0 +1,8 @@
+Figure 1. The main idea promoted throughout the paper is that
+semantic context prototype-aware underpins localization of indi-
+vidual objects in WSSS. Our CPAL performs adaptive perception
+of diverse attributes (e.g., cat) with attribute hunting (c) rather
+than from single prototype (a) and plain context prototypes (b).
+This attribute-specific adaptation not only mitigates the risk of er-
+rors where (b) mistakenly identifies similar categories (e.g., dog)
+but also ensures accurate activation of the complete object region.

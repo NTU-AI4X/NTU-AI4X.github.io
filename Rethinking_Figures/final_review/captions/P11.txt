@@ -1,0 +1,10 @@
+Figure 1. Attention visualization at selected query points. We
+show an input resized to 512 × 512 using the CLIP ViT-B/16 vi-
+sion encoder. For each colored query, we compare the attention
+maps produced by CLIP [51], NACLIP [26], and our PEARL.
+CLIP exhibits diffuse and background-biased responses, while
+NACLIP improves localization but often fragments objects into
+isolated peaks. By performing Procrustes alignment in the last
+self-attention block, PEARL yields compact and object-consistent
+attention, suppresses background spill, and better preserves thin
+parts, resulting in stable focus with reduced grid artifacts.

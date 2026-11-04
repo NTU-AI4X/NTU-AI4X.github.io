@@ -1,0 +1,4 @@
+Figure 3: Overview of our two-stage failure-aware adaptation framework. Starting from a
+frozen backbone with adapted LoRA parameters, (a) Stage 1 trains Background-aware LoRA to
+correct background leakage, and (b) Stage 2 freezes the preceding components and trains CIC to
+correct the remaining directional errors.

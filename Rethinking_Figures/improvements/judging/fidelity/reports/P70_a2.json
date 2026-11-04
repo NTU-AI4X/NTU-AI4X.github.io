@@ -1,0 +1,70 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P70",
+  "generation_attempt": 2,
+  "source_image_sha256": "bf761eead4a4662d9d11d602fdaa2d7dbf2e2f0d9cbf8d42b47237ad44cc96fa",
+  "revised_image_sha256": "d3c581f63800744a5dba0191e3addd1b04c73aa824cc2b2169e13205910d7d06",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent multimodal evidence request; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The multimodal super-resolution pipeline is preserved: prompt, depth and segmentation inputs are encoded, MMLC produces multimodal latent tokens m, and diffusion uses these tokens with the LR input to produce the SR output through m-cfg."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both the main pipeline and MMLC detail panel remain. CLIP and VQGAN encoders, modality tokens, additional-modality placeholders, both diffusion blocks, pos/neg inputs, latent tokens, cross-attention, linear layer and self-attention are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and notation remain visible, including TXT, DEP, SEG, m, z_t, z_{t−1}, m-cfg, diffusion steps T, concat, δ, Q/K/V, the attention repetition notation, skip connection and random masking. The added expansion of m-cfg matches the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input-to-encoder-to-MMLC arrows, the m conditioning connection, LR/z_t concatenation, diffusion guidance combination, timestep feedback and LR cross-modal prediction branches are retained. The detail panel preserves latent queries, modality key/value connections, the attention sequence and skip connection. The supplied exact-pixel check additionally covers the complete original computational graph."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green prompt tokens, pink depth tokens, orange segmentation tokens, mixed-color multimodal tokens and the blue LR box retain their associations. Flame and snowflake symbols remain attached to the same modules. Added numbered headings do not redefine these encodings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The lion prompt, LR/SR lion images, grayscale depth example and magenta segmentation example are preserved. No new measurement, example, class identity or result is introduced; the supplied pixel verification supports preservation within the computational graph."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added headings summarize encoding, latent conditioning and super-resolution already shown. The statement that MMLC condenses multimodal inputs into a fixed-length latent sequence is supported by the supplied excerpt describing compression into a shorter sequence whose length matches the latent token sequence. The m-cfg explanation is supported by the caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains both complete panels, all original graph content and the added explanatory text without visible clipping or corruption. Cropped edges in the supplied detail images are covered by the full image and overlapping views."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Assessment is limited to the supplied images, caption, excerpt and reported pixel verification. Pixel verification supports the computational graph only; added headings and explanations were assessed separately. The retained source figure may still have visual limitations; no quality-score-informed revision.",
+  "caption": "Figure 3. This diagram illustrates our multimodal super-resolution pipeline. Starting with a low-resolution (LR) image, we extract modalities\nlike depth and semantic segmentation maps. These modalities are encoded into tokens and transformed into multimodal latent tokens (m).\nOur diffusion model uses these tokens and the LR input to generate a high-resolution (SR) output. A multimodal classifier-free guidance\n(m-cfg) refines the SR image for enhanced quality.",
+  "body_evidence": "judging/fidelity/requests/P70_a2_d3c581f63800/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P70_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P70_a2_d3c581f63800",
+    "response_sha256": "85c371732556f990781bd83e888eb99a3f7d838450d13e74694f2140ffa960c8",
+    "request_metadata_sha256": "82b2ec3495194abdc983fd7eff3efd745ddb1c06b57164abd97e322bc4d1c757",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed complete computational graph preservation and checked added MMLC fixed-length statement against supplied source Section 3.1 excerpt. No new computational edge is introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P70_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T04:36:08.627414+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:36:08.627414+00:00"
+}

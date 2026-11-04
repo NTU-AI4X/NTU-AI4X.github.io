@@ -1,0 +1,4 @@
+Figure 1: Overview of MatGym. Across five simulated laboratories, agents explore candidates and
+adapt tool use to feedback under resource budgets, then deliver a sample and its synthesis recipe.
+Acceptance requires service performance, recipe–history consistency, and success on at least two of
+three fresh batches. An earlier garnet task is shown. *Lab time excludes the simulated storage wait.

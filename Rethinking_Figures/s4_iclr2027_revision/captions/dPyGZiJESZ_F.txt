@@ -1,0 +1,2 @@
+Figure 2: Overview of Latent Bridge, showing (a) feature alignment training, (b) video generation
+and geometry prediction from a shared latent, and (c) the architectures of bridges.

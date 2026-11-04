@@ -1,0 +1,5 @@
+Figure 3: Overview of UniForge3D. Left: The reconstruction and generation branches interact
+bidirectionally to predict multi-view point maps and a complete sparse structure in a shared anchor-
+guided space. Right: Structure-conditioned point maps establish voxel-to-pixel correspondences,
+enabling the model to select informative views and use their image features to guide detailed shape
+generation.

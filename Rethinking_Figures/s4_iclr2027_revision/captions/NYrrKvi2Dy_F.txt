@@ -1,0 +1,4 @@
+Figure 3: Overview of Classwise State Routing. Top: A labeled calibration set estimates down-
+stream class-by-state reliability, selects a compact shared state pool, and fixes class-conditioned
+routing weights. Bottom: For a new image, the frozen backbone extracts selected-state responses,
+which are fused and rescaled before unchanged backend-native decoding.

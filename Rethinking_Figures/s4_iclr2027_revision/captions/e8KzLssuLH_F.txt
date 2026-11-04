@@ -1,0 +1,8 @@
+Figure 2: Overview of PAIR3D. PAIR3D aligns reconstructed 3D scenes with physical constraints
+through verifiable feedback. Given an initial SAM3D reconstruction with artifacts such as floating
+objects and inter-object penetration, we construct a multimodal relational scene graph from object
+states, spatial visual evidence, and pairwise relations. A shared relational encoder provides structure-
+aware representations to an actor–critic policy, which iteratively updates object translation, rotation,
+and scale. Physics simulation and visual verification provide verifiable rewards for PPO training. The
+resulting policy directly refines scenes at test time, reducing penetration and support violations while
+producing configurations that remain stable under simulation.

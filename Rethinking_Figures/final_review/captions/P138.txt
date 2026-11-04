@@ -1,0 +1,4 @@
+Figure 2. The proposed domain adaption framework contains a segmentation net and a SimT. Target images are passed through the
+segmentation net f(·) to perform semantic segmentation, and supervision signals are corrected by the learnable SimT. SimT is estimated
+w
+through the proposed (a) volume regularization, (b) anchor guidance and (c) convex guarantee.

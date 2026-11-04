@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_kv0BeIZGMk_M",
+  "generation_attempt": 2,
+  "source_image_sha256": "e7ec5c5c067c3d60d312d678d6d907f8a71799f1bd1b93a4218a20e929905d95",
+  "revised_image_sha256": "6e7421380e2b978810c6da118bb43c22d489d194bbe86ecdb605f85ff5198cf0",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures contrast conventional local-view inference with HIVE’s global/local interaction and image-conditioned vocabulary, followed by the same performance comparison."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Panels (a), (b), and (c) remain present, including image views, category lists, vision/text encoders, MLLM, COS nodes, expanded vocabulary, and eight-axis radar chart."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Module names, panel captions, dataset labels, and legend entries are retained. HIVE values remain 78.7, 57.5, 52.0, 94.7, 52.9, 34.8, 47.5, and 31.6; radar ticks remain 25%, 50%, 75%, and 100%."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Both encoder branches still feed COS. HIVE retains global-to-local and local-to-global curved arrows, the image-to-MLLM arrow, and category list → MLLM → expanded vocabulary → text encoder."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue visual-path arrows and brown text-path arrows retain their roles. Radar colors consistently identify CLIP, ResCLIP, dino.txt, SC-CLIP, VIP, and red circle-marked HIVE. Changed panel borders do not change grouping."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The baby/teddy-bear imagery and people, toothbrush, and teddy bear examples remain intact. Expanded names retain 'people, child, baby' and 'teddy bear, toy bear, stuffed bear.' Radar profiles are preserved; supplied pixel evidence also covers these example and chart regions."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added annotations—'Independent local views; fixed category names,' 'Local–global–local context,' and 'Image-conditioned aliases'—are explicitly supported by the supplied source excerpt."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all three complete panel captions, modules, example text, radar labels, and legend. Cropped content at detail-image boundaries remains visible in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, excerpt, and reported pixel checks only. Pixel evidence covers the listed rectangles; connections and added annotations were assessed separately from visible content. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Paradigm and performance comparison between conventional approach and our HIVE.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_kv0BeIZGMk_M_a2_6e7421380e2b/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_kv0BeIZGMk_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_kv0BeIZGMk_M_a2_6e7421380e2b",
+    "response_sha256": "67b061158e89f0ee01453b6d11704e696aa629cac1f2b8d95b0e97bb85aac980",
+    "request_metadata_sha256": "987461b4fbbdec196d776301ce6fb5ed57b243fa63a33eab8fafa7e24d15ac0e",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed final full image and independent source-pair response: conventional and HIVE inference routes, local/global loop, image-conditioned aliases and complete radar data are retained. Independently recomputed six protected regions; no radar value or category changed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/ICLR27_kv0BeIZGMk_M_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T04:45:38.643427+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:45:38.643427+00:00"
+}

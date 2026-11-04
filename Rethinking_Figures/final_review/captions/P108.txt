@@ -1,0 +1,10 @@
+Figure 2. Overview of our method.
+Wefirsttrainthenetworkinasemi-
+supervised manner. During active
+learning, for each image, we use
+the network to compute the acqui-
+sition function and based on it de-
+cide if we actively label the image,
+if we pseudo-label it, or if we only
+use it as part of the unlabeled data
+for the next training cycle.

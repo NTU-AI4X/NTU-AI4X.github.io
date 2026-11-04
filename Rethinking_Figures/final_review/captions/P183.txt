@@ -1,0 +1,2 @@
+Figure 1. NAS3R is a self-supervised framework that requires no ground-truth annotations and no pretrained priors during training, and
+jointly infers 3D Gassian parameters, camera intrinsics and extrinsics and depth maps, also enabling high-quality novel view synthesis.

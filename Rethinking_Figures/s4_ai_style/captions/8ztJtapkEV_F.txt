@@ -1,0 +1,5 @@
+Figure 1: Overview of FINFIRST construction pipeline: Data Preprocessing derives a taxonomy,
+coverage blueprint, and source map from real-world financial scenarios; Data Construction engages
+over 50 finance experts to iteratively author tasks, balance coverage, construct evidence-grounded ref-
+erence packages, and define atomic rubrics; and Quality Control applies a 6-stage filtering procedure,
+yielding a final set of 123 verified questions.

@@ -1,0 +1,74 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P294",
+  "generation_attempt": 1,
+  "source_image_sha256": "b0bb876f4a9e77f5b566a770df428c2b5367fc3a3385ca572c570182b6961c50",
+  "revised_image_sha256": "377a020eb49040e4c0ff5829dc91cef3d09f2a1c14165af4eb77bee65aff3c0b",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The inference pipeline remains image/text input, class-specific SAM 3 computation and final segmentation, matching Figure 2 and Section 3.2 on PDF pages 3–4.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four class frames, input satellite image and prompts, complete instance/semantic/presence branches, original output mask and background/building/road/tree/car legend are retained.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original N×H×W and H×W dimensions, 0.85 presence score, MAX/MAX/multiply and Argmax labels are exact source pixels. Added operator key correctly states element-wise maximum and multiplication.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Traced the restored image/text-to-SAM3 input connector across the widened left gutter and all four colored class-specific score-to-Argmax connectors across the right gutter. Each resumes the matching source path without extra joins or reversed arrows.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original colors for categories, probability/instance maps, presence score and final output are unchanged. The repeated class-specific scope note corresponds to the existing stacked class frames.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed all three source modules at native scale and matched every destination pixel and recorded hash. All scientific photographic/map evidence is original data.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added three-operation guide and statement that the detailed Building branch repeats for Tree/Road/Car follow the caption and class-wise inference description. No background threshold or omitted implementation detail is invented.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed original and derivative. All panels, original sparse map regions, legend, 0.85 label and class names are visible without clipping; low-opacity source class frames remain faint as in the source.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Independent scientific-fidelity review only. No derivative quality scores were read. Exact original scientific content is retained; layout quality is left to independent scoring.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-11-01T02:05:51.042645+00:00",
+  "hybrid_verification": {
+    "regions": 3,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/P294/provenance.json",
+    "source_pdf_pages": [
+      3,
+      4
+    ]
+  }
+}

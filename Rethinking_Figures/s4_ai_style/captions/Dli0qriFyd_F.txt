@@ -1,0 +1,4 @@
+Figure 2: Overview of the MEMVISTA construction pipeline. Project scenarios and state schemas
+define the setting, while state operations specify its evolution. Images and turn-by-turn user–agent
+interactions realize this progression as multimodal histories. The completed histories and validated
+state records support four task families: snapshot, trajectory, boundary, and reasoning.

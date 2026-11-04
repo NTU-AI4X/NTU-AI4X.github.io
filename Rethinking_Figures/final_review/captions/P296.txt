@@ -1,0 +1,5 @@
+Fig. 2. (a), (b) Given several novel classes and their support set, we first use HDIG to synthesize high-quality, diverse novel class images proportional to the
+base class images. Guided by support images, APE refines these synthesized images to generate accurate masks through two stages: Adaptive Pseudo-label
+Filtering (APF) and Adaptive Pseudo-label Relabeling (APR). Specifically, APF filters noisy regions in the initial mask M to obtain M1 ; APR relabels these
+unlabeled regions to yield M2 . Finally, SAM-based Boundary Refinement (SABR) further refines the mask boundaries, yielding the final M3 . (c), (d) illustrate
+the details of APF and APR.

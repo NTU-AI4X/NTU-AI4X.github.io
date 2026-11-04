@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_RPFKIcqk1w_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "7e7c478d563c8c4606db027163ce454e0f305c34e5f8ffc0af42829e9c81d289",
+  "revised_image_sha256": "e40fecf8b83c052645cb7ea2eae4024a378b245c515a34e710eaa5c504886be1",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The same framework spans three PDE problems, two programming arms, the lab community and its four iteration phases, then two example discovered operator programs."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three PDE rows and five source field/surface tiles, both arms, the full illustrative lab grid, planner/worker/reviewer/lifecycle loop, Darcy operator and Allen-Cahn operator remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The 16 labs x16 iterations and single-lab x256 same-budget statements, up to3 repairs, 0.21M parameter counts, 3x3/5x5/7x7 kernels, softmax(x,y), F/A/W/R/T/G/S legend and relative L2 metric retain source values."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Planner program feeds numerical training, error/code feeds reviewer, and critique/inspirations loop back. Failure feedback returns toward planning. The Darcy grid weights convolution branches through softmax; Allen-Cahn F to A splits S/W, sums, then R to G, as in the original."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Citation arrows point toward the starred most-cited lab; plus denotes founding and crosses removal. The separate held-out-retraining arrow remains independent of the star, avoiding an unsupported equivalence between most-cited and evaluation winner."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "All five PDE example tiles were independently verified as exact native 1:1 RGB copies of source regions, including recorded pixel hashes. Program diagrams remain schematic rather than empirical curves."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "No new performance claim is added. Held-out random seed retraining, different winners by problem and no universal winner are original statements supported by the caption and Method Sections 4-5."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All sections, restored scientific fields, complete operator branches, legend, parameters and bottom same-budget ablation text are visible."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "The illustrative lab grid retains the source schematic arrangement including lifecycle/new/removed icons; the experimental configuration is conveyed by its unchanged 16-lab label. All five scientific tiles are exact native pixels. This audit does not validate reported empirical findings.",
+  "caption": "Figure 1: The neural operator AI scientific community: the three problems and the two arms (left), a\ncommunity of 16 labs and the four phases of each iteration inside a lab (center), and two discovered\nprograms (right). Every winning program is retrained on held-out random seeds before it is compared\nwith other models.",
+  "body_evidence": "generation/AI_RPFKIcqk1w_F/source_context.txt",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/AI_RPFKIcqk1w_F_a1.json"
+  ],
+  "reviewed_at": "2026-10-31T15:57:35.204980+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T15:57:35.204980+00:00",
+  "independent_pixel_check": "judging/fidelity/reports/AI_RPFKIcqk1w_F_independent_pixel_check.json"
+}

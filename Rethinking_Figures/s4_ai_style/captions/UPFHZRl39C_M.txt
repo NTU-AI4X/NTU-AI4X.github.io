@@ -1,0 +1,2 @@
+Figure 1: From stateless refinement to continual capability growth. VEvo-Harness causally verifies
+and reuses visual experience, enabling frozen generators to become progressively stronger with usage.

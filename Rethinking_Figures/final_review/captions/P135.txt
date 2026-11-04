@@ -1,0 +1,5 @@
+Figure 1. (a) Image and the query points (denote with ”⋆”) to vi-
+sualize the attention and affinity maps; (b) the self-attention maps
+in Transformer blocks only capture coarse semantic-level affin-
+ity relations; (c) the learned reliable semantic affinity from self-
+attention with our proposed method.

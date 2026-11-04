@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P97",
+  "generation_attempt": 1,
+  "source_image_sha256": "c9fa31455826a60ca2333539a941c772f1f7c96d6cec8572b28fd2f570650a1d",
+  "revised_image_sha256": "29022340ea534a1e00f10e8a0d82951f7ff9b2bc6c02e1d9fd413ecfdc28df20",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains empirical evidence for object-scale variance, inconsistent cross-scale predictions and hard-pseudo-label noise."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three source measured plots and their original panel titles remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Full1000 instance-size axis,10^7 log-axis endpoint, mean/deviation values, detector legends and AP/AR thresholds remain unchanged."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The three plots remain separate observations; added headings/summary do not create a causal arrow or alter the plotted dependencies."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "All original histogram and curve colours, foreground/background ratio legend and precision/recall axis colours are retained."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Three entire plot regions independently match native source pixels, including all curves, ticks, labels and legends; no numerical data was redrawn."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New dataset resize settings, score-distance definition, backbone/training fraction and false-negative explanation follow the original caption and introduction. The SED heading is supported by the paper title and motivation discussion."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All axes and upper/lower exponent labels remain visible. Abbreviations Fore/Back/F:B are retained without invented legend expansions."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 2. (a) For the COCO dataset, all the images are resized such that the short edge has 800 pixels while the long edge has less than\n1333 pixels. For the ImageNet dataset, all the images are resized to 224×224 to calculate the statistics. The scale of object is represented\nas the square root of the area. We discuss the typical training input size for ImageNet classification and COCO detection tasks. (b) All the\nscores are predicted on COCO minival dataset by the RetinaNet detector with FPN and ResNet 50 backbone, which is trained with 10%\nCOCO data. The score distance is the absolute difference between the predictions of the image in different sizes. The Y-axis is the average\nnumberofanchorsperimage. (c)Wepredictpseudo-labelontherestofCOCOtrainingdatawithaconvergedFaster-RCNNdetector(with\nFPNandResNet50backbone), trainedwith10%COCOdata. Thelowaveragerecallandprecisionshowthathardpseudo-labelincurmore\nnoise with False Negative samples.",
+  "body_evidence": "generation/P97/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P97_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T03:56:43.790138+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T03:56:43.790138+00:00"
+}

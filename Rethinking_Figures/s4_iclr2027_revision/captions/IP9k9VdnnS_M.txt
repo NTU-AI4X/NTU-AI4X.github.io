@@ -1,0 +1,1 @@
+Figure 1: Motivation of the proposed DFC-guided restoration paradigm. (a) Degraded images and residual frequency-domain energy maps; (b) DFCs derived from residual-to-degraded energy ratios; (c) Adaptive DFC tokenization into band-wise spectral tokens, where same-band tokens across degradations form reusable spectral priors; (d) Token-guided degradation-aware restoration.

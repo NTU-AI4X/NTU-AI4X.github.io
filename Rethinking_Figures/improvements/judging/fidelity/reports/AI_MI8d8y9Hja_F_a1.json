@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_MI8d8y9Hja_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "b71b04a611ac6672fe22d34d199ac104aa7820cc8390b8309d222057b921fbe3",
+  "revised_image_sha256": "507a661855ca33c3c8061533fdf3ce3a0317fb8fdf8168e4fcd1f0fabb7e3ecd",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The four-phase collection protocol still produces participant timing judgments for evaluating proactive interventions. The added benchmark bridge matches the caption’s collection-to-evaluation relationship."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four collection phases and evaluation Tasks A, B and C remain, including conversation examples, source-search interface, candidate message, timing annotations and deliberation windows."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Phase and task names remain accurate. First relevant #6, last useful #11 and best placement #8 are preserved, as are the 5-turn lookahead and transcript turn labels. Added counts of 15 models and 28 configurations match the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Phase ordering, acceptable and revised windows, and intervention placement after Turn 3 remain intact. The realism/difficulty arrow still points upward. The new rightward benchmark arrow is supported by the caption."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Pink and green participant identities and annotation windows remain consistent. Purple selected turns and messages, red rejection marks, green acceptance marks and gray alternatives retain their original meanings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The four self-driving-car conversation messages and Waymo candidate intervention are preserved. Timing examples retain the Turn 6–11 acceptable window, best Turn 8, and the same evaluation selections."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added intervention-timing heading and PITCH benchmark bridge are supported by the caption. The added context-availability summary follows the original replay, five-future-turn and full-transcript task descriptions; deployment realism is also explicitly supported."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all substantive panels, labels and examples without visible text clipping or corruption. Cropped content in the supplied detail views is visible in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption; no source body text was provided. Reported pixel equality applies only to the listed rectangles; added headings and the connecting arrow were assessed semantically. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: PITCH (Proactive Intervention Timing in CHat) is the first benchmark for proactive inter-\nvention timing built from unscripted human conversations and participants’ own judgments of when\nproactive interjections should occur. We collected the benchmark data via a four-phrase protocol:\nConversation, Message Contribution, Timing Judgments, and Deliberation. We then evaluated 15\nmodels across 28 configurations against the benchmark in three task setups that differ in their task\ndifficulty and realism for real-world deployment of agents in group conversations.",
+  "body_evidence": "judging/fidelity/requests/AI_MI8d8y9Hja_F_a1_507a661855ca/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_MI8d8y9Hja_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_MI8d8y9Hja_F_a1_507a661855ca",
+    "response_sha256": "2c583c6784dc376965b2e91c5ec209dbe805a013cdeb7cd7a921ca1c611920b9",
+    "request_metadata_sha256": "c17f1f988cd3fd1a24877c8767a1fa4594a4b78df1b9934e4d986c064dafc713",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the final PITCH figure and read its source caption plus all independent source-pair observations. Four original collection phases, the Waymo source search and candidate message, participant conversation, timing window Turn 6-11/best 8, and deliberation are intact. Tasks A/B/C retain replay, 5-turn lookahead, and full-transcript setups, selected turns and upward realism/difficulty arrow. The added overall benchmark bridge and 15-model/28-configuration heading are directly supported by the caption. All five protected source blocks are replayed at 2x nearest-neighbor. No new empirical result or participant judgment is introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T06:44:34.569080+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:44:34.569080+00:00"
+}

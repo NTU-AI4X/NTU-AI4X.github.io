@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P96",
+  "generation_attempt": 1,
+  "source_image_sha256": "0bef0135a320442b06f4c33a8afdb087cc551ff623c68f6b267e32dba5a31635",
+  "revised_image_sha256": "bbc69816e7efda1ca938fa66e07f260a859b2918a7fd07040ba4ab3363a08f3f",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The labeled/unlabeled training pipeline, Aggregated Teacher, Student, Adaptive Filtering, MetaNet refinement and final loss remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original panels are retained, including animal and tennis examples, augmented views, downsampled view, predictions after NMS and both pixel-label panels. Enlargements repeat the original refinement examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Module names, augmentation labels, cow/horse/dog prediction labels, L_s + L_u + L_scale, and legend scores 0 and 1 are preserved. Added explanatory wording agrees with the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Teacher predictions flow through Adaptive Filtering and MetaNet; refined labels feed L_u. Student-to-teacher updating, augmentation inputs and loss connections retain their directions. The enlarged before-to-after MetaNet arrow matches the original."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Yellow remains foreground, green ignorable region and gray background. The horse region changes from yellow before MetaNet to green afterward in both the original and enlarged examples."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The animal scenes, tennis annotations and patch-shuffled examples are retained. Enlargements preserve the same class labels and region assignments; no new measurements or outcomes appear. Supplied pixel checks support preservation within the listed rectangles."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "“Scale consistency across patch-shuffled views” follows the caption's different-scale consistency regularization. “MetaNet refines high-score false positives” follows its explicit description of high-scoring wrong predictions. Before/after headings explain the existing refinement sequence."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains the complete pipeline, enlargement panels, legends and explanatory text without visible clipping or corruption. Cropped text at detail-image boundaries is visible completely in the full derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel checks. Pixel checks establish preservation only within their listed rectangles; added text and relationships were assessed separately. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. The pipeline of our proposed DenSe Learning (DSL) based SSOD method. The training data contain both labeled and unlabeled\nimages. During each training iteration, a teacher model is employed to produce pseudo-labels for weakly augmented unlabeled images.\nIn anchor-free based detectors like FCOS [44], each spatial location of the dense predictions will be assigned with one label, and the\nmodel performance is sensitive to noisy pseudo-labels. To alleviate this problem, an Adaptive Filtering strategy is proposed to split the\npseudo-labels into three types, including background, foreground and ignorable regions. Moreover, there exist some false positive cases,\nwhich have higher scores but are obviously wrong predictions. Thus, a MetaNet is proposed to refine these cases. To improve the model\ngeneralization capability, unlabeled images are patch-shuffled and consistency regularizations are applied on these images with different\nscales. For improving the stability and quality of pseudo-labels, the teacher model is updated by the student models via aggregation, called\nAggregated Teacher. After obtaining the fine-grained pixel-wise pseudo-labels, the detector can be optimized by the final loss, which is the\nsum of L ,L and L .\ns u scale",
+  "body_evidence": "judging/fidelity/requests/P96_a1_bbc69816e7ef/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P96_a1_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P96_a1_bbc69816e7ef",
+    "response_sha256": "04e8ed585e4d72c281bc57a00ec3d45c81eca514a9d4ca37dfcc250ac9d1fcce",
+    "request_metadata_sha256": "e5bdf6d1e925b03e1e7f9ba10e3aac9141e434144835fef33143b66d028e85f6",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed DSL final and before/after MetaNet enlargement; read caption and independent checks. All original animal/tennis examples, augments, teacher/student update, filtering and loss paths, three-region color legend and class labels remain. New scale-consistency and high-score false-positive descriptions are caption-grounded. Tiny original blue connector endpoint on before-crop edge is retained as a visual limitation, not an added relation. All protected overview/detail/legend regions independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T09:52:22.518568+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:52:22.518568+00:00"
+}

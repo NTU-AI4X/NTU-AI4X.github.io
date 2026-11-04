@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P269",
+  "generation_attempt": 1,
+  "source_image_sha256": "a27f9be31a6c98175f562119513bc25d1300c36f98117aa1b6a8a3296380e055",
+  "revised_image_sha256": "83efc270af6bcdf3ad55508583ad9196bf3630a55a9175981f41da0cfa3b1d28",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "All three task comparisons remain intact: categories guide open-vocabulary detection, caption phrases guide grounding, and the generative method produces object names through a language model."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Panels (a), (b), and (c), all three tennis photographs, DETR blocks, text encoders, classifier heads, embedding arrays, and language-model encoder/decoder are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Panel titles and module labels are preserved. Category inputs remain ‘person’, ‘tennis racket’, and ‘cat’; predictions retain two ‘person’ entries, ‘tennis racket’, and <no object>. Caption and generated-name examples remain unchanged."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Image-to-DETR and text-to-embedding paths retain their directions. Classifier outputs still align with text embeddings in (a)/(b); (c) preserves DETR → encoder → intermediate representations → decoder → generated names."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Yellow ‘A man’ and blue ‘a young boy’ still correspond to their embedding and alignment highlights. Purple category embeddings, green object representations, and pink DETR tokens remain consistent. Added blue input and green output boxes are consistently labeled."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The photographs and caption example are preserved. Generated alternatives still include person/man, person/boy, tennis racket/racquet, and fence/chain link fence; no measurements or new outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added input/output summaries describe the depicted relationships. The closing statement about users lacking advance category knowledge is supported by the supplied caption. No additional method component or empirical claim is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all panel titles, diagrams, output strings, added summaries, heading, and closing sentence without visible clipping or unreadable replacement text."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. Reported pixel equality covers only the three listed rectangles and was not independently verified; added explanatory content was assessed semantically. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Comparing generative open-ended object detection with\nother open-set object detection tasks. Open-vocabulary object de-\ntection and phrase grounding typically require predefined cate-\ngories or phrases in text prompts to align with image regions. In\ncontrast, our introduced generative open-ended object detection is\na more general and practical setting where categorical information\nis not explicitly defined. Such a setting is especially meaningful\nfor scenarios where users lack precise knowledge of object cate-\ngories during inference.",
+  "body_evidence": "judging/fidelity/requests/P269_a1_83efc270af6b/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P269_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P269_a1_83efc270af6b",
+    "response_sha256": "f721ded1c93cab02b33eefbf21a660ee714224aa4fd31a39f5529b7eb7dbb2cc",
+    "request_metadata_sha256": "94832c7048758b8bbf4fe77264fd574f66b1b69f72a40e6957f4f1418d35bfca",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed final three-panel detector comparison and independent source-pair response; original category/caption/generative outputs, aligned token colors and no-object label remain. Source-supported input/output summaries add no inferred category list.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T04:45:38.525976+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T04:45:38.525976+00:00"
+}

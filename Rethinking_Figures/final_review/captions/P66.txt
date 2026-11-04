@@ -1,0 +1,5 @@
+Figure 2. Pipeline of DW. The left part shows the overall detection model which consists of backbone, FPN and detection head. The
+outputs from the classification branch (H × W × C) and the centerness branch (H × W × 1) are multiplied as the final cls score. The
+box refinement module utilizes the four predicted boundary points (H × W × 8) to adjust the coarse prediction (H × W × 4) to finer
+locations.The right part shows the weighting process. Given an object, a candidate anchor bag is first constructed by selecting the anchor
+points near the object center. Each anchor will then be assigned a pos weight and neg weight from different aspects.

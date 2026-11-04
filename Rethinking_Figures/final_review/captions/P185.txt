@@ -1,0 +1,18 @@
+Figure 1. Different paradigms of isotropic reconstruction from
+anisotropic datasets. Existing approaches typically extract vol-
+ume features from abundant xy-plane images. After stacking
+anisotropic slices along the z-axis (top), they: (a) Video inter-
+polation along the z-axis: models are trained along the x or y
+direction, where adjacent frames are input to synthesize the inter-
+mediate frame; during inference, the trained model is repurposed
+to interpolate along the z-axis, generating intermediate slices cor-
+responding to continuous temporal coordinates (τ ∈ [0, 1]). (b)
+Image super-resolution on xz/yz planes: Since the xy-plane im-
+ages are of much higher resolution, a low-resolution counterpart
+can be generated either by manual downsampling [21] or by learn-
+ing a degradation model [6], forming paired HR–LR supervision
+for training; during inference, the resulting super-resolution model
+is then applied along the z-axis to enhance xz/yz slices. Both
+paradigms implicitly assume spatial isotropy. In contrast, our
+method directly performs inference in continuous 3D space, with-
+out relying on such isotropic assumptions.

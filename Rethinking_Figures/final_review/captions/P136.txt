@@ -1,0 +1,5 @@
+Figure 3. The proposed end-to-end framework for WSSS. We use a Transformer backbone as the encoder to extract feature maps. The
+initial pseudo labels are generated with CAM [59] and then refined with the proposed PAR. In the AFA module, we derive the semantic
+affinity from MHSA in Transformer blocks. AFA is supervised with the pseudo affinity labels derived from the refined label. Next, we
+employ the learned affinity to revise the pseudo labels via random walk propagation [2, 1]. The propagated labels are finally refined with
+PAR as the pseudo labels for the segmentation branch.

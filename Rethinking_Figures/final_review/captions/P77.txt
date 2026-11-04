@@ -1,0 +1,9 @@
+Figure1. OurPoInit-of-Viewmethodinjectsimperceptiblepertur-
+bations into input views (top) to induce cross-view inconsistency
+(seedetailsinFigure3)inthefoundationalStructure-from-Motion
+(SfM)initializationratherthanthesingle-view-basedlossinexist-
+ing attacks. The corrupted feature correspondences propagate to
+inaccurate point triangulation, leading to erroneous camera poses
+and severely degraded 3D reconstruction results (bottom). Com-
+paredtocleanviews,ourpoisonedinputsyieldfarfewerregistered
+images, and as a result, lower quality of rendered views.

@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P203",
+  "generation_attempt": 1,
+  "source_image_sha256": "362691d71a147b5a0411df6196fd225ba57b519d1c6d2b3521f57fb901afb932",
+  "revised_image_sha256": "17f8f20bf4e0eddc079a96ef9bebec4337bbb85d6f8dbecb6a0600d5717b5885",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The direct panorama-to-PanoVGGT reconstruction path and the split-pinhole baseline remain intact, alongside the PanoCity dataset overview."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Retains three overlapping panorama inputs, 12 vertex-view crops, both reconstruction results, and all six outdoor dataset examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original method and panel labels remain legible, including 'Icosahedron Vertex Views,' 'Split,' 'Compare,' and 'Results.' Weather labels retain their sequence: Clear sky, Foggy, Cloudy, Snowy, Night, Cloudy. No original equations or numerical values are omitted."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The rightward Split arrow, downward model-to-result arrows, comparison arrows, panel containment, and winding dataset path preserve their original relationships."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Orange method/input/output labels, blue dataset/results labels, dashed group boundaries, colored layers behind city panoramas, and weather/camera symbols retain their associations."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The bedroom inputs, contrasting room reconstructions, and six city panoramas retain their visible content and category identities. No measurements or outcomes have been added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added headings summarize the existing method comparison and outdoor dataset coverage. The new joint pose/depth/point-cloud prediction statement is supported by the supplied abstract; the pose and depth supervision statement is supported by the supplied dataset description."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original figure plus readable headings and bottom statements. No key content is clipped or visibly corrupted; truncation at detail-image boundaries is resolved by the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, source text, and reported pixel proof. The proof covers the complete-source rectangle; added headings and explanatory statements were assessed separately against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Overview of PanoVGGT and the PanoCity dataset. PanoVGGT predicts camera poses, dense depth, and consistent 3D point\nclouds from unordered panoramas. Compared with perspective-based pipelines that split panoramas into pinhole views, it yields more\naccurate 3D reconstructions. PanoCity contains over 120k outdoor panoramas under diverse urban scenes and weather conditions.",
+  "body_evidence": "judging/fidelity/requests/P203_a1_17f8f20bf4e0/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P203_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P203_a1_17f8f20bf4e0",
+    "response_sha256": "77ba1f38c0799b446944c33d890b089c4665ea103b9525306b979898ad7c4c14",
+    "request_metadata_sha256": "665e86e6f0d4739e81ec4d82e062cb8c20028a05bb80eb1cedd3c0ed6251fc22",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final PanoVGGT/PanoCity figure, read caption and source introduction on dataset annotations, and reviewed all pair checks. Original panorama stack, twelve split views, two reconstruction results, all six weather scenes, camera/weather icons and crossing vertical titles remain complete. Added top groups separate method versus dataset roles; bottom pose/depth/point-cloud predictions and dataset pose/depth supervision are explicitly source-supported. Full scientific source image is preserved; no new weather or geometric result is added.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:30:30.162534+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:30:30.162534+00:00"
+}

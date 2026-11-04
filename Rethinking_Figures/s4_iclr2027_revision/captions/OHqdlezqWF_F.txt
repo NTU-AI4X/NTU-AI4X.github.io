@@ -1,0 +1,4 @@
+Figure 2: Overview of the proposed UCMIT framework. At each scale, LCIT reconstructs RGB-
+aligned thermal evidence from nearby thermal sources. REF then arbitrates between co-located and
+transported evidence and regulates its residual injection into the RGB stream. The resulting multi-
+scale representations are progressively aggregated for task-specific dense prediction.

@@ -1,0 +1,3 @@
+Figure 1. Comparisons on the resolution and annotation quality between existing semantic segmentation datasets (a) COCO, (b) ADE20K,
+(c) EntitySeg and (d) our established dataset MaSS13K. Note that the ‘others’ category, which is highlighted in yellow, in our MaSS13K
+actually contains a group of well-segmented objects without specific class names. Please zoom-in for a better view.

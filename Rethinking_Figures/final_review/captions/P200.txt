@@ -1,0 +1,4 @@
+Figure 3. Overall framework. We extend the visual stream into a frozen Prior Noise stream that preserves the pretrained diffusion prior
+and a Control Noise stream that adaptively modulates noise based on the Fidelity Weight to restore fine details, forming a Noise-hybrid
+Visual Stream. Leveraging the Fidelity Weight to adjust adversarial signals adaptively, Fidelity-aware Adversarial Training enhances
+controllability and achieves one-step inference.

@@ -1,0 +1,77 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P224",
+  "generation_attempt": 1,
+  "source_image_sha256": "b8f644f5b33fdc23ee0247a62cf2533940a10143b5a9425c98e40c95be7f99ff",
+  "revised_image_sha256": "807bfc299135b144993f205d327d871834cccbde0011639b90af95b5a314a1a6",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative retains depth-to-REL representation, RGB/REL region slicing, dual processing streams, gate-controlled Stages 1–4, and the decoder producing the segmentation example."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original modules and examples remain: Original Depth, Point Cloud, Normal, ReD/EGVIA/LOA, RGB Image, SMMF Region Slicing, both PE1/Attn1 branches, SMMF Cell 1, subsequent stages, gate network, decoder, and output image."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Viewed full final, original-full-plus-gate-enlargement layout and paired-image checks. Every RGB/REL sample, gate variable, two-stream feature path, stage1–4 and decoder arrow remains. Aux questioned fusion weights. Read source 2601.16788v1 detailed fusion paragraph lines525–551: Prob weights multiply expert fusion outputs in their sum, soft stage uses probability vector and hard stage one-hot. Thus weights is supported without claiming all are continuous at inference. Supplementary source excerpt/hash retained; no image alteration. Inset connector stubs are contextual crop boundaries, complete in overview."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "RGB and REL feed their respective PE1→Attn1 branches; x₁/x₂ feed the gate; g₁–g₄ feed the corresponding stages. Both horizontal streams and all four downward decoder connections remain, as does the decoder’s leftward output arrow. The enlarged gate inset repeats the original internal sequence."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green REL grouping, blue region-slicing grouping, yellow/cyan processing branches, pink fusion cell, orange gating paths, and black feature-flow arrows retain their original meanings. Probability-bar colors and relative heights are preserved."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The room panorama, depth/geometry images, red-bordered input regions, and colored segmentation result match the original examples. No new measurements or outcomes are shown. The supplied pixel proof supports preservation within the two listed source rectangles."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Viewed full final, original-full-plus-gate-enlargement layout and paired-image checks. Every RGB/REL sample, gate variable, two-stream feature path, stage1–4 and decoder arrow remains. Aux questioned fusion weights. Read source 2601.16788v1 detailed fusion paragraph lines525–551: Prob weights multiply expert fusion outputs in their sum, soft stage uses probability vector and hard stage one-hot. Thus weights is supported without claiming all are continuous at inference. Supplementary source excerpt/hash retained; no image alteration. Inset connector stubs are contextual crop boundaries, complete in overview."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram and readable added annotations. The enlarged gate panel has complete text and formulas; its external connector stubs do not remove relationships from the complete diagram above. Cropping in the supplied detail views is not clipping of the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [
+    {
+      "flag": "Unverified interpretation: 'Regional fusion weights' may imply numerical mixing weights, whereas the supplied source only says the gate independently determines the fusion used in each region. Use 'Regional gate network — enlarged view' or supply support for the weights interpretation.",
+      "disposition": "Resolved by supplemental original evidence and direct local inspection; no derivative pixels changed.",
+      "evidence": "Viewed full final, original-full-plus-gate-enlargement layout and paired-image checks. Every RGB/REL sample, gate variable, two-stream feature path, stage1–4 and decoder arrow remains. Aux questioned fusion weights. Read source 2601.16788v1 detailed fusion paragraph lines525–551: Prob weights multiply expert fusion outputs in their sum, soft stage uses probability vector and hard stage one-hot. Thus weights is supported without claiming all are continuous at inference. Supplementary source excerpt/hash retained; no image alteration. Inset connector stubs are contextual crop boundaries, complete in overview.",
+      "source_evidence": "generation/P224/independent_body_context.txt",
+      "source_evidence_sha256": "585214e5a5a9fda713b60fb73a7078a6965fffeafd4aa7da375ccab9caf1263e"
+    }
+  ],
+  "remaining_limitations": "Assessment uses only the supplied images, caption, and reported pixel proof. No source body text was provided. Pixel proof applies only to its listed rectangles and does not validate added explanatory claims. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. The overview of REL-SF4PASS. Firstly, REL representation effectively represents the depth information by using ReD, EGVIA,\nand LOA, which contains the 3D location and surface normal direction. Secondly, Our SMMF to get image regions from cylinder side\nsurface and uses a Gate Network to independently determine the fusion used in each region.",
+  "body_evidence": "judging/fidelity/requests/P224_a1_807bfc299135/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P224_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P224_a1_807bfc299135",
+    "response_sha256": "9699bda611ecc738ad59843e54ea0db956e412e64eda646d19d1e411c72d2f33",
+    "request_metadata_sha256": "e0f882fe43c41273d70dd405bd4f492cb3cb4858f4fd4a8e40bab42ae7ebd77d",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final, original-full-plus-gate-enlargement layout and paired-image checks. Every RGB/REL sample, gate variable, two-stream feature path, stage1–4 and decoder arrow remains. Aux questioned fusion weights. Read source 2601.16788v1 detailed fusion paragraph lines525–551: Prob weights multiply expert fusion outputs in their sum, soft stage uses probability vector and hard stage one-hot. Thus weights is supported without claiming all are continuous at inference. Supplementary source excerpt/hash retained; no image alteration. Inset connector stubs are contextual crop boundaries, complete in overview.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:08:30.597111+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:08:30.597111+00:00"
+}

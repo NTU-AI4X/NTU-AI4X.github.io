@@ -1,0 +1,3 @@
+Figure 2: Overview of GRASP. Real-ISR is cast as visual in-context completion. Local visual
+evidence comes from the diptych, global image context from the Vision-Context Bridge over CLIP,
+and semantic prompts from LLaVA captions during training and agent refinement during inference.

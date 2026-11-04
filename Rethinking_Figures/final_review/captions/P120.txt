@@ -1,0 +1,7 @@
+Figure2. TheoverallpipelineoftheproposedFinPercep-RMandCo-evolutionaryCurriculumLearning(CCL)framework. FinPercep-RM
+producesaFine-grainedPerceptualDegradationMapthatcapturesspatiallylocalizeddefectlikelihoodandintensity, andtherewardmodel
+is progressively expanded from small-variance, coarse-grained rewards to large-variance, fine-grained signals. During training, under the
+CCL mechanism, the Generator first learns with the coarse global reward from RM for a stable and easy initialization, and is then co-
+0
+evolutionarily guided by increasingly strict RM versions to enhance local fidelity and suppress reward hacking.
+k

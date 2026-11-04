@@ -1,0 +1,73 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P139",
+  "generation_attempt": 1,
+  "source_image_sha256": "e132a4ba46b02844cf7c02b866a92c53b1542d8edadb2364ccd282d0846f8482",
+  "revised_image_sha256": "2dc25a69f5326ea869998832d1a564be5e7b6fb772901dbe975f629104860d05",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The motivation remains duplicate false-positive detections in crowded scenes, contrasted between Sparse RCNN and the proposed method. The added title directly states the problem described on PDF page 1.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both complete original scene images are present, retaining every visible person and detection box. Two matched detail crops of the same central pedestrian are additional views of those exact sources, not substitute examples.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The source panel identities (a) Sparse RCNN and (b) Ours are preserved. True positive and False positive legend labels correctly match the original caption. No numerical measurement or equation was introduced.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Left/right method correspondence remains consistent in both full scenes and detail views. The lower detail row compares equivalent scene coordinates, with a horizontal displacement of 492 source pixels, matching the two original panels.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green true-positive and red false-positive boxes remain untouched source pixels. The new green/red outline legend faithfully explains exactly the color meaning specified in the caption.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed all four regions from provenance: two complete scenes match byte-for-byte at native 1x; both matched detail crops match exact 2x nearest-neighbor expansion. All recorded source and restored pixel SHA256 values matched.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "False positives in crowded scenes, overlapping detections, and each object detected once are supported by the original caption and page-1 introduction/abstract. No additional outcome or mechanism is asserted.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed the complete original and derivative rasters. Both full scenes, method labels, color legend, both detail crops and bottom captions are complete and legible. Enlarged details are visibly faithful to the originals.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Content-fidelity review only, not an aesthetic quality judgment. Detail crops use recorded nearest-neighbor magnification and retain original box marks.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-10-31T15:59:46.406754+00:00",
+  "hybrid_verification": {
+    "regions": 4,
+    "native_1x_regions": 2,
+    "nearest_2x_regions": 2,
+    "all_pixel_and_hash_checks": "passed",
+    "provenance": "generation/P139/provenance.json",
+    "source_pdf_page": 1
+  }
+}

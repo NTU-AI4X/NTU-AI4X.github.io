@@ -1,0 +1,4 @@
+Figure 1: We present PCAsplat, a geometric regularization of Gaussian splatting that aligns Gaus-
+sians with surfaces through differentiable local PCA. Compared with current methods, PCAsplat
+substantially reduces floaters (left) and produces cleaner point clouds with better surface coverage
+(center). This improved point-cloud enables downstream tasks such as instance segmentation (right).

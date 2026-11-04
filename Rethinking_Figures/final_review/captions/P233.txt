@@ -1,0 +1,13 @@
+Figure 1. Previous works used class information p (y ) to align
+s
+the learned source distribution p (y , u|x) with the balanced target
+s
+distribution p (y , u|x), without considering the space u and class
+t
+y relationship i.e. p (y , u). FRACAL captures p (y , u), using
+s s
+the fractal dimension, and embeds fractal margins during infer-
+ence, aligning the learned distribution p (y , u|x) with the target
+s
+p (y , u|x) better than previous works.
+t

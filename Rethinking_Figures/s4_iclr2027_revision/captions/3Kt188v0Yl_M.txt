@@ -1,0 +1,4 @@
+Figure 1: Motivation of SegDem. Conventional regression is prone to false colors and moire´ arti-
+facts in ambiguous regions, while generative models may hallucinate details unsupported by RAW
+measurements. SegDem instead transfers structural decoder representations from segmentation to
+demosaicing, improving boundary-aware reconstruction.

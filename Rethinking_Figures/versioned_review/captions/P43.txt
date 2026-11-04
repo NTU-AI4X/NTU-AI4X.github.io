@@ -1,0 +1,5 @@
+Figure 1. Compared with the logits-optimization methods seeking
+optimal solutions, we reformulate the problem as an analytical so-
+lution form. This reformulation confers three key advantages: in-
+dependence from GT annotations, elimination of time-consuming
+training, and freedom from model-specific modulation.

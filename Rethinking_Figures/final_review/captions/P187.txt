@@ -1,0 +1,5 @@
+Figure 3. Different Visual Overlaps under the Same Frame In-
+terval. Two sequences from DL3DV [34] share the same frame in-
+terval yet exhibit drastically different levels of visual overlap. Our
+proposed semantic and geometric overlap metrics more accurately
+capture the true difficulty (or camera motion) of each sequence.

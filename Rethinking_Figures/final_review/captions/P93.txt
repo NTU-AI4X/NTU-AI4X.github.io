@@ -1,0 +1,2 @@
+Figure 1. Different annotation setup for (a) WSOD, (b) SSOD, (c)
+SAOD and (d) SIOD (Ours).

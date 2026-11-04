@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P10",
+  "generation_attempt": 1,
+  "source_image_sha256": "7a4d38fa2d0d56ceef8be4c05b3d9a05854b8cb7a3a0e4a3f4eae32ac539f4e0",
+  "revised_image_sha256": "c842fa8884783cd24c66574779ce97aeb93d82f31d238ac015b4146719cef7ae",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The framework still contrasts physical event/RGB sensing with NeRF radiance and learned sensor-response simulation."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The complete two-row source pipeline and both response-model details remain, with all scene photos, event streams, raw/LDR images and sensor diagrams."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All source Eq.3/5/6–7/9–12 references, exposure/time symbols, radiance sum and RGB logarithmic expressions remain in original pixels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Original scene→sensor→event/image generation and NeRF→volume→sensor models→predicted image/event paths are unchanged. Image and event loss connections remain complete; both detailed response-network branch structures are preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original RGB channels and red-on/blue-off triangle encodings remain. The added triangle key agrees with the original top-row On Event/Off Event labels."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The full main pipeline is native1× source pixels, and both response-model details are exact2× nearest-neighbour copies, independently verified."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Upper/lower row summaries, HDR-to-LDR/events labels and joint-supervision sentence directly follow the figure caption and Sections4.1–4.4."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All source content remains visible after moving details below the main pipeline; main-panel small text remains a quality limitation rather than being regenerated."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 3. The data generation process of event and RGB cameras (upper parts) and the pipeline of See-NeRF (lower parts) are shown in the\nfigure. We use NeRF to represent the actual radiance of an extreme lighting scene in the HDR domain. The volume rendering simulates the\nraw scene radiance rays hitting the sensor and obtaining the raw sensor values. The predicted LDR images and events are generated with our\nproposed sensor-physics grounded RGB and event CRF models (details are shown in the right part of the figure). The image loss and event\nloss are employed to jointly supervise the optimization of the two CRF models and the NeRF network.",
+  "body_evidence": "generation/P10/independent_body_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P10_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T03:52:57.493707+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T03:52:57.493707+00:00"
+}

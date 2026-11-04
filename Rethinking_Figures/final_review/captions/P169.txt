@@ -1,0 +1,2 @@
+Figure 2. Our core motivation. Based on the observations in (a) and (b), we deconstruct the complex UHD restoration problem into three
+progressive stages: zero-frequency enhancement, low-frequency restoration, and high-frequency refinement.

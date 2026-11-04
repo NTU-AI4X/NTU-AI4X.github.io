@@ -1,0 +1,75 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_0jbdTGiGaz_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "21e3240727ff2607419821a34efd00201cc1d055b2c1ff15a4650f25876bd7d0",
+  "revised_image_sha256": "9e1e463150eb893c5739b58d00ab6d946b4280f254c05e8fc92a566a34a70db4",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The complete overview retains the teacher–student method, weak/strong augmentation inputs, balanced pseudo-labels, cross-consistency loss, supervised loss, and EMA relationship."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both aerial examples, both backbones and heads, all three feature-map stacks, and both loss pathways remain in the overview. The additional panel repeats the detector interiors."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Actually viewed final full IACCL diagram and enlargement and read caption and all independent checks. The complete overview retains every input label, weak/strong augmentation, feature branch, teacher/student head, EMA, balanced pseudo-label and both losses. The explicitly labeled enlarged view repeats the detector interiors; partial I_u^w/I_l^w boundary fragments and external output stubs do not replace or remove the fully legible originals in the overview. This is a local-detail readability blemish rather than altered scientific notation or a missing global relationship. Preserve it for quality evaluation without editing the figure."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The overview preserves all arrow directions, including the student F_u^s branch into both heads, upward EMA, predictions entering cross-consistency loss, and gt pointing toward L_s. The enlargement retains the internal branching but crops external connections."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Teacher/student background grouping, purple and navy pathways, red supervision arrows, colored feature-map cells, and snowflake/flame symbols remain consistent with the original."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same residential aerial image and labeled airfield image with red object boxes are retained. No new examples, measurements, or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added heading, 'Feature maps and detector heads — enlarged view,' describes a repeated source region and introduces no scientific claim or method component."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Actually viewed final full IACCL diagram and enlargement and read caption and all independent checks. The complete overview retains every input label, weak/strong augmentation, feature branch, teacher/student head, EMA, balanced pseudo-label and both losses. The explicitly labeled enlarged view repeats the detector interiors; partial I_u^w/I_l^w boundary fragments and external output stubs do not replace or remove the fully legible originals in the overview. This is a local-detail readability blemish rather than altered scientific notation or a missing global relationship. Preserve it for quality evaluation without editing the figure."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [
+    {
+      "flag": "The added enlargement clips I_u^w and I_l^w into unreadable fragments and truncates external connections. The complete overview preserves their meaning, but the enlargement itself has incomplete visible boundary content.",
+      "disposition": "local_detail_boundary_with_complete_originals_in_overview",
+      "evidence": "Actually viewed final full IACCL diagram and enlargement and read caption and all independent checks. The complete overview retains every input label, weak/strong augmentation, feature branch, teacher/student head, EMA, balanced pseudo-label and both losses. The explicitly labeled enlarged view repeats the detector interiors; partial I_u^w/I_l^w boundary fragments and external output stubs do not replace or remove the fully legible originals in the overview. This is a local-detail readability blemish rather than altered scientific notation or a missing global relationship. Preserve it for quality evaluation without editing the figure."
+    }
+  ],
+  "remaining_limitations": "Assessment uses the supplied images and reported pixel checks. Those checks support preservation within the listed rectangles but do not establish completeness at crop boundaries. No source body text was supplied. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3: An illustration of our proposed IACCL",
+  "body_evidence": "judging/fidelity/requests/ICLR27_0jbdTGiGaz_F_a1_9e1e463150eb/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_0jbdTGiGaz_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_0jbdTGiGaz_F_a1_9e1e463150eb",
+    "response_sha256": "2c2c5e820a1b12f3c5dcb068d5299056142f873e915009471aa1e6999a04b8c0",
+    "request_metadata_sha256": "3f00bc344b5ab05aef11f482bec22c0cd3e77fd7e6a34c2ff6060cbd467d9b71",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final full IACCL diagram and enlargement and read caption and all independent checks. The complete overview retains every input label, weak/strong augmentation, feature branch, teacher/student head, EMA, balanced pseudo-label and both losses. The explicitly labeled enlarged view repeats the detector interiors; partial I_u^w/I_l^w boundary fragments and external output stubs do not replace or remove the fully legible originals in the overview. This is a local-detail readability blemish rather than altered scientific notation or a missing global relationship. Preserve it for quality evaluation without editing the figure.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:26:11.378552+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:26:11.378552+00:00"
+}

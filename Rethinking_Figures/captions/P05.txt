@@ -1,0 +1,1 @@
+Figure 2. Conceptual overview of weakly-supervised segmentation approaches. (a) Traditional methods rely solely on sparse 2D annotations, limiting supervision propagation. (b) Our proposed method Rewis3d introduces a 3D branch, enforcing cross-modal consistency (CMC) between 2D predictions and 3D predictions from reconstructed geometry.

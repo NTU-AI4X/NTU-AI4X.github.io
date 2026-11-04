@@ -1,0 +1,5 @@
+Figure 2: Overview of SegDem. Stage 1 learns region- and boundary-aware representations using a
+clean linear-RGB image state while retaining the mosaicked observation as an auxiliary RAW con-
+dition. Stage 2 transfers the pretrained decoder parameters to demosaicing, while task-conditioned
+auxiliary features and training-only DINOv2 alignment provide structural supervision without alter-
+ing the sensor-conditioned output pathway.

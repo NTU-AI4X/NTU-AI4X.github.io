@@ -1,0 +1,1 @@
+Figure 1: Paradigm and performance comparison between conventional approach and our HIVE.

@@ -1,0 +1,4 @@
+Figure 3: The diagram of the proposed progressive end-to-end object detection framework. First, the prediction selector
+select queries associated with high confidence scores as accepted queries, leaving the rest as noisy queries. Then Relation
+information extractor models the relations between noisy queries and their neighbors from accepted predictions. Next, the
+queries are fed into the queries updater to be further refined by performing a new local self-attention.

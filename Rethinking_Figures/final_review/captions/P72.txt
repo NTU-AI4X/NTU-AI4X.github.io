@@ -1,0 +1,2 @@
+Figure2. ArchitectureofourproposedTATTnetworkforSTISR.TPGB,TPGandSRBareshortfortextpriorguidedblocks,TPGenerator
+and Sequential-Recurrent Blocks, respectively, while ⊕ means the element-wise addition.

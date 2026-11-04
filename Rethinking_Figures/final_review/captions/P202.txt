@@ -1,0 +1,12 @@
+Fig. 4: Method Overview. Our method performs streaming 3D reconstruction via
+dual-branch inference. At time step t, the main branch predicts depth and pose from
+state s using both image and RayMap features. The predicted pose Tˆ is remapped
+t−1 t
+into RayMap and encoded into tokens r′ , then queried against the frozen state s
+t t−1
+by the RayMap branch to obtain a static-biased prediction. The depth difference
+between branches is pro jected via image-state attention to form staticness weights α
+t
+that suppress dynamic regions during state update (s = s + α ⊙ ∆s ). This dual-
+t t−1 t t
+branch scheme identifies and suppresses dynamic regions at inference time.

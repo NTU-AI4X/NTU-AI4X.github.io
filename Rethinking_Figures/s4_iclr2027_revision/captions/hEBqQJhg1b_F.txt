@@ -1,0 +1,4 @@
+Figure 2: Overview of SEER. SEER converts regional VLM evidence into executable OVSS label
+propagation. From a fixed prediction, it selects ambiguous proposals, derives score-based candidates,
+and verifies them with multi-view closed-set reasoning. Score support and vocabulary legality certify
+the verified label, and the OVSS model controls its pixel propagation.

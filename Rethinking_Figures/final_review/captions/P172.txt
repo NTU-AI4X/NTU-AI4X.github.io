@@ -1,0 +1,4 @@
+Figure 2. An overview of the FaithDiff, which takes LQ images and image descriptions as inputs and restores HQ images via diffusion
+process. To fully leverage the power of LDMs, we propose to unleash diffusion priors. An alignment module is developed to effectively
+incorporate the features extracted from LQ images with the noisy latent of the diffusion model. We jointly optimize the encoder, the
+alignment module, and the diffusion model, which can benefit from their interplay and lead to faithful SR images with high visual quality.

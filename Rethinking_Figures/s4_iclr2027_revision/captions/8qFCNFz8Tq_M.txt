@@ -1,0 +1,6 @@
+Figure 2: Conflicting target assignment in any-depth detectors. (a) In AnyDepth-DETR, the Hungarian
+matcher can assign different queries to the same ground-truth objects across the two execution paths.
+We reorder the super-net’s foreground queries to align with the base-net’s target-matched query
+ordering before applying KD. (b) In AnyDepth-YOLO, the Task-Aligned Assigner (TAL) can assign
+the super-net and base-net outputs to different anchors for the same ground-truth object. We exclude
+conflicting anchor assignments (in red boxes) from the foreground distillation set.

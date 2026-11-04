@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P278",
+  "generation_attempt": 2,
+  "source_image_sha256": "c9d4b6dfaa31633cd0fe5595e34f503536fb86863a3f403b4cb68d214f1dff10",
+  "revised_image_sha256": "8d53d5f0eaea0f5764256280376568014e551466c0d83361647a342345b07c25",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The classification-to-segmentation framework remains intact: image I feeds feature extraction, classification produces initial CAMs, prototype-aware learning produces PACAMs, and refined pseudo-masks supervise segmentation."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both panels retain their modules and examples, including the support bank, instance/context prototypes, distribution-alignment plot, pair-wise coefficient matrix, positiveness score, and soft-neighbor graph."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Labels and notation remain visible, including θ, f, δ_n, instance/context prototype indices, classification and self-supervised losses, the 0/0/1/1 label vector, Top K, p_i, w_i, and equation references (4), (5), (6), (7), and (9)."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Original arrow directions and relationships are retained: prototypes update the bank; clustering produces context prototypes; instance and context prototypes feed alignment; candidate neighbors and positiveness scores support neighbor selection; PACAM refinement feeds pseudo-masks and segmentation."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green instance, blue context, and yellow dataset prototype stars retain their legend meanings. Solid green initial, solid yellow global, and dashed green aligned distributions remain consistent. Class colors and dashed stage boundaries are preserved."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The horse/rider image, initial CAM and PACAM examples, pseudo-mask, horse/person/bg prototype identities, coefficient matrix, and schematic distributions are retained without apparent changes to their scientific content."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added bottom explanation is supported by the supplied text: selection of K soft positive neighbors by Eq. (6), similarity-map aggregation into PACAM by Eq. (13), CAM–PACAM consistency by Eq. (14), and alignment toward dense same-class features by Section 3.3."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains both complete panels, captions, legends, and the added explanation without visible clipping or unreadable replacement text. Partial content at detail-image edges is present in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The supplied pixel-proof report covers the original framework rectangle only; the added explanation was assessed separately against the source text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of the proposed unified learning framework. (a) shows image label-guided WSSS (from classification to segmentation).\nThe upper branch describes the classification network θ identifying object regions corresponding to each category to minimize LBC E .\nIntroduce a self-supervised learning paradigm using context prototype-aware learning to provide a more complete CAM, supervising the\ninitial CAM and minimizing LS elf . The lower branch refines these CAMs (e.g., DenceCRF [26]) to form pseudo-labels for supervising the\nsemantic segmentation network. (b) outlines our strategy based on context prototype-aware learning. In mini-batches, instance prototypes\nP I are generated using CAM and extracted features f , updating the support bank. Then, the bank is used to construct a context prototype\nn\nset P c . Feature distribution alignment is then applied to the current instance features, adding a shift term δ to guide them toward clusters of\nn n\ndense features in the bank. Next, soft neighbors are softly measured for P I based on P c , with P I serving as anchors. Finally, positiveness\nn n n\nvalue w can be computed between two specific attributes. This mechanism selects K soft positive neighbors P˜ c to generate PACAM.\ni n",
+  "body_evidence": "judging/fidelity/requests/P278_a2_8d53d5f0eaea/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P278_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P278_a2_8d53d5f0eaea",
+    "response_sha256": "f0fa33115dd0b1afefa2f33d2902d5859d55f61f33631f7024ee9cf0e5904391",
+    "request_metadata_sha256": "3cd7aa1469fcc5826b374fb95c8385241df9722837c4ec6472af209973490491",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final export with both complete original panels and added bottom sequence. Classification losses, CAM/PACAM supervision, pseudo-mask refinement, support bank, feature-distribution shift, stars/curves and Top K soft-neighbor graph remain intact. Checked added three steps against caption and source text: soft-neighbor selection, similarity-map aggregation into PACAM and CAM/PACAM consistency. Prior duplicate panel-b title fragments were removed in a2; both original panel titles remain. Independent pixel replay verifies original scientific rectangle.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P278_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T07:48:13.970459+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:48:13.970459+00:00"
+}

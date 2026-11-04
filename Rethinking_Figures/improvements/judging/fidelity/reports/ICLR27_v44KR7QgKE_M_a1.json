@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_v44KR7QgKE_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "71670d991213409e8749a29e81cfcd0959b6061f0f65aefc3cc846b14e392c95",
+  "revised_image_sha256": "61c2ceaa90a72035e0906269ade60f8b03031c8ac68bffa024c0565493a6ecb2",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Preserves the PnP-ADMM noisy-to-denoised RGB workflow and the distinction between domain mismatch and solver-input mismatch."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both panels remain, including all three update modules, pretrained models, noisy/denoised dog images, and four comparison groups with their animal, spectral-cube, and MRI examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Retains A^{k+1}=prox_{f/ρ}(V^k−U^k), C^k=A^{k+1}+U^k, V^{k+1}=prox_{(λ/ρ)Ψ}(C^k), and U^{k+1}=U^k+A^{k+1}−V^{k+1}. V^K, V^{k+1}, K Iterations, and the original panel/group labels remain legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Preserves data-consistency → prior → dual ordering, the dual-to-data feedback loop, the prior-output branch to the denoised image, and both mismatch comparisons with ≠ symbols."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Orange model symbols, blue snowflakes, update-box colors, orange RGB/input groups, purple target/ADMM groups, and dashed panel boundaries retain their original associations."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same dog restoration pair, cat/dog/lion examples, spectral cubes, and brain images remain in their corresponding roles. No measurements or new restoration outcomes are added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added domain-mismatch explanation follows the caption. The added claims about dual feedback, solver-dependent errors, and mismatch within the same modality are explicitly supported by the supplied page-2 excerpt."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains both complete original panels and both complete added callouts. No missing labels, clipped equations, or corrupted scientific content is visible."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and text. The reported pixel proof covers the original figure rectangle, not the added callouts; those were checked against the supplied excerpt. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Two sources of mismatch when using pretrained image priors in scientific imaging:\ndifferences between the pretraining and target image domains, and differences between score-model\ntraining inputs and ADMM denoiser inputs.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_v44KR7QgKE_M_a1_61c2ceaa90a7/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_v44KR7QgKE_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_v44KR7QgKE_M_a1_61c2ceaa90a7",
+    "response_sha256": "1f04e19fe8c2e7522c33de8be18ad67e7726f5dfd5977a91600194f3c86af0e0",
+    "request_metadata_sha256": "3020fb747bd9c3d1d6b76066898f948563062514cbe79e4b57afb4431f289386",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed the complete final image and read caption, source context and all independent pair checks. Original three ADMM updates, full formulas, dual-feedback loop, pretrained-model branches, photos/spectral cubes/MRI examples and both mismatch comparisons remain. New domain and solver-input callouts are supported directly by source context lines202-204, which explicitly allow same-modality mismatch due to dual feedback and solver-dependent errors. Complete original region independently replayed; no change to any restored scientific pixels.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T09:29:05.540257+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:29:05.540257+00:00"
+}

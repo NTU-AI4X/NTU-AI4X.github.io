@@ -1,0 +1,2 @@
+Figure 1: Overview of SpatialAgent. The MapBuilder maintains a persistent spatial map from
+observations and actions, which is provided to the LLM for decision making.

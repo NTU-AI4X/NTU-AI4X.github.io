@@ -1,0 +1,1 @@
+Figure 2: Concept of the generalized SR. Dotted lines represent the upscale image pyramid in xyz-coordinate. While ×s super-resolved images from conventional methods (red) exist on the plane z = s only, our results (blue) exists on any arbitrary cutting surfaces of the pyramid. Note that the aspect ratio on the plane can be varied as well.

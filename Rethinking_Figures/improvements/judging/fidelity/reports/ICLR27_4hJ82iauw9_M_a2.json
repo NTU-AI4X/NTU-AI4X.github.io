@@ -1,0 +1,67 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_4hJ82iauw9_M",
+  "generation_attempt": 2,
+  "source_image_sha256": "0d1a5f88ff41874e1a771f5c8ab16cc11bbb1146615779b24e3c460a757cef8a",
+  "revised_image_sha256": "471ee2eeef0cdb882ad843c7170b64f1ab7dd568f0030b5be8af6aaf75303571",
+  "reviewer": {
+    "identity": "prepare_judge_inputs independent cross-review",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "All four comparison paradigms remain: offline full sequence, per-frame causal streaming, overlapping chunk alignment, and block-wise streaming. The figure still motivates the block-wise tradeoff.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four source graph interiors were visually compared and independently byte-verified after 2x nearest-neighbor enlargement. The chunk panel retains six aligned output squares, including the three dashed overlap groups.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The original t1, t2, t3, t4, tn-1, tn, C1/C2/Cm, and B1/B2/Bm labels are retained inside exact source regions. Panel titles and added explanatory notes are readable and match the paper introduction.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "All original edges, arrowheads, ordering, chunk containment, and two rightward time arrows are preserved in exact restored graph regions. Section 3.3 Eq.3 permits keys from current or past blocks, matching the causal-access legend.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue context, red active query, white inactive/unavailable states, and blue-with-red-boundary aligned outputs match the original categories. The new legend uses these same encodings; black is called causal access rather than historical-only, covering the current-frame edge in streaming.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "No new numerical result or example is introduced. All four graph regions compare exactly to integer-2x copies of original pixels; source/final bounding boxes were independently tested.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Introduction lines 080-105 support full-sequence, causal per-frame, overlapping chunk alignment and within-block bidirectional access. Section 3.3 lines 259-269 explicitly defines query/key visibility and current-plus-historical KV access, supporting query/context and causal-access legend terms.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All four panel graphs, complete time labels/arrows, headings, explanatory notes and full bottom legend are visible. The revised chunk panel has six output nodes and retains original overlap boxes without clipping.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Review checks semantic preservation and visible completeness; it does not establish scientific correctness or a quality-score improvement. Source diagram semantics are interpreted using its caption, introduction, and Section 3.3.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_4hJ82iauw9_M_a1.json"
+  ],
+  "approved_by": "prepare_judge_inputs independent cross-review",
+  "approved_at": "2026-10-31T15:40:15.872917+00:00"
+}

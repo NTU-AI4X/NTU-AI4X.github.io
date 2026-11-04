@@ -1,0 +1,3 @@
+Figure 2: Different views provide different evidence for the same 3D region. The 3D box marks
+three blueberries, which are clearly visible, seen at an oblique angle, or fully occluded across the
+three views, motivating region-specific view selection.

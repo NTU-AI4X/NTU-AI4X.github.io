@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P240",
+  "generation_attempt": 1,
+  "source_image_sha256": "e5d95289484edb98812e94dea6b361199e8bcb791d35d035571c23b0c601cb66",
+  "revised_image_sha256": "52c0d9917c451a214ae57fd9b34e293003dcf443743de5b2b2a852aa04459e7b",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The PWOOD student–teacher framework remains intact: weakly labeled original/augmented views support orientation and scale learning; strongly and weakly augmented unlabeled inputs feed student and teacher branches, with EMA and pseudo-label filtering retained."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original modules remain visible, including both backbones, prediction boxes, Scale Upper/Lower Bound, Orientation Learning, and Class-Agnostic Pseudo-Label Filtering. The additional lower panel repeats the scale module as an explicitly labeled enlarged view."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and mathematical content are retained, including EMA, EM Algorithm, Dynamic T_d, ≥ T_d, unsupervised loss, orientation losses, and scale losses. Matrix M retains rows (1, 0.8, 0.1), (0.8, 1, 0.8), and (0.1, 0.8, 1), alongside 'minimize M.'"
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Input-to-backbone and backbone-to-prediction arrows, prediction connections to learning modules, student-to-teacher EMA, threshold filtering paths, and the loss connection between filtered grids are preserved. Teacher scores still flow through EM to positive/negative distributions, with leftward arrows toward Dynamic T_d and Drop Out."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red augmented/student predictions, blue original-view predictions, teal unlabeled/teacher paths, green learning-module boundaries, and purple filtering elements retain their meanings. Pale versus saturated grid dots and pink versus red orientation boxes remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The boat imagery with point and box annotations, court and vehicle examples, segmentation illustrations, Target/Pred. boxes, matrix entries, dot-grid patterns, and schematic score distributions are preserved. The enlarged scale panel introduces no new examples or measurements."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Both added statements are supported by the supplied caption: orientation and scale learning use weak annotations, and dynamic thresholds improve pseudo-label filtering. The enlarged-view label introduces no scientific claim or method component."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram and complete enlarged scale panel. No original label, formula, connector, or panel is visibly omitted or clipped. Cropping at the supplied detail-image boundaries does not occur in the full derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel checks; no source body excerpt was provided. Pixel verification applies only to its listed rectangles. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Fig. 2. The overview of the proposed PWOOD framework. Orientation Learning and Scale Learning modules enables the Orientation-and-Scale-aware Student\nto learn both scale and orientation information from weakly annotated data, as well as Class-Agnostic Pseudo-Label Filtering mechanism enhances pseudo-label\nquality by leveraging dynamic thresholds.",
+  "body_evidence": "judging/fidelity/requests/P240_a1_52c0d9917c45/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P240_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P240_a1_52c0d9917c45",
+    "response_sha256": "a9b6e478605557a72641b0fbf19edc793cc2f5c01ec346ec24048670cdba0b67",
+    "request_metadata_sha256": "c16a25c0f76c395b1f2eb17c048f4b8516ec13e7384a36f4302e0fa5a09428dd",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final and caption. Full PWOOD overview and enlarged original Scale Learning panel preserve all boat point/box examples, weak/strong teacher-student EMA, orientation losses, threshold distributions/EM, score grids and1/.8/.1 values. Caption directly supports orientation/scale learning from weak labels and dynamic-threshold pseudo labels. Detail does not introduce new data.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:18:29.156807+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:18:29.156807+00:00"
+}

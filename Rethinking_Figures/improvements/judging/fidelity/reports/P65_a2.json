@@ -1,0 +1,63 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P65",
+  "generation_attempt": 2,
+  "source_image_sha256": "b34aee3e8e3547f12f1d6cba9706f8a6e4bba82eaeb97b298f7a4fd31fe1c19a",
+  "revised_image_sha256": "8c34c678fa7de00365579da09758df14d25f497fe1fc4842e1ffa56fa170578f",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M example retains distinct positive/negative anchor weighting compared with GFL and VFL."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Original train photograph with four anchor boxes, Score/IoU table, A/B/C/D column key and all six weight rows remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All source numeric strings including apparently incomplete 0. values remain exact; GFL/VFL/DW names are moved to complete left row labels."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Each anchor letter retains its source column and color, and each positive/negative row retains original method association without reordering values."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original blue/green/orange/yellow anchor encodings and every weight bar length remain exact scientific pixels."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Six source data blocks independently match integer-scaled originals, including full VFL rightmost bar; only redundant right-margin method names are replaced by left labels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "GFL B/D near-equal pairs, VFL C/D equal pairs and DW distinct pair statements restate Fig1 caption and visible values."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All original data and source-truncated number strings are preserved rather than guessed or repaired; complete method headings and new notes remain visible."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific scope and source resolution retained. Source-boundary seams and original incomplete numeric strings remain for blind design scoring; no missing value is inferred.",
+  "caption": "Figure 1. An illustration of the difference between the proposed\nDWmethodandexistinglabelassignmentmethods,e.g.,GFL[21]\nand VFL [43]. For ambiguous anchors B, C and D, GFL and VFL\nwillassignnearlythesameposandnegweightsto{B,D}and{C,\nD}, respectively. In contrast, our DW assigns a distinct (pos, neg)\npair for each anchor.",
+  "body_evidence": "../papers/2203.09730_conference.pdf; caption and relevant method/intro pages read directly",
+  "independent_pixel_check": "judging/fidelity/reports/P65_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P65_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T02:06:28.880549+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T02:06:28.880549+00:00"
+}

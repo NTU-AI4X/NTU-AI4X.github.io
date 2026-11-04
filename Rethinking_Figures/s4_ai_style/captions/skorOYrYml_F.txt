@@ -1,0 +1,7 @@
+Figure 1: BodyBound in simulation. (a) Task schematics show six families and their intervened
+body parameters. (b) Paired comparisons change the physical body with its matching description,
+or the description alone. (c) Policies act from public observations, goals, and body descriptions;
+fresh observations close the loop, while an independent checker evaluates measured traces. HPT
+and Diffusion Policy use RGB, not depth. (d) Familiar starts, expert executions, and unchanged-
+command replay separate task competence, attainability, and shared solutions. Scene geometry
+stays fixed within each pair.

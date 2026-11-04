@@ -1,0 +1,2 @@
+Figure 2. Architecture of the proposed method. The main point of our method is the use of discrimination loss to learn priors of views.
+While the discriminator aims to minimize discrimination loss, the encoder and decoders try to maximize it using a gradient reversal layer.

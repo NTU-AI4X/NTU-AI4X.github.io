@@ -1,0 +1,7 @@
+Figure 1. Overview of Evolving World Object Detection (EWOD). Top (Training): Sequential tasks introduce disjoint classes K across
+t
+shifting domains D (Day → Night → Fog). Bottom (Deployment): The detector must (i) identify unseen objects U without supervision;
+t t
+(ii) retain knowledge of all prior classes across all domains; (iii) incrementally learn former unknowns when their labels are revealed later
+(e.g., U → K ) and (iv) achieve all these objectives without revisiting any previous data. Best viewed in colour with zoom1 .
+2 3

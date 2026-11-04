@@ -1,0 +1,70 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P296",
+  "generation_attempt": 3,
+  "source_image_sha256": "150672133133b3b5dd9851808db7263c51b3b771ec4323f6bd798fd51bb3bff0",
+  "revised_image_sha256": "6b21e5c649c84b0440436c3e9762e28b59ef0e8c38e0b06d4020823cd7b9dc37",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit (generator self-check)",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "failed",
+      "evidence": "After third generation the required M1 Pooling→Local Prototypes update is still missing; the outer Local Prototypes→APR edge now has a reverse arrowhead at Local Prototypes. Two semantic repairs exhausted. HDIG and purple association repairs succeeded, but do not compensate for this scientific topology error.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "pending",
+      "evidence": "",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [
+    {
+      "check": "connections_and_direction",
+      "description": "After third generation the required M1 Pooling→Local Prototypes update is still missing; the outer Local Prototypes→APR edge now has a reverse arrowhead at Local Prototypes. Two semantic repairs exhausted. HDIG and purple association repairs succeeded, but do not compensate for this scientific topology error."
+    }
+  ],
+  "remaining_limitations": "",
+  "verdict": "rejected",
+  "previous_report_paths": [],
+  "approved_by": "",
+  "approved_at": ""
+}

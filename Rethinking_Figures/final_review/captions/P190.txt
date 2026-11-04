@@ -1,0 +1,3 @@
+Figure 3. We present G²VLM, a unified model that integrates both a geometric perception expert for 3D reconstruction and a semantic
+perception expert for multimodal understanding and spatial reasoning tasks. All tokens can do shared multi-modal self attention in each
+transformer block.

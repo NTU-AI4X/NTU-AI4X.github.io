@@ -1,0 +1,5 @@
+Figure 1. The main paradigmatic types of existing oriented ob-
+ject detection. Existing methods are primarily divided into rotated
+boxes (RBox)-supervised, horizontal boxes (HBox)-supervised,
+and Point-supervised approaches. Compared to RBox and HBox
+labels, point labels have lower costs and higher efficiency.

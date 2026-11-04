@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_Cdx9a9GdBy_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "46dad6ec50b3072e637511dd1bd52915497669f25cfcb04db6c984cf255e4549",
+  "revised_image_sha256": "ba601866183bdd2f43eee85b69dc8200266c24938bbdd15abc6be7eb2b955630",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The degraded-to-restored pipeline retains frozen F₀, sequential restoration stages, trainable residual modules, capability selection and expert composition."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original panels remain: backbone, frozen/trainable legend, GAP/STD/GAP(ℱ(u)) descriptors, prototype/router selection, and expert composition with weighting and summation nodes."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Stage 1/2/L, M₁/M₂/M_L, u₁, h₁, P₁/P₂/Pₜ₋₁/Pₜ, R₁/R₂/Rₜ₋₁/Rₜ, expert indices and M₂(u₂) are preserved. Added definitions of P and R agree with the caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Stage ordering, downward residual branches, additive returns, input-to-final-sum skip connection, descriptor-to-selection-to-composition flow, and expert weighting paths retain their original directions and endpoints."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Snowflakes still indicate frozen components and flames trainable components. Historical/current component colors, red rejection marks, green selection checks, and green/yellow routing encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same degraded and restored street examples, four selection histograms, and two colored routing vectors are retained. No new measurements or outcome examples appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added RestoreMore headline and frozen-backbone/residual-expansion subtitle follow the caption. Footer explanations of prototypes, routers and complementary expert retrieval are also supported; 'expert bank' abbreviates the caption's expert-key bank."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains the complete original architecture and readable added header/footer text. No missing content, clipped labels or visible corruption is apparent; detail-image cropping does not affect the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption; no source body excerpt was provided. The supplied pixel-equality report covers the complete original architecture rectangle, but was not independently executed and does not verify the added header/footer claims. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Overview of the proposed RestoreMore framework. A pretrained restoration model is\npreserved as a frozen capability anchor, and lightweight residual expansion modules are inserted at\nselected feature stages. Inside each expansion module, a degradation descriptor is first constructed\nfrom spatial and frequency statistics. Top-M capability selection is then performed over accumu-\nlated capability prototypes and routers. The selected routers further retrieve complementary experts\nfrom the expert-key bank through query–key matching. Frozen historical components and trainable\ncurrent-task components are indicated by snowflake and flame icons, respectively.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_Cdx9a9GdBy_F_a2_ba601866183b/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_Cdx9a9GdBy_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_Cdx9a9GdBy_F_a2_ba601866183b",
+    "response_sha256": "15ba8ca840a7d98a905671a64fca97bc4f91fa685415affde03acbf38ea4ba1d",
+    "request_metadata_sha256": "ba9c5466fcf2be345ce572baa47f1bf986389d2933603e6b0e714ee5a32b686a",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the final and generated draft and reviewed the source caption and all independent pair observations. The complete original scientific diagram is restored natively: frozen backbone/stage skip connections, trainable residual returns, both street images, histograms, GAP/STD/Fourier descriptors, P/R capability rows, selection crosses/checks, E experts, weighting and addition paths all remain. Added headings and P/R/E key restate capability prototypes, routers and expert retrieval from the caption. No unshown meaning is assigned to dashed route colors or histogram values. This is an annotation/layout intervention, and all original scientific content is independently pixel-replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_Cdx9a9GdBy_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T07:00:55.575097+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:00:55.575097+00:00"
+}

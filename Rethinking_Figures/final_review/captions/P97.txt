@@ -1,0 +1,8 @@
+Figure 2. (a) For the COCO dataset, all the images are resized such that the short edge has 800 pixels while the long edge has less than
+1333 pixels. For the ImageNet dataset, all the images are resized to 224×224 to calculate the statistics. The scale of object is represented
+as the square root of the area. We discuss the typical training input size for ImageNet classification and COCO detection tasks. (b) All the
+scores are predicted on COCO minival dataset by the RetinaNet detector with FPN and ResNet 50 backbone, which is trained with 10%
+COCO data. The score distance is the absolute difference between the predictions of the image in different sizes. The Y-axis is the average
+numberofanchorsperimage. (c)Wepredictpseudo-labelontherestofCOCOtrainingdatawithaconvergedFaster-RCNNdetector(with
+FPNandResNet50backbone), trainedwith10%COCOdata. Thelowaveragerecallandprecisionshowthathardpseudo-labelincurmore
+noise with False Negative samples.

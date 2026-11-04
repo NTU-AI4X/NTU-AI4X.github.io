@@ -1,0 +1,6 @@
+Figure 2: Overview of PCAsplat. We regularize Gaussian neighborhoods directly in scene space.
+For each Gaussian, we estimate a local neighborhood and compute differentiable PCA statistics
+that capture the underlying tangent structure. We then regularize the local eigenspectrum to reduce
+neighborhood thickness and promote isotropic tangent-plane coverage. We also align Gaussian
+normals with PCA-derived normals, encouraging surface-aligned and well-localized splats. Our
+formulation is lightweight, differentiable, and directly compatible with existing splatting pipelines.

@@ -1,0 +1,7 @@
+Figure 2. CrossSDF takes a set of planar cross-sections as input. These cross-sections result in contours which denote the surface
+boundaries of the target geometry of interest (left, black lines) and each induces a 2D signed distance field (SDF) in its respective plane.
+From this, we generate a set of planar sample points Ω and their 2D SDF labels. During training, points are encoded using our hybrid
+pl
+encoder before being passed to the SDF network M for prediction. At each iteration we create a set of 3D samples Ω to apply
+SDF reg
+volumetric regularization. The combination of our novel sampling, loss function, and hybrid encoding results in a high quality 3D SDF.

@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_8P9XSKFW9N_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "4c3efb9be64796706e1b288f19c57afb7cbe35a1baf09fd59f54eb8344397909",
+  "revised_image_sha256": "d9ae295edb79ed789cb9708f97236fe6e8e5143bf0e3b54951f6647fb1cc1589",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures preserve dual optical/SAR backbones, shared density projection, reliability-weighted consensus, consensus-guided multiscale fusion, detection, and density supervision, consistent with the caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Stages I–IV remain present, including both encoders, shared projector, consensus gating, Softmax, reliability maps, fusion cell, detection neck/head, progressive decoder, and all three supervision losses."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Feature levels 3/4/5, encoder and fusion equations, W_o(x,y)+W_s(x,y)=1, Z_c=W_o⊙Z_o+W_s⊙Z_s, both ×2 decoder labels, and Bayesian, structural, and count-loss formulas are retained. Source wording is preserved."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Both modality streams retain their directed paths through alignment, concatenation, aggregation, and projection. Gating/Softmax branches, fusion ordering, detection flow, decoder flow, and loss-box arrows match the original. Added spacing introduces no new connections."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green optical and blue SAR encodings, mixed-color fused features, reliability-map cell patterns, dashed groupings, and the density scale labeled High/Low remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Optical/SAR image mosaics, the detection example with green markings, consensus heatmap, and predicted density example match the source. Supplied pixel-equality results support preservation within the three listed source blocks."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added highlighted headings repeat the existing Stage I–IV titles. They introduce no additional scientific claim, component, relation, or result."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all three source bands, including rightmost reliability maps, fused outputs, and count supervision. No new clipping, missing formula, or unreadable replacement is apparent; detail-image crops are covered by the full view."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel proof; the proof file was not independently opened. Pixel equality applies only to the listed rectangles. Added headings and inter-band layout were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2: Overview of DeCo. Independent backbones extract multimodal, multiscale features, which\nare projected into a shared density space to estimate modality reliability and construct density con-\nsensus. The resulting consensus guides multiscale feature fusion for detection and is simultaneously\ndecoded into a density map for density supervision.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_8P9XSKFW9N_F_a1_d9ae295edb79/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_8P9XSKFW9N_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_8P9XSKFW9N_F_a1_d9ae295edb79",
+    "response_sha256": "50b293677856baf2963ed199ed90103a50a14ada70611826b35a5af4169b9d39",
+    "request_metadata_sha256": "eec236a5a25841aba09bf8c016651f9a4553d638bb8fd32081e54d7bedb56901",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed all three complete original bands and added stage headings, read caption and eight checks. Optical/SAR mosaics, shared projector/softmax branch, reliability maps, fusion equations and all detection/density/loss panels remain unchanged. Preserved source Optical density encoder Ds wording and SAR tensor color instead of guessing corrections. New headings merely repeat original stage titles. Three complete scientific regions independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:08:30.729331+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:08:30.729331+00:00"
+}

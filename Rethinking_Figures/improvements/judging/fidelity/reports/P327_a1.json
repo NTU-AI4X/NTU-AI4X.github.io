@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P327",
+  "generation_attempt": 1,
+  "source_image_sha256": "3bb22afa58a61dcf06ca56c885a1efd9a149a49a54d858c4f818142f0b9498a4",
+  "revised_image_sha256": "6ab7a0261310b2ce060a2a8d3419a7f8c09e7b63202d38d7f1fa2d232cd96ee0",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M optical concept remains two dual-pixel views interpreted as pinhole projections of the same lens-formed virtual image."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Original object/endpoints, lens and CL/CR centers, shared virtual image X-prime, sensor plane, left/right images and F dimension remain."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "X/X-prime, CL/CR, IL/IR and F labels are consistent. F is correctly defined as lens-to-sensor-plane distance according to Sec3.1, distinct from lens focal length f."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "All eight original ray segments remain: four incident object-to-center segments and four refracted center-to-image segments. Corresponding red/blue rays intersect at the two ends of the shared inverted virtual image."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red CL→IL and blue CR→IR preserve source mapping. Real-world/object-space side, virtual-world side, image inversion and sensor-plane placement are unchanged qualitatively."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "This is a qualitative schematic with no empirical photograph or measured data. Source object geometry is redrawn illustratively while optical relations and ray counts are directly checked."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New mapping legend and X-prime/F definitions follow source caption and Sec3.1 pinhole observation. No measured distance, new lens law or scientific outcome is asserted."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All eight rays, center dots, real/virtual object endpoints, labels and F endpoints are visible. Distances remain schematic and should not be read as calibrated measurements."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original illustrative scope remains. Qualitative optics is not calibrated geometry; empirical panels retain source resolution via documented resampling. Visual polish is judged separately.",
+  "caption": "Figure 2. Formation of the two image I and I from two points\nL R\nC and C on the lens plane may be thought of as pin-hole pro-\nL R\njections (with centres C L and C R and focal-length F ) of the vir-\ntual image formed by the lens.",
+  "body_evidence": "generation/P327/attempt_01/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P327_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T17:28:11.320237+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T17:28:11.320237+00:00"
+}

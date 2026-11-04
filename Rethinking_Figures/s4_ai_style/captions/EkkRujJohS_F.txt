@@ -1,0 +1,5 @@
+Figure 1: Overview of OmniClinic. Each electronic health record instantiates a patient agent and
+defines the case evidence. The sandbox exposes a finite action space spanning clinical consultation
+and bedside physical examinations with common clinical tools. The doctor agent selects among these
+actions to acquire multimodal evidence before submitting a diagnosis. Examination succeeds only
+with the appropriate tool, body region, patient pose, and doctor (agent) position.

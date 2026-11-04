@@ -1,0 +1,6 @@
+Figure 1. Pipeline. First, we train a UDF prediction network U on a synthetic dataset, which contains a series of local point cloud patches
+Θ
+that are independent of specific shapes. Given a global point cloud P, we then extract a local patch P assigned to each query point q within
+a specified radius, and obtain the corresponding UDF values U (P , q). Finally, we extract the mesh corresponding to the input point cloud
+Θˆ
+by incorporating the DCUDF [18] framework.

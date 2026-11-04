@@ -1,0 +1,3 @@
+Figure 1: (a) LoRA updates every filter of each adapted layer through low-rank matrices. (b) RwF
+localizes the few degradation-critical filters of each task and regenerates only them from a shared
+filter bank, leaving the rest of the backbone frozen.

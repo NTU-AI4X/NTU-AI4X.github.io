@@ -1,0 +1,9 @@
+Figure 1. Overview of ERP projection, cylindrical coordinate and
+comparison of HHA and REL. Tˆ is the tangent line to circle O
+θ,p p
+at point p. Circle O lies in the plane perpendicular to gravity,
+p
+passes through point p, and its center lies on the cylindrical axis
+L of ρθz . In (c), we compared how different structure informa-
+cyl
+tion are represented in REL and HHA.

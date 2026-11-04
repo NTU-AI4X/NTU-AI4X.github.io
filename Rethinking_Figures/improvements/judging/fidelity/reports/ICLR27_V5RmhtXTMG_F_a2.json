@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_V5RmhtXTMG_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "7b9113146c4db9b052ded0227d660eec7a239a3b4d4431a96ee7031851d9ddc8",
+  "revised_image_sha256": "a75a3e146d0014b7d3d3913a25186f19934e98bc426e3d31648f73cc7a77a47d",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The support/query workflow remains intact: DINOv2 encoding, prototype refinement, cosine classification of UPN proposals, suspect screening, OAD, final proposals and SAM2 segmentation."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original modules remain, including the three TPR panels, both screening panels, memory bank, prototype maps, OAD whole/fragment illustrations, legend and final result."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original module names, legend labels, and OAD labels 'whole: holds' and 'fragment: collapses' are retained and legible. Added numbered explanations agree with the supplied caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The memory-bank-to-TPR path, return to prototype maps, inputs to cosine classification, screening-to-OAD arrow, unflagged bypass to Final Proposal, and upward Final Proposal → SAM2 Mask → Final Result chain are preserved."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Green filled circles still denote support negatives, red filled circles support positives, and dashed hollow circles test positives. Prototype stars, proposal-box colors, dashed module boundaries and OAD bar/grid encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The four support cow photographs, grazing-cow query, proposal overlays, prototype-point examples and final segmentation remain the same. No new measurements or example outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added POISE title and footer describe prototype refinement followed by suspect resolution. Retrieved hard negatives, nested same-class pairs, OAD restricted to flagged pairs and the unflagged bypass are supported by the caption and original arrows."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original diagram plus a fully visible title and footer. No key labels, panels or connectors are clipped; the supplied detail images are overlapping crops."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. The reported pixel proof covers the original-diagram rectangle only; added title and footer claims were checked separately against the supplied source. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: POISE overview. The support set is encoded by a frozen DINOv2 encoder into a raw memory\nbank and per-class prototype maps. TPR retrieves an adjacency set of hard negatives, renews each prototype\nby a bounded one-step update, and writes the refined prototype back. UPN proposals are scored by cosine\nclassification against the refined prototypes; suspect screening flags nested same-class pairs and passes only\nthose to OAD, which separates whole objects from fragments.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_V5RmhtXTMG_F_a2_a75a3e146d00/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_V5RmhtXTMG_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_V5RmhtXTMG_F_a2_a75a3e146d00",
+    "response_sha256": "307dfbdb12c845d21bc9e67c26e1602f979edb28d63af5afd230b8d215be86d5",
+    "request_metadata_sha256": "4b6af0b9872265b8d77b6d7dc0ed43458ff6c550e25ccf7c1b3f4bd7012791ae",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full export and first draft, read caption and independent eight-check response. Final complete source block preserves four support cows, query/proposal/mask examples, red/green/dashed prototype coding, TPR three stages, unflagged proposal bypass and flagged OAD whole/fragment contrast. Added three reading steps and bypass sentence are directly in the caption. Pixel restoration is independently replayed; this is an annotation/layout intervention, not a complete redraw.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_V5RmhtXTMG_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T07:46:45.299935+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:46:45.299935+00:00"
+}

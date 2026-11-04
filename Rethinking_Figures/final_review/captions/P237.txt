@@ -1,0 +1,5 @@
+Figure 1. T-SNE visualization of embeddings in CLIP feature
+space, showing text prompt, visual prompt, target image, and
+our dual-prompt for a street scene image. Numbers indicate dis-
+tance to image feature, where our dual-prompt approach achieves
+closest proximity (0.18).

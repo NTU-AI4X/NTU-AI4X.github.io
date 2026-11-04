@@ -1,0 +1,2 @@
+Figure 4: VASC overview. Value contrast and cross-layer memory jointly guide block selection
+within a fixed budget. Actual execution updates memory for the next layer.

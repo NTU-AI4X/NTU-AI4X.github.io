@@ -1,0 +1,3 @@
+Figure 1: Motivation of PreActIR. Existing agentic restoration is largely reactive: tool effects are
+observed only after execution, while decisions remain restricted to the available action space. Pre-
+ActIR predicts action consequences before execution.

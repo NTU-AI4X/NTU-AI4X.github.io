@@ -1,0 +1,3 @@
+Figure 1: Role prompting versus role–skill composition in MAS for AI application development.
+Both teams retain the same specialist roles, while role–skill composition adds explicit procedural
+guidance, illustrated by a CUDA-specific skill for the algorithm engineer.

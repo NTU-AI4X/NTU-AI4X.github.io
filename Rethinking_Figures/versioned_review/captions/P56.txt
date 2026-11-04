@@ -1,0 +1,7 @@
+Figure 2. Overall architecture of MFuser. MFuser takes inputs through both VFM and VLM visual encoders. Features from each encoder
+layer are concatenated and refined in MVFuser, which captures sequential and spatial dependencies in parallel. The refined features are
+then added back to the original features and passed to the next layer. MTEnhancer strengthens text embeddings of each class by integrating
+visualfeaturesthroughahybridattention-Mambamechanism. TheenhancedtextembeddingsserveasobjectqueriesfortheMask2Former
+decoder, alongside multi-scale visual features. During training, only MVFusers, MTEnhancers, and the segmentation decoder are trainable
+while the VFM and VLM remain frozen, preserving their generalization ability and enabling efficient training. Note that skip connections
+between each block of MTEnhancer are omitted for clarity.

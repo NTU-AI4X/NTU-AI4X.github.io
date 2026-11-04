@@ -1,0 +1,7 @@
+Fig.1: Motivation for IWE. Left→right: (i) Raw predictions before thresholding
+for two classes — a true positive Person (red) (bbox cluster size = 167, max score
+= 0.14) and a false positive Dog (blue) (bbox cluster size = 45, max score = 0.15);
+(ii) In ZS, all scores remain below the detection threshold, causing a missed detection;
+(iii) Standard entropy minimization over-confidently sharpens scores, resulting in a dog
+false positive; and (iv) IWE focuses updates on dense bbox clusters and suppresses
+isolated boxes, producing only the correct person detection.

@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_kQkih2eMHu_F",
+  "generation_attempt": 2,
+  "source_image_sha256": "1b8fe60ca3f88de0f14d75bc781f1e7d7b5a420f3da9bceb309c3fe34eb544be",
+  "revised_image_sha256": "5a9966974b4997b9a753c501a10e55ac06af51861ea395b00227675dead11756",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Both figures retain the two-stage restoration method: Stage 1 without R or P, Stage 2 with R and P, and the LQ-input-to-restored-image pipeline."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Training curriculum, shared VAE encoder, image/text branches, Qwen3 encoder, region down-sampling, joint attention, velocity prediction, reconstruction, decoder, condition sampling, and loss panel are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Stage titles, x_LQ, x_GT, x̂, R, P, t, v, vθ, and both stages’ L2, LPIPS, global GAN, and patch GAN terms are preserved. The full cactus-edge instruction remains legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Stage 1 still leads to Stage 2. Guidance connects to the shared encoder; region control passes through Down-Sample to Image Branch; text passes through Qwen3 and Text Branch to joint attention. Timestep/noise inputs, reconstruction-to-decoder flow, and training-loss arrows retain their directions."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Blue image modules, orange text modules, green restoration modules, purple region control, and dashed conditioning paths remain consistent. Purple Outside and yellow Inside retain their original meanings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Coastal input/output examples, cactus guidance images, region-mask/edge/box examples, and loss heatmap are preserved. The supplied pixel proof reports exact equality for the complete original figure rectangle."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Added headings about learning the restoration prior and binding guidance to the target region follow the caption. Footer definitions of R and P = (t, v), and the training-supervision statement, are also supported by the caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original scientific content and the added headings/footer without visible clipping, missing labels, or corrupted text. Cropped detail views are resolved by the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, and reported pixel proof. The proof file was not independently accessed; added content outside its rectangle was checked against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 6: Overview of FAIR’s two-stage training. Stage 1 learns a general restoration prior. Stage 2\nconditions restoration on region control R and guidance P = (t, v), using region-aware supervision\nto bind the guidance to its target region.",
+  "body_evidence": "judging/fidelity/requests/ICLR27_kQkih2eMHu_F_a2_5a9966974b49/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_kQkih2eMHu_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/ICLR27_kQkih2eMHu_F_a2_5a9966974b49",
+    "response_sha256": "7aa182976c8fa4bb627e34625e089857b1cd9c7283e68aad5886ad7e4f609bfd",
+    "request_metadata_sha256": "10ac48e54adf6f439f77486955f55eef9c5f1dc945b9006f3d95ac60687a21d2",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full figure and read source-pair evidence and caption. Entire original FAIR scientific graph retains R and P conditioning, shared VAE, Qwen3/text/image branches, two curricula and losses. Full coastline/cactus guidance, region control and inside/outside color encoding are original pixels. New titles/footer simply define R and P=(t,v) and two stages. No extra weighting→heatmap edge or inferred snowflake meaning was introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/ICLR27_kQkih2eMHu_F_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T05:33:36.584095+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:33:36.584095+00:00"
+}

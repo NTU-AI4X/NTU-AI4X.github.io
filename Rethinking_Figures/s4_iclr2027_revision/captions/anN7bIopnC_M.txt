@@ -1,0 +1,6 @@
+Figure 2: Motivation. CKA (Kornblith et al.,
+2019) (left) reveals weak feature correspondence
+between DBSR and DFSR, while residual and
+zoom-in comparisons (right) show local discrep-
+ancies between DBSR outputs and paired HR
+targets.

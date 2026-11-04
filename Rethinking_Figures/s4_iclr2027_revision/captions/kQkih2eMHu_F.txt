@@ -1,0 +1,3 @@
+Figure 6: Overview of FAIR’s two-stage training. Stage 1 learns a general restoration prior. Stage 2
+conditions restoration on region control R and guidance P = (t, v), using region-aware supervision
+to bind the guidance to its target region.

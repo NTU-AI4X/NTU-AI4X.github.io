@@ -1,0 +1,6 @@
+Figure 1. Motivation of our method. (a) False matches tend to
+occur in cross-modal features. We establish well-aligned image-
+modal reference features thus transit the text-to-image matching to
+image-to-image matching. (b) Indivdual matching tends to suffer
+from disturbances. We propose a novel relation-aware matching
+strategy for more robust region classification.

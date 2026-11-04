@@ -1,0 +1,79 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P281",
+  "generation_attempt": 2,
+  "source_image_sha256": "659a96c75bd939a8c65e2bb58cb89dce04d5d17e4021febad1bdabe776062a23",
+  "revised_image_sha256": "60cb8084f0327d4c0a2d55621a8e63864c8c0871c2af4e733a0b30a581fc07d5",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The comparison remains intact: previous object-centric, per-scene policies suffer self-occlusion and poor generalization; the proposed free-space policy trains across objects and generalizes to novel objects."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both comparison panels retain the building capture scenes, robot, camera-view hemisphere, NeRF label, drone coordinate diagram, three illustrated training objects, and three novel-object examples."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Viewed final comparison, read caption and paired checks, then directly verified original conference title and abstract in quota_review/text/2402.16174_conference.txt and the same paper's Fig.2 caption. GenNBV is the paper's explicit method name, so the model's name-verification flag resulted from its empty body excerpt, not an unsupported claim. Original object-centric/per-scene vs free-space/generalizable comparison and all examples/geometry are pixel-preserved. New banners restate original claim without new metrics."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The NeRF-to-robot-to-camera-views-to-NeRF arrow cycle is retained. The training-object arrow still points left toward free-space capturing; drone trajectories, viewing rays, and training-set containment preserve their original relationships."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red self-occlusion marking, colored coordinate axes, blue dashed viewing rays, pale trajectory arrows, and the dotted training-object enclosure retain their meanings. Added blue banners do not redefine these encodings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same building models, construction vehicle within the camera hemisphere, and three novel-building examples are visible. No measurements, quantitative outcomes, or changed example identities are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Viewed final comparison, read caption and paired checks, then directly verified original conference title and abstract in quota_review/text/2402.16174_conference.txt and the same paper's Fig.2 caption. GenNBV is the paper's explicit method name, so the model's name-verification flag resulted from its empty body excerpt, not an unsupported claim. Original object-centric/per-scene vs free-space/generalizable comparison and all examples/geometry are pixel-preserved. New banners restate original claim without new metrics."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original figure content and complete added headers/footer without visible clipping or corruption. Text cut off in the overlapping detail crops is visible in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [
+    {
+      "flag": "The added method name “GenNBV” is unverified. Supply source support for that name or remove it.",
+      "disposition": "resolved_by_direct_original_title_abstract_and_same_paper_caption",
+      "evidence": "Viewed final comparison, read caption and paired checks, then directly verified original conference title and abstract in quota_review/text/2402.16174_conference.txt and the same paper's Fig.2 caption. GenNBV is the paper's explicit method name, so the model's name-verification flag resulted from its empty body excerpt, not an unsupported claim. Original object-centric/per-scene vs free-space/generalizable comparison and all examples/geometry are pixel-preserved. New banners restate original claim without new metrics.",
+      "source_evidence": "generation/P281/independent_body_context.txt",
+      "source_evidence_sha256": "0e3c36d2425277dec0f23ee109fb4b473ff43cf450f5b48ae0a2eb4ac9ca34d4"
+    }
+  ],
+  "remaining_limitations": "The source body excerpt is empty. The supplied pixel proof reports preservation of the original composite rectangle; it does not verify the added banners or their terminology. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. To determine the best view for 3D reconstruction, previous methods only chose from hand-crafted action space or based on\nobject-centric capturing, lacking the ability to generalize to unforeseen scenes (Left). With our end-to-end trained, generalized free-space\npolicy, it can generalize to unseen objects, enabling the captured drone to image from any viewpoint (Right).",
+  "body_evidence": "judging/fidelity/requests/P281_a2_60cb8084f032/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P281_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P281_a2_60cb8084f032",
+    "response_sha256": "36639381d83d89fa341f7940cfda1763fe3f1980618e750ee1b50a26f173992f",
+    "request_metadata_sha256": "e72137b5b38574539dff3f72f74f37782351228737dcd7d1b6ed28d57358f53d",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final comparison, read caption and paired checks, then directly verified original conference title and abstract in quota_review/text/2402.16174_conference.txt and the same paper's Fig.2 caption. GenNBV is the paper's explicit method name, so the model's name-verification flag resulted from its empty body excerpt, not an unsupported claim. Original object-centric/per-scene vs free-space/generalizable comparison and all examples/geometry are pixel-preserved. New banners restate original claim without new metrics.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P281_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:52:22.577154+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:52:22.577154+00:00"
+}

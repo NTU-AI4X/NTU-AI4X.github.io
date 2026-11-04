@@ -1,0 +1,5 @@
+Figure 1: Patch noise and region noise. Patch noise refers to isolated predictions that disagree with
+surrounding patches, as seen in the cows (bottom), whereas region noise occurs when a semantic
+region is split into inconsistent labels, as shown in the cow (top) and cats (middle). SHAPE reduces
+both types of noise by selectively exploiting structural support through its Edge, Node, and Region
+Experts at relation, patch, and region levels, respectively.

@@ -1,0 +1,4 @@
+Figure 2: (a) Segmentation mIoU over 1,200 layer–timestep states; (b) Three-dimensional view
+of the same performance landscape. (c) Classwise reliability over the selected states; stars mark
+classwise maxima and red marks the strongest shared state. (d) Class IoU of the strongest shared
+state and each class’s preferred state.

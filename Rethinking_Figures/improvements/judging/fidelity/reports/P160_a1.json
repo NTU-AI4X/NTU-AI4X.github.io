@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P160",
+  "generation_attempt": 1,
+  "source_image_sha256": "7151adf6f28ac44ee051bf2af8850197e5f9fa7219871396f2ef07ecf28fe2c2",
+  "revised_image_sha256": "a0e0fe42c440280aba07bba1771846d8a879f302a5edde7b8c1411e32d5f10c1",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative retains the baseline detector and its FC feature branching into classification and localization alignment, including auxiliary predictors, GRLs and inconsistency losses."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The complete overview retains the feature stack, RPN, proposals, ROI Align, FCs, discriminators, both task branches and the category/boundary feature-space diagram. The enlarged panel repeats the task branches."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Module labels, classification/localization superscripts, da/ia loss subscripts, positive and negative loss signs, and equation references (2), (5), (6) and (7) are preserved. Class A–E and Top, Bottom, Left, Right remain present."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The backbone-to-RPN/ROI-to-FCs paths, discriminator paths through GRLs, task-head arrows, auxiliary-predictor paths and arrows toward the signed losses retain their original directions. Feature-space arrows still point outward toward category and boundary groups."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red source, teal target and gray mixed-flow encodings remain consistent with the retained legend. Green classification and blue localization grouping, gray feature spaces, and oval/triangle feature symbols are preserved."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The five category examples and four boundary examples retain their identities and paired source/target features. No measurements, numerical results or additional examples are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added 'Classification: category-wise margins' and 'Localization: boundary-wise margins' statements are supported by the supplied caption. 'Task-specific alignment — enlarged view' accurately describes the repeated task-branch region."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete original overview and the enlarged branch region with both loss expressions intact. Partial content at the supplied detail-image edges reflects those detail crops; the corresponding content is present in the full derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel checks. Pixel equality applies only to the two listed rectangles; the added headings were assessed separately against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Framework overview. Best viewed in color. We develop the high-level feature alignment into separate task spaces, by applying\nthe proposed Task-specific Inconsistency Alignment module to both the classification (green part) and localization (blue part) branches\nof the baseline detector (gray part). In each branch, the behavioral inconsistency of multiple auxiliary predictors is optimized via the\ncorresponding inconsistency-aware loss, for essentially bridging the category-wise or boundary-wise margins between domains.",
+  "body_evidence": "judging/fidelity/requests/P160_a1_a0e0fe42c440/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P160_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P160_a1_a0e0fe42c440",
+    "response_sha256": "1f304d3ac50fb6814e83bf38a5b60a3f7870e09156e8816c064b9193c3ab530b",
+    "request_metadata_sha256": "ad29e8cae54042dfd5cf04bbe46987b49d2d56799f2b7273c6121d7b362c4e4f",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full original and task-specific enlargement; caption reviewed. Baseline detector, GRL/discriminator routes, red/teal source/target branches, signed loss formulas Eqs2/5/6/7 and category A–E/boundary directions retained. Added classification categorywise/localization boundarywise statements are explicit source purpose; no invented loss relation.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T08:55:40.800004+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T08:55:40.800004+00:00"
+}

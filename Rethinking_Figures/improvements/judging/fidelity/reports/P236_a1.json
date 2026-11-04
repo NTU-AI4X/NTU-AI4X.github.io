@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P236",
+  "generation_attempt": 1,
+  "source_image_sha256": "d28fc68f27ba607df881399804766f0b4f59335b170ba068789098a1c29e2f6e",
+  "revised_image_sha256": "2c70261adc375a300b5a26d93563027c0c0b784890199793658a190a7fb4d390",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The incomplete point cloud still feeds hierarchical encoding, proxy generation and parametric recovery, producing a parametric completion and then a polygonal surface mesh."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three architecture panels and their modules remain, including the segmentation lookup table, query generator, encoder, decoder, parameter estimator, point distributor and primitive selector. The matching inset, example objects and legend are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Module names, Queries, x,y,z and r,θ,φ are preserved. The matching equation retains σ̂, arg min over σ∈Π, the sum indexed by i up to N, and C(P_i, P̂_{σ(i)}). No changed numerical values are visible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Encoding arrows point upward; query generation and decoding proceed downward. Decoder outputs still connect to the parameter estimator and, through a dashed shortcut, the point distributor. Recovery proceeds upward to selection, then to completion and downward through assembly to the mesh. Matching callout arrows remain."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Gray circular point proxies, colored square plane proxies, dashed padded proxies and dashed shortcut arrows preserve their legend meanings. Panel grouping, primitive colors and the dashed bipartite-matching enclosure remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same incomplete and segmented point clouds, completed object with a hexagonal opening, surface mesh and primitive-set examples are visible. No additional measurements, outcomes or changed class identities appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added heading 'Selection is optimized via bipartite matching' directly follows the supplied caption. The added note 'Point colors denote planar primitives' also restates the caption. Neither introduces a new method component or result."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the complete architecture, output labels, enlarged matching equation and both primitive sets, plus all five legend entries. No clipping or unreadable replacement text is apparent in the full export; detail-image crops do not indicate missing export content."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. The reported pixel proof covers only its listed rectangles; surrounding additions and relationships were assessed visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Architecture of PaCo. Starting from an incomplete point cloud, we hierarchically encode the points into plane proxies with a\nlookup table from segmentation. These proxies inform the proxy generator in producing a set of proxy proposals. The generated proxies\nare then passed to the parameter estimator and the point distributor for primitive estimation. Finally, the primitive selector identifies a\nsubset of primitives to form the parametric completion, with selection optimized via bipartite matching. The resulting primitives enable\ndirect assembly for polygonal surface reconstruction. Points are colored according to their planar primitives.",
+  "body_evidence": "judging/fidelity/requests/P236_a1_2c70261adc37/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P236_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P236_a1_2c70261adc37",
+    "response_sha256": "f833e923efd8f62fdbffc52e5152630cd5921ba7961d42866409f854e77ff30b",
+    "request_metadata_sha256": "62ee26828d6f73729e607c0c07e2a7a01d825f8cf2ee88c7aa7fe4bb5ca0651a",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed final PaCo and read the caption and eight independent pair checks. The unchanged main architecture retains lookup-table segmentation, encoding/query/decoder paths, original shortcuts, parameter estimator, point distributor, selector, parametric completion, and primitive assembly. The entire bipartite-matching strip is enlarged 2x nearest-neighbor with all symbols, point-cloud examples and callout arrows intact; the complete five-part legend remains. Added selection and planar-color explanations are directly stated in the source caption. No matching cost term, primitive identity, or new path was invented.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T06:50:49.725017+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:50:49.725017+00:00"
+}

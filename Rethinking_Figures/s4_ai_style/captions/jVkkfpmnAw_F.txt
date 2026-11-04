@@ -1,0 +1,4 @@
+Figure 2: Workflow of OHM. Given a structured visual representation and a task-specific question,
+the orchestration agent routes the input to perception agents that recover entities and relations. The
+validation module examines the recovered graph with support from the ontology, after which task-
+specific reasoning agents produce the final answer.

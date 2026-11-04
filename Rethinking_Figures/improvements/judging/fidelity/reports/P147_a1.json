@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P147",
+  "generation_attempt": 1,
+  "source_image_sha256": "6c191155157dceb597d4c297ca744180ff66e36762687f52b38341410b68f819",
+  "revised_image_sha256": "7508dee9fd3e5656bf6a78671a3847869c7fb105ee573505c1d9f2f2f55e2a1b",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The four diffusion processes and their input/terminal-state relationships remain intact. The added global-noise-versus-selective-reconstruction framing follows the supplied caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Panels (a) Standard Diffusion, (b) Mean-reverting Diffusion, (c) Diffusion Bridge and (d) Ours retain their image sequences, domain diagrams, target circles, distribution contours and probabilistic paths. Rearrangement into four columns preserves panel associations."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "All panels retain x₀ = x_HQ. Terminal expressions remain x_T ∼ N(0, Σ) in (a), x_T ∼ N(μ, Σ) in (b), and x_T = μ in (c–d). Target domain, Probabilistic path, Residual and the respective Noise domain, Noisy image domain and Image domain labels are retained."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Image-sequence arrows still point from x₀ toward x_T. Blue, green and red residual connections retain their endpoints and directions; dashed paths and the additional curved/local red arrows in (d) remain visible. Moving the sequences above diagrams in (c–d) introduces no new connection."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Gray/black standard-diffusion contours, blue mean-reverting residuals, green bridge residuals and red Ours residuals retain their meanings. Blue surrounding distributions in (c–d), dashed sequence borders and colored terminal labels remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Each panel retains its six-frame doll example, including progressive noise in (a), noisy doll states in (b), and blurred terminal images in (c–d). Panel (d) preserves the visible distinction between doll degradation and intact background. No measurements or new examples are introduced."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new title and four explanatory boxes are supported by the caption: Gaussian noise mapping, a low-quality domain with stationary noise, direct transitions between known distributions, and selective reconstruction while preserving intact areas."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains the complete title, all four panels, equations, legends, image strips and explanatory boxes. No key content is visibly clipped or unreadable. Cropping in the supplied detail views does not occur in the full derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and reported pixel checks only. Pixel equality supports only the listed rectangles; layout relationships and added text were assessed separately. No source body text was supplied. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Typical diffusion processes. (a) Standard diffusion maps high-quality images to Gaussian noise domain. (b) Mean-reverting diffusion drives terminal state toward a low-quality domain with stationary noise. (c) Diffusion bridge establishes direct probabilistic transitions between known distributions. All inject noise globally, disrupting overall structures and constraining transitions. (d) In contrast, our RDBM selectively reconstructs degraded regions (e.g., the doll) while preserving intact areas (e.g., the background).",
+  "body_evidence": "judging/fidelity/requests/P147_a1_7508dee9fd3e/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P147_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P147_a1_7508dee9fd3e",
+    "response_sha256": "3e0eaaa4140a32ecf9b8648fe12f6fbcee49be5d68c17aa6f2081299d8b2a96a",
+    "request_metadata_sha256": "3fd9e6eccbc0d2398e2629f1caffc920f48b8392cfb00f2b5e32b7ebaf9f89ab",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full image and reviewed independent source-pair observations plus caption. Four processes preserve each original doll/noise sequence, terminal distributions x_T, residual arrow and probabilistic path; moving c/d image strips above their landscapes does not reconnect anything. Global noise versus selective reconstruction footer claims match all four caption definitions. All original symbols, noise patterns and red local trajectories remain source pixels, no new curve/data.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T05:19:52.833632+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T05:19:52.833632+00:00"
+}

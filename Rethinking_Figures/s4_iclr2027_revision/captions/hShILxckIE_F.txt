@@ -1,0 +1,8 @@
+Figure 3: ARROW architecture. The multi-view encoder E tokenizes each frame independently
+and employs global attention to produce a shared global context F together with an ID token h for
+i
+each frame. The query encoder combines a source-centered RGB crop, the Fourier-encoded (u, v)
+coordinate, and the ID tokens of the queried source, target, and reference view frames into a latent
+query token z . Each latent query token independently cross-attends to the global context, so a single
+q
+encoding serves arbitrarily many queries and yields a consistent 4D representation of the scene.

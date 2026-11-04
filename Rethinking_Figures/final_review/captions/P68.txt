@@ -1,0 +1,4 @@
+Figure 2. Proposed MoCE-IR framework. Despite recent advances in MoE-based image restoration [57, 62, 63], inconsistent expert
+behavior—where some experts over-generalize while others underperform—limits their computational efficiency. We address this through
+complexity experts: flexible blocks with varying computational capacity and receptive fields. Our MoCE-IR employs an asymmetric
+encoder-decoder architecture where each decoder block contains a mixture-of-complexity-experts layer for adaptive capacity routing.

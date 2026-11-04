@@ -1,0 +1,9 @@
+Figure 1. Comparing generative open-ended object detection with
+other open-set object detection tasks. Open-vocabulary object de-
+tection and phrase grounding typically require predefined cate-
+gories or phrases in text prompts to align with image regions. In
+contrast, our introduced generative open-ended object detection is
+a more general and practical setting where categorical information
+is not explicitly defined. Such a setting is especially meaningful
+for scenarios where users lack precise knowledge of object cate-
+gories during inference.

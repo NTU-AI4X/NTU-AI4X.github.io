@@ -1,0 +1,6 @@
+Figure 1: How a run works. One run spans 20 in-game years and roughly 340 to 400 decision stops,
+ending in a single composite score. At each stop, the clock freezes and the agent takes as many tool-
+call turns as it wants (read → act → advance). The agent’s only cross-stop memory is its self-
+written notebook (§3.2); the environment side holds the club (net worth, squad with permanently
+hidden true ability, a board that can fire the manager) and the world (15 rival clubs, a counter-
+adaptive market, delayed-payoff investments).

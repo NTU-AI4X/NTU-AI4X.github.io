@@ -1,0 +1,3 @@
+Figure 1. Overview of PanoVGGT and the PanoCity dataset. PanoVGGT predicts camera poses, dense depth, and consistent 3D point
+clouds from unordered panoramas. Compared with perspective-based pipelines that split panoramas into pinhole views, it yields more
+accurate 3D reconstructions. PanoCity contains over 120k outdoor panoramas under diverse urban scenes and weather conditions.

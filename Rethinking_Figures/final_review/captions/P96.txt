@@ -1,0 +1,11 @@
+Figure 2. The pipeline of our proposed DenSe Learning (DSL) based SSOD method. The training data contain both labeled and unlabeled
+images. During each training iteration, a teacher model is employed to produce pseudo-labels for weakly augmented unlabeled images.
+In anchor-free based detectors like FCOS [44], each spatial location of the dense predictions will be assigned with one label, and the
+model performance is sensitive to noisy pseudo-labels. To alleviate this problem, an Adaptive Filtering strategy is proposed to split the
+pseudo-labels into three types, including background, foreground and ignorable regions. Moreover, there exist some false positive cases,
+which have higher scores but are obviously wrong predictions. Thus, a MetaNet is proposed to refine these cases. To improve the model
+generalization capability, unlabeled images are patch-shuffled and consistency regularizations are applied on these images with different
+scales. For improving the stability and quality of pseudo-labels, the teacher model is updated by the student models via aggregation, called
+Aggregated Teacher. After obtaining the fine-grained pixel-wise pseudo-labels, the detector can be optimized by the final loss, which is the
+sum of L ,L and L .
+s u scale

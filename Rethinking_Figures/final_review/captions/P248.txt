@@ -1,0 +1,5 @@
+Figure 2. Illustration of the training process of NoOVD. We use K-FPN to extract the pyramid embeddings from frozen CLIP to identify
+latent novel-category objects. Besides the image-text alignment with L , we also align the features of the RoI head with the features
+cons
+from K-FPN via knowledge self-distillation with L .
+kd

@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P121",
+  "generation_attempt": 1,
+  "source_image_sha256": "62c9f1724a7554ed10c79ebbd9fafded97172061608c829c8c1d0400a92d7580",
+  "revised_image_sha256": "43e81fde21a4801019df80df2edb4f0191f639988caaf8890018e34f0c400b3c",
+  "reviewer": {
+    "identity": "/root/gallery_integration_audit",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The Motivation contrast remains three SISR region types: A smooth/large-scale structures, B texture-like aliasing details, and C fine-scale aliasing structures. The six LR-to-SR comparisons still motivate separating realistic detail from artifacts.",
+      "requirement": "The intended M/F task, main problem or full method and its key input/output relationships remain intact."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All twelve original image patches are present: two A pairs (blue smooth area and large structural contours), two B pairs (texture and foliage), and two C pairs (branches and building). They are reorganized into three equal rows without deleting a pair.",
+      "requirement": "All semantically necessary panels, entities, objects, modules and examples are retained or represented equivalently."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "The Type A/B/C category wording is preserved; every pair is explicitly labelled LR Input then SR Result. There are no equations or experimental numbers to transcribe. The new short notes accurately paraphrase the corresponding source-caption statements.",
+      "requirement": "Names, labels, equations, indices, symbols, numerical values and claim-bearing words are accurate and legible."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The left-to-right LR Input to SR Result ordering remains correct for all six pairs. Horizontal row grouping preserves the original A/B/C membership. No causal arrow or module has been introduced.",
+      "requirement": "Arrows, ordering, containment, causality and other represented relationships preserve the source meaning."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Source image colors and details are unchanged. Former red separators are replaced by neutral row rules and equal category headings; these boundaries retain the three-category meaning rather than recoding a data variable.",
+      "requirement": "Changed colors, symbols and grouping do not alter category meanings; legends and repeated encodings remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independently recomputed all twelve source and destination crops from provenance.json: source pixel bytes equal final pixel bytes at 1:1 scale, and their SHA256 values match both recorded source/restored hashes. No data resampling, color change or generative patch content is used.",
+      "requirement": "Examples and data-bearing visuals are preserved without fabricated measurements, outcomes or altered class identities."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New notes are supported by the original caption and PDF page 1: Type A main structures survive LR sampling; irregular Type B details can appear perceptually realistic; overshoot/distorted Type C structures can appear as artifacts. They introduce no new measured result, category or method claim.",
+      "requirement": "No new scientific claim, method component, relation or result is introduced without support in the original figure and supplied text."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "Directly viewed both complete rasters. All twelve patches and repeated labels fit their rows; the last Type C note remains fully inside the image. No visible generated surrogate imagery, clipped heading, or missing example is present.",
+      "requirement": "The exported image is complete: no clipping, missing key content, unreadable replacement text or visible generation corruption."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "This is a scientific-content fidelity check, not a quality score. The new caption-supported interpretive notes make the original implicit comparison more explicit; no inference about human aesthetic preference is made.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "approved_by": "/root/gallery_integration_audit",
+  "approved_at": "2026-10-31T15:18:22.586444+00:00",
+  "hybrid_verification": {
+    "regions": 12,
+    "pixel_equality": "12 of 12 passed at 1:1 scale",
+    "provenance": "generation/P121/provenance.json",
+    "source_pdf_page": 1
+  }
+}

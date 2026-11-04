@@ -1,0 +1,3 @@
+Figure 1. The challenges of transferring OV instance segmen-
+tation to underwater scenarios in terms of (a) datasets and (b-c)
+methods, which have motivated the contributions of this study.

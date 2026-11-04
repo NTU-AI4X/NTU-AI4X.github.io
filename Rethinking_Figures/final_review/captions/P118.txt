@@ -1,0 +1,7 @@
+Figure 2. Overview of our SplatSuRe framework. A high-resolution (HR) 3D Gaussian Splatting (3DGS) model is trained using low-
+resolution (LR) and super-resolution (SR) inputs. We first train a 3DGS model on LR inputs to identify undersampled regions and render
+per-view weight maps that indicate where SR is needed. During training of the HR 3DGS model, the images produced by the frozen
+single-image super-resolution (SISR) model are spatially weighted by these maps to form the SR loss L . A complementary LR loss
+SR
+L compares the downsampled HR render against the original LR ground truth to provide consistent supervision across the entire image.
+LR

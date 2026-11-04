@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "ICLR27_WrLCWdkY49_M",
+  "generation_attempt": 1,
+  "source_image_sha256": "57fcfda80bdde2c2f3e89683fc67d57c0301c9296f10e7312e97eebe8a19d4ad",
+  "revised_image_sha256": "4a254fc06af5f6135888af7ecd81e11661063f9b30d621f0881ac2070b025ad0",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The same motivation remains rigid fixed category experts versus dynamic composition, homogeneous category updates, and hierarchical drift during incremental training."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "The entire original assignment/LCAR/shared-bank schematic including its legend, full category similarity matrix with color bar, and full three-series drift plot are preserved as three protected regions."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Boat/car/dock labels, selected/unselected vector legend, heatmap seven category labels and 0-to-1 color scale, curve legends Vector/Category/Task and training stages 1-8 remain intact."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "All original schematic arrows, branches, selected-vector routing and composition links are preserved within the intact source schematic. Reordering panels does not imply a new causal or computational path."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Source blue/gray vector encodings, hatching, red active routing, heatmap colors and blue/orange/green curve-marker identities remain unchanged apart from proportional resampling."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Independent crop-file and decoded-pixel checks verify all three destination regions equal the specified LANCZOS resizes of original source blocks. Every matrix cell and every plotted curve point is derived from original pixels."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New headings and summaries closely restate Figure 1 caption and introduction: fixed experts, category-demand-driven fine-grained composition, high within-task pairwise similarity and accumulated hierarchical deviations. They add no numerical claim or empirical finding."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All three source panels, full schematic legend, heatmap axes/color bar and complete drift chart axes/legend are visible; new captions lie outside the protected content."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original scientific regions are proportionally LANCZOS-resampled with documented rounding, not native 1:1 copies. This audit checks fidelity to the supplied figure/text and does not establish the paper claims.",
+  "caption": "Figure 1: Motivation of DCHA. (a) Existing category-level methods rigidly assign fixed experts\nbased on category, whereas DCHA dynamically selects and composes fine-grained parameter vec-\ntors according to category demands. (b) Category-specific updates produced by existing category-\nlevel methods exhibit uniformly high pairwise similarities within the same task. (c) Shared bank\nparameter deviations progressively accumulate at the vector, category, and task levels during incre-\nmental training, resulting in hierarchical drift.",
+  "body_evidence": "generation/ICLR27_WrLCWdkY49_M/attempt_01/source_context.txt: original caption and surrounding source-paper text.",
+  "independent_pixel_check": "judging/fidelity/reports/ICLR27_WrLCWdkY49_M_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T15:50:07.816758+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T15:50:07.816758+00:00"
+}

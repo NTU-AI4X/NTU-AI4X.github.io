@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_1Xi9fslMSG_F",
+  "generation_attempt": 1,
+  "source_image_sha256": "01dcf3d20df5d5006a4d777004573c9b7202d320a195b41450e5c28fd98fbc24",
+  "revised_image_sha256": "1ff55fcda22496b123126b211c8c15e08851d3b6b422304bf556b16034746efb",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves budget-constrained candidate exploration with feedback, delivery of an intact sample plus synthesis recipe, and acceptance through service targets, recipe–history consistency, and fresh-batch replication."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All five laboratory cards and four workflow panels remain. Candidate pool, agent, Search, Compute, Synthesize, Measure, consumed sample, delivery objects, and three fresh batches are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Laboratory names and property labels match. Values remain 30 days in air; Samples 7; Compute 6 units; Lab time* 400 h; Measurement 30 units; Actions 200; and ≥ 2 / 3 pass. The delivery '+' and recipe-history '=' are preserved."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The laboratory connector and downward garnet arrow remain, as do Task brief → exploration → Delivery → Acceptance, the agent’s four downward tool-selection branches, leftward dashed Feedback arrow, and destructive-analysis arrow toward the consumed sample."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Teal garnet highlighting, teal feedback and acceptance checks, blue tool-selection arrows, orange resource-budget emphasis, and reddish destructive-analysis encoding retain their original meanings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The garnet pellet example, candidate illustrations, intact versus broken sample distinction, and three replication pellets remain consistent. No new measured values or batch outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added five-laboratory heading is supported by the caption and laboratory-specific task definition. The added feedback-guided exploration statement follows the caption and body. The storage-wait footnote reproduces the supplied caption’s qualification."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all original panels and labels, with its added heading, bottom statement, and footnote visible. Cropping in the detail views does not represent clipping in the full export."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The reported pixel-equality proof was not independently verified; semantic relationships were inspected visually. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1: Overview of MatGym. Across five simulated laboratories, agents explore candidates and\nadapt tool use to feedback under resource budgets, then deliver a sample and its synthesis recipe.\nAcceptance requires service performance, recipe–history consistency, and success on at least two of\nthree fresh batches. An earlier garnet task is shown. *Lab time excludes the simulated storage wait.",
+  "body_evidence": "judging/fidelity/requests/AI_1Xi9fslMSG_F_a1_1ff55fcda224/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/AI_1Xi9fslMSG_F_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_1Xi9fslMSG_F_a1_1ff55fcda224",
+    "response_sha256": "c0b7100733c87381070534b1d1148228640c3db090f4804b1a36491651b555f3",
+    "request_metadata_sha256": "970d74a15cd58544706b17936394a5054bc1db490829dc1649c3f8dae93912c1",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the complete final MatGym image and read the source caption and Sections 3.1-3.2 plus all eight independent source-pair checks. The preserved original includes five laboratory alternatives, all four exploration tools and feedback, the intact sample/recipe delivery, destructive sample distinction, all resource limits, and the >=2/3 replication requirement. The added top line correctly says the garnet example is illustrated rather than suggesting a sequential five-laboratory experiment. The bottom feedback-guided exploration statement is explicit in the source, and the storage-wait footnote matches the caption. The complete scientific source block is independently replayed; no result or value is fabricated.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T06:48:30.722375+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:48:30.722375+00:00"
+}

@@ -1,0 +1,6 @@
+Figure 1: Three unresolved challenges in taxonomy-aware segmentation. Left: identical visual
+concepts can be split, merged, or omitted by different annotation policies. Center: a coarse label such
+as vehicle is compatible with several semantic atoms, but the correct relation changes with local visual
+evidence, which a class name alone cannot observe. Right: forward-only supervision can preserve an
+apparently correct coarse mask even when distinct atom channels become indistinguishable. A useful
+compiler must therefore be local, visually grounded, and semantically recoverable.

@@ -1,0 +1,3 @@
+Figure 3. Illustration of our proposed PlanarSplatting. Given a set of posed multi-view images of indoor scenes, our method renders
+depth and normal maps from 3D plane primitives. Then, with the supervision of monocular cues, these 3D plane primitives are gradually
+optimized to recover the scene geometry and finally merged to get the planar reconstruction result.

@@ -1,0 +1,89 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "AI_UPFHZRl39C_M",
+  "generation_attempt": 2,
+  "source_image_sha256": "b6da7a1fab2124dea74cc11dd80375213668cb083d711e96b6ff549ebb993e33",
+  "revised_image_sha256": "4c318ab0d0f46e020545cd006cc275c9c8b9dbc56b817b29d35d060ff5141a20",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent pair evidence; /root/vision_exemplars delegated acceptance review with /root source-scope confirmation",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The contrast between discarded stateless repairs and accumulated, causally verified experience remains intact. Frozen generator/judge models, reusable skills, and capability growth with usage are retained."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All scientific panels remain: the stateless workflow, Visual Traceback, Action Routing, Frozen Models, Causal Governance, Memory → Skill Consolidation, three charts, four episode examples, and the social-post example."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Reviewed full original, derivative and source text at lines 108-134. The omitted peripheral Li Bai verses and hero-scene plaque are decorative backdrop, not inputs, outputs, measurements or evidence in the operational example. Root independently confirmed this scope. The Li Bai input/rewrite prompts, all generated-example thumbnails, complete social post including its verse and counts, all three charts, causal guard and same-model explanatory banners remain. Authorized background removal does not remove scientific labels or claims."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The downward stateless sequence, blue cyclic arrows around the core modules, routing/governance arrows toward Frozen Models, episodic-memory-to-skills arrow, and rightward episode progression retain their source directions."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The blue rising capability curve and gray dashed stateless baseline remain distinct. Green acceptance/red rejection symbols and gray-versus-blue/orange comparison bars retain their meanings. Added column grouping is consistent with the source."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The scientific examples and chart content are preserved: Li Bai generation/repair thumbnails, traceback boxes, memory examples, episode thumbnails, and the social post. No fabricated measurements or altered outcomes are visible."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added subtitle matches the supplied caption. “Verify and reuse experience” is supported by the caption and existing governance/memory modules. No additional method component or scientific result is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The crop retains decorative plaque/scroll fragments at its boundary, as visibly confirmed. These are an aesthetic/layout limitation, not clipped scientific labels, arrows or operational examples. All five complete scientific areas are restored exactly. The surviving decorative fragments are retained for actual quality scoring, without further quality-based edits."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [
+    {
+      "check": "labels_math_and_numbers",
+      "raw_issue": "Peripheral literary annotations from the original are omitted; they are example-scene text rather than scientific claims.",
+      "resolution": "Reviewed full original, derivative and source text at lines 108-134. The omitted peripheral Li Bai verses and hero-scene plaque are decorative backdrop, not inputs, outputs, measurements or evidence in the operational example. Root independently confirmed this scope. The Li Bai input/rewrite prompts, all generated-example thumbnails, complete social post including its verse and counts, all three charts, causal guard and same-model explanatory banners remain. Authorized background removal does not remove scientific labels or claims."
+    },
+    {
+      "check": "complete_visible_content",
+      "raw_issue": "The central crop visibly truncates the vertical plaque and poem scroll. Preservation of the listed pixel rectangles does not establish completeness of these objects outside those rectangles.",
+      "resolution": "The crop retains decorative plaque/scroll fragments at its boundary, as visibly confirmed. These are an aesthetic/layout limitation, not clipped scientific labels, arrows or operational examples. All five complete scientific areas are restored exactly. The surviving decorative fragments are retained for actual quality scoring, without further quality-based edits."
+    }
+  ],
+  "remaining_limitations": "Partial decluttering and annotation intervention, not a full redraw. Decorative poem/plaque edge fragments remain visible and may affect readability/aesthetics. Original author-illustration chart claims are preserved, not newly validated empirical results. These limitations remain available to the independent quality judge.",
+  "caption": "Figure 1: From stateless refinement to continual capability growth. VEvo-Harness causally verifies\nand reuses visual experience, enabling frozen generators to become progressively stronger with usage.",
+  "body_evidence": {
+    "path": "s4_ai_style/text/UPFHZRl39C.txt",
+    "sha256": "a9c666a518bbd638de6a8196fc4d39dc8b3016484f402139b656a4e82373ef29",
+    "lines": [
+      108,
+      134
+    ]
+  },
+  "independent_pixel_check": "judging/fidelity/reports/AI_UPFHZRl39C_M_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/AI_UPFHZRl39C_M_a2_4c318ab0d0f4",
+    "response_sha256": "5ade472a03b56067189c2829d890b5c66d5a8e2966afff953bb4a8dc11a99af8",
+    "request_metadata_sha256": "478ade8d0e1d2b7e46d64e04f246e9d5b2f764f83c1b4ff752938650939a6fa2",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Personally viewed original full, generated draft, and hybrid final. Five source blocks preserve all operational panels and examples. Reviewed four-principle source explanation; decorative verses have no operational evidence role. Raw model flags retained and resolved explicitly, after source-scope confirmation from root. No image edits followed quality scoring.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/AI_UPFHZRl39C_M_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T06:51:44.545029+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:51:44.545029+00:00"
+}

@@ -1,0 +1,6 @@
+Figure 2. Overview of the model architecture. Following
+DUSt3R [75], images are encoded then decoded with a ViT back-
+bone into pointmaps, from which focals, depthmaps and relative
+pose can be extracted. Pow3R introduces optional inputs to guide
+the regression with prior knowledge about the camera intrinsics
+and depth (fed into the encoder) and the pose (into the decoder).

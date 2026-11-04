@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P136",
+  "generation_attempt": 2,
+  "source_image_sha256": "58141978f4cbdebc4c994428d3b2a1e3077ffe673c9440a3a0c13068e8e022a8",
+  "revised_image_sha256": "857538d1691e3d05f2c8db034e51cab7086afbcf94fed6ecd214951a41a1266b",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The Transformer-based segmentation framework remains intact: image input produces feature maps, classification/CAM outputs, learned affinity, and segmentation predictions supervised by refined pseudo labels. The added title accurately summarizes image-level supervision."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All original modules remain visible: Transformer, MHSA, AFA, MLP layer, feature maps, classification layer, segmentation decoder, random walk, both PAR blocks, and all three losses. Initial, refined, affinity, and final pseudo labels are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and loss subscripts L_aff, L_cls, and L_seg are preserved and legible, including CAM, MHSA, AFA, and the class label “Aeroplane.” The added PAR expansion, “Pixel-Adaptive Refinement,” matches the supplied text. Added numbers 1 and 2 identify explanatory sections rather than measurements."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The original arrow relationships remain: MHSA → MLP → affinity prediction; refined label → affinity label → affinity loss; affinity prediction feeds random walk; initial pseudo labels feed random walk and the upper PAR; random walk → lower PAR → pseudo label. Segmentation prediction and pseudo label both feed L_seg, while classification prediction and “Aeroplane” feed L_cls."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The legend still assigns blue arrows to classification, green to affinity learning, and gray to segmentation, consistently with the diagram. Pale-yellow PAR blocks and the shaded AFA region retain their meanings. Added green explanatory boxes do not redefine the original legend."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same aeroplane photograph, attention-map stack, affinity matrices, classification indicator, and aircraft mask examples are retained. No new class identity, quantitative measurement, or experimental result appears. The supplied pixel-equality report also covers the complete original framework rectangle."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added summaries are supported: MHSA provides affinity, refined labels supervise affinity through affinity labels, learned affinity guides random-walk propagation, and PAR refines segmentation supervision. The footer's statement that PAR uses RGB and position information is explicitly supported by the source excerpt."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative includes the complete original diagram, legend, output masks, and labels, along with the complete added title, explanatory sections, and footer. No substantive clipping or unreadable replacement text is visible. Partial text at detail-image boundaries is present in full in the full derivative."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption, excerpt, and reported pixel proof. The proof file was not independently opened or verified; added explanatory content was checked against the supplied source text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 3. The proposed end-to-end framework for WSSS. We use a Transformer backbone as the encoder to extract feature maps. The\ninitial pseudo labels are generated with CAM [59] and then refined with the proposed PAR. In the AFA module, we derive the semantic\naffinity from MHSA in Transformer blocks. AFA is supervised with the pseudo affinity labels derived from the refined label. Next, we\nemploy the learned affinity to revise the pseudo labels via random walk propagation [2, 1]. The propagated labels are finally refined with\nPAR as the pseudo labels for the segmentation branch.",
+  "body_evidence": "judging/fidelity/requests/P136_a2_857538d1691e/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P136_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P136_a2_857538d1691e",
+    "response_sha256": "ded6c724b6867a09d749efc5b8483dc2c35f1fbeef6e30b1cbd0f3e4bbb8a903",
+    "request_metadata_sha256": "fcf96b4a10b71f92da809d494d647f3b923fa7a9b19b369ba5e0ec9f60b66c79",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed complete final AFA graph and read caption plus source PAR body_evidence. Refined labels supervise affinity; learned affinity routes to random walk, not the refined-label supervision input. Both PAR instances, all masks/losses/legend remain unchanged. Source Sec.3.4 explicitly defines Pixel-Adaptive Refinement using RGB and XY position, supporting footer; reading sections do not add a training schedule. Complete original figure independently replayed.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P136_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:52:22.550743+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:52:22.550743+00:00"
+}

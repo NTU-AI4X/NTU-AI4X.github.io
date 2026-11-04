@@ -1,0 +1,9 @@
+Figure 1: (a) Offline memory is first built for the whole video before the first question; Q1–Q6 then
+reason over the same memory without updating it. Nodes used by a question take that question’s
+color, and the rest are never touched. (b) Per-question tokens with Gemini 3.8 Flash as the model.
+Direct feeds the video and question directly to the model. Offline memory is Qwen-MM-Plugins:
+its construction cost, amortized over the benchmark’s questions. Our method has no construction
+stage. (c) Sprout builds memory while reasoning. The agent watches the video segment by segment
+at a low frame rate and stops once the question has enough evidence, so the tail of the video is never
+watched and costs nothing. Each watched segment is remembered as a coarse textual node written
+into memory; revisits at a higher frame rate add child nodes beneath the intervals a question needs.

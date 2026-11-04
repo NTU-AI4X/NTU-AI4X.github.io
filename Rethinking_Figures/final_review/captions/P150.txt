@@ -1,0 +1,3 @@
+Figure 3. The overall architecture. We adopt a multi-scale encoder-decoder based on unmixing with several key modules: (a) Coarse-
+to-Fine Deformable Aggregation module, (b) Spatial-Channel Abundance Cross-Attention module, and (c) Spatial-Channel Modulation
+Fusion module to super-resolve high-quality HR HSI.

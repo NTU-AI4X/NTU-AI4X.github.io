@@ -1,0 +1,4 @@
+Figure 1: Illustrative examples of ontology-harnessed reasoning in OHM. In knowledge graph (KG)
+completion (left), type knowledge helps identify the missing entity. In anomaly detection (right),
+relation-domain knowledge reveals that Lived in is incompatible with Tesla as a company. The
+ontology provides supporting evidence rather than a hard decision rule.

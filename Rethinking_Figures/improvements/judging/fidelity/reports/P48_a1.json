@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P48",
+  "generation_attempt": 1,
+  "source_image_sha256": "93076f508c9ffaccede980bcc43d2b546acdfd127ee4c0a7eb59a365a9d14178",
+  "revised_image_sha256": "1650ba94f20f724e7390e964b9949cd073135226eeae1934393eaa6fbab95441",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative retains the full method: RGB image patches and C learnable class tokens enter the transformer; output class tokens produce class scores through average pooling; extracted attention maps and patch affinities feed localization refinement."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both Norm blocks, Multi-Head Attention, MLP, residual additions, L× encoder enclosure, attention stacks, fused token-attention matrix, two class-specific maps, affinity map, refinement module and two refined maps are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and symbols remain legible, including C, N, N², L×, K, H Heads, PE, matrix indices c₁/c₂/c_C and p₁/p₂/p₃/p_M, Fusion, Reshape and Refinement. The added footer correctly identifies the last K layers and H heads."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The encoder sequence and both residual paths retain their directions. Output tokens still lead to Average Pooling and Class scores. The orange matrix region leads to class-specific maps, the blue region leads to patch affinity, and both branches enter Refinement before the refined maps."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Red class tokens, yellow patch tokens, purple positional embeddings, orange class-to-patch entries and blue patch-to-patch entries retain their meanings. The dashed matrix selection and attention-extraction enclosure preserve their original groupings."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The horse-and-rider input, both initial attention overlays, diagonal-pattern affinity image and both refined overlays preserve the source examples and visible activation patterns. No additional measurements or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added numbered footer summarizes aggregation from the last K layers and H heads, class-to-patch localization maps, and patch-to-patch affinity for refinement. All three statements are supported by the supplied caption and body text; no new method component is introduced."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains all original content and the complete three-part footer. No clipped labels, missing endpoints or visibly corrupted text are apparent. Partial content at detail-image boundaries is present in the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text. The reported pixel proof supports preservation within its listed rectangle; its file and hash were not independently verified. The added footer was assessed separately against the supplied text. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. An overview of the proposed multi-class token transformer (MCTformer-V1). It first splits and transforms an input RGB image\ninto a sequence of patch tokens. We propose to learn C extra class tokens, where C is the number of classes. The C class tokens are\nconcatenated with patch tokens, with added position embeddings (PE), which then go through consecutive L transformer encoding layers.\nFinally, the output C class tokens are used to produce class scores via average pooling. We aggregate the transformer attentions from the\nlast K layers and multiple heads to generate a final attention map, from which we can extract class-specific object localization maps and a\npatch-level pairwise affinity map from the class-to-patch and the patch-to-patch attentions, respectively. The patch-level pairwise affinity\ncan be used to refine the class-specific transformer attention maps to produce improved object localization maps.",
+  "body_evidence": "judging/fidelity/requests/P48_a1_1650ba94f20f/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P48_a1_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P48_a1_1650ba94f20f",
+    "response_sha256": "78e1c06dd5c64a5b2ac6d564fb439e365e2a9785c593565e0a1fa1785d836c7c",
+    "request_metadata_sha256": "7a11e87196984be400d186e913bcb3c41ac4fa5b72d56684a1e225c85ae87290",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full original-content MCTformer overview and read caption/checks: C class tokens, patch tokens/PE, transformer residuals, class-score pooling, K-layer/H-head aggregation, orange class-to-patch map and blue affinity/refinement inputs remain complete. Footer statements restate exactly those caption relationships; all original attention heatmaps and source examples are preserved by full-rectangle pixel replay.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T10:36:54.292153+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T10:36:54.292153+00:00"
+}

@@ -1,0 +1,5 @@
+Figure 1: MAESTRO’s coordination loop. The persistent coordinator 1 dispatches or redirects
+workers, which 2 attack open obligations in parallel and 3 report proofs, diagnoses, progress, or
+blueprints to a shared queue. The coordinator 4 consumes these events as they arrive and 5 revises
+the shared Lean workspace, here retracting H2 and H1.2, restating H3 as H3’, adding H4, and
+keeping the proved H1.1. When the root closes, 6 Lean checks the final proof or falsification.

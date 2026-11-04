@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P244",
+  "generation_attempt": 1,
+  "source_image_sha256": "db4e530b0c4b6a09f2029c3c3e8805d2b952399117fe7f8470304eb2d4086b0a",
+  "revised_image_sha256": "1d9918ac17daccc6eccceb982d026ce6f32ae5772e0dc3d179959b27a58802a7",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The complete framework remains: image x feeds the task-t model and teacher Φ_{t−1}; shared/private prompts feed decoder layers; refined pseudo-labels and detection outputs meet at L_DKD."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both original panels, encoder/decoder, query and ranking functions, prompt pools, prototypes, teacher, prediction heads, losses and legend are retained. The additional lower panel repeats the pseudo-label-generation region."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "F_ψ, Q(·), L_DDL, L_DKD, decoder indices, prompt weights, y_{t−1}, y_t and y_pseudo remain intact. Candidate values θ = 0.4, 0.6 and 0.1 retain their question mark, check and cross."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Query branching to both pools, pool aggregation and decoder injection, prototype updating, similarity filtering, both merge paths and the connections into L_DKD preserve the original directions. The enlarged inset repeats the same merge structure."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Circular general prompts, triangular task-specific prompts, pentagonal prototypes and feature-vector circles retain their legend meanings. Old/new task grouping, frozen/trainable markers and pseudo-label color ordering remain consistent."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same dog-and-bench input and detection example remain, including Dog and Bench labels and bounding boxes. No new measurements or example outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added content-aware-query heading follows the caption’s query-based retrieval from both pools. The teacher-candidate heading follows its description of refinement through class-prototype similarity. The enlarged-view label describes the duplicated region."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative’s full overview retains all original content, and added headings are complete. The explicitly labeled inset ends at contextual connector stubs; their external endpoints remain visible in the overview."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images, caption and pixel-proof report only. The reported pixel equality covers the two listed rectangles; added headings were checked separately against the caption. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of our framework at incremental step t. Given an image x, the query function generates a content-aware query\nrepresentation by adaptively computing query weights via a ranking function F and performing weighted aggregation. Subsequently,\nψ\nprompts are retrieved from both the shared and private pool and injected into the decoder layer. In parallel, the teacher model Φ\nt−1\ngenerates a set of candidate bounding boxes, where potentially valuable ones are projected into the feature space to compute their similarity\nwith class prototypes. This process yields a set of refined, high-quality pseudo-labels to guide the training of the student model Φ .\nt",
+  "body_evidence": "judging/fidelity/requests/P244_a1_1d9918ac17da/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P244_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P244_a1_1d9918ac17da",
+    "response_sha256": "b81326a860f11e53ead838fe3de1900059d9ea291f17f0ea3eaf3b2d8f6b22b7",
+    "request_metadata_sha256": "48d1b95c46818df358d3d923a7fb524c1b58ff3fccd1d5ce095645ca9505dfe4",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the final overview and enlarged pseudo-label module, read the source caption and all independent pair checks. Shared/private prompt retrieval, query weights, prototype updates, teacher candidates, similarity filtering, merge paths, both losses and output boxes remain intact. Original theta 0.4 question mark, 0.6 check and 0.1 cross are preserved without resolving the source uncertainty. The two explanatory headings follow the caption; the lower panel is explicitly an enlarged 2x view, whose cropped connector endpoints remain fully available in the overview. No new pseudo-label class or unshown teacher/student connection is introduced.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T07:06:23.338642+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T07:06:23.338642+00:00"
+}

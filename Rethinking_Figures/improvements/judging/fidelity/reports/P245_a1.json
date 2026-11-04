@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P245",
+  "generation_attempt": 1,
+  "source_image_sha256": "165783df5e3988964ea5dd4174b22baf3631b5359e112f86ee27474692adc106",
+  "revised_image_sha256": "f6ad11b5e7cfdea60415af128ebd52e7a3c95453b2fe0216746ca43a542e3b83",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M comparison retains image replay versus enhanced instance replay and their background-shift motivation."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Stored/new image-label pairs, object inventory, selected horse, pasted instance and retraining destinations are all preserved."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Horse/person labels, question marks and Select/Place/Retrain labels remain; added background-shift definition follows caption."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Both left inputs feed Retrain; right Select arrow enters instance bank, Place returns the selected horse to the new image, and new data feeds retraining exactly as source."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Original orange background-shift arrows, pink label masks, circled horse and red pasted-instance outline are preserved."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Three native source blocks independently match original pixels, with the entire right-hand replay topology retained as one block."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "Bottom explanations of background shift, question-mark regions and retained instance restate caption and p1 introduction; no unshown class label is invented."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All full source diagrams and labels remain visible. Repeated panel wording and large whitespace are left to blind design scoring."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original examples, content and source resolution remain; new text is limited to original caption/body claims. Layout quality is assessed separately.",
+  "caption": "Figure 1. Comparison of traditional image replay (a) and our re-\nplay methods (b). (a) shows that only the old class “horse” is la-\nbeled in stored image, while other classes (new class “person” and\nold class “car”) are labeled as background. Both old (“horse”) and\nfuture classes in new images are labeled as background. (b) Our\nmethod avoids confusing information in stored image by retaining\ninstances and alleviates background shift by fusing these instances\nin the new image.",
+  "body_evidence": "../papers/2503.22136_conference.pdf; source caption and relevant introduction/method page inspected directly",
+  "independent_pixel_check": "judging/fidelity/reports/P245_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T00:23:05.289887+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T00:23:05.289887+00:00"
+}

@@ -1,0 +1,7 @@
+Figure 3. Flowchart of the proposed single-stage SASS method, which is realized by incorporating an auxiliary branch into the traditional
+segmentation model S(·). During training, the predicted masks P are split into the labeled and unlabeled parts, which are supervised by
+the segmentation loss L and the tree energy loss L , respectively. To obtain pseudo labels for unlabeled pixels, the Tree Affinity
+seg tree
+Generation procedure (Eqs. 3-5) first utilizes the color information I and semantic features F to generate the low-level and high-level
+affinity matrices Alow,Ahigh. Then the Cascaded Filtering operation (Eqs. 6-7) converts the network predictions P into soft pseudo labels
+Y˜. During testing, the auxiliary branch is removed to avoid extra computational costs.

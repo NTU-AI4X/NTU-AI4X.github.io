@@ -1,0 +1,3 @@
+Figure 3: Overview of LonGaussian. LoGeR processes overlapping chunks, and AllTracker cor-
+respondences guide Gaussian consolidation before cross-chunk filtering and far-field modeling.
+Snowflakes and flames denote frozen and trainable modules, respectively.

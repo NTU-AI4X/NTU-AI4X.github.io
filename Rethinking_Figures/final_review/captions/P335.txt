@@ -1,0 +1,12 @@
+Figure 1. Our Carve3D algorithm steadily improves the 3D con-
+sistency of a multi-view diffusion model and the resulting quality
+of the NeRF and the mesh, without sacrificing its image-prompt
+alignment, texture details, or realism. Here, we show 3 testing-
+set results (in 3 rows, numbered as 1-3, separated by dotted lines)
+from the finetuning process (epoch 0, 28, and 55 in 3 columns).
+Each row includes the generated multi-view images (denoted as
+MV), the reconstructed NeRF and extracted mesh (denoted as RM)
+and the text prompt (denoted as TP). The inconsistencies in the
+multi-view images, e.g. the facing direction of the shopping cart,
+the position of the octopus arms, and the position of the pencils,
+lead to artifacts in the NeRF and the mesh (highlighted in red).

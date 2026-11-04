@@ -1,0 +1,8 @@
+Figure 1. Different sematic segmentation paradigms: (a-b) para-
+metric vs (c) nonparametric. Modern segmentation solutions, no
+matter using (a) parametric softmax or (b) query vectors for mask
+decoding,canbeviewedaslearnableprototypebasedmethodsthat
+learn class-wise prototypes in a fully parametric manner. We in-
+steadproposeanonparametricscheme(c)thatdirectlyselectssub-
+clustercentersofembeddedpixelsasprototypes,andachievesper-
+pixel prediction via nonparametric nearest prototype retrieving.

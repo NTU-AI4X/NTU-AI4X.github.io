@@ -1,0 +1,8 @@
+Figure 1. An object from a low-performing class (Pottedplant),
+original image in blue, augmented version in orange. a) Because
+of its low-entropy, uncertainty-based AL methods do not label the
+image. b) Because of its high confidence, pseudo-label SSL meth-
+ods wrongly pseudo-label the image and thus harm the training. c)
+Because of its high-inconsistency, consistency-based SSL meth-
+ods cannot learn from it. d) Our method selects the image for
+labeling and prevents it from getting pseudo-labeled.

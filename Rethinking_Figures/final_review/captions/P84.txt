@@ -1,0 +1,6 @@
+Figure 4. Overview of our method. Motivated by the observation that certain feature channels learned from the source domain negatively
+impact cross-domain performance, we propose suppressing and pruning sensitive channels while adapting invariant ones. We introduce
+sensitivity-guided channel pruning, which quantifies the importance of each feature channel based on its image-level and instance-level
+sensitivity to domain discrepancies. We then apply a weighted sparsity loss to the learnable parameters, promoting the pruning of channels
+with higher sensitivity based on the predefined threshold and ratio. To prevent the loss of potentially useful channels from early pruning,
+we introduce a stochastic channel reactivation mechanism.

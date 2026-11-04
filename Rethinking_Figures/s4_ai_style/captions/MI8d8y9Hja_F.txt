@@ -1,0 +1,6 @@
+Figure 1: PITCH (Proactive Intervention Timing in CHat) is the first benchmark for proactive inter-
+vention timing built from unscripted human conversations and participants’ own judgments of when
+proactive interjections should occur. We collected the benchmark data via a four-phrase protocol:
+Conversation, Message Contribution, Timing Judgments, and Deliberation. We then evaluated 15
+models across 28 configurations against the benchmark in three task setups that differ in their task
+difficulty and realism for real-world deployment of agents in group conversations.

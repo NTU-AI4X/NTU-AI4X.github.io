@@ -1,0 +1,6 @@
+Figure 1: Overview of HARMONY HARNESS. (a) The functionality–security space is split into
+weighted subproblems. Each subproblem keeps a harness and together they approximate the Pareto
+frontier. (b) An LLM proposer diagnoses failures and forms a hypothesis. Operators edit tools, skills,
+or logic, and place each edit in either the general scope or the environment-specific scope. The child
+is validated before evaluation. (c) At inference, a composition agent picks components from the
+general and environment-specific pools to build a task-specific harness.

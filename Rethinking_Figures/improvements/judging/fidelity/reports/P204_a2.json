@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P204",
+  "generation_attempt": 2,
+  "source_image_sha256": "8009ab7e3c7d98f1eb33ac25d4362076cb892596fca41cb5568bae800a5633dc",
+  "revised_image_sha256": "aed3b212b36898e66e432abbb5f93eb7901a4febfbbbf806df007fa211404086",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The panorama-to-3D pipeline remains intact: panoramic inputs, ViT(DINOv2), spherical embeddings, attention aggregation, three prediction branches, and depth/camera/point-map outputs."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Retains all original panels, including the SO3 augmentation examples, token addition, self-/cross-attention, branch-adapted positional encoding, random anchor, and reconstruction."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Original labels and notation remain visible, including azimuth θ, polar φ, p_embed, × L times, (I,D,g), primed augmentation triplets, and the randomly selected reference-image statement."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Embedding arrows, encoder-to-token direction, attention repetition arrows, branch-adapted encoding connections, branch output connections, and dashed camera/depth-to-reconstruction relationships are retained."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Square patch tokens, circular positional embeddings, striped combined tokens, and their color legends remain consistent. Global, local, and camera branches retain their blue, orange, and purple categories."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The same three input panoramas, two rotated augmentation examples, two depth maps, anchor scene, reconstruction, and camera markers are preserved. No new measurements or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "All three added sidebar claims have supplied textual support: wrap-around continuity in Section 4.2; aggregation of local geometry, global structure, and camera motion in the caption; and depth, camera poses, and local/global point-map outputs in the caption and Section 4.3."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains the entire original figure and all three sidebar boxes without visible clipping or missing labels. Cropping in the detail images is resolved by the full view."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The reported pixel proof supports preservation of its listed full-original rectangle; it was not independently revalidated and does not validate the added sidebar claims. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of the proposed PanoVGGT framework. Given one or multiple panoramic images, PanoVGGT extracts spherical\npatch tokens using a ViT backbone, augments them via S O(3) geometric augmentation, and encodes them with shared and branch-adapted\npositional embeddings. A multi-branch attention aggregator jointly reasons about local geometry, global structure, and camera motion.\nThe model outputs dense depth maps, camera poses (under a randomly selected global anchor), and local/global point maps for final 3D\nreconstruction.",
+  "body_evidence": "judging/fidelity/requests/P204_a2_aed3b212b368/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P204_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P204_a2_aed3b212b368",
+    "response_sha256": "9dc8328514a3e8def337be33f8ea863ac2ef84fb641bd9b505687eeede5458bb",
+    "request_metadata_sha256": "e672f25dbe1941ffb2f5c36198a2fb7676e119f044af94523c1f477e64cdd226",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed final full original scientific panel with three right-side statements. Read source_context Section4.2 lines193-197 explicitly preserving wrap-around angular-boundary continuity, and caption for local/global/camera aggregation and outputs. All panorama evidence, SO3 augmented views, position embedding and branch adapters, random-anchor wording and 3D reconstruction remain exact. Sidebar text is complete in a2; no invented coordinate or edge added.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/P204_a1_self_rejection.json"
+  ],
+  "reviewed_at": "2026-11-01T10:36:54.388440+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T10:36:54.388440+00:00"
+}

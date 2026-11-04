@@ -1,0 +1,7 @@
+Figure 3. Attention score visualization for various query points.
+Left: Vanilla CLIP (A ) shows noisy, unfocused attention.
+CLIP
+Center: VFM-to-CLIP distillation without low-rank eigenscaling
+shows partial object grouping with limited detail. Right: Incor-
+porating our low-rank eigenscaling (Eq. (7)) captures object-level
+context, improving grouping within a single object.

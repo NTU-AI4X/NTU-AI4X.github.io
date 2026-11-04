@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P282",
+  "generation_attempt": 2,
+  "source_image_sha256": "a17092362f50737a7644ed58a3f220ecbd46ed872358a5e648bf21aabd70c0d5",
+  "revised_image_sha256": "8207dc09759794066b12dfbc5c0dffefd8b0e371075413edd57f68b19a6789b3",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "Historical observations feed the hybrid scene representation, vectorization and policy π, which produces action a_t for the next viewpoint. The added GenNBV title matches the caption."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Both observation steps, building and drone views, training dataset examples, semantic and geometric representations, historical poses, vectorization, policy, inference and reward calculation are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Step 2 retains [x: -4, y: -5, z: 7, yaw: -120, pitch: -45]; Step 1 retains [x: 4, y: -6, z: 2, yaw: -60, pitch: 10]. F_t^S, F_t^G, s_t^S, s_t^G, s_t^A, π, a_t, pose labels and ΔCoverage Ratio remain legible and equivalent."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "Observation flow into the representation, downward representation–vectorization–policy arrows, concatenation symbols, action feedback loop, dashed viewpoint trajectory and downward coverage-change arrow preserve their original directions and relationships."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Yellow representation grouping, green vectorization grouping, orange policy/action encoding, colored coordinate axes and pink coverage annotation remain consistent. The dashed divider still separates inference from reward calculation."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The paired depth/color observations, three dataset building examples, geometric voxel depiction and before/after coverage buildings retain their identities and depicted content. No new measurements or outcomes appear."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added title summarizes the caption’s input–representation–next-viewpoint sequence. The footer’s coverage-increase training reward and expected cumulative reward objective are explicitly supported by the supplied caption."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative contains all original content plus the complete title and two-line footer. No material clipping, unreadable replacement labels or visible corruption is apparent; cropped detail views are covered by the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and caption. The reported pixel-equality proof was not independently verified; it covers only its listed rectangle. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of our proposed framework GenNBV. Our end-to-end policy takes the historical multi-source observations as input,\ntransforms them into a more informative scene representation, and produces the next viewpoint position. A reward signal will be returned\nat training time to optimize the end-to-end policy for maximizing the expected cumulative reward in one episode. Specifically, the signal\nis the increased coverage ratio after collecting a new viewpoint.",
+  "body_evidence": "judging/fidelity/requests/P282_a2_8207dc097597/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P282_a2_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P282_a2_8207dc097597",
+    "response_sha256": "bbea3c2f118462d0b36711e0dccaffc8e5120df5ac7e1fab7a646356265b833a",
+    "request_metadata_sha256": "d5786cf8d1a1a3c0ca771844df46a9278370fc4f76489827735ed57a21d62d18",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Viewed full final and initial draft; read caption and independent pair checks. The complete original source preserves both numeric observation poses, coordinate axes, history, semantic/geometric representations, vectorization, policy action feedback, and coverage comparison. New title and training-reward footer match caption exactly in meaning; no new coverage encoding or pose interpretation. Complete original rectangle independently replayed native before acceptance.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P282_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T09:40:18.008120+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T09:40:18.008120+00:00"
+}

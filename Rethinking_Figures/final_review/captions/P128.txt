@@ -1,0 +1,12 @@
+Figure 1. We present CASS, object-level Context-Aware
+training-free open-vocabulary Semantic Segmentation model. (a)
+Overview: Our method distills the vision foundation model’s
+(VFM)object-levelcontextualspectralgraphintoCLIP’sattention
+and refines query text embeddings towards object-specific seman-
+tics. (b) Object-Level Context: This result illustrates how incor-
+porating object-level context improves segmentation accuracy by
+unifying object-wise components into a user-defined object class;
+forexample,(toprow)ourapproachpreciselysegmentsthetruck’s
+body, wheels, and cargo area and (bottom row) accurately groups
+elements into a single object, such as the sheep, whereas base-
+lines [16, 29] often fail to achieve this unified segmentation.

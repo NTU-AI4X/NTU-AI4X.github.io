@@ -1,0 +1,63 @@
+{
+  "status": "pass_complete",
+  "mode": "complete",
+  "checked_at_utc": "2026-10-31T09:52:28.744815+00:00",
+  "protocol_id": "codex-sixdim-v1-a0385ca7f29ad75b",
+  "figures": 371,
+  "papers": 200,
+  "expected_primary_runs": 1113,
+  "verified_raw_primary_runs": 1113,
+  "published_primary_runs": 1113,
+  "published_complete_figures": 371,
+  "unpublished_verified_runs": 0,
+  "independent_session_ids": 1113,
+  "accepted_tool_calls": 0,
+  "known_cli_startup_warnings": 1113,
+  "recovered_transport_reconnect_events": 73,
+  "cli_websocket_to_https_fallback_events": 0,
+  "runner_provenance_metadata_corrections": 1,
+  "runner_provenance_corrected_run_ids": [
+    "J0090_r3"
+  ],
+  "runner_snapshot_hashes": [
+    "5bc010abff0af9f99ab54c52323c10548f55d674c49431ceff7c32f1c057aea3",
+    "ded836aa12f9a708530b84b7ee6907a33ad2ae3caafe036d4c424e11182f0245"
+  ],
+  "cohorts": {
+    "main": {
+      "papers": 160,
+      "figures": 320,
+      "M": 160,
+      "F": 160
+    },
+    "style": {
+      "papers": 40,
+      "figures": 51,
+      "M": 11,
+      "F": 40
+    }
+  },
+  "gallery_cards": {
+    "index.html": 371,
+    "verified_gallery.html": 371,
+    "s4_ai_style/index.html": 51
+  },
+  "checks": [
+    "frozen protocol and source hashes",
+    "371 original and 1113 view hashes",
+    "anonymous prompt hashes and source-identifier exclusion",
+    "fresh session per accepted run",
+    "raw response/events hashes and final JSON equality",
+    "no tool calls in accepted runs",
+    "six dimensions, integer/null validity and evidence",
+    "published median/range/n recomputation",
+    "gallery script payload equality",
+    "371/51 card ID, role and stage mappings",
+    "main/style separation"
+  ],
+  "limitations": [
+    "This audit verifies execution and provenance, not the scientific validity of visual judgments.",
+    "Partial mode permits newly completed raw results to await the next publication; CSV final equality is checked only in complete mode.",
+    "The narrowly identified CLI startup warning, HTTPS fallback diagnostics and completed transport reconnects are retained and separately counted; they are not model tool calls."
+  ]
+}

@@ -1,0 +1,2 @@
+Figure 2: Illustration of the BKBAgent framework for battery parameter identification. Utility de-
+notes the approximate expected belief change in Eq. (3).

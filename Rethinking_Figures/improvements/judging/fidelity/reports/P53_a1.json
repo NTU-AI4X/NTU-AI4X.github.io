@@ -1,0 +1,61 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P53",
+  "generation_attempt": 1,
+  "source_image_sha256": "c264c8865f3177067feaa526d5cc13533776e85073a6138c8df85ac7b7ea351b",
+  "revised_image_sha256": "60bfcaccb8504f4bfd17c221f014e93c6866bc0eabb5a11495d41849deafd758",
+  "reviewer": {
+    "identity": "/root/vision_exemplars",
+    "method": "direct_visual_inspection"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The M comparison still motivates joint global-context and fine-local-detail modeling via ERF coverage and segmentation examples."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All four three-map ERF rows plus input, GT and four segmentation outputs are present in the original comparison order."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "SegFormer/VWFormer/EDAFormer/SegMAN, Stage2/3/4,16×16/32×32/64×64 windows,1/8,1/16,1/32 feature maps and27M–29M/1024×1024 metadata match the source."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "ERF rows compare the original corresponding models/scales; right-side scene and mask insets retain exact same red/yellow source-to-detail links."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "ERF intensities/colors, segmentation categories, red/yellow ROI and dashed inset connectors are preserved; SegMAN remains the original red-emphasized label."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "Ten protected regions independently match deterministic source resizes: four complete three-map ERF strips with labels and six complete scene/mask panels with all insets."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "New global-context/local-detail headings, Cityscapes resolution and model-size footer are directly stated in the source caption and Introduction discussion."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "All ERF stage labels, scene boundaries, enlarged details and original connectors are visible. No generated surrogate heatmap or mask remains in the evidence slots."
+    }
+  },
+  "issues": [],
+  "remaining_limitations": "Original illustrative scope remains. Qualitative optics is not calibrated geometry; empirical panels retain source resolution via documented resampling. Visual polish is judged separately.",
+  "caption": "Figure 2. Qualitative analysis of receptive field patterns and segmentation performance for small-sized models (27M-29M parameters).\nLeft: Visualization of effective receptive fields (ERF) on the Cityscapes validation set at 1024×1024 resolution, illustrating SegMAN’s\nstronger global context modeling capacity in comparison to existing state-of-the-art models. Right: Segmentation maps highlighting\nSegMAN’s superior capacity to encode fine-grained local details that are often missed by existing approaches.",
+  "body_evidence": "generation/P53/attempt_01/source_context.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P53_independent_pixel_check.json",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-10-31T17:28:11.383048+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-10-31T17:28:11.383048+00:00"
+}

@@ -1,0 +1,1 @@
+Figure 2. The class distribution of the Cityscapes dataset.

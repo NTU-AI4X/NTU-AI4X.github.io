@@ -1,0 +1,4 @@
+Figure 4: Overview of our SM4RT. Given a monocular input video, SM4RT extracts latent geome-
+try tokens with a DINOv2 backbone, then decouples them into scene geometry and motion geometry
+tokens. The scene decoder predicts camera parameters and depth, while the motion decoder esti-
+mates sparse se(3) transforms and motion base weights for dense SE(3) projection.

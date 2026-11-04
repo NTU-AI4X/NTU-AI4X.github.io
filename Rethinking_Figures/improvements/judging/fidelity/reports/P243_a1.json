@@ -1,0 +1,69 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P243",
+  "generation_attempt": 1,
+  "source_image_sha256": "0f6ea8754c92e9815254d4133f32d5120d53cc5d213af58a745f1e75df2f905d",
+  "revised_image_sha256": "7290dab6c6ede36431f8e726bf7d88a3af5ab5a89717ccbe7688c6ea099d0def",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": true
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The derivative preserves the three-part comparison: task-general prompt relearning, prompt drift from missing annotations, and shared/private prompt pools with prototype-guided pseudo-label supervision."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "Panels (a), (b), and (c) remain present, including Task 1/Task 2/Task t groups, annotation tables, drifted tokens, both prompt pools, prototype space, supervised class list, and the complete legend."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Panel captions and labels including 'Relearn,' 'Shared prompt pool,' 'Private prompt pool,' 'Prototype Space,' 'Guide,' 'Previous,' and 'Current' are retained and legible. Task indices, class names, ellipses, and red check/cross symbols match. No equations or numerical results are added."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The curved relearning arrows retain their endpoints and directions. Dashed drift arrows still connect solid tokens to dashed-outline tokens, and annotation-table arrows point upward toward the prompt strip. In panel (c), the prototype-space guide points down to the class list, whose supervision arrow points left into the private pool."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "Circles still encode task-general prompts, triangles task-specific prompts, dashed token outlines drifted prompts, and pentagons category prototypes. Blue/green/orange task groupings and green Previous versus pink Current class blocks remain consistent with the original legend and panels."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The class examples are unchanged: Person/Dog/Cat/Bird; Car/Bus/Train/Plane; and Skis/Kite/Fork/Bowl. Task t retains Dog/Cat/Car/Bus as previous classes marked with crosses. Panel (c) retains Cat/ellipsis/Car/Bus and the current classes marked with checks. No measurements or outcomes are fabricated."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The added title and explanatory sidebars are supported by the supplied text: task-ID isolation forces relearning; treating old foreground classes as background causes drift; the shared pool optimizes task-general prompts, the private pool preserves task-specific representations, and prototypes guide old-class pseudo-labels."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The full derivative visibly includes all three panels, their captions, the supervision list, explanatory sidebars, and all four legend categories. No clipped labels, missing key content, unreadable replacement text, or visible corruption is apparent."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "Assessment uses the supplied images and source text only. The reported pixel proof covers only its listed rectangles; added text and relationships were assessed separately by visual comparison. No tools or files were accessed. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 1. Comparison of prompt-based methods. (a) Use task\nID to isolate prompt, which forces task-general prompt to be re-\nlearned at each task. (b) Missing annotations cause prompt tokens\nto drift. (c) The shared prompt pool continuously optimizes task-\ngeneral prompt, and category prototypes guide the generation of\npseudo labels for old categories.",
+  "body_evidence": "judging/fidelity/requests/P243_a1_7290dab6c6ed/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P243_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P243_a1_7290dab6c6ed",
+    "response_sha256": "b411bcf7943d33df6509a547ebb2365c1cb8fa443c57e5f31f3802eaa2bda6ea",
+    "request_metadata_sha256": "8c9bf1f4b80d47d6f8c75115b244c3866b95b5010d1b1c8c13c151e7956f3a08",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Reviewed the independent original/derivative request and actually viewed the final PNG. The three prompt-learning panels retain all Task 1/2/t groups, class lists, ticks/crosses, shared/private pools and the complete circle/triangle/dashed/pentagon legend. The side notes explain task isolation, missing-annotation drift, and general prompts plus category prototypes, as supported by the source introduction and caption. No unsupported color-to-class mapping was added. All eight independent checks passed; final protected regions are separately replayed before acceptance.",
+  "verdict": "passed",
+  "previous_report_paths": [],
+  "reviewed_at": "2026-11-01T06:41:28.564325+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:41:28.564325+00:00"
+}

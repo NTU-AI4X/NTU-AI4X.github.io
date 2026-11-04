@@ -1,0 +1,7 @@
+Figure 1: Target-support use in FT-FSOD (Yu et al., 2026) and PULSE. (a) FT-FSOD uses support
+annotations for target-domain fine-tuning and subsequently scores query predictions without explicitly
+consulting the support examples. (b) PULSE retains cached support evidence and uses SSCA to
+refine classification scores according to support–query agreement. Box tags denote predicted classes,
+and bar lengths illustrate schematic confidence. The dashed candidate illustrates score suppression at
+the same location. Test images from DeepFish (Fu et al., 2024) are used for illustration; the support
+examples, bounding boxes, and score changes are schematic.

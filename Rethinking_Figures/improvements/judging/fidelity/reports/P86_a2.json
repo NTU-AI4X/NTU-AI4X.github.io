@@ -1,0 +1,71 @@
+{
+  "schema_version": "figure-redesign-fidelity-v1",
+  "figure_id": "P86",
+  "generation_attempt": 2,
+  "source_image_sha256": "cd77d5d6a6da3cddc5691a229a6bf9d482b937880f05f442ef1562a0592c1acf",
+  "revised_image_sha256": "c5f79add37786b7da2d4e0a487558eea3288ddda0dbcc1f3852060319e6cfa97",
+  "reviewer": {
+    "identity": "gpt-6-astra high independent image-pair evidence; /root/vision_exemplars delegated acceptance review",
+    "method": "independent_multimodal_request_then_root_review"
+  },
+  "inspection": {
+    "original_image_viewed": true,
+    "revised_image_viewed": true,
+    "caption_read": true,
+    "relevant_body_read": false
+  },
+  "checks": {
+    "role_and_message": {
+      "status": "passed",
+      "evidence": "The training → testing → surface reconstruction method remains intact: local regions feed the Local Context Prior, specialization uses the global target and predictable queries, and Marching Cubes produces a surface mesh."
+    },
+    "panel_and_object_coverage": {
+      "status": "passed",
+      "evidence": "All three stages, six local-region examples, global-target scene, two context-prior modules, local/global SDF labels, and surface-mesh example are retained."
+    },
+    "labels_math_and_numbers": {
+      "status": "passed",
+      "evidence": "Local Regions t_i, Global Target G, Local SDF F, Global SDF Fg, both context-prior names, Predictable Queries, and Marching Cubes remain legible and consistent. Stage numbers 1–3 and references to Fig.2(a) and Fig.2(b) are preserved in relocated headings."
+    },
+    "connections_and_direction": {
+      "status": "passed",
+      "evidence": "The original rightward arrows remain: local regions → Local Context Prior, specialization → Predictable Context Prior, and Marching Cubes → Surface Mesh. Stage braces retain their original grouping. The added summary follows the same direction."
+    },
+    "visual_encodings": {
+      "status": "passed",
+      "evidence": "The purple point-cloud examples, gray reconstructed mesh, outlined prior modules, black arrows, and stage braces retain their meanings. Enlarged headings and the added summary enclosure introduce no conflicting category encoding."
+    },
+    "examples_and_data": {
+      "status": "passed",
+      "evidence": "The six local crops and the target/reconstructed room scenes retain their visible content and identities. The supplied pixel proof reports exact preservation of the pipeline rectangle at 2× scale. No measurements or new examples are added."
+    },
+    "unsupported_additions": {
+      "status": "passed",
+      "evidence": "The new bottom summary, Local SDF F → Global SDF Fg → Surface mesh, restates the existing pipeline. Its instruction to specialize using predictable queries and extract with Marching Cubes is supported by the original transition labels and mesh output."
+    },
+    "complete_visible_content": {
+      "status": "passed",
+      "evidence": "The derivative full image contains complete headings, labels, arrows, examples, braces, and summary text without visible clipping or corrupted text. Cropping in the supplied detail views does not affect the full image."
+    }
+  },
+  "issues": [],
+  "resolved_model_flags": [],
+  "remaining_limitations": "No source body excerpt was supplied. The pixel proof covers only its listed pipeline rectangle; relocated stage headings and the added summary were assessed visually against the original figure. Retained source resolution and visual blemishes are independently scored; no quality-informed reroll.",
+  "caption": "Figure 2. Overview of our method.",
+  "body_evidence": "judging/fidelity/requests/P86_a2_c5f79add3778/prompt.txt",
+  "independent_pixel_check": "judging/fidelity/reports/P86_independent_pixel_check.json",
+  "multimodal_evidence": {
+    "request_directory": "judging/fidelity/requests/P86_a2_c5f79add3778",
+    "response_sha256": "85b31135e99cbcd69a498e14cf4e445f65649e5cadedc0335566e79afd350af6",
+    "request_metadata_sha256": "1797f356d3b902ac32506786fc09a063bde44766d57603209428fe0ab54173cb",
+    "automatic_approval": false
+  },
+  "delegated_acceptance_review": "Actually viewed the complete final image and first generated draft, and reviewed all eight independent source/derivative observations. The original six local clouds, global target, mesh, context-prior modules, SDF variables, every arrow, and the three braces are restored together at 2x nearest-neighbor. Three original stage captions and Fig.2(a/b) references move above the corresponding groups. The footer only restates the visible local-SDF to global-SDF to mesh route and existing predictable-query/Marching-Cubes labels. It adds no target-to-module edge or unshown module internals. The original caption is minimal, so the added text is grounded directly in preserved original labels rather than inferred mechanism details.",
+  "verdict": "passed",
+  "previous_report_paths": [
+    "judging/fidelity/reports/P86_a1.json"
+  ],
+  "reviewed_at": "2026-11-01T06:46:30.329879+00:00",
+  "approved_by": "/root/vision_exemplars, delegated independent fidelity review by /root",
+  "approved_at": "2026-11-01T06:46:30.329879+00:00"
+}

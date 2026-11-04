@@ -1,0 +1,4 @@
+Figure 2: Overview of CVRoute. (a) Street-view semantics are routed to satellite-defined regions
+for satellite-space prediction. (b) Cross-view entities are matched over multiple pose hypotheses and
+fused through pose-marginalized nullable routing. (c) A training-only privileged relationship teacher
+guides early routing and is gradually annealed out; inference uses only predicted relationships.

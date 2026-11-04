@@ -1,0 +1,8 @@
+Figure 1. Comparison of traditional image replay (a) and our re-
+play methods (b). (a) shows that only the old class “horse” is la-
+beled in stored image, while other classes (new class “person” and
+old class “car”) are labeled as background. Both old (“horse”) and
+future classes in new images are labeled as background. (b) Our
+method avoids confusing information in stored image by retaining
+instances and alleviates background shift by fusing these instances
+in the new image.
